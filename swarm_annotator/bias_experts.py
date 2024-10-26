@@ -4,6 +4,16 @@ import pandas as pd
 from swarm import Swarm, Agent
 
 
+class BiasIdenSwarm(nn.Module):
+    def __init__(self, experts, aggregator):
+        super.__init__()
+        self.experts = experts
+        self.aggregator = aggregator
+
+    def forward(self, x):
+        assert len(self.experts) != 0
+
+
 class TaskExpert(nn.Module):
     def __init__(
         self,
@@ -37,6 +47,8 @@ class TaskExpert(nn.Module):
             and self.task_relevant_examples is not None
         ):
             instructions = f"You are a {agent_name}, you will output binary judgement on whether a {task} is shown in the input text. Your output format will be: [1 or 0], based on your expert opinion, where 1 indicates such bias exists."
+        elif self.prompt_config["prompt_setting"] == "CoT":
+            instructions = f"You are a {agent_name}, an expert in analyzing texts for {task}. You will read the input text and use a step-by-step reasoning process, to determine whether the {task} is present in the text. Your final output should be a binary judgement: [1 or 0], where 1 indicates such bias exists. Do not include your reasoning steps in the final output."
         else:
             instructions = f"You are a {agent_name}, you will output binary judgement on whether a {task} is shown in the input text. Your output format will be: [1 or 0], based on your expert opinion, where 1 indicates such bias exists."
 
