@@ -39,6 +39,7 @@ def calculate_kappa_scores(file_paths_1, file_paths_2):
         "hate speech",
         "linguistic bias",
         "text-level context bias",
+        "gender bias",
         "political bias",
         "racial bias",
     ]
