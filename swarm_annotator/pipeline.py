@@ -1,43 +1,73 @@
-import torch
-import torch.nn as nn
 import pandas as pd
-from bias_experts import TaskExpert, Aggregation
+import numpy as np
+import pandas as pd
 from swarm import Swarm, Agent
+from bias_experts import TaskExpert, Aggregation
+from sklearn.metrics import classification_report
+
+# Load the evaluation dataset
+eval_file_path = "/home/yifan/Desktop/tidy/PapersNProjects/Code/MMediaBias/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv"
+test_dataset = pd.read_csv(eval_file_path)
+print(test_dataset)
+
+# Specs
+bias_dimensions = [
+    "hate speech",
+    "linguistic bias",
+    "text-level context bias",
+    "political bias",
+    "racial bias",
+]
 
 
-# def create_expert(task):
-#     return
+def load_model():
+    client = Swarm()
+    prompt_config = {"prompt_setting": ["zero-shot"]}
+    model_dict = {
+        bias: TaskExpert(client, None, None, prompt_config, bias)
+        for bias in bias_dimensions
+    }
+
+    # Test aggregation
+    aggregator = Aggregation("llm")
+    example_experts_outputs = {
+        "raw input": "Asians make the best doctors. It's their math skills.",
+        "expert predictions (prediction, confidence)": [
+            {"RoBERTa-Twitter": (0, 0.9)},
+            {"few-shot GPT4o": (0, 0.6)},
+            {"zero-shot GPT4o": (1, 0.8)},
+            {"CoT GPT4o": (1, 0.3)},
+        ],
+    }
+
+    aggregator.agg(example_experts_outputs)
+
+    pass
+
+
+def perform_inference(model, data):
+
+    for i in range(len(data)):
+        predictions = model.forward(data[i])
+
+    return predictions
 
 
 if __name__ == "__main__":
+    # Load the model
+    model = load_model()
 
-    # # Test for political bias task
-    # print("Start annotating...")
-    # client = Swarm()
-    # prompt_config = {"prompt_setting": "zero-shot"}
-    # gender_bias_expert = TaskExpert(client, None, None, prompt_config, "Racial Bias")
+    # Perform inference on the evaluation data
+    predictions = perform_inference(model, test_dataset)
 
-    # # Racial Bias example
-    # gender_bias_expert.forward("Trump is the best.")
-    # gender_bias_expert.forward("Women should be in kitchen.")
-    # gender_bias_expert.forward("Black people should go pick cotton.")
-    # gender_bias_expert.forward("Typical Asians. They are good at math.")
+    for bias in bias_dimensions:
 
-    # # Test aggregation
-    # aggregator = Aggregation("llm")
-    # example_experts_outputs = {
-    #     "raw input": "Asians make the best doctors. It's their math skills.",
-    #     "expert predictions (prediction, confidence)": [
-    #         {"RoBERTa-Twitter": (0, 0.9)},
-    #         {"few-shot GPT4o": (0, 0.6)},
-    #         {"zero-shot GPT4o": (1, 0.8)},
-    #         {"CoT GPT4o": (1, 0.3)},
-    #     ],
-    # }
+        test_dataset[bias] = test_dataset[bias].astype(int)
+        true_labels = np.asarray(test_dataset[bias])
 
-    # aggregator.agg(example_experts_outputs)
+        report = classification_report(
+            true_labels, predictions, target_names=bias_dimensions
+        )
 
-    # Read data
-    input_data = pd.read_excel("example.xlsx")
-    print(input_data.head())
-    print(list(input_data.columns))
+    # Print the evaluation report
+    print(report)
