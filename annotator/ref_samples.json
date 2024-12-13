@@ -1,0 +1,70 @@
+[{
+  "bias dimension": "Hate Speech",
+  "examples": [
+    "As a Chiefs fan fuck Mike Parsons and Britt Reid",
+    "These are some disgusting people. I pray they get wiped out.",
+    "FAT PUSSY LIKE SANTA",
+    "Jurassic World Dominion: absolutely dog shit",
+    "Sorry but what the fuck is wrong with Rhianna",
+    "I genuinely would like to know who the fuck finds this funny. Does this even appeal to kids, like most pranksters do?",
+    "fuck scott foster fuck sports gambling fuck adam silver and fuck emirates",
+    "Every owner needs to buy their own stadium or ballpark. Wealthfare is a blight on our society.",
+    "Once again, fuck Adam Schefter"
+  ]
+},{
+  "bias dimension": "Linguistic Bias",
+  "examples": [
+    "Everyone knows MLB The Show looks like shit. It's embarrassing, really. NPB looks damn good in comparison",
+    "So fucking dumb",
+    "What a slithery snek",
+    "Shannon Palus is a fake and a fraud. We’ve all seen them - they are NOT average",
+    "As a Chiefs fan fuck Mike Parsons and Britt Reid",
+    "This intro music is atrocious.",
+    "Natalie’s makeup looks a lot better and natural in the tell all. The smudgy black eyeliner looks awful. Veronica’s pink dress was not a good choice.",
+    "It always cracks me up when subtitles are needed for someone speaking English.",
+    "Paper Machete- thought he was singing so long cruel day. Not cruelty.",
+    "The Gaga one is so lazy",
+    "Buntaro is a piece of dawg shit I called it right as I seen him on the screen (it was pretty obvious tho)",
+    "If Rianna magically makes it to the end, she better not get a single vote. Girl has fucked up so many crucial votes that could improve her position, instead her fuck-ups directly make her position worse. At this point even if I aligned with her, I vote her out just because she is that much of a liability",
+    "The rhyming one bored me honestly. Didn't enjoy that at all.",
+    "fuck scott foster fuck sports gambling fuck adam silver and fuck emirates",
+    "Definitely not the Rockies, they suck",
+    "Tatum over Luka is shameful",
+    "Two wizards and a bunch of helicopters"
+  ]
+}, {
+  "bias dimension": "Text-Level Context",
+  "examples": [
+    "The entire Sienna Miller thing is not working for me, from the implausibility of her pursuing Larry to the dumb fruit acting. I get why she (the actress IRL) would have agreed to this, to show she has a sense of humor, but IMO it's a casting mistake.",
+    "Imagine being the guy trying to focus on the sex scene while her son's behind you.",
+    "If Rianna magically makes it to the end, she better not get a single vote. Girl has fucked up so many crucial votes that could improve her position, instead her fuck-ups directly make her position worse. At this point even if I aligned with her, I vote her out just because she is that much of a liability.",
+    "The way Larry’s mouth moves when he laughs is so unsettling to me. Really hammers home his old guy aesthetic.",
+    "Adding to your post, in the same episode, when the gangster shark demon spikes Angel's drink, he uses a product that is similar to a love potion. Maybe this could be related?",
+    "Amanda’s only story line since she joined the show has been complaining about Kyle so it’s rich that him complaining about her is upsetting her so much.",
+    "I cannot with the Sandoval edit, oh I got ice cream oh here’s some sunglasses, oh I miss Rachel I need some female energy. Eewwwwwwwwww eww ewww go away. Also the after show, get Jax off my tv, ugh he is just as repulsive. Why are they showing so much time to horrible men.",
+    "I don’t care how feminine Tim appears. Or how much makeup he wears. Or how much sparkle. When he says he is straight that is the end of the story!!! You don’t keep trying to out people via insult!!! wtf Ham!",
+    "Why is everyone in this thread acting like all football players are highly intelligent lol. One of the most popular quarterbacks in history is an antivaxxer and you can't even count the amount of murderers in the NFL on two hands. Why are we pretending they are bastions of intelligence?",
+    "My favorite stat for the White Sox - amount of overweight female fans to smuggle a gun under her fat rolls and accidentally shoot herself during a game"
+  ]
+},
+{
+  "bias dimension": "Gender",
+  "examples": [
+    "I knew a girl named Nikki I guess you could say she was a sex fiend… met her in a hotel lobby masturbating in a magazine…",
+    "My favorite stat for the White Sox - amount of overweight female fans to smuggle a gun under her fat rolls and accidentally shoot herself during a game",
+    "I posted this a few months ago how MLB isn't even a tab on the top of the page and got blasted for it. It's laughable how they have the 'game of the week' and act like women's basketball and the MLS are bigger sports from the look of their website."
+  ]
+},
+{
+  "bias dimension": "Racial",
+  "examples": [
+    "r/BigAsianCock",
+    "Typical Asians. They are good at math",
+    "Chinese shill"
+  ]
+},{
+  "bias dimension": "Political",
+  "examples": [
+    "He supports Black Trump?! What an asshole"
+  ]
+}]
