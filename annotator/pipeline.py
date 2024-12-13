@@ -178,7 +178,7 @@ if __name__ == "__main__":
     # --------------------------------- arguments -------------------------------- #
     parser = argparse.ArgumentParser(description='Annotate text data with expert models')
     parser.add_argument('--model', type=str, default="gpt-4o-mini", help='The model to use for annotation')
-    parser.add_argument('--api_key', type=str, default="", help='The corresponding API key')
+    parser.add_argument('--api_key', type=str, default="../api_key.txt", help='The corresponding API key')
     parser.add_argument('--max_retries', type=int, default=5, help='The maximum number of retries for a failed annotation')
     parser.add_argument('--seed', type=int, default=42, help='The seed for the random number generator')
     parser.add_argument('--eval_path', type=str, default="/home/yifan/Desktop/tidy/PapersNProjects/Code/MMediaBias/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv", help='The path to the evaluation dataset')
@@ -194,11 +194,12 @@ if __name__ == "__main__":
 
 
     np.random.seed(args.seed)
+    key = open(args.api_key, "r").read()
     logger.add(f"../logs/DevRun-{args.note}.log", mode="w")
     logger.info("Pipeline started with args: " + str(args))
 
     # --------------------------------- run pipeline -------------------------------- #
     data = load_data(args.eval_path)
-    model = OpenAIModel(args.model, api_key=args.api_key)
+    model = OpenAIModel(args.model, api_key=key)
     pipeline = Pipeline(model, args.max_retries, data, args.batch_size, args.context_path, args.output_path)
     pipeline.run(sample_num=1000)
