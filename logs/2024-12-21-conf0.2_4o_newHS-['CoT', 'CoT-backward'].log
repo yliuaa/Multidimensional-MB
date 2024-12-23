@@ -1,0 +1,7 @@
+2024-12-21 19:31:07.663 | INFO     | __main__:<module>:501 - Pipeline started with args: Namespace(model='gpt-4o', api_key='../api_key.txt', strategies=['CoT', 'CoT-backward'], dynamic_context=True, max_retries=10, seed=42, eval_path='~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv', batch_size=10, context_path='./ref_samples.json', output_path='./save/', note='conf0.2_4o_newHS')
+2024-12-21 19:31:07.672 | INFO     | __main__:load_data:58 - Loading data from ~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv
+2024-12-21 19:31:07.672 | INFO     | __main__:load_data:59 - Columns: ['Unnamed: 0', 'id', 'textDisplay', 'publishedAt', 'parentId', 'parentType', 'hate speech', 'linguistic bias', 'text-level context bias', 'political bias', 'gender bias', 'racial bias', 'domain']
+2024-12-21 19:31:07.672 | INFO     | __main__:load_data:60 - Shape: (1998, 13)
+2024-12-21 19:31:07.706 | DEBUG    | __main__:__init__:98 - Confidence check True
+2024-12-21 19:31:07.712 | INFO     | __main__:annotate:304 - Loaded context examples at ./ref_samples.json
+2024-12-21 19:31:07.712 | INFO     | __main__:annotate:305 - Starting annotation...

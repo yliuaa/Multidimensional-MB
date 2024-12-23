@@ -1,7 +1,7 @@
 model: "gpt-4o-mini"
 max_retries: 5
 seed: 42
-eval_path: "/home/yifan/Desktop/tidy/PapersNProjects/Code/MMediaBias/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv"
+eval_path: "~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv"
 batch_size: 10
 context_path: "./ref_samples.json"
 output_path: "./save/"

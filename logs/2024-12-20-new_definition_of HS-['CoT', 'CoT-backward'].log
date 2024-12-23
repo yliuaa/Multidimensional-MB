@@ -1,0 +1,553 @@
+2024-12-20 21:58:45.054 | INFO     | __main__:<module>:501 - Pipeline started with args: Namespace(model='gpt-4o-mini', api_key='../api_key.txt', strategies=['CoT', 'CoT-backward'], dynamic_context=True, max_retries=10, seed=42, eval_path='~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv', batch_size=10, context_path='./ref_samples.json', output_path='./save/', note='new_definition_of HS')
+2024-12-20 21:58:45.063 | INFO     | __main__:load_data:58 - Loading data from ~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv
+2024-12-20 21:58:45.063 | INFO     | __main__:load_data:59 - Columns: ['Unnamed: 0', 'id', 'textDisplay', 'publishedAt', 'parentId', 'parentType', 'hate speech', 'linguistic bias', 'text-level context bias', 'political bias', 'gender bias', 'racial bias', 'domain']
+2024-12-20 21:58:45.063 | INFO     | __main__:load_data:60 - Shape: (1998, 13)
+2024-12-20 21:58:45.097 | DEBUG    | __main__:__init__:98 - Confidence check True
+2024-12-20 21:58:45.105 | INFO     | __main__:annotate:304 - Loaded context examples at ./ref_samples.json
+2024-12-20 21:58:45.105 | INFO     | __main__:annotate:305 - Starting annotation...
+2024-12-20 21:58:59.511 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 21:59:11.414 | INFO     | __main__:annotate:358 - Batch annotated - idx 0:10
+2024-12-20 21:59:25.835 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 21:59:27.092 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 21:59:36.607 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 21:59:52.636 | INFO     | __main__:annotate:358 - Batch annotated - idx 10:20
+2024-12-20 21:59:56.569 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:00:02.014 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:00:08.996 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.5
+2024-12-20 22:00:16.741 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:00:20.065 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:00:21.588 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:00:21.588 | INFO     | __main__:annotate:358 - Batch annotated - idx 20:30
+2024-12-20 22:00:25.894 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:00:34.152 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:00:35.938 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:00:40.027 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:00:41.548 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:00:42.752 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:00:42.752 | INFO     | __main__:annotate:358 - Batch annotated - idx 30:40
+2024-12-20 22:00:59.208 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.5
+2024-12-20 22:01:08.433 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:01:11.171 | INFO     | __main__:annotate:358 - Batch annotated - idx 40:50
+2024-12-20 22:01:17.106 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:01:38.159 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:01:38.159 | INFO     | __main__:annotate:358 - Batch annotated - idx 50:60
+2024-12-20 22:01:39.170 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:01:54.976 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.5
+2024-12-20 22:01:59.936 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:02:08.297 | INFO     | __main__:annotate:358 - Batch annotated - idx 60:70
+2024-12-20 22:02:13.242 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:02:17.433 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:02:31.164 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:02:40.816 | INFO     | __main__:annotate:358 - Batch annotated - idx 70:80
+2024-12-20 22:02:50.879 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:02:52.700 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:02:55.623 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:03:06.361 | INFO     | __main__:annotate:358 - Batch annotated - idx 80:90
+2024-12-20 22:03:07.625 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:03:24.855 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:03:31.345 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:03:33.932 | INFO     | __main__:annotate:358 - Batch annotated - idx 90:100
+2024-12-20 22:03:36.092 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:03:50.954 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 22:03:56.771 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:04:07.999 | INFO     | __main__:annotate:358 - Batch annotated - idx 100:110
+2024-12-20 22:04:07.999 | INFO     | __main__:evaluate:392 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ksj00jk', 'krou5ax', 'ktmpukg', 'ku9487n', 'ku5hvgh', 'kuotbev', 'kuphpzq', 'kv34sr6', 'krxg5dv', 'kumjanv', 'kw9ppdw', 'ktem8i1', 'kt1cou1', 'krruhj4', 'kunxqb4', 'kvxn0gp', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ktzjg62', 'kvohnsm', 'kv6n8zr', 'ksv0pyy']
+2024-12-20 22:04:08.005 | INFO     | __main__:evaluate:413 - hate speech: Macro F1 0.4883720930232558; Micro F1 0.9678646934460887; Accuracy 0.9545454545454546
+
+2024-12-20 22:04:08.009 | INFO     | __main__:evaluate:413 - linguistic bias: Macro F1 0.8100172711571675; Micro F1 0.909059506986968; Accuracy 0.9181818181818182
+
+2024-12-20 22:04:08.013 | INFO     | __main__:evaluate:413 - text-level context bias: Macro F1 0.8474341192787795; Micro F1 0.9636363636363636; Accuracy 0.9636363636363636
+
+2024-12-20 22:04:08.017 | INFO     | __main__:evaluate:413 - political bias: Macro F1 0.9118589743589745; Micro F1 0.9832459207459208; Accuracy 0.9818181818181818
+
+2024-12-20 22:04:08.021 | INFO     | __main__:evaluate:413 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-20 22:04:08.025 | INFO     | __main__:evaluate:413 - gender bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-20 22:04:08.025 | INFO     | __main__:evaluate:416 - Reflecting on mistakes...
+2024-12-20 22:04:11.561 | DEBUG    | __main__:evaluate:425 - Context(HateSpeech='Example: ESPN being trash isn’t news. This comment reflects frustration but does not constitute hate speech directed at any particular group or individual. It lacks specific derogatory language or intent to incite violence.', LinguisticBias="Example: Offenses would destroy and the NFLPA would orchestrate a mercy rule. The phrase 'would destroy' implies a negative consequence but lacks specific references that suggest linguistic bias based on identity categories. This interpretation might hinge on contextual usage versus inherent bias.", TextLevelContextBias="Example: Honestly? I honestly hope intel will make a top end competitor. This comment expresses a hope for competition in the tech industry, which doesn't exhibit bias but reflects personal preference. Yet the inclusion of strong language in other annotations can skew interpretations of broader discourses.", PoliticalBias='', RacialBias='', GenderBias='')
+2024-12-20 22:04:11.562 | SUCCESS  | __main__:evaluate:426 - Evaluation done.
+2024-12-20 22:04:20.355 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:04:33.463 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:04:35.616 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:04:35.616 | INFO     | __main__:annotate:358 - Batch annotated - idx 110:120
+2024-12-20 22:04:53.058 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:05:01.335 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:05:09.029 | INFO     | __main__:annotate:358 - Batch annotated - idx 120:130
+2024-12-20 22:05:19.902 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:05:23.840 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:05:24.749 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:05:30.986 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:05:33.325 | INFO     | __main__:annotate:358 - Batch annotated - idx 130:140
+2024-12-20 22:06:05.545 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 22:06:12.478 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:06:15.603 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:06:19.042 | INFO     | __main__:annotate:358 - Batch annotated - idx 140:150
+2024-12-20 22:06:22.243 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6
+2024-12-20 22:06:26.190 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:06:46.621 | INFO     | __main__:annotate:358 - Batch annotated - idx 150:160
+2024-12-20 22:07:01.565 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6
+2024-12-20 22:07:02.773 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:07:03.733 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:07:08.050 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:07:11.520 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:07:12.587 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:07:14.116 | INFO     | __main__:annotate:358 - Batch annotated - idx 160:170
+2024-12-20 22:07:18.458 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:07:23.010 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:07:39.523 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6000000000000001
+2024-12-20 22:07:39.524 | INFO     | __main__:annotate:358 - Batch annotated - idx 170:180
+2024-12-20 22:07:43.787 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:08:05.289 | INFO     | __main__:annotate:358 - Batch annotated - idx 180:190
+2024-12-20 22:08:14.088 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:08:23.905 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:08:28.915 | INFO     | __main__:annotate:358 - Batch annotated - idx 190:200
+2024-12-20 22:08:30.043 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:08:41.077 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6
+2024-12-20 22:08:50.588 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:08:53.592 | INFO     | __main__:annotate:358 - Batch annotated - idx 200:210
+2024-12-20 22:08:53.592 | INFO     | __main__:evaluate:392 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ksj00jk', 'krou5ax', 'ktmpukg', 'ku9487n', 'ku5hvgh', 'kuotbev', 'kuphpzq', 'kv34sr6', 'krxg5dv', 'kumjanv', 'kw9ppdw', 'ktem8i1', 'kt1cou1', 'krruhj4', 'kunxqb4', 'kvxn0gp', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ktzjg62', 'kvohnsm', 'kv6n8zr', 'ksv0pyy', 'ksfmpjz', 'kueh628', 'ksrpsqm', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kst38sb', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'kuqzvj1', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksqqo7r', 'kvo8j6d']
+2024-12-20 22:08:53.597 | INFO     | __main__:evaluate:413 - hate speech: Macro F1 0.602595296025953; Micro F1 0.9721005677210056; Accuracy 0.9666666666666667
+
+2024-12-20 22:08:53.601 | INFO     | __main__:evaluate:413 - linguistic bias: Macro F1 0.8267231420870235; Micro F1 0.922878046097145; Accuracy 0.9285714285714286
+
+2024-12-20 22:08:53.605 | INFO     | __main__:evaluate:413 - text-level context bias: Macro F1 0.8086734693877551; Micro F1 0.9539601554907677; Accuracy 0.9523809523809523
+
+2024-12-20 22:08:53.609 | INFO     | __main__:evaluate:413 - political bias: Macro F1 0.9362025316455695; Micro F1 0.9859819168173598; Accuracy 0.9857142857142858
+
+2024-12-20 22:08:53.613 | INFO     | __main__:evaluate:413 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-20 22:08:53.617 | INFO     | __main__:evaluate:413 - gender bias: Macro F1 0.9273607748184018; Micro F1 0.9949037242015449; Accuracy 0.9952380952380953
+
+2024-12-20 22:08:53.617 | INFO     | __main__:evaluate:416 - Reflecting on mistakes...
+2024-12-20 22:08:59.262 | DEBUG    | __main__:evaluate:425 - Context(HateSpeech="Example: And people say ukraine is filled with nazis.... This statement may appear to relate to a sensitive historical context, but lacks a direct call to hatred against a specific group and thus doesn't strictly fit the hate speech definition.", LinguisticBias='Example: Offenses would destroy and the NFLPA would orchestrate a mercy rule. The commentary reflects a negative assertion but does not inherently demonstrate linguistic bias based on social categories. It illustrates a frustrated opinion rather than a bias-aligned remark.', TextLevelContextBias="Example: Honestly? I honestly hope intel will make a top end competitor. While the comment expresses an opinion, the additional annotations like 'we should turn you to ash' reflect a tonal inconsistency that skews interpretations. The presence of unprofessional remarks can create narratives that distract from the primary discourse.", PoliticalBias='Example: And people say ukraine is filled with nazis.... This suggests a dismissive stance towards broader geopolitical discussions, reflecting a political bias against the perception of a crisis.', RacialBias='', GenderBias="Example: On the heels front, I've also noticed that it's becoming a lot less common for women to wear high heels to work since returning to the office. This observation points to gender-related trends in professional attire, which can indicate societal changes but doesn't demonstrate outright bias.")
+2024-12-20 22:08:59.262 | SUCCESS  | __main__:evaluate:426 - Evaluation done.
+2024-12-20 22:09:12.611 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:09:16.633 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:09:21.348 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:09:26.433 | INFO     | __main__:annotate:358 - Batch annotated - idx 210:220
+2024-12-20 22:09:40.623 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 22:09:46.651 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:09:54.354 | INFO     | __main__:annotate:358 - Batch annotated - idx 220:230
+2024-12-20 22:09:58.636 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6000000000000001
+2024-12-20 22:09:59.949 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:10:10.495 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:10:12.157 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 22:10:18.993 | INFO     | __main__:annotate:358 - Batch annotated - idx 230:240
+2024-12-20 22:10:21.146 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:10:52.662 | INFO     | __main__:annotate:358 - Batch annotated - idx 240:250
+2024-12-20 22:11:12.509 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:11:14.096 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:11:27.268 | INFO     | __main__:annotate:358 - Batch annotated - idx 250:260
+2024-12-20 22:11:32.071 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:11:33.589 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:11:36.224 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:11:43.410 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:11:44.674 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:11:49.463 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:11:52.794 | INFO     | __main__:annotate:358 - Batch annotated - idx 260:270
+2024-12-20 22:12:01.922 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:12:19.757 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:12:25.517 | INFO     | __main__:annotate:358 - Batch annotated - idx 270:280
+2024-12-20 22:12:38.057 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:12:50.952 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 22:12:52.511 | INFO     | __main__:annotate:358 - Batch annotated - idx 280:290
+2024-12-20 22:13:00.737 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:13:08.519 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6000000000000001
+2024-12-20 22:13:09.871 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:13:21.570 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:13:23.934 | INFO     | __main__:annotate:358 - Batch annotated - idx 290:300
+2024-12-20 22:13:56.348 | INFO     | __main__:annotate:358 - Batch annotated - idx 300:310
+2024-12-20 22:13:56.348 | INFO     | __main__:evaluate:392 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ksj00jk', 'krou5ax', 'ktmpukg', 'ku9487n', 'ku5hvgh', 'kuotbev', 'kuphpzq', 'kv34sr6', 'krxg5dv', 'kumjanv', 'kw9ppdw', 'ktem8i1', 'kt1cou1', 'krruhj4', 'kunxqb4', 'kvxn0gp', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ktzjg62', 'kvohnsm', 'kv6n8zr', 'ksv0pyy', 'ksfmpjz', 'kueh628', 'ksrpsqm', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kst38sb', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'kuqzvj1', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksqqo7r', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kvtqpbp', 'kuono6m', 'kv275vm', 'ks3y5sb', 'kth2ku9', 'kt1kz1o', 'kt8cttl', 'kvix3ho', 'ktdr3bs', 'kv7nhjr', 'ktmrng0', 'ksqfs84', 'kri0tfl', 'kvprt4r']
+2024-12-20 22:13:56.353 | INFO     | __main__:evaluate:413 - hate speech: Macro F1 0.5835199283475145; Micro F1 0.9774468023633764; Accuracy 0.9709677419354839
+
+2024-12-20 22:13:56.357 | INFO     | __main__:evaluate:413 - linguistic bias: Macro F1 0.7900541795665634; Micro F1 0.9004756316788174; Accuracy 0.9096774193548387
+
+2024-12-20 22:13:56.361 | INFO     | __main__:evaluate:413 - text-level context bias: Macro F1 0.7701433514582303; Micro F1 0.9444995455487697; Accuracy 0.9419354838709677
+
+2024-12-20 22:13:56.365 | INFO     | __main__:evaluate:413 - political bias: Macro F1 0.9375277094836967; Micro F1 0.9840445379975842; Accuracy 0.9838709677419355
+
+2024-12-20 22:13:56.368 | INFO     | __main__:evaluate:413 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-20 22:13:56.373 | INFO     | __main__:evaluate:413 - gender bias: Macro F1 0.9436261138388797; Micro F1 0.9965976218550001; Accuracy 0.9967741935483871
+
+2024-12-20 22:13:56.373 | INFO     | __main__:evaluate:416 - Reflecting on mistakes...
+2024-12-20 22:14:02.030 | DEBUG    | __main__:evaluate:425 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... While this phrase alludes to a sensitive historical context, it lacks a clear derogatory intent against a specific group, therefore does not meet the threshold for hate speech. The phrase can be perceived as dismissive or sarcastic without a clear goal of incitement.', LinguisticBias="Example: Offenses would destroy and the NFLPA would orchestrate a mercy rule. This statement mixes opinions about sports governance but doesn't inherently exhibit linguistic bias through word choice related to social identity. The context is crucial in determining bias perceptions.", TextLevelContextBias="Example: Honestly? I honestly hope intel will make a top end competitor. This expresses a hope rather than bias, yet the surrounding severe statements could taint the overall interpretation of the tone in the discourse. Comments like 'we should turn you to ash' are aggressive, which distracts from the intended discussion.", PoliticalBias='Example: And people say ukraine is filled with nazis.... This demonstrates a bias against the narrative around Ukraine, showing skepticism towards the framing of the situation. Such comments shape public discourse but lack direct evidence of political completeness.', RacialBias='', GenderBias="Example: On the heels front, I've also noticed that it's becoming a lot less common for women to wear high heels to work since returning to the office. This reflects observations on professional attire trends influenced by gender, indicating broader societal changes without direct bias against individuals.")
+2024-12-20 22:14:02.030 | SUCCESS  | __main__:evaluate:426 - Evaluation done.
+2024-12-20 22:14:03.556 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:14:32.983 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:14:35.241 | INFO     | __main__:annotate:358 - Batch annotated - idx 310:320
+2024-12-20 22:14:41.877 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:14:45.968 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.5
+2024-12-20 22:15:03.964 | INFO     | __main__:annotate:358 - Batch annotated - idx 320:330
+2024-12-20 22:15:08.708 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.5
+2024-12-20 22:15:09.983 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 22:15:16.583 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:15:39.202 | INFO     | __main__:annotate:358 - Batch annotated - idx 330:340
+2024-12-20 22:15:47.205 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:15:48.857 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:15:50.422 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:16:08.116 | INFO     | __main__:annotate:358 - Batch annotated - idx 340:350
+2024-12-20 22:16:10.283 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:16:12.623 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:16:14.083 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:16:28.295 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:16:44.151 | INFO     | __main__:annotate:358 - Batch annotated - idx 350:360
+2024-12-20 22:16:49.069 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:16:50.353 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:17:01.155 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:17:05.162 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.5
+2024-12-20 22:17:09.879 | INFO     | __main__:annotate:358 - Batch annotated - idx 360:370
+2024-12-20 22:17:24.192 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:17:35.366 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:17:42.104 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:17:44.686 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:17:47.736 | INFO     | __main__:annotate:358 - Batch annotated - idx 370:380
+2024-12-20 22:17:50.865 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.5
+2024-12-20 22:17:52.063 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:17:53.528 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:17:55.209 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:17:58.362 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:18:00.840 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:18:10.002 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6
+2024-12-20 22:18:10.003 | INFO     | __main__:annotate:358 - Batch annotated - idx 380:390
+2024-12-20 22:18:11.751 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:18:24.571 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:18:25.685 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:18:27.137 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:18:32.336 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:18:36.173 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:18:36.174 | INFO     | __main__:annotate:358 - Batch annotated - idx 390:400
+2024-12-20 22:19:08.959 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:19:18.413 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:19:20.214 | INFO     | __main__:annotate:358 - Batch annotated - idx 400:410
+2024-12-20 22:19:20.215 | INFO     | __main__:evaluate:392 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ksj00jk', 'krou5ax', 'ktmpukg', 'ku9487n', 'ku5hvgh', 'kuotbev', 'kuphpzq', 'kv34sr6', 'krxg5dv', 'kumjanv', 'kw9ppdw', 'ktem8i1', 'kt1cou1', 'krruhj4', 'kunxqb4', 'kvxn0gp', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ktzjg62', 'kvohnsm', 'kv6n8zr', 'ksv0pyy', 'ksfmpjz', 'kueh628', 'ksrpsqm', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kst38sb', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'kuqzvj1', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksqqo7r', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kvtqpbp', 'kuono6m', 'kv275vm', 'ks3y5sb', 'kth2ku9', 'kt1kz1o', 'kt8cttl', 'kvix3ho', 'ktdr3bs', 'kv7nhjr', 'ktmrng0', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'kwkckkj', 'ktpicpj', 'ksxauop', 'kubeoe9', 'ktdiore', 'ksgkvrr', 'kr5fe5w', 'kuwq9zw', 'ksx18nn', 'kve9kkx', 'ksndg8a', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'kvx8y78', 'ktbu3c7', 'kthpmj5', 'kvpv962', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kw80cpe', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kte3g5k', 'kt4cqfh']
+2024-12-20 22:19:20.220 | INFO     | __main__:evaluate:413 - hate speech: Macro F1 0.6812810945273632; Micro F1 0.9800919184564979; Accuracy 0.975609756097561
+
+2024-12-20 22:19:20.224 | INFO     | __main__:evaluate:413 - linguistic bias: Macro F1 0.8128893000308357; Micro F1 0.9015470469228282; Accuracy 0.9097560975609756
+
+2024-12-20 22:19:20.228 | INFO     | __main__:evaluate:413 - text-level context bias: Macro F1 0.7953654188948307; Micro F1 0.9500769531759488; Accuracy 0.948780487804878
+
+2024-12-20 22:19:20.232 | INFO     | __main__:evaluate:413 - political bias: Macro F1 0.9340093352647674; Micro F1 0.9827882527980278; Accuracy 0.9829268292682927
+
+2024-12-20 22:19:20.235 | INFO     | __main__:evaluate:413 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-20 22:19:20.239 | INFO     | __main__:evaluate:413 - gender bias: Macro F1 0.9539274075738846; Micro F1 0.997451618296383; Accuracy 0.9975609756097561
+
+2024-12-20 22:19:20.239 | INFO     | __main__:evaluate:416 - Reflecting on mistakes...
+2024-12-20 22:19:23.931 | DEBUG    | __main__:evaluate:425 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... This implies a sarcastic perspective on serious accusations, but it lacks a clear derogatory nature towards any specific group, failing to meet hate speech criteria.', LinguisticBias="Example: Offenses would destroy and the NFLPA would orchestrate a mercy rule. This expression suggests a severe outcome but does not reflect prejudicial word choice related to identity categories. The surrounding inflammatory context might color perceptions of bias unfairly. Furthermore, phrases such as 'he's the figurehead for hate' illustrate frustration rather than linguistic bias tied to social identities.", TextLevelContextBias="Example: Honestly? I honestly hope intel will make a top end competitor. The sentiment expresses a personal desire, though combined phrases indicating extreme emotions might cloud overall interpretation: remarks like 'we should turn you to ash' contribute to a perception of narrative bias in discussions around responsibility and competence.", PoliticalBias='Example: And people say ukraine is filled with nazis.... This comment shapes views on geopolitical narratives, showcasing political bias towards skepticism about established perspectives. Statements about voting percentages and comparisons to historical contexts reflect a bias towards political evaluation and discontent.', RacialBias='', GenderBias="Example: On the heels front, I've also noticed that it's becoming a lot less common for women to wear high heels to work since returning to the office. This speaks to changing standards in women's professional attire, highlighting societal shifts related to gender norms without showing bias against individuals.")
+2024-12-20 22:19:23.931 | SUCCESS  | __main__:evaluate:426 - Evaluation done.
+2024-12-20 22:19:34.311 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:19:38.449 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:19:45.195 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:19:46.604 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:19:48.316 | INFO     | __main__:annotate:358 - Batch annotated - idx 410:420
+2024-12-20 22:20:13.719 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:20:17.824 | INFO     | __main__:annotate:358 - Batch annotated - idx 420:430
+2024-12-20 22:20:22.223 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:20:28.143 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:20:32.336 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 22:20:35.644 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:20:43.824 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:20:47.901 | INFO     | __main__:annotate:358 - Batch annotated - idx 430:440
+2024-12-20 22:20:51.852 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:21:04.385 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 22:21:10.619 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:21:14.304 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:21:18.750 | INFO     | __main__:annotate:358 - Batch annotated - idx 440:450
+2024-12-20 22:21:24.189 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:21:27.816 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:21:42.538 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:21:47.630 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:21:47.630 | INFO     | __main__:annotate:358 - Batch annotated - idx 450:460
+2024-12-20 22:21:51.499 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 22:21:54.183 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:21:57.450 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:21:58.792 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:21:59.793 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:22:16.165 | INFO     | __main__:annotate:358 - Batch annotated - idx 460:470
+2024-12-20 22:22:29.367 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:22:30.519 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:22:40.143 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:22:45.592 | INFO     | __main__:annotate:358 - Batch annotated - idx 470:480
+2024-12-20 22:22:47.886 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:23:00.831 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:23:05.827 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:23:09.936 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.5
+2024-12-20 22:23:11.840 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:23:14.807 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:23:14.807 | INFO     | __main__:annotate:358 - Batch annotated - idx 480:490
+2024-12-20 22:23:16.655 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 22:23:21.831 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6000000000000001
+2024-12-20 22:23:23.475 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:23:27.665 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:23:44.710 | INFO     | __main__:annotate:358 - Batch annotated - idx 490:500
+2024-12-20 22:23:48.918 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:23:52.860 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:24:00.341 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:24:03.650 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 22:24:10.909 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:24:10.909 | INFO     | __main__:annotate:358 - Batch annotated - idx 500:510
+2024-12-20 22:24:10.911 | INFO     | __main__:evaluate:392 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ksj00jk', 'krou5ax', 'ktmpukg', 'ku9487n', 'ku5hvgh', 'kuotbev', 'kuphpzq', 'kv34sr6', 'krxg5dv', 'kumjanv', 'kw9ppdw', 'ktem8i1', 'kt1cou1', 'krruhj4', 'kunxqb4', 'kvxn0gp', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ktzjg62', 'kvohnsm', 'kv6n8zr', 'ksv0pyy', 'ksfmpjz', 'kueh628', 'ksrpsqm', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kst38sb', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'kuqzvj1', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksqqo7r', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kvtqpbp', 'kuono6m', 'kv275vm', 'ks3y5sb', 'kth2ku9', 'kt1kz1o', 'kt8cttl', 'kvix3ho', 'ktdr3bs', 'kv7nhjr', 'ktmrng0', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'kwkckkj', 'ktpicpj', 'ksxauop', 'kubeoe9', 'ktdiore', 'ksgkvrr', 'kr5fe5w', 'kuwq9zw', 'ksx18nn', 'kve9kkx', 'ksndg8a', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'kvx8y78', 'ktbu3c7', 'kthpmj5', 'kvpv962', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kw80cpe', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kte3g5k', 'kt4cqfh', 'kuav8g8', 'kuk503d', 'ktk46n2', 'kvpj2xe', 'kuzyqqs', 'kw0zs7p', 'ksfazrj', 'ktac398', 'ksi65jq', 'krscef3', 'kswoeub', 'ksl89yk', 'kwo79b4', 'kw29ttp', 'kuh1o2n', 'ktlm5v9', 'kvfcxqp', 'kuvohjy', 'kworjf6', 'kt4qisi', 'kvy6nt1', 'kupmqu4', 'kv5mxpz', 'ktutxqa', 'ktjm7eb']
+2024-12-20 22:24:10.917 | INFO     | __main__:evaluate:413 - hate speech: Macro F1 0.643; Micro F1 0.9792745098039216; Accuracy 0.9725490196078431
+
+2024-12-20 22:24:10.921 | INFO     | __main__:evaluate:413 - linguistic bias: Macro F1 0.8030344827586207; Micro F1 0.895353076402975; Accuracy 0.903921568627451
+
+2024-12-20 22:24:10.926 | INFO     | __main__:evaluate:413 - text-level context bias: Macro F1 0.7960116564767727; Micro F1 0.9485174516638265; Accuracy 0.9450980392156862
+
+2024-12-20 22:24:10.932 | INFO     | __main__:evaluate:413 - political bias: Macro F1 0.9086915205685089; Micro F1 0.9749658197415667; Accuracy 0.9745098039215686
+
+2024-12-20 22:24:10.938 | INFO     | __main__:evaluate:413 - racial bias: Macro F1 0.8995073891625616; Micro F1 0.9978441031585048; Accuracy 0.9980392156862745
+
+2024-12-20 22:24:10.943 | INFO     | __main__:evaluate:413 - gender bias: Macro F1 0.9661691542288557; Micro F1 0.9979748317237342; Accuracy 0.9980392156862745
+
+2024-12-20 22:24:10.943 | INFO     | __main__:evaluate:416 - Reflecting on mistakes...
+2024-12-20 22:24:18.028 | DEBUG    | __main__:evaluate:425 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... Though this comment may imply a controversial political context, it lacks direct language that targets a specific group with animosity, not qualifying it as hate speech.', LinguisticBias="Example: Offenses would destroy and the NFLPA would orchestrate a mercy rule. This statement reveals frustration but doesn’t showcase inherent linguistic bias towards a social category. Phrases like 'he's the figurehead for hate' express strong opinions without clear bias-related word choices.", TextLevelContextBias="Example: Honestly? I honestly hope intel will make a top end competitor. This expresses a desire for competition but combined with aggressive remarks, like 'we should turn you to ash,' can distort the perception of bias within the broader context. The commentary may suggest frustration but doesn't adhere to a skewed narrative that favors one viewpoint.", PoliticalBias='Example: And people say ukraine is filled with nazis.... This reflects a skeptical attitude towards prevailing narratives around the Ukraine situation, portraying subjective understanding rather than an objective assessment. Commenting on voting percentages implies criticism of political judgement and can introduce bias against established political norms.', RacialBias='Example: The Argonians have a few things to say about this. This statement could indicate cultural or racial discussions tied to a fictional context without presenting outright bias but could reflect a whimsical tone within the conversation.', GenderBias="Example: On the heels front, I've also noticed that it's becoming a lot less common for women to wear high heels to work since returning to the office. This comment observes trends related to gender without discriminatory language, showing societal shifts in professional attire.")
+2024-12-20 22:24:18.028 | SUCCESS  | __main__:evaluate:426 - Evaluation done.
+2024-12-20 22:24:21.993 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:24:23.525 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:24:27.051 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:24:41.663 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:24:45.502 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:24:47.005 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:24:49.348 | INFO     | __main__:annotate:358 - Batch annotated - idx 510:520
+2024-12-20 22:24:53.673 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:25:07.872 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:25:25.335 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:25:25.335 | INFO     | __main__:annotate:358 - Batch annotated - idx 520:530
+2024-12-20 22:25:30.738 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:25:34.670 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:25:37.464 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:25:55.702 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:25:57.360 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:25:57.360 | INFO     | __main__:annotate:358 - Batch annotated - idx 530:540
+2024-12-20 22:25:58.960 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:26:00.924 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:26:06.211 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:26:29.018 | INFO     | __main__:annotate:358 - Batch annotated - idx 540:550
+2024-12-20 22:27:00.522 | INFO     | __main__:annotate:358 - Batch annotated - idx 550:560
+2024-12-20 22:27:18.069 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 22:27:21.722 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:27:26.295 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 22:27:31.927 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:27:34.031 | INFO     | __main__:annotate:358 - Batch annotated - idx 560:570
+2024-12-20 22:27:40.529 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:27:52.715 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.4
+2024-12-20 22:27:56.957 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:27:58.421 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:28:07.730 | INFO     | __main__:annotate:358 - Batch annotated - idx 570:580
+2024-12-20 22:28:15.644 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:28:31.060 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:28:32.315 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 22:28:34.077 | INFO     | __main__:annotate:358 - Batch annotated - idx 580:590
+2024-12-20 22:28:38.121 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:28:40.756 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:28:44.179 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:28:48.561 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:28:52.874 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:28:56.567 | INFO     | __main__:annotate:358 - Batch annotated - idx 590:600
+2024-12-20 22:28:58.219 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:29:01.990 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:29:05.042 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:29:19.693 | INFO     | __main__:annotate:358 - Batch annotated - idx 600:610
+2024-12-20 22:29:19.694 | INFO     | __main__:evaluate:392 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ksj00jk', 'krou5ax', 'ktmpukg', 'ku9487n', 'ku5hvgh', 'kuotbev', 'kuphpzq', 'kv34sr6', 'krxg5dv', 'kumjanv', 'kw9ppdw', 'ktem8i1', 'kt1cou1', 'krruhj4', 'kunxqb4', 'kvxn0gp', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ktzjg62', 'kvohnsm', 'kv6n8zr', 'ksv0pyy', 'ksfmpjz', 'kueh628', 'ksrpsqm', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kst38sb', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'kuqzvj1', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksqqo7r', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kvtqpbp', 'kuono6m', 'kv275vm', 'ks3y5sb', 'kth2ku9', 'kt1kz1o', 'kt8cttl', 'kvix3ho', 'ktdr3bs', 'kv7nhjr', 'ktmrng0', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'kwkckkj', 'ktpicpj', 'ksxauop', 'kubeoe9', 'ktdiore', 'ksgkvrr', 'kr5fe5w', 'kuwq9zw', 'ksx18nn', 'kve9kkx', 'ksndg8a', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'kvx8y78', 'ktbu3c7', 'kthpmj5', 'kvpv962', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kw80cpe', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kte3g5k', 'kt4cqfh', 'kuav8g8', 'kuk503d', 'ktk46n2', 'kvpj2xe', 'kuzyqqs', 'kw0zs7p', 'ksfazrj', 'ktac398', 'ksi65jq', 'krscef3', 'kswoeub', 'ksl89yk', 'kwo79b4', 'kw29ttp', 'kuh1o2n', 'ktlm5v9', 'kvfcxqp', 'kuvohjy', 'kworjf6', 'kt4qisi', 'kvy6nt1', 'kupmqu4', 'kv5mxpz', 'ktutxqa', 'ktjm7eb', 'kuk8s4i', 'kva44k3', 'kug4atl', 'kvzotlo', 'kx39blk', 'kupda6h', 'ksdyfha', 'krh8gsk', 'kuh3t87', 'kvzkixg', 'kruh0tt', 'ku10ehx', 'kte72ih', 'ku1jsrm', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kwrpam5', 'krtm5a8', 'kw1zqfw', 'ksunegg', 'kub6rxl', 'kuql88m', 'kvqxne7', 'kv30et0']
+2024-12-20 22:29:19.699 | INFO     | __main__:evaluate:413 - hate speech: Macro F1 0.7350820811256841; Micro F1 0.9799599312537645; Accuracy 0.9754098360655737
+
+2024-12-20 22:29:19.703 | INFO     | __main__:evaluate:413 - linguistic bias: Macro F1 0.8123118173226962; Micro F1 0.8998397801381415; Accuracy 0.9081967213114754
+
+2024-12-20 22:29:19.707 | INFO     | __main__:evaluate:413 - text-level context bias: Macro F1 0.7873343997375004; Micro F1 0.9484550251102545; Accuracy 0.9442622950819672
+
+2024-12-20 22:29:19.710 | INFO     | __main__:evaluate:413 - political bias: Macro F1 0.9124318116566179; Micro F1 0.9772958115060033; Accuracy 0.9770491803278688
+
+2024-12-20 22:29:19.714 | INFO     | __main__:evaluate:413 - racial bias: Macro F1 0.9541318896157606; Micro F1 0.9982868180647134; Accuracy 0.9983606557377049
+
+2024-12-20 22:29:19.718 | INFO     | __main__:evaluate:413 - gender bias: Macro F1 0.9757734620119941; Micro F1 0.9983223073612607; Accuracy 0.9983606557377049
+
+2024-12-20 22:29:19.718 | INFO     | __main__:evaluate:416 - Reflecting on mistakes...
+2024-12-20 22:29:25.156 | DEBUG    | __main__:evaluate:425 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... While this could be misinterpreted, it serves more as a dismissive attitude towards a serious issue than direct hate speech against a defined identity or group.', LinguisticBias="Example: Offenses would destroy and the NFLPA would orchestrate a mercy rule. The phrasing suggests severity but lacks a direct correlation to biased communication reflecting social identity. Expressions of deep frustration, like 'he's the figurehead for hate,' denote personal opinion rather than linguistic bias.", TextLevelContextBias='Example: Honestly? I honestly hope intel will make a top end competitor. The underlying desire for competitive equity reflects a positive sentiment, albeit obscured by surrounding extreme remarks. Comments reflecting anger or disdain complicate interpretation of nuanced views.', PoliticalBias='Example: And people say ukraine is filled with nazis.... This reflects skepticism of international narratives, indicating a bias, but is focused on personal judgement rather than broad evaluation.', RacialBias="Example: The Argonians have a few things to say about this. This comment may joke about a fictional group's perspectives, providing no clear bias; it relies on a playful engagement without harmful intent.", GenderBias="Example: On the heels front, I've also noticed that it's becoming a lot less common for women to wear high heels to work since returning to the office. This illustrates a trend without negative implications, reflecting changing social norms around gender expression in professional settings.")
+2024-12-20 22:29:25.156 | SUCCESS  | __main__:evaluate:426 - Evaluation done.
+2024-12-20 22:29:31.405 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:29:32.569 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:29:34.812 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:29:37.547 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 22:29:42.566 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:29:55.743 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:29:55.743 | INFO     | __main__:annotate:358 - Batch annotated - idx 610:620
+2024-12-20 22:30:12.873 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:30:17.494 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:30:21.730 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:30:26.056 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:30:33.253 | INFO     | __main__:annotate:358 - Batch annotated - idx 620:630
+2024-12-20 22:30:43.018 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:30:45.692 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:30:50.446 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:30:59.462 | INFO     | __main__:annotate:358 - Batch annotated - idx 630:640
+2024-12-20 22:31:03.602 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:31:10.899 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:31:23.437 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:31:28.158 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:31:30.442 | INFO     | __main__:annotate:358 - Batch annotated - idx 640:650
+2024-12-20 22:31:35.696 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:31:42.508 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:31:47.678 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:31:57.153 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:32:01.939 | INFO     | __main__:annotate:358 - Batch annotated - idx 650:660
+2024-12-20 22:32:11.605 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:32:12.751 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:32:33.927 | INFO     | __main__:annotate:358 - Batch annotated - idx 660:670
+2024-12-20 22:32:49.384 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6000000000000001
+2024-12-20 22:32:55.393 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6000000000000001
+2024-12-20 22:32:56.673 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:33:02.845 | INFO     | __main__:annotate:358 - Batch annotated - idx 670:680
+2024-12-20 22:33:13.155 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:33:16.139 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6000000000000001
+2024-12-20 22:33:24.349 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:33:25.608 | INFO     | __main__:annotate:358 - Batch annotated - idx 680:690
+2024-12-20 22:33:26.657 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:33:27.989 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:33:34.079 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:33:42.114 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:33:56.343 | INFO     | __main__:annotate:358 - Batch annotated - idx 690:700
+2024-12-20 22:34:00.086 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:34:17.496 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:34:22.002 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:34:23.178 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:34:23.179 | INFO     | __main__:annotate:358 - Batch annotated - idx 700:710
+2024-12-20 22:34:23.179 | INFO     | __main__:evaluate:392 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ksj00jk', 'krou5ax', 'ktmpukg', 'ku9487n', 'ku5hvgh', 'kuotbev', 'kuphpzq', 'kv34sr6', 'krxg5dv', 'kumjanv', 'kw9ppdw', 'ktem8i1', 'kt1cou1', 'krruhj4', 'kunxqb4', 'kvxn0gp', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ktzjg62', 'kvohnsm', 'kv6n8zr', 'ksv0pyy', 'ksfmpjz', 'kueh628', 'ksrpsqm', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kst38sb', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'kuqzvj1', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksqqo7r', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kvtqpbp', 'kuono6m', 'kv275vm', 'ks3y5sb', 'kth2ku9', 'kt1kz1o', 'kt8cttl', 'kvix3ho', 'ktdr3bs', 'kv7nhjr', 'ktmrng0', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'kwkckkj', 'ktpicpj', 'ksxauop', 'kubeoe9', 'ktdiore', 'ksgkvrr', 'kr5fe5w', 'kuwq9zw', 'ksx18nn', 'kve9kkx', 'ksndg8a', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'kvx8y78', 'ktbu3c7', 'kthpmj5', 'kvpv962', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kw80cpe', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kte3g5k', 'kt4cqfh', 'kuav8g8', 'kuk503d', 'ktk46n2', 'kvpj2xe', 'kuzyqqs', 'kw0zs7p', 'ksfazrj', 'ktac398', 'ksi65jq', 'krscef3', 'kswoeub', 'ksl89yk', 'kwo79b4', 'kw29ttp', 'kuh1o2n', 'ktlm5v9', 'kvfcxqp', 'kuvohjy', 'kworjf6', 'kt4qisi', 'kvy6nt1', 'kupmqu4', 'kv5mxpz', 'ktutxqa', 'ktjm7eb', 'kuk8s4i', 'kva44k3', 'kug4atl', 'kvzotlo', 'kx39blk', 'kupda6h', 'ksdyfha', 'krh8gsk', 'kuh3t87', 'kvzkixg', 'kruh0tt', 'ku10ehx', 'kte72ih', 'ku1jsrm', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kwrpam5', 'krtm5a8', 'kw1zqfw', 'ksunegg', 'kub6rxl', 'kuql88m', 'kvqxne7', 'kv30et0', 'krrjqt7', 'ktjcc6g', 'ks78ekc', 'ktebp6s', 'kx1tn0x', 'kuzjqnu', 'kt6ubh3', 'ktjo0dj', 'kru22m1', 'ksbwzpk', 'kv0fd6t', 'krs7aqn', 'ktf7bba', 'kve649y', 'ksoy5s0', 'krv9pia', 'kuzwy6u', 'kshwzko', 'kvu3uhn', 'kued4wu', 'kvun422', 'kvarnqk', 'ktta436', 'kwtdigi', 'kv7fxdi']
+2024-12-20 22:34:23.184 | INFO     | __main__:evaluate:413 - hate speech: Macro F1 0.7122658501440922; Micro F1 0.980065805495799; Accuracy 0.9746478873239437
+
+2024-12-20 22:34:23.188 | INFO     | __main__:evaluate:413 - linguistic bias: Macro F1 0.8155844155844156; Micro F1 0.8986281324309494; Accuracy 0.9070422535211268
+
+2024-12-20 22:34:23.192 | INFO     | __main__:evaluate:413 - text-level context bias: Macro F1 0.774090909090909; Micro F1 0.9463124199743917; Accuracy 0.9408450704225352
+
+2024-12-20 22:34:23.195 | INFO     | __main__:evaluate:413 - political bias: Macro F1 0.9071569659804954; Micro F1 0.973570400579514; Accuracy 0.9732394366197183
+
+2024-12-20 22:34:23.199 | INFO     | __main__:evaluate:413 - racial bias: Macro F1 0.95419059294148; Micro F1 0.9985280286142949; Accuracy 0.9985915492957746
+
+2024-12-20 22:34:23.203 | INFO     | __main__:evaluate:413 - gender bias: Macro F1 0.9758330780489465; Micro F1 0.998558518132862; Accuracy 0.9985915492957746
+
+2024-12-20 22:34:23.203 | INFO     | __main__:evaluate:416 - Reflecting on mistakes...
+2024-12-20 22:34:28.974 | DEBUG    | __main__:evaluate:425 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... This statement lacks overt hatred toward a specific group and serves more as a critique on public perceptions rather than hate speech.', LinguisticBias="Example: Offenses would destroy and the NFLPA would orchestrate a mercy rule. While the expression shows displeasure, it doesn't demonstrate linguistic bias as it relates to social-category cognition. The surrounding context may reflect frustration rather than prejudicial language.", TextLevelContextBias="Example: Honestly? I honestly hope intel will make a top end competitor. The commentary aims for a competitive narrative but extreme expressions such as 'turn you to ash' detract from constructive dialogue, painting a potentially aggressive narrative.", PoliticalBias='Example: And people say ukraine is filled with nazis.... This highlights skepticism toward mainstream narratives, reflecting political bias shaped by personal interactions with global matters. The discourse on voting percentages illustrates a critical stance toward electoral outcomes.', RacialBias="Example: The Argonians have a few things to say about this. This phrase, within a fictional context, offers no clear bias and maintains a playful tone about a certain group's perspective.", GenderBias="Example: On the heels front, I've also noticed that it's becoming a lot less common for women to wear high heels to work since returning to the office. This note signals a shift in professional norms relating to gender but does not convey bias against individuals.")
+2024-12-20 22:34:28.974 | SUCCESS  | __main__:evaluate:426 - Evaluation done.
+2024-12-20 22:34:47.818 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6
+2024-12-20 22:34:54.404 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.5
+2024-12-20 22:34:55.654 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 22:34:57.014 | INFO     | __main__:annotate:358 - Batch annotated - idx 710:720
+2024-12-20 22:35:10.775 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:35:19.915 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:35:27.761 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 22:35:29.813 | INFO     | __main__:annotate:358 - Batch annotated - idx 720:730
+2024-12-20 22:35:37.010 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:35:38.675 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:35:44.252 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:35:45.603 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:35:51.670 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:35:53.508 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:36:04.907 | INFO     | __main__:annotate:358 - Batch annotated - idx 730:740
+2024-12-20 22:36:08.209 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:36:15.334 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:36:20.391 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.9
+2024-12-20 22:36:27.312 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:36:33.545 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:36:37.628 | INFO     | __main__:annotate:358 - Batch annotated - idx 740:750
+2024-12-20 22:36:39.358 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:36:59.385 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:37:07.299 | INFO     | __main__:annotate:358 - Batch annotated - idx 750:760
+2024-12-20 22:37:28.706 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:37:33.917 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:37:35.255 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.6000000000000001
+2024-12-20 22:37:36.588 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.5
+2024-12-20 22:37:36.588 | INFO     | __main__:annotate:358 - Batch annotated - idx 760:770
+2024-12-20 22:37:41.050 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:37:50.478 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.7
+2024-12-20 22:38:04.888 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:38:04.888 | INFO     | __main__:annotate:358 - Batch annotated - idx 770:780
+2024-12-20 22:38:17.960 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:38:19.320 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:38:20.751 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:38:28.481 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.4
+2024-12-20 22:38:35.129 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 22:38:37.677 | INFO     | __main__:annotate:358 - Batch annotated - idx 780:790
+2024-12-20 22:38:42.804 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:38:46.272 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:38:47.353 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:39:00.469 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 22:39:09.475 | INFO     | __main__:annotate:358 - Batch annotated - idx 790:800
+2024-12-20 22:39:21.840 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:39:25.637 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:39:35.768 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:39:35.768 | INFO     | __main__:annotate:358 - Batch annotated - idx 800:810
+2024-12-20 22:39:35.769 | INFO     | __main__:evaluate:392 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ksj00jk', 'krou5ax', 'ktmpukg', 'ku9487n', 'ku5hvgh', 'kuotbev', 'kuphpzq', 'kv34sr6', 'krxg5dv', 'kumjanv', 'kw9ppdw', 'ktem8i1', 'kt1cou1', 'krruhj4', 'kunxqb4', 'kvxn0gp', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ktzjg62', 'kvohnsm', 'kv6n8zr', 'ksv0pyy', 'ksfmpjz', 'kueh628', 'ksrpsqm', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kst38sb', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'kuqzvj1', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksqqo7r', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kvtqpbp', 'kuono6m', 'kv275vm', 'ks3y5sb', 'kth2ku9', 'kt1kz1o', 'kt8cttl', 'kvix3ho', 'ktdr3bs', 'kv7nhjr', 'ktmrng0', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'kwkckkj', 'ktpicpj', 'ksxauop', 'kubeoe9', 'ktdiore', 'ksgkvrr', 'kr5fe5w', 'kuwq9zw', 'ksx18nn', 'kve9kkx', 'ksndg8a', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'kvx8y78', 'ktbu3c7', 'kthpmj5', 'kvpv962', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kw80cpe', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kte3g5k', 'kt4cqfh', 'kuav8g8', 'kuk503d', 'ktk46n2', 'kvpj2xe', 'kuzyqqs', 'kw0zs7p', 'ksfazrj', 'ktac398', 'ksi65jq', 'krscef3', 'kswoeub', 'ksl89yk', 'kwo79b4', 'kw29ttp', 'kuh1o2n', 'ktlm5v9', 'kvfcxqp', 'kuvohjy', 'kworjf6', 'kt4qisi', 'kvy6nt1', 'kupmqu4', 'kv5mxpz', 'ktutxqa', 'ktjm7eb', 'kuk8s4i', 'kva44k3', 'kug4atl', 'kvzotlo', 'kx39blk', 'kupda6h', 'ksdyfha', 'krh8gsk', 'kuh3t87', 'kvzkixg', 'kruh0tt', 'ku10ehx', 'kte72ih', 'ku1jsrm', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kwrpam5', 'krtm5a8', 'kw1zqfw', 'ksunegg', 'kub6rxl', 'kuql88m', 'kvqxne7', 'kv30et0', 'krrjqt7', 'ktjcc6g', 'ks78ekc', 'ktebp6s', 'kx1tn0x', 'kuzjqnu', 'kt6ubh3', 'ktjo0dj', 'kru22m1', 'ksbwzpk', 'kv0fd6t', 'krs7aqn', 'ktf7bba', 'kve649y', 'ksoy5s0', 'krv9pia', 'kuzwy6u', 'kshwzko', 'kvu3uhn', 'kued4wu', 'kvun422', 'kvarnqk', 'ktta436', 'kwtdigi', 'kv7fxdi', 'kvttlyx', 'kseqcmp', 'ktxlyj5', 'kvxcx6p', 'kv8vvhn', 'ktvnr9h', 'ktm99y4', 'kwsg5qi', 'ksnbok3', 'kug7o9e', 'kt4ora7', 'kv7fizq', 'kt7l91h', 'krefl04', 'kw22dwa', 'kw14kjp', 'kvjcol9', 'kraxc86', 'kvdw49d', 'ktehmjc', 'ktng6iq', 'kteb0w7', 'kunvnab', 'kwn4iwy', 'kuraxzc', 'kx263w5', 'kvrboe6', 'kw86crt', 'kt51ko5']
+2024-12-20 22:39:35.776 | INFO     | __main__:evaluate:413 - hate speech: Macro F1 0.7159090909090908; Micro F1 0.9800006235191421; Accuracy 0.9753086419753086
+
+2024-12-20 22:39:35.780 | INFO     | __main__:evaluate:413 - linguistic bias: Macro F1 0.8220792624398581; Micro F1 0.9016985891135478; Accuracy 0.9098765432098765
+
+2024-12-20 22:39:35.784 | INFO     | __main__:evaluate:413 - text-level context bias: Macro F1 0.793; Micro F1 0.9475637860082305; Accuracy 0.9432098765432099
+
+2024-12-20 22:39:35.788 | INFO     | __main__:evaluate:413 - political bias: Macro F1 0.9102900148198153; Micro F1 0.9743542383167721; Accuracy 0.9740740740740741
+
+2024-12-20 22:39:35.792 | INFO     | __main__:evaluate:413 - racial bias: Macro F1 0.9542347025255664; Micro F1 0.9987096990204511; Accuracy 0.9987654320987654
+
+2024-12-20 22:39:35.796 | INFO     | __main__:evaluate:413 - gender bias: Macro F1 0.9758777807558294; Micro F1 0.9987364236686729; Accuracy 0.9987654320987654
+
+2024-12-20 22:39:35.796 | INFO     | __main__:evaluate:416 - Reflecting on mistakes...
+2024-12-20 22:39:41.737 | DEBUG    | __main__:evaluate:425 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... This statement lacks notable hatred directed toward a specific group and mainly reflects a sarcastic dismissal of serious implications.', LinguisticBias='Example: Offenses would destroy and the NFLPA would orchestrate a mercy rule. This remark conveys frustration without revealing clear linguistic bias against a social identity through intended language choice, showcasing discontent instead.', TextLevelContextBias="Example: Honestly? I honestly hope intel will make a top end competitor. This conveys anticipation for competition but is overshadowed by aggressive remarks, such as 'we should turn you to ash,' which confuses the narrative and frameworks of discourse.", PoliticalBias='Example: And people say ukraine is filled with nazis.... This illustrates a personal opinion colored by skepticism towards established narratives in political discussions. The mention of voting percentages indicates dissatisfaction with political processes, shedding light on individual biases.', RacialBias='Example: The Argonians have a few things to say about this. This is a whimsical comment relying on fictional lore and does not convey direct bias, instead maintaining a humorous tone about the subject matter.', GenderBias="Example: On the heels front, I've also noticed that it's becoming a lot less common for women to wear high heels to work since returning to the office. This observation hints at shifting social norms regarding women's professional attire without implying bias.")
+2024-12-20 22:39:41.737 | SUCCESS  | __main__:evaluate:426 - Evaluation done.
+2024-12-20 22:40:49.392 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 22:41:06.920 | WARNING  | __main__:annotate:333 - Batch failed - retrying (1/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:41:24.406 | WARNING  | __main__:annotate:333 - Batch failed - retrying (2/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:41:43.739 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:42:01.260 | WARNING  | __main__:annotate:333 - Batch failed - retrying (3/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:42:19.924 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:42:37.438 | WARNING  | __main__:annotate:333 - Batch failed - retrying (4/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:42:55.031 | WARNING  | __main__:annotate:333 - Batch failed - retrying (5/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:43:13.447 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:43:30.970 | WARNING  | __main__:annotate:333 - Batch failed - retrying (6/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:43:53.197 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:44:10.751 | WARNING  | __main__:annotate:333 - Batch failed - retrying (7/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:44:28.266 | WARNING  | __main__:annotate:333 - Batch failed - retrying (8/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:44:45.774 | WARNING  | __main__:annotate:333 - Batch failed - retrying (9/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:45:03.308 | WARNING  | __main__:annotate:333 - Batch failed - retrying (10/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:45:03.308 | ERROR    | __main__:annotate:338 - Batch failed after 10 retries - skipping batch
+2024-12-20 22:45:22.052 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:45:39.565 | WARNING  | __main__:annotate:333 - Batch failed - retrying (1/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:45:57.085 | WARNING  | __main__:annotate:333 - Batch failed - retrying (2/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:46:14.629 | WARNING  | __main__:annotate:333 - Batch failed - retrying (3/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:46:32.139 | WARNING  | __main__:annotate:333 - Batch failed - retrying (4/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:46:49.653 | WARNING  | __main__:annotate:333 - Batch failed - retrying (5/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:47:08.177 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:47:26.925 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:48:14.126 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 22:48:41.935 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.8
+2024-12-20 22:49:00.560 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 22:49:18.135 | WARNING  | __main__:annotate:333 - Batch failed - retrying (6/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:49:35.702 | WARNING  | __main__:annotate:333 - Batch failed - retrying (7/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:49:54.632 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:50:12.143 | WARNING  | __main__:annotate:333 - Batch failed - retrying (8/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:50:29.703 | WARNING  | __main__:annotate:333 - Batch failed - retrying (9/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:50:48.632 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:51:06.157 | WARNING  | __main__:annotate:333 - Batch failed - retrying (10/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:51:06.157 | ERROR    | __main__:annotate:338 - Batch failed after 10 retries - skipping batch
+2024-12-20 22:51:23.703 | WARNING  | __main__:annotate:333 - Batch failed - retrying (1/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:51:41.233 | WARNING  | __main__:annotate:333 - Batch failed - retrying (2/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:52:26.735 | WARNING  | __main__:annotate:333 - Batch failed - retrying (3/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:53:12.605 | WARNING  | __main__:annotate:333 - Batch failed - retrying (4/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:53:30.124 | WARNING  | __main__:annotate:333 - Batch failed - retrying (5/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:54:06.229 | WARNING  | __main__:annotate:333 - Batch failed - retrying (6/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:54:23.804 | WARNING  | __main__:annotate:333 - Batch failed - retrying (7/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:54:59.819 | WARNING  | __main__:annotate:333 - Batch failed - retrying (8/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:55:17.349 | WARNING  | __main__:annotate:333 - Batch failed - retrying (9/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:55:53.207 | WARNING  | __main__:annotate:333 - Batch failed - retrying (10/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:55:53.208 | ERROR    | __main__:annotate:338 - Batch failed after 10 retries - skipping batch
+2024-12-20 22:56:10.796 | WARNING  | __main__:annotate:333 - Batch failed - retrying (1/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:56:28.311 | WARNING  | __main__:annotate:333 - Batch failed - retrying (2/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:56:45.825 | WARNING  | __main__:annotate:333 - Batch failed - retrying (3/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:57:32.650 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 22:57:50.154 | WARNING  | __main__:annotate:333 - Batch failed - retrying (4/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:58:26.240 | WARNING  | __main__:annotate:333 - Batch failed - retrying (5/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:59:02.601 | WARNING  | __main__:annotate:333 - Batch failed - retrying (6/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 22:59:43.804 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 23:00:02.621 | DEBUG    | __main__:confidence_aware_agg:274 - Maximum confidence gap: 0.0
+2024-12-20 23:00:31.111 | WARNING  | __main__:annotate:333 - Batch failed - retrying (7/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 23:01:16.969 | WARNING  | __main__:annotate:333 - Batch failed - retrying (8/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}
+2024-12-20 23:01:53.385 | WARNING  | __main__:annotate:333 - Batch failed - retrying (9/10) due to error: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-K27uA234OR5KgbnWUCYoimvB on requests per day (RPD): Limit 10000, Used 10000, Requested 1. Please try again in 8.64s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'requests', 'param': None, 'code': 'rate_limit_exceeded'}}

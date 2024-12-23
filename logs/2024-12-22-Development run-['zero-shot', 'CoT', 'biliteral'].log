@@ -1,0 +1,61 @@
+2024-12-22 23:13:10.930 | INFO     | __main__:<module>:547 - Pipeline started with args: Namespace(model='gpt-4o', api_key='../api_key.json', strategies=['zero-shot', 'CoT', 'biliteral'], dynamic_context=False, max_retries=10, seed=42, eval_path='~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv', batch_size=10, context_path='./ref_samples.json', output_path='./save/', note='Development run')
+2024-12-22 23:13:10.938 | INFO     | __main__:load_data:59 - Loading data from ~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv
+2024-12-22 23:13:10.938 | INFO     | __main__:load_data:60 - Columns: ['Unnamed: 0', 'id', 'textDisplay', 'publishedAt', 'parentId', 'parentType', 'hate speech', 'linguistic bias', 'text-level context bias', 'political bias', 'gender bias', 'racial bias', 'domain']
+2024-12-22 23:13:10.938 | INFO     | __main__:load_data:61 - Shape: (1998, 13)
+2024-12-22 23:13:10.972 | DEBUG    | __main__:__init__:99 - Confidence check True
+2024-12-22 23:13:10.982 | INFO     | __main__:annotate:306 - Loaded context examples at ./ref_samples.json
+2024-12-22 23:13:10.982 | INFO     | __main__:annotate:307 - Starting annotation...
+2024-12-22 23:13:20.635 | DEBUG    | __main__:confidence_aware_agg:276 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 23:13:25.268 | DEBUG    | __main__:confidence_aware_agg:276 - Maximum confidence gap: 0.5
+2024-12-22 23:13:29.138 | ERROR    | asyncio.events:_run:89 - An error has been caught in function '_run', process 'MainProcess' (3840655), thread 'MainThread' (140702887813760):
+Traceback (most recent call last):
+
+  File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 571, in <module>
+    asyncio.run(pipeline.annotate(sample_num=30, note=args.note))
+    │       │   │        │                            │    └ 'Development run'
+    │       │   │        │                            └ Namespace(model='gpt-4o', api_key='../api_key.json', strategies=['zero-shot', 'CoT', 'biliteral'], dynamic_context=False, max...
+    │       │   │        └ <function Pipeline.annotate at 0x7ff6f40b74c0>
+    │       │   └ <__main__.Pipeline object at 0x7ff6f400a120>
+    │       └ <function run at 0x7ff7f0b3cc20>
+    └ <module 'asyncio' from '/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/__init__.py'>
+
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Pipeline.annotate at 0x7ff6f3fca940>
+           │      └ <function Runner.run at 0x7ff7f0c01300>
+           └ <asyncio.runners.Runner object at 0x7ff6f400a660>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Pipeline.annotate() running at /home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7ff7f0bfee80>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7ff6f400a660>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 707, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7ff7f0bfede0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 678, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7ff7f0c00c20>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 2033, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7ff7f0b1bc40>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7ff6f3eed900>()>
+> File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7ff6f3eed900>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7ff6f3eed900>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7ff6f3eed900>()>
+
+  File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 368, in annotate
+    predictions = np.concatenate((predictions, batched_preds))
+                  │  │            │            └ array([], dtype=int16)
+                  │  │            └ array([], shape=(0, 6), dtype=int64)
+                  │  └ <function concatenate at 0x7ff7f09f8070>
+                  └ <module 'numpy' from '/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/numpy/__init__.py'>
+
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 2 dimension(s) and the array at index 1 has 1 dimension(s)

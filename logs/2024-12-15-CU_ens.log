@@ -1,0 +1,331 @@
+2024-12-15 21:56:48.891 | INFO     | __main__:<module>:400 - Pipeline started with args: Namespace(model='gpt-4o-mini', api_key='../api_key.txt', strategies=['CoT', 'zero-shot'], max_retries=10, seed=42, eval_path='~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv', batch_size=10, context_path='./ref_samples.json', output_path='./save/', note='CU_ens')
+2024-12-15 21:56:48.902 | INFO     | __main__:load_data:59 - Loading data from ~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv
+2024-12-15 21:56:48.902 | INFO     | __main__:load_data:60 - Columns: ['Unnamed: 0', 'id', 'textDisplay', 'publishedAt', 'parentId', 'parentType', 'hate speech', 'linguistic bias', 'text-level context bias', 'political bias', 'gender bias', 'racial bias', 'domain']
+2024-12-15 21:56:48.902 | INFO     | __main__:load_data:61 - Shape: (1998, 13)
+2024-12-15 21:56:48.949 | INFO     | __main__:annotate:222 - Loaded context examples at ./ref_samples.json
+2024-12-15 21:56:48.949 | INFO     | __main__:annotate:223 - Starting annotation...
+2024-12-15 21:56:59.322 | INFO     | __main__:annotate:264 - Batch annotated - idx 0:10
+2024-12-15 21:57:13.817 | INFO     | __main__:annotate:264 - Batch annotated - idx 10:20
+2024-12-15 21:57:29.474 | INFO     | __main__:annotate:264 - Batch annotated - idx 20:30
+2024-12-15 21:57:48.790 | INFO     | __main__:annotate:264 - Batch annotated - idx 30:40
+2024-12-15 21:58:00.435 | INFO     | __main__:annotate:264 - Batch annotated - idx 40:50
+2024-12-15 21:58:09.094 | INFO     | __main__:annotate:264 - Batch annotated - idx 50:60
+2024-12-15 21:58:21.051 | INFO     | __main__:annotate:264 - Batch annotated - idx 60:70
+2024-12-15 21:58:33.655 | INFO     | __main__:annotate:264 - Batch annotated - idx 70:80
+2024-12-15 21:58:43.190 | INFO     | __main__:annotate:264 - Batch annotated - idx 80:90
+2024-12-15 21:58:54.038 | INFO     | __main__:annotate:264 - Batch annotated - idx 90:100
+2024-12-15 21:59:06.647 | INFO     | __main__:annotate:264 - Batch annotated - idx 100:110
+2024-12-15 21:59:06.648 | INFO     | __main__:evaluate:291 - Evaluation started...
+2024-12-15 21:59:06.653 | INFO     | __main__:evaluate:312 - Macro F1: hate speech: 0.47115384615384615
+
+2024-12-15 21:59:06.658 | INFO     | __main__:evaluate:312 - Macro F1: linguistic bias: 0.5202220459952418
+
+2024-12-15 21:59:06.663 | INFO     | __main__:evaluate:312 - Macro F1: text-level context bias: 0.5387331714853234
+
+2024-12-15 21:59:06.666 | INFO     | __main__:evaluate:312 - Macro F1: political bias: 0.7355769230769231
+
+2024-12-15 21:59:06.671 | INFO     | __main__:evaluate:312 - Macro F1: racial bias: 0.4977168949771689
+
+2024-12-15 21:59:06.675 | INFO     | __main__:evaluate:312 - Macro F1: gender bias: 0.4977168949771689
+
+2024-12-15 21:59:06.675 | INFO     | __main__:evaluate:315 - Reflecting on mistakes...
+2024-12-15 21:59:11.800 | DEBUG    | __main__:evaluate:325 - Context(HateSpeech="Misclassification; the phrase 'ESPN being trash isn’t news' is an opinion rather than hate speech. Prevention would involve clearer guidelines distinguishing between opinionated statements and hate speech.", LinguisticBias='While some comments reflect negative sentiments and possible bias, not all display explicit linguistic bias as per definitions. A thorough review of context and intention could prevent misclassification.', TextLevelContextBias='Some comments exhibit strong opinion without employing language that skews narratives. Emphasizing narrative analysis could clarify distinctions.', PoliticalBias='Misclassification; some comments express strong views without aligning strictly with political agendas, suggesting a need for clearer guidelines.', RacialBias='', GenderBias="Generalization of a woman's role without context reflects a stereotype; clarity in recognizing gender-related biases can improve classification.")
+2024-12-15 21:59:11.800 | SUCCESS  | __main__:evaluate:326 - Evaluation done.
+2024-12-15 21:59:38.336 | INFO     | __main__:annotate:264 - Batch annotated - idx 110:120
+2024-12-15 21:59:47.453 | INFO     | __main__:annotate:264 - Batch annotated - idx 120:130
+2024-12-15 21:59:55.653 | INFO     | __main__:annotate:264 - Batch annotated - idx 130:140
+2024-12-15 22:00:04.964 | INFO     | __main__:annotate:264 - Batch annotated - idx 140:150
+2024-12-15 22:00:13.759 | INFO     | __main__:annotate:264 - Batch annotated - idx 150:160
+2024-12-15 22:00:22.752 | INFO     | __main__:annotate:264 - Batch annotated - idx 160:170
+2024-12-15 22:00:32.964 | INFO     | __main__:annotate:264 - Batch annotated - idx 170:180
+2024-12-15 22:00:42.281 | INFO     | __main__:annotate:264 - Batch annotated - idx 180:190
+2024-12-15 22:00:50.556 | INFO     | __main__:annotate:264 - Batch annotated - idx 190:200
+2024-12-15 22:00:59.829 | INFO     | __main__:annotate:264 - Batch annotated - idx 200:210
+2024-12-15 22:00:59.830 | INFO     | __main__:evaluate:291 - Evaluation started...
+2024-12-15 22:00:59.836 | INFO     | __main__:evaluate:312 - Macro F1: hate speech: 0.5356550580431177
+
+2024-12-15 22:00:59.840 | INFO     | __main__:evaluate:312 - Macro F1: linguistic bias: 0.5807426843876562
+
+2024-12-15 22:00:59.844 | INFO     | __main__:evaluate:312 - Macro F1: text-level context bias: 0.6296296296296297
+
+2024-12-15 22:00:59.848 | INFO     | __main__:evaluate:312 - Macro F1: political bias: 0.6851574212893553
+
+2024-12-15 22:00:59.852 | INFO     | __main__:evaluate:312 - Macro F1: racial bias: 0.8321342925659472
+
+2024-12-15 22:00:59.857 | INFO     | __main__:evaluate:312 - Macro F1: gender bias: 0.6963855421686747
+
+2024-12-15 22:00:59.857 | INFO     | __main__:evaluate:315 - Reflecting on mistakes...
+2024-12-15 22:01:03.433 | DEBUG    | __main__:evaluate:325 - Context(HateSpeech="Multiple comment misclassifications; the phrases 'ESPN being trash isn’t news' and 'And people say ukraine is filled with nazis....' reflect opinions or commentary rather than hate speech. This indicates the need for clear guidelines to differentiate between opinionated statements and hate speech in annotations.", LinguisticBias='While several comments express strong sentiments that may indicate bias, not all can be strictly categorized as linguistic bias. A more thorough contextual understanding and clear criteria could mitigate these misclassifications.', TextLevelContextBias='Some annotations reflect personal opinions or frustrations without biasing a narrative substantially. More nuanced text analysis might improve the classification process.', PoliticalBias='Some comments contain strong political views but blur the lines between simply expressing opinion and political bias. Identifying where strong opinions diverge into bias could enhance clarity.', RacialBias='', GenderBias="Generalizations about women's choices, as well as negative portrayals, reflect stereotypes. Additional clarity in recognizing the complexities of gender-related biases would improve classification.")
+2024-12-15 22:01:03.433 | SUCCESS  | __main__:evaluate:326 - Evaluation done.
+2024-12-15 22:01:12.543 | INFO     | __main__:annotate:264 - Batch annotated - idx 210:220
+2024-12-15 22:01:22.604 | INFO     | __main__:annotate:264 - Batch annotated - idx 220:230
+2024-12-15 22:01:34.180 | INFO     | __main__:annotate:264 - Batch annotated - idx 230:240
+2024-12-15 22:01:43.781 | INFO     | __main__:annotate:264 - Batch annotated - idx 240:250
+2024-12-15 22:01:52.294 | INFO     | __main__:annotate:264 - Batch annotated - idx 250:260
+2024-12-15 22:02:03.510 | INFO     | __main__:annotate:264 - Batch annotated - idx 260:270
+2024-12-15 22:02:14.729 | INFO     | __main__:annotate:264 - Batch annotated - idx 270:280
+2024-12-15 22:02:24.808 | INFO     | __main__:annotate:264 - Batch annotated - idx 280:290
+2024-12-15 22:02:35.508 | INFO     | __main__:annotate:264 - Batch annotated - idx 290:300
+2024-12-15 22:02:44.482 | INFO     | __main__:annotate:264 - Batch annotated - idx 300:310
+2024-12-15 22:02:44.483 | INFO     | __main__:evaluate:291 - Evaluation started...
+2024-12-15 22:02:44.487 | INFO     | __main__:evaluate:312 - Macro F1: hate speech: 0.5287321374277896
+
+2024-12-15 22:02:44.493 | INFO     | __main__:evaluate:312 - Macro F1: linguistic bias: 0.5678476551198085
+
+2024-12-15 22:02:44.497 | INFO     | __main__:evaluate:312 - Macro F1: text-level context bias: 0.6272617965336227
+
+2024-12-15 22:02:44.501 | INFO     | __main__:evaluate:312 - Macro F1: political bias: 0.7607017543859649
+
+2024-12-15 22:02:44.505 | INFO     | __main__:evaluate:312 - Macro F1: racial bias: 0.8325229605618585
+
+2024-12-15 22:02:44.508 | INFO     | __main__:evaluate:312 - Macro F1: gender bias: 0.7832673036588207
+
+2024-12-15 22:02:44.508 | INFO     | __main__:evaluate:315 - Reflecting on mistakes...
+2024-12-15 22:02:49.954 | DEBUG    | __main__:evaluate:325 - Context(HateSpeech="Misclassification; the phrases 'ESPN being trash isn’t news' and 'And people say ukraine is filled with nazis....' are expressions of opinion rather than hate speech. Clearer criteria for classifying hate speech could have prevented this error.", LinguisticBias='Several comments reflect negative sentiments towards individuals or groups, but they do not all exhibit explicit linguistic bias as defined. Careful contextual evaluation and refined definitions could mitigate these misclassifications.', TextLevelContextBias='Some comments express personal opinions or frustrations but do not necessarily skew a broader narrative. A deeper analysis of narrative context could help differentiate these cases.', PoliticalBias='Misclassification; some comments do not exhibit a structured political bias but rather strong opinions on political figures. Better guidelines to delineate opinion versus political bias could enhance annotation accuracy.', RacialBias='', GenderBias="Stereotypes related to gender roles are present, reflecting a bias in comments about women's choices. Improved clarity in identifying gender biases in statements would be beneficial.")
+2024-12-15 22:02:49.954 | SUCCESS  | __main__:evaluate:326 - Evaluation done.
+2024-12-15 22:02:59.940 | INFO     | __main__:annotate:264 - Batch annotated - idx 310:320
+2024-12-15 22:04:39.339 | INFO     | __main__:annotate:264 - Batch annotated - idx 320:330
+2024-12-15 22:04:50.501 | INFO     | __main__:annotate:264 - Batch annotated - idx 330:340
+2024-12-15 22:04:59.771 | INFO     | __main__:annotate:264 - Batch annotated - idx 340:350
+2024-12-15 22:05:09.411 | INFO     | __main__:annotate:264 - Batch annotated - idx 350:360
+2024-12-15 22:05:18.721 | INFO     | __main__:annotate:264 - Batch annotated - idx 360:370
+2024-12-15 22:05:28.066 | INFO     | __main__:annotate:264 - Batch annotated - idx 370:380
+2024-12-15 22:05:37.899 | INFO     | __main__:annotate:264 - Batch annotated - idx 380:390
+2024-12-15 22:05:49.366 | INFO     | __main__:annotate:264 - Batch annotated - idx 390:400
+2024-12-15 22:06:00.304 | INFO     | __main__:annotate:264 - Batch annotated - idx 400:410
+2024-12-15 22:06:00.304 | INFO     | __main__:evaluate:291 - Evaluation started...
+2024-12-15 22:06:00.309 | INFO     | __main__:evaluate:312 - Macro F1: hate speech: 0.5212741114380459
+
+2024-12-15 22:06:00.313 | INFO     | __main__:evaluate:312 - Macro F1: linguistic bias: 0.5633295100770113
+
+2024-12-15 22:06:00.316 | INFO     | __main__:evaluate:312 - Macro F1: text-level context bias: 0.6179562210851548
+
+2024-12-15 22:06:00.320 | INFO     | __main__:evaluate:312 - Macro F1: political bias: 0.7547231710376503
+
+2024-12-15 22:06:00.324 | INFO     | __main__:evaluate:312 - Macro F1: racial bias: 0.8327213382292942
+
+2024-12-15 22:06:00.328 | INFO     | __main__:evaluate:312 - Macro F1: gender bias: 0.7975308641975308
+
+2024-12-15 22:06:00.328 | INFO     | __main__:evaluate:315 - Reflecting on mistakes...
+2024-12-15 22:06:03.481 | DEBUG    | __main__:evaluate:325 - Context(HateSpeech="Misclassifications persist as phrases like 'ESPN being trash isn’t news' and 'And people say ukraine is filled with nazis....' are not hate speech but opinions. Adding clearer definitions for appropriate language could help annotate these statements accurately.", LinguisticBias='Not all negative or derogatory comments demonstrate linguistic bias as per the defined criteria. A more nuanced understanding of context could enhance classification regarding linguistic bias.', TextLevelContextBias='Some comments merely express frustrations and do not constructively bias a narrative. Emphasizing textual context and narrative construction can help differentiate these instances.', PoliticalBias='Strong opinions are presented without necessarily demonstrating overt political bias. Guidelines to distinguish between expressing an opinion and aligning with a political bias category would be beneficial.', RacialBias='', GenderBias="Stereotypes regarding women's roles and portrayals are evident; a more defined approach to identifying and addressing gender bias in comments would improve accuracy.")
+2024-12-15 22:06:03.481 | SUCCESS  | __main__:evaluate:326 - Evaluation done.
+2024-12-15 22:06:25.594 | INFO     | __main__:annotate:264 - Batch annotated - idx 410:420
+2024-12-15 22:06:38.988 | INFO     | __main__:annotate:264 - Batch annotated - idx 420:430
+2024-12-15 22:06:50.810 | INFO     | __main__:annotate:264 - Batch annotated - idx 430:440
+2024-12-15 22:07:02.993 | INFO     | __main__:annotate:264 - Batch annotated - idx 440:450
+2024-12-15 22:07:12.472 | INFO     | __main__:annotate:264 - Batch annotated - idx 450:460
+2024-12-15 22:07:21.665 | INFO     | __main__:annotate:264 - Batch annotated - idx 460:470
+2024-12-15 22:07:30.452 | INFO     | __main__:annotate:264 - Batch annotated - idx 470:480
+2024-12-15 22:07:43.157 | INFO     | __main__:annotate:264 - Batch annotated - idx 480:490
+2024-12-15 22:07:52.513 | INFO     | __main__:annotate:264 - Batch annotated - idx 490:500
+2024-12-15 22:08:01.533 | INFO     | __main__:annotate:264 - Batch annotated - idx 500:510
+2024-12-15 22:08:01.534 | INFO     | __main__:evaluate:291 - Evaluation started...
+2024-12-15 22:08:01.538 | INFO     | __main__:evaluate:312 - Macro F1: hate speech: 0.5118201595358955
+
+2024-12-15 22:08:01.542 | INFO     | __main__:evaluate:312 - Macro F1: linguistic bias: 0.5603264281230382
+
+2024-12-15 22:08:01.546 | INFO     | __main__:evaluate:312 - Macro F1: text-level context bias: 0.6064814814814814
+
+2024-12-15 22:08:01.551 | INFO     | __main__:evaluate:312 - Macro F1: political bias: 0.7647239735506689
+
+2024-12-15 22:08:01.554 | INFO     | __main__:evaluate:312 - Macro F1: racial bias: 0.8323471400394478
+
+2024-12-15 22:08:01.558 | INFO     | __main__:evaluate:312 - Macro F1: gender bias: 0.7827321783584209
+
+2024-12-15 22:08:01.558 | INFO     | __main__:evaluate:315 - Reflecting on mistakes...
+2024-12-15 22:08:05.613 | DEBUG    | __main__:evaluate:325 - Context(HateSpeech="Multiple misclassifications detected; phrases like 'ESPN being trash isn’t news', 'And people say ukraine is filled with nazis....', and 'AB if he was just autistic or some shit idk' express opinions rather than hate speech. Clearer parameters for identifying hate speech vs. opinion could prevent further errors.", LinguisticBias='While many comments contain explicit negativity, they do not all demonstrate linguistic bias in terms of language reflecting social-category cognition. A more thorough context-based analysis could refine this classification.', TextLevelContextBias='Some comments simply express frustrations or opinions without further skewing the narrative. Emphasizing narrative construction and intent could help differentiate these cases.', PoliticalBias='Opinions presented in comments show strong emotional responses without demonstrating a structured political bias. Better definitions are needed to distinguish between personal opinion and political bias adequately.', RacialBias='Only one instance of racial bias was present in the annotations, indicating a lack of diversity in detected biases; this highlights a need for broader inclusion in future categorizations.', GenderBias="Stereotypes and negative portrayals of women are noted, particularly in contexts that diminish women's contributions or identities. A more defined approach to identifying gender bias would aid in accuracy and reduce stereotypes.")
+2024-12-15 22:08:05.613 | SUCCESS  | __main__:evaluate:326 - Evaluation done.
+2024-12-15 22:08:15.865 | INFO     | __main__:annotate:264 - Batch annotated - idx 510:520
+2024-12-15 22:08:25.798 | INFO     | __main__:annotate:264 - Batch annotated - idx 520:530
+2024-12-15 22:08:35.546 | INFO     | __main__:annotate:264 - Batch annotated - idx 530:540
+2024-12-15 22:08:46.482 | INFO     | __main__:annotate:264 - Batch annotated - idx 540:550
+2024-12-15 22:08:55.526 | INFO     | __main__:annotate:264 - Batch annotated - idx 550:560
+2024-12-15 22:09:03.955 | INFO     | __main__:annotate:264 - Batch annotated - idx 560:570
+2024-12-15 22:09:12.672 | INFO     | __main__:annotate:264 - Batch annotated - idx 570:580
+2024-12-15 22:09:22.331 | INFO     | __main__:annotate:264 - Batch annotated - idx 580:590
+2024-12-15 22:09:33.733 | INFO     | __main__:annotate:264 - Batch annotated - idx 590:600
+2024-12-15 22:09:43.751 | INFO     | __main__:annotate:264 - Batch annotated - idx 600:610
+2024-12-15 22:09:43.751 | INFO     | __main__:evaluate:291 - Evaluation started...
+2024-12-15 22:09:43.756 | INFO     | __main__:evaluate:312 - Macro F1: hate speech: 0.5756029684601113
+
+2024-12-15 22:09:43.760 | INFO     | __main__:evaluate:312 - Macro F1: linguistic bias: 0.5786779344248973
+
+2024-12-15 22:09:43.766 | INFO     | __main__:evaluate:312 - Macro F1: text-level context bias: 0.5825258805137921
+
+2024-12-15 22:09:43.770 | INFO     | __main__:evaluate:312 - Macro F1: political bias: 0.7720141502464124
+
+2024-12-15 22:09:43.774 | INFO     | __main__:evaluate:312 - Macro F1: racial bias: 0.7983471074380165
+
+2024-12-15 22:09:43.778 | INFO     | __main__:evaluate:312 - Macro F1: gender bias: 0.7966666666666666
+
+2024-12-15 22:09:43.778 | INFO     | __main__:evaluate:315 - Reflecting on mistakes...
+2024-12-15 22:09:48.290 | DEBUG    | __main__:evaluate:325 - Context(HateSpeech="Persistent misclassifications where personal opinions are tagged as hate speech. Phrases like 'ESPN being trash isn’t news' and 'MJ shit on his team, coaches, friends and front office' represent personal sentiment, not targeting any group. Enhanced clarity and guidelines on categorization are needed to distinguish between opinion and hate speech effectively.", LinguisticBias='A significant portion of comments reflect derogatory language or opinions but do not uniformly fit the definition of linguistic bias. A more nuanced approach that considers context and social cognition may reduce misclassifications.', TextLevelContextBias='Some comments express general frustrations without skewing narrative context significantly. Better narrative analysis is needed to discern when subjective opinions influence the broader context.', PoliticalBias='Comments reflect strong opinions on politics and specific figures but do not consistently exhibit structured political bias. Defining boundaries between personal opinion and political bias more clearly could enhance accuracy in classification.', RacialBias="Comments flagged indicate a lack of sensitivity towards racial contexts, with phrases such as 'That’s what Islam does to the world' showing a need for improved guidelines for racial bias categorization.", GenderBias="Gender-related stereotypes are prevalent, particularly in comments regarding women's choices and appearances. More robust standards for identifying and addressing gender biases would help mitigate stereotypes and misclassifications.")
+2024-12-15 22:09:48.291 | SUCCESS  | __main__:evaluate:326 - Evaluation done.
+2024-12-15 22:09:57.702 | INFO     | __main__:annotate:264 - Batch annotated - idx 610:620
+2024-12-15 22:10:08.474 | INFO     | __main__:annotate:264 - Batch annotated - idx 620:630
+2024-12-15 22:10:17.446 | INFO     | __main__:annotate:264 - Batch annotated - idx 630:640
+2024-12-15 22:10:27.158 | INFO     | __main__:annotate:264 - Batch annotated - idx 640:650
+2024-12-15 22:10:39.658 | INFO     | __main__:annotate:264 - Batch annotated - idx 650:660
+2024-12-15 22:10:49.054 | INFO     | __main__:annotate:264 - Batch annotated - idx 660:670
+2024-12-15 22:10:59.295 | INFO     | __main__:annotate:264 - Batch annotated - idx 670:680
+2024-12-15 22:11:10.115 | INFO     | __main__:annotate:264 - Batch annotated - idx 680:690
+2024-12-15 22:11:20.664 | INFO     | __main__:annotate:264 - Batch annotated - idx 690:700
+2024-12-15 22:11:29.712 | INFO     | __main__:annotate:264 - Batch annotated - idx 700:710
+2024-12-15 22:11:29.712 | INFO     | __main__:evaluate:291 - Evaluation started...
+2024-12-15 22:11:29.717 | INFO     | __main__:evaluate:312 - Macro F1: hate speech: 0.5687560738581147
+
+2024-12-15 22:11:29.722 | INFO     | __main__:evaluate:312 - Macro F1: linguistic bias: 0.5975056689342404
+
+2024-12-15 22:11:29.726 | INFO     | __main__:evaluate:312 - Macro F1: text-level context bias: 0.5763521826601683
+
+2024-12-15 22:11:29.730 | INFO     | __main__:evaluate:312 - Macro F1: political bias: 0.7967858426049412
+
+2024-12-15 22:11:29.734 | INFO     | __main__:evaluate:312 - Macro F1: racial bias: 0.7985815602836879
+
+2024-12-15 22:11:29.737 | INFO     | __main__:evaluate:312 - Macro F1: gender bias: 0.7824977024405186
+
+2024-12-15 22:11:29.738 | INFO     | __main__:evaluate:315 - Reflecting on mistakes...
+2024-12-15 22:11:34.533 | DEBUG    | __main__:evaluate:325 - Context(HateSpeech="Continued misclassification where opinions are incorrectly categorized as hate speech. Phrases like 'ESPN being trash isn’t news' and 'AB if he was just autistic or some shit idk' do not target any specific group and better criteria for identifying hate speech might be essential.", LinguisticBias='Several comments display derogatory language directed at others, yet do not strictly align with the defined linguistic bias criteria. A nuanced context evaluation could improve the classification and reduce inconsistencies.', TextLevelContextBias='Some comments express dissatisfaction or personal sentiment without significantly influencing overall narrative context. Emphasizing a clearer analysis of intent and context could refine these classifications.', PoliticalBias='Strong opinions are evident in comments, although they do not necessarily mean a structured political bias. Better definitions are needed to differentiate expressions of opinion from formal political bias.', RacialBias="There are instances that reflect racial insensitivity, such as 'That’s what Islam does to the world.' Enhanced guidelines are necessary to ensure sensitivity and accurate categorization of racial biases.", GenderBias='Gender-related stereotypes and biases are highlighted in many comments. A more refined approach to detecting and classifying gender biases would mitigate harmful stereotypes and enable more accurate annotations.')
+2024-12-15 22:11:34.534 | SUCCESS  | __main__:evaluate:326 - Evaluation done.
+2024-12-15 22:11:43.247 | INFO     | __main__:annotate:264 - Batch annotated - idx 710:720
+2024-12-15 22:11:52.472 | INFO     | __main__:annotate:264 - Batch annotated - idx 720:730
+2024-12-15 22:12:02.949 | INFO     | __main__:annotate:264 - Batch annotated - idx 730:740
+2024-12-15 22:12:15.127 | INFO     | __main__:annotate:264 - Batch annotated - idx 740:750
+2024-12-15 22:12:24.291 | INFO     | __main__:annotate:264 - Batch annotated - idx 750:760
+2024-12-15 22:12:32.876 | INFO     | __main__:annotate:264 - Batch annotated - idx 760:770
+2024-12-15 22:12:42.227 | INFO     | __main__:annotate:264 - Batch annotated - idx 770:780
+2024-12-15 22:12:52.503 | INFO     | __main__:annotate:264 - Batch annotated - idx 780:790
+2024-12-15 22:13:03.344 | INFO     | __main__:annotate:264 - Batch annotated - idx 790:800
+2024-12-15 22:13:14.558 | INFO     | __main__:annotate:264 - Batch annotated - idx 800:810
+2024-12-15 22:13:14.559 | INFO     | __main__:evaluate:291 - Evaluation started...
+2024-12-15 22:13:14.564 | INFO     | __main__:evaluate:312 - Macro F1: hate speech: 0.5577112982863781
+
+2024-12-15 22:13:14.568 | INFO     | __main__:evaluate:312 - Macro F1: linguistic bias: 0.609197445436193
+
+2024-12-15 22:13:14.572 | INFO     | __main__:evaluate:312 - Macro F1: text-level context bias: 0.5903350559567405
+
+2024-12-15 22:13:14.576 | INFO     | __main__:evaluate:312 - Macro F1: political bias: 0.7992752776154296
+
+2024-12-15 22:13:14.580 | INFO     | __main__:evaluate:312 - Macro F1: racial bias: 0.7987577639751553
+
+2024-12-15 22:13:14.584 | INFO     | __main__:evaluate:312 - Macro F1: gender bias: 0.769598361588349
+
+2024-12-15 22:13:14.584 | INFO     | __main__:evaluate:315 - Reflecting on mistakes...
+2024-12-15 22:13:18.226 | DEBUG    | __main__:evaluate:325 - Context(HateSpeech="Continued misclassifications where opinions are flagged as hate speech. Phrases such as 'ESPN being trash isn’t news' and 'AB if he was just autistic or some shit idk' represent subjective sentiments rather than targeting any group specifically. It is important to sharpen criteria for identifying hate speech.", LinguisticBias='Several comments utilize derogatory language, yet do not uniformly align with the definition of linguistic bias. A more nuanced context evaluation might decrease misclassifications in this category.', TextLevelContextBias='Some comments reflect personal frustrations without significant narrative skewing. Improved narrative context analysis could help differentiate between subjective opinions and text-level context bias.', PoliticalBias='Strong personal opinions are prevalent in the comments but don’t necessarily reflect formal political bias. Better definitions and clearer guidelines are needed to distinguish personal opinion from political bias accurately.', RacialBias="Certain comments show a lack of sensitivity and reflect racial bias, such as 'That’s what Islam does to the world.' Enhanced guidelines for identifying and categorizing racial biases are necessary.", GenderBias='Gender-related stereotypes and biases are evident in several comments. A refined approach to identifying gender bias would help in addressing harmful stereotypes effectively.')
+2024-12-15 22:13:18.226 | SUCCESS  | __main__:evaluate:326 - Evaluation done.
+2024-12-15 22:13:28.079 | INFO     | __main__:annotate:264 - Batch annotated - idx 810:820
+2024-12-15 22:13:38.497 | INFO     | __main__:annotate:264 - Batch annotated - idx 820:830
+2024-12-15 22:13:48.255 | INFO     | __main__:annotate:264 - Batch annotated - idx 830:840
+2024-12-15 22:13:58.238 | INFO     | __main__:annotate:264 - Batch annotated - idx 840:850
+2024-12-15 22:14:07.876 | INFO     | __main__:annotate:264 - Batch annotated - idx 850:860
+2024-12-15 22:14:17.488 | INFO     | __main__:annotate:264 - Batch annotated - idx 860:870
+2024-12-15 22:14:26.826 | INFO     | __main__:annotate:264 - Batch annotated - idx 870:880
+2024-12-15 22:14:38.741 | INFO     | __main__:annotate:264 - Batch annotated - idx 880:890
+2024-12-15 22:14:48.052 | INFO     | __main__:annotate:264 - Batch annotated - idx 890:900
+2024-12-15 22:15:00.567 | INFO     | __main__:annotate:264 - Batch annotated - idx 900:910
+2024-12-15 22:15:00.567 | INFO     | __main__:evaluate:291 - Evaluation started...
+2024-12-15 22:15:00.573 | INFO     | __main__:evaluate:312 - Macro F1: hate speech: 0.5505083924360898
+
+2024-12-15 22:15:00.578 | INFO     | __main__:evaluate:312 - Macro F1: linguistic bias: 0.6130980906809798
+
+2024-12-15 22:15:00.582 | INFO     | __main__:evaluate:312 - Macro F1: text-level context bias: 0.601656314699793
+
+2024-12-15 22:15:00.586 | INFO     | __main__:evaluate:312 - Macro F1: political bias: 0.7922558029928125
+
+2024-12-15 22:15:00.590 | INFO     | __main__:evaluate:312 - Macro F1: racial bias: 0.7713452937333534
+
+2024-12-15 22:15:00.594 | INFO     | __main__:evaluate:312 - Macro F1: gender bias: 0.7932288116337196
+
+2024-12-15 22:15:00.594 | INFO     | __main__:evaluate:315 - Reflecting on mistakes...
+2024-12-15 22:15:05.188 | DEBUG    | __main__:evaluate:325 - Context(HateSpeech="Ongoing misclassifications; phrases such as 'ESPN being trash isn’t news' and 'Jurassic World Dominion: absolutely dog shit' reflect subjective opinions rather than hate speech targeted at a specific group. A clearer definition of hate speech is needed.", LinguisticBias='Many comments use derogatory language or negative sentiment but may not fully align with the established criteria for linguistic bias. A context-sensitive approach might reduce misclassifications in this area.', TextLevelContextBias='Some expressions of personal dissatisfaction do not significantly alter the narrative context. Additional focus on narrative intent and impact could enhance classification accuracy.', PoliticalBias='The comments often express emotional reactions toward political figures and processes, but do not consistently align with structured political bias. Refining guidelines to clearly differentiate political opinions from bias may improve classifications.', RacialBias="There are several instances of insensitivity, such as 'That’s what Islam does to the world.' This suggests a need for better recognition and sensitivity in identifying racial biases.", GenderBias='Stereotypes and negative portrayals regarding gender are prevalent. A more defined framework for identifying and categorizing gender biases would aid in reducing harmful stereotypes.')
+2024-12-15 22:15:05.189 | SUCCESS  | __main__:evaluate:326 - Evaluation done.
+2024-12-15 22:15:14.806 | INFO     | __main__:annotate:264 - Batch annotated - idx 910:920
+2024-12-15 22:15:25.182 | INFO     | __main__:annotate:264 - Batch annotated - idx 920:930
+2024-12-15 22:15:33.867 | INFO     | __main__:annotate:264 - Batch annotated - idx 930:940
+2024-12-15 22:15:43.354 | INFO     | __main__:annotate:264 - Batch annotated - idx 940:950
+2024-12-15 22:15:52.346 | INFO     | __main__:annotate:264 - Batch annotated - idx 950:960
+2024-12-15 22:16:00.962 | INFO     | __main__:annotate:264 - Batch annotated - idx 960:970
+2024-12-15 22:16:10.491 | INFO     | __main__:annotate:264 - Batch annotated - idx 970:980
+2024-12-15 22:16:20.105 | INFO     | __main__:annotate:264 - Batch annotated - idx 980:990
+2024-12-15 22:16:28.597 | INFO     | __main__:annotate:264 - Batch annotated - idx 990:1000
+2024-12-15 22:16:28.597 | INFO     | __main__:evaluate:291 - Evaluation started...
+2024-12-15 22:16:28.598 | ERROR    | __main__:annotate:280 - An error has been caught in function 'annotate', process 'MainProcess' (3455793), thread 'MainThread' (139929997333120):
+Traceback (most recent call last):
+
+  File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 414, in <module>
+
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Pipeline.annotate at 0x7f4300227940>
+           │      └ <function Runner.run at 0x7f43fcdc42c0>
+           └ <asyncio.runners.Runner object at 0x7f4300039010>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Pipeline.annotate() running at /home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7f43fcdc1e40>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7f4300039010>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 707, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f43fcdc1da0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 678, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f43fcdc3ba0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 2033, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f43fcf6ac00>
+    └ <Handle Task.task_wakeup()>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup()>
+
+> File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 280, in annotate
+    _ = await self.evaluate(predictions, all_labels, "", "")
+              │    │        │            └ array([[0., 0., 0., 0., 0., 0.],
+              │    │        │                     [0., 0., 0., 0., 0., 0.],
+              │    │        │                     [0., 0., 0., 0., 0., 0.],
+              │    │        │                     ...,
+              │    │        │                     [0., 0....
+              │    │        └ [Prediction(Prediction=[0, 0, 0, 0, 0, 0], Confidence=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]), Prediction(Prediction=[0, 0, 0, 0, 0, ...
+              │    └ <function Pipeline.evaluate at 0x7f430033e8e0>
+              └ <__main__.Pipeline object at 0x7f4300038440>
+
+  File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 300, in evaluate
+    bias_reports = classification_report(
+                   └ <function classification_report at 0x7f4301c0fb00>
+
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           │     │       └ {'output_dict': True}
+           │     └ (array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+           │              0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0....
+           └ <function classification_report at 0x7f4301c0fa60>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/sklearn/metrics/_classification.py", line 2671, in classification_report
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+            │                │              │       └ array([0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+            │                │              │                0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, ...
+            │                │              └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+            │                │                       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,...
+            │                └ <function _check_targets at 0x7f4301c0e5c0>
+            └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+                     0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,...
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/sklearn/metrics/_classification.py", line 98, in _check_targets
+    check_consistent_length(y_true, y_pred)
+    │                       │       └ array([0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+    │                       │                0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, ...
+    │                       └ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+    │                                0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,...
+    └ <function check_consistent_length at 0x7f430208a200>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/sklearn/utils/validation.py", line 475, in check_consistent_length
+    raise ValueError(
+
+ValueError: Found input variables with inconsistent numbers of samples: [910, 1000]
+2024-12-15 22:16:28.637 | SUCCESS  | __main__:annotate:284 - Pipeline finished - saved predictions at ./save/
+2024-12-15 22:16:28.637 | SUCCESS  | __main__:annotate:287 - Done.

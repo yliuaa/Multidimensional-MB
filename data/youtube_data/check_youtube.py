@@ -9,14 +9,49 @@ from sklearn.metrics import accuracy_score, f1_score, recall_score, classificati
 biases = ['genderBias', 'racialBias',
           'hateSpeech', 'linguisticBias',
           'textLevelContentBias', 'politicalBias']
-df_1 = pd.read_csv('youtube(healthcare, politics, sports-100))_Yifan.csv')
-df_1_added = pd.read_csv('youtube(entertainment-job-100)) -Yifan.csv')
-df_2 = pd.read_csv('youtube(healthcare, politics, sports-100))_Yike.csv')
-df_2_added = pd.read_csv('youtube(entertainment-job-100)) - Yike.csv')
+df_1 = pd.read_csv('youtube(healthcare, politics, sports-100))_annotator1.csv')
+df_1_added = pd.read_csv('youtube(entertainment-job-100))-annotator1.csv')
+df_2 = pd.read_csv('youtube(healthcare, politics, sports-100))_annotator2.csv')
+df_2_added = pd.read_csv('youtube(entertainment-job-100))-annotator2.csv')
 
 df_1 = pd.concat([df_1, df_1_added], axis=0).reset_index(drop=True)
 df_2 = pd.concat([df_2, df_2_added], axis=0).reset_index(drop=True)
 
+# get rid of all rows where the annotator did not annotate
+# remove unannotated rows
+df_1 = df_1.dropna(subset=biases)
+df_2 = df_2.dropna(subset=biases)
+# stack the two dataframes
+df_stacked = pd.concat([df_1, df_2], axis=0).reset_index(drop=True)
+print(df_1)
+print(df_2)
+print(df_stacked)
+# check duplicated ids
+print(df_stacked['id'].duplicated().sum())
+# remove one of the duplicated ids
+df_stacked = df_stacked.drop_duplicates(subset='id', keep='first')
+# remove unnamed columns
+df_stacked = df_stacked.loc[:, ~df_stacked.columns.str.contains('^Unnamed')]
+print(df_stacked)
+# Save the stacked dataframe
+df_stacked.to_csv('youtube_manual.csv', index=False)
+
+
+
+# print(len(df_1))
+# print(len(df_2))
+# df = pd.concat([df_1, df_2], axis=1)
+# # remove duplicated rows
+# df = df.loc[:, ~df.columns.duplicated()]
+# df = df.dropna(subset=biases)
+
+# print(df)
+
+
+
+
+
+'''
 overlapped_ids = list(range(41, 61)) + list(range(141, 161)) + list(range(241, 261)) + list(range(341, 361)) + list(range(441, 461))
 
 print("Inter-rater Agreement")
@@ -83,3 +118,4 @@ for i, domain in enumerate(domains):
         wrong_predictions = [i for i, (true, pred) in enumerate(zip(target_pred, val_gt[bias])) if true != pred]
         print(f"bias type({bias}): {len(wrong_predictions)}")
         val_pred.iloc[wrong_predictions].to_csv(f'wrong_prediction{(bias)}.csv')
+'''

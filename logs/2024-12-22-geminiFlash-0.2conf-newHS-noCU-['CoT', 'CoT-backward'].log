@@ -1,0 +1,248 @@
+2024-12-22 20:17:16.460 | INFO     | __main__:<module>:511 - Pipeline started with args: Namespace(model='gemini-1.5-pro', api_key='../api_key.json', strategies=['CoT', 'CoT-backward'], dynamic_context=False, max_retries=10, seed=42, eval_path='~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv', batch_size=10, context_path='./ref_samples.json', output_path='./save/', note='geminiFlash-0.2conf-newHS-noCU')
+2024-12-22 20:17:16.469 | INFO     | __main__:load_data:59 - Loading data from ~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv
+2024-12-22 20:17:16.469 | INFO     | __main__:load_data:60 - Columns: ['Unnamed: 0', 'id', 'textDisplay', 'publishedAt', 'parentId', 'parentType', 'hate speech', 'linguistic bias', 'text-level context bias', 'political bias', 'gender bias', 'racial bias', 'domain']
+2024-12-22 20:17:16.469 | INFO     | __main__:load_data:61 - Shape: (1998, 13)
+2024-12-22 20:17:16.504 | DEBUG    | __main__:__init__:99 - Confidence check True
+2024-12-22 20:17:16.513 | INFO     | __main__:annotate:300 - Using subset size: -1
+2024-12-22 20:17:16.514 | INFO     | __main__:annotate:305 - Loaded context examples at ./ref_samples.json
+2024-12-22 20:17:16.514 | INFO     | __main__:annotate:306 - Starting annotation...
+2024-12-22 20:17:18.358 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:17:21.818 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:17:23.561 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:17:25.319 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:17:27.078 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:17:35.771 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:17:42.733 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:17:42.733 | INFO     | __main__:annotate:359 - Batch annotated - idx 0:10
+2024-12-22 20:17:44.477 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:17:46.200 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:17:49.668 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:17:54.927 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:17:58.378 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:18:00.138 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3
+2024-12-22 20:18:08.816 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:18:10.523 | INFO     | __main__:annotate:359 - Batch annotated - idx 10:20
+2024-12-22 20:18:12.297 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:18:15.700 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:18:17.455 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:18:28.084 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:18:42.062 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-22 20:18:43.836 | INFO     | __main__:annotate:359 - Batch annotated - idx 20:30
+2024-12-22 20:18:49.066 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:18:52.675 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:18:54.435 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:18:56.162 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:18:58.008 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:19:12.011 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:19:13.736 | INFO     | __main__:annotate:359 - Batch annotated - idx 30:40
+2024-12-22 20:19:15.535 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:19:19.001 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:19:29.488 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:19:31.213 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:19:32.974 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:19:34.687 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:19:36.425 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:19:39.863 | INFO     | __main__:annotate:359 - Batch annotated - idx 40:50
+2024-12-22 20:19:41.619 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:19:55.542 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:19:59.036 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:20:05.951 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3
+2024-12-22 20:20:11.184 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:20:12.942 | INFO     | __main__:annotate:359 - Batch annotated - idx 50:60
+2024-12-22 20:20:14.694 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:20:16.442 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3
+2024-12-22 20:20:18.199 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:20:21.696 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:20:25.177 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:20:26.963 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-22 20:20:33.949 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:20:41.082 | INFO     | __main__:annotate:359 - Batch annotated - idx 60:70
+2024-12-22 20:20:42.846 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:20:44.577 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:20:48.107 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:20:49.842 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:20:56.818 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:21:02.051 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:21:05.511 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:21:08.993 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:21:10.666 | INFO     | __main__:annotate:359 - Batch annotated - idx 70:80
+2024-12-22 20:21:12.424 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:21:14.157 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:21:17.643 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:21:28.042 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:21:31.627 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:21:35.137 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:21:36.892 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:21:42.130 | INFO     | __main__:annotate:359 - Batch annotated - idx 80:90
+2024-12-22 20:21:43.912 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:21:50.893 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:21:54.432 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:21:56.226 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:21:59.727 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:22:01.486 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:22:04.978 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:22:06.744 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:22:08.499 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:22:10.218 | INFO     | __main__:annotate:359 - Batch annotated - idx 90:100
+2024-12-22 20:22:11.964 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:22:20.710 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:22:24.200 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:22:33.049 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:22:34.766 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:22:38.250 | INFO     | __main__:annotate:359 - Batch annotated - idx 100:110
+2024-12-22 20:22:38.250 | INFO     | __main__:evaluate:402 - Evaluation started; current human judgement36: ['ktuet1g', 'kutwa6d', 'kqp4j7m', 'kuqre03', 'kw0xdg2', 'ku6tpkp', 'kv9j9gw', 'kvbmxga', 'krrqz7p', 'ku3o43b', 'kt1kz1o', 'ktkcmbq', 'kub94e8', 'kv3tep5', 'kv9dh0h', 'ktri8o6', 'kuta0pt', 'ktf9uo3', 'ktedq66', 'ktv8bzu', 'krwgeu1', 'kqw4s4o', 'krd9yg8', 'ktem8i1', 'kusbz8r', 'kv76hkj', 'kv9sgl7', 'kt973xs', 'kreh6r5', 'ktlevw7', 'kv37h27', 'ku5edzz', 'krcazwq', 'kuayt5n', 'kstcn4d', 'kv2g8lw']
+2024-12-22 20:22:38.256 | INFO     | __main__:evaluate:423 - hate speech: Macro F1 0.4786729857819905; Micro F1 0.957345971563981; Accuracy 0.9181818181818182
+
+2024-12-22 20:22:38.261 | INFO     | __main__:evaluate:423 - linguistic bias: Macro F1 0.6631278072682727; Micro F1 0.7433089572738409; Accuracy 0.7272727272727273
+
+2024-12-22 20:22:38.265 | INFO     | __main__:evaluate:423 - text-level context bias: Macro F1 0.5788374521406195; Micro F1 0.7636616776888271; Accuracy 0.7
+
+2024-12-22 20:22:38.270 | INFO     | __main__:evaluate:423 - political bias: Macro F1 0.7495934959349593; Micro F1 0.9461936437546193; Accuracy 0.9363636363636364
+
+2024-12-22 20:22:38.276 | INFO     | __main__:evaluate:423 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-22 20:22:38.280 | INFO     | __main__:evaluate:423 - gender bias: Macro F1 0.47368421052631576; Micro F1 0.9473684210526315; Accuracy 0.9
+
+2024-12-22 20:22:38.281 | SUCCESS  | __main__:evaluate:436 - Evaluation done.
+2024-12-22 20:22:50.486 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:22:53.956 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:22:59.178 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:23:02.687 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:23:09.711 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:23:09.711 | INFO     | __main__:annotate:359 - Batch annotated - idx 110:120
+2024-12-22 20:23:11.441 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:23:16.721 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:23:23.708 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:23:25.451 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:23:28.941 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:23:34.205 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:23:37.700 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:23:39.447 | INFO     | __main__:annotate:359 - Batch annotated - idx 120:130
+2024-12-22 20:23:44.648 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:23:46.399 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:23:49.889 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.5
+2024-12-22 20:23:55.106 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:23:56.842 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:24:00.348 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:24:07.298 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:24:09.049 | INFO     | __main__:annotate:359 - Batch annotated - idx 130:140
+2024-12-22 20:24:17.747 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:24:19.479 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:24:24.721 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-22 20:24:28.167 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:24:38.647 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-22 20:24:40.402 | INFO     | __main__:annotate:359 - Batch annotated - idx 140:150
+2024-12-22 20:24:45.649 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:24:50.881 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:24:52.635 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:24:54.400 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:24:56.156 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:24:57.900 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:25:04.867 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3
+2024-12-22 20:25:04.867 | INFO     | __main__:annotate:359 - Batch annotated - idx 150:160
+2024-12-22 20:25:06.615 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:25:10.095 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:25:13.551 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:25:17.059 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-22 20:25:20.553 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.5
+2024-12-22 20:25:29.266 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:25:36.210 | INFO     | __main__:annotate:359 - Batch annotated - idx 160:170
+2024-12-22 20:25:37.981 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:25:48.371 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:25:50.114 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:25:53.542 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:26:02.264 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:26:03.990 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:26:03.990 | INFO     | __main__:annotate:359 - Batch annotated - idx 170:180
+2024-12-22 20:26:05.734 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:26:07.467 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:26:10.965 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:26:14.465 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:26:16.214 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:26:19.748 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:26:30.180 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:26:33.634 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:26:35.333 | INFO     | __main__:annotate:359 - Batch annotated - idx 180:190
+2024-12-22 20:26:37.092 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:26:42.349 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:26:44.195 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.5
+2024-12-22 20:26:45.946 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:26:49.447 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:26:59.936 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3
+2024-12-22 20:27:03.441 | INFO     | __main__:annotate:359 - Batch annotated - idx 190:200
+2024-12-22 20:27:05.165 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:27:08.734 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:27:10.470 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-22 20:27:17.469 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:27:24.536 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3
+2024-12-22 20:27:26.302 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:27:29.699 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:27:33.168 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:27:34.887 | INFO     | __main__:annotate:359 - Batch annotated - idx 200:210
+2024-12-22 20:27:34.887 | INFO     | __main__:evaluate:402 - Evaluation started; current human judgement66: ['ktuet1g', 'kutwa6d', 'kqp4j7m', 'kuqre03', 'kw0xdg2', 'ku6tpkp', 'kv9j9gw', 'kvbmxga', 'krrqz7p', 'ku3o43b', 'kt1kz1o', 'ktkcmbq', 'kub94e8', 'kv3tep5', 'kv9dh0h', 'ktri8o6', 'kuta0pt', 'ktf9uo3', 'ktedq66', 'ktv8bzu', 'krwgeu1', 'kqw4s4o', 'krd9yg8', 'ktem8i1', 'kusbz8r', 'kv76hkj', 'kv9sgl7', 'kt973xs', 'kreh6r5', 'ktlevw7', 'kv37h27', 'ku5edzz', 'krcazwq', 'kuayt5n', 'kstcn4d', 'kv2g8lw', 'kru6yep', 'kuyfsno', 'kv1lxp4', 'ks9nqmt', 'ktmk7xt', 'kuxv76s', 'krp213g', 'kr0l9gw', 'kt43x4b', 'ks9wqku', 'krdn8q2', 'kuum6xy', 'ktppxj9', 'ktbmsur', 'ktsliqw', 'ksxpwsj', 'kskm0rq', 'krh00v8', 'ksckiea', 'kr8v34x', 'ksdgxg7', 'ku8vcni', 'kuq9m8o', 'ku9905x', 'kuoqia4', 'kv6xrwg', 'krtkns8', 'kr30i8a', 'kvxvhuk', 'ks8ymlg']
+2024-12-22 20:27:34.892 | INFO     | __main__:evaluate:423 - hate speech: Macro F1 0.4852941176470588; Micro F1 0.9705882352941176; Accuracy 0.9428571428571428
+
+2024-12-22 20:27:34.896 | INFO     | __main__:evaluate:423 - linguistic bias: Macro F1 0.6259109311740891; Micro F1 0.7722382880277617; Accuracy 0.7380952380952381
+
+2024-12-22 20:27:34.901 | INFO     | __main__:evaluate:423 - text-level context bias: Macro F1 0.5238095238095238; Micro F1 0.7795918367346939; Accuracy 0.6952380952380952
+
+2024-12-22 20:27:34.905 | INFO     | __main__:evaluate:423 - political bias: Macro F1 0.7660759493670886; Micro F1 0.9564508740204942; Accuracy 0.9476190476190476
+
+2024-12-22 20:27:34.909 | INFO     | __main__:evaluate:423 - racial bias: Macro F1 0.8987951807228916; Micro F1 0.9957085484796329; Accuracy 0.9952380952380953
+
+2024-12-22 20:27:34.913 | INFO     | __main__:evaluate:423 - gender bias: Macro F1 0.46835443037974683; Micro F1 0.9367088607594937; Accuracy 0.8809523809523809
+
+2024-12-22 20:27:34.913 | SUCCESS  | __main__:evaluate:436 - Evaluation done.
+2024-12-22 20:27:36.647 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:27:41.858 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:27:43.607 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:27:47.083 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:27:50.592 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:28:01.360 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:28:04.849 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:28:06.578 | INFO     | __main__:annotate:359 - Batch annotated - idx 210:220
+2024-12-22 20:28:18.822 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:28:27.482 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:28:31.017 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:28:37.985 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:28:39.704 | INFO     | __main__:annotate:359 - Batch annotated - idx 220:230
+2024-12-22 20:28:44.963 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:28:46.701 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:28:55.428 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:29:00.647 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:29:04.132 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:29:07.605 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:29:07.605 | INFO     | __main__:annotate:359 - Batch annotated - idx 230:240
+2024-12-22 20:29:12.826 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:29:14.563 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-22 20:29:16.316 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:29:19.756 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:29:23.270 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:29:26.751 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:29:30.238 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:29:33.741 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3
+2024-12-22 20:29:35.492 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3
+2024-12-22 20:29:35.492 | INFO     | __main__:annotate:359 - Batch annotated - idx 240:250
+2024-12-22 20:29:37.277 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:29:40.755 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:29:42.492 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:29:45.987 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:29:47.711 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:29:52.965 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3
+2024-12-22 20:30:01.619 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:30:01.619 | INFO     | __main__:annotate:359 - Batch annotated - idx 250:260
+2024-12-22 20:30:03.355 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:30:06.822 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:30:12.076 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:30:13.841 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:30:15.598 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3
+2024-12-22 20:30:17.336 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:30:19.073 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:30:20.848 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:30:24.324 | INFO     | __main__:annotate:359 - Batch annotated - idx 260:270
+2024-12-22 20:30:29.800 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-22 20:30:33.228 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-22 20:30:34.946 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.2
+2024-12-22 20:30:48.719 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-22 20:30:55.587 | INFO     | __main__:annotate:359 - Batch annotated - idx 270:280
+2024-12-22 20:30:57.314 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.3

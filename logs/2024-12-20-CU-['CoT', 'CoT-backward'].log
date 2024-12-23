@@ -1,0 +1,710 @@
+2024-12-20 20:46:35.333 | INFO     | __main__:<module>:500 - Pipeline started with args: Namespace(model='gpt-4o-mini', api_key='../api_key.txt', strategies=['CoT', 'CoT-backward'], dynamic_context=True, max_retries=10, seed=42, eval_path='~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv', batch_size=10, context_path='./ref_samples.json', output_path='./save/', note='Development run')
+2024-12-20 20:46:35.341 | INFO     | __main__:load_data:58 - Loading data from ~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv
+2024-12-20 20:46:35.341 | INFO     | __main__:load_data:59 - Columns: ['Unnamed: 0', 'id', 'textDisplay', 'publishedAt', 'parentId', 'parentType', 'hate speech', 'linguistic bias', 'text-level context bias', 'political bias', 'gender bias', 'racial bias', 'domain']
+2024-12-20 20:46:35.341 | INFO     | __main__:load_data:60 - Shape: (1998, 13)
+2024-12-20 20:46:35.376 | DEBUG    | __main__:__init__:98 - Confidence check True
+2024-12-20 20:46:35.384 | INFO     | __main__:annotate:305 - Loaded context examples at ./ref_samples.json
+2024-12-20 20:46:35.385 | INFO     | __main__:annotate:306 - Starting annotation...
+2024-12-20 20:46:51.158 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:47:07.772 | INFO     | __main__:annotate:359 - Batch annotated - idx 0:10
+2024-12-20 20:47:16.258 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:47:21.114 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:47:23.834 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:47:39.805 | INFO     | __main__:annotate:359 - Batch annotated - idx 10:20
+2024-12-20 20:47:49.235 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 20:47:56.452 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 20:48:05.169 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:48:08.614 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 20:48:13.548 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:48:13.548 | INFO     | __main__:annotate:359 - Batch annotated - idx 20:30
+2024-12-20 20:48:14.817 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:48:16.159 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 20:48:26.388 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:48:31.452 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 20:48:35.169 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 20:48:48.451 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 20:48:49.517 | INFO     | __main__:annotate:359 - Batch annotated - idx 30:40
+2024-12-20 20:49:05.509 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.4
+2024-12-20 20:49:13.837 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:49:17.564 | INFO     | __main__:annotate:359 - Batch annotated - idx 40:50
+2024-12-20 20:49:24.937 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:49:48.503 | INFO     | __main__:annotate:359 - Batch annotated - idx 50:60
+2024-12-20 20:49:54.798 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:50:08.525 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:50:14.208 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:50:19.966 | INFO     | __main__:annotate:359 - Batch annotated - idx 60:70
+2024-12-20 20:50:27.082 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:50:28.335 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.7
+2024-12-20 20:50:43.688 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:50:50.126 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:50:50.126 | INFO     | __main__:annotate:359 - Batch annotated - idx 70:80
+2024-12-20 20:50:51.572 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:50:56.933 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:50:58.037 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 20:51:05.846 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:51:09.941 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 20:51:23.566 | INFO     | __main__:annotate:359 - Batch annotated - idx 80:90
+2024-12-20 20:51:51.349 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:51:51.349 | INFO     | __main__:annotate:359 - Batch annotated - idx 90:100
+2024-12-20 20:52:09.936 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 20:52:17.316 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:52:21.915 | INFO     | __main__:annotate:359 - Batch annotated - idx 100:110
+2024-12-20 20:52:21.915 | INFO     | __main__:evaluate:391 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ku9487n', 'kwa84je', 'kuotbev', 'kw9ppdw', 'ktem8i1', 'ktku1zl', 'ks6jw5n', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ktw2xtc', 'ktd1tw7', 'ksv0pyy']
+2024-12-20 20:52:21.922 | INFO     | __main__:evaluate:412 - hate speech: Macro F1 0.4835680751173709; Micro F1 0.9583440034144259; Accuracy 0.9363636363636364
+
+2024-12-20 20:52:21.928 | INFO     | __main__:evaluate:412 - linguistic bias: Macro F1 0.781919111816019; Micro F1 0.8969793093504435; Accuracy 0.9090909090909091
+
+2024-12-20 20:52:21.933 | INFO     | __main__:evaluate:412 - text-level context bias: Macro F1 0.757975797579758; Micro F1 0.9346334633463346; Accuracy 0.9272727272727272
+
+2024-12-20 20:52:21.940 | INFO     | __main__:evaluate:412 - political bias: Macro F1 0.7607655502392344; Micro F1 0.9565028273162245; Accuracy 0.9545454545454546
+
+2024-12-20 20:52:21.947 | INFO     | __main__:evaluate:412 - racial bias: Macro F1 0.4977168949771689; Micro F1 0.9954337899543378; Accuracy 0.990909090909091
+
+2024-12-20 20:52:21.951 | INFO     | __main__:evaluate:412 - gender bias: Macro F1 0.8310291858678955; Micro F1 0.9924032956291021; Accuracy 0.990909090909091
+
+2024-12-20 20:52:21.951 | INFO     | __main__:evaluate:415 - Reflecting on mistakes...
+2024-12-20 20:52:33.570 | ERROR    | __main__:annotate:371 - An error has been caught in function 'annotate', process 'MainProcess' (2619273), thread 'MainThread' (139988930339456):
+Traceback (most recent call last):
+
+  File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 517, in <module>
+    asyncio.run(pipeline.annotate(sample_num=1000))
+    │       │   │        └ <function Pipeline.annotate at 0x7f50b8db0cc0>
+    │       │   └ <__main__.Pipeline object at 0x7f50b8ce5fd0>
+    │       └ <function run at 0x7f51b5859ee0>
+    └ <module 'asyncio' from '/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/__init__.py'>
+
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Pipeline.annotate at 0x7f50b8cc2140>
+           │      └ <function Runner.run at 0x7f51b5918400>
+           └ <asyncio.runners.Runner object at 0x7f50b8ce6ba0>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Pipeline.annotate() running at /home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7f51b5915f80>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7f50b8ce6ba0>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 707, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f51b5915ee0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 678, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f51b5917ce0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 2033, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f51b5a56d40>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7f50b81fcac0>()>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7f50b81fcac0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7f50b81fcac0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7f50b81fcac0>()>
+
+> File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 371, in annotate
+    context = await self.evaluate(
+                    │    └ <function Pipeline.evaluate at 0x7f50b8db1080>
+                    └ <__main__.Pipeline object at 0x7f50b8ce5fd0>
+
+  File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 416, in evaluate
+    reflection = await self.contextual_expert.run(
+                       │    │                 └ <function Agent.run at 0x7f50b93d36a0>
+                       │    └ Agent(model=OpenAIModel(model_name='gpt-4o-mini'), name=None, last_run_messages=[SystemPrompt(content='\n                # Ta...
+                       └ <__main__.Pipeline object at 0x7f50b8ce5fd0>
+
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/pydantic_ai/agent.py", line 209, in run
+    model_response, request_cost = await agent_model.request(messages)
+    │                                    │           │       └ [SystemPrompt(content='\n                # Task: Reflection on Mistake Annotations\n                You are a reflective anno...
+    │                                    │           └ <function OpenAIAgentModel.request at 0x7f50b8d4c5e0>
+    │                                    └ OpenAIAgentModel(client=<openai.AsyncOpenAI object at 0x7f50b8e1e510>, model_name='gpt-4o-mini', allow_text_result=False, too...
+    └ ModelStructuredResponse(calls=[ToolCall(tool_name='final_result', args=ArgsJson(args_json='{"HateSpeech": "Example: ESPN bein...
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/pydantic_ai/models/openai.py", line 139, in request
+    response = await self._completions_create(messages, False)
+                     │    │                   └ [SystemPrompt(content='\n                # Task: Reflection on Mistake Annotations\n                You are a reflective anno...
+                     │    └ <function OpenAIAgentModel._completions_create at 0x7f50b8d4cae0>
+                     └ OpenAIAgentModel(client=<openai.AsyncOpenAI object at 0x7f50b8e1e510>, model_name='gpt-4o-mini', allow_text_result=False, too...
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/pydantic_ai/models/openai.py", line 170, in _completions_create
+    return await self.client.chat.completions.create(
+                 │    │      │    │           └ <function AsyncCompletions.create at 0x7f50b8e90c20>
+                 │    │      │    └ <openai.resources.chat.completions.AsyncCompletions object at 0x7f50b8b402f0>
+                 │    │      └ <openai.resources.chat.chat.AsyncChat object at 0x7f50b8e1ee40>
+                 │    └ <openai.AsyncOpenAI object at 0x7f50b8e1e510>
+                 └ OpenAIAgentModel(client=<openai.AsyncOpenAI object at 0x7f50b8e1e510>, model_name='gpt-4o-mini', allow_text_result=False, too...
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/openai/resources/chat/completions.py", line 1661, in create
+    return await self._post(
+                 │    └ <bound method AsyncAPIClient.post of <openai.AsyncOpenAI object at 0x7f50b8e1e510>>
+                 └ <openai.resources.chat.completions.AsyncCompletions object at 0x7f50b8b402f0>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/openai/_base_client.py", line 1843, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+                 │    │       │        │            │                  └ openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+                 │    │       │        │            └ False
+                 │    │       │        └ FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeout=NOT_...
+                 │    │       └ <class 'openai.types.chat.chat_completion.ChatCompletion'>
+                 │    └ <function AsyncAPIClient.request at 0x7f50b9119f80>
+                 └ <openai.AsyncOpenAI object at 0x7f50b8e1e510>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/openai/_base_client.py", line 1537, in request
+    return await self._request(
+                 │    └ <function AsyncAPIClient._request at 0x7f50b911a020>
+                 └ <openai.AsyncOpenAI object at 0x7f50b8e1e510>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/openai/_base_client.py", line 1638, in _request
+    raise self._make_status_error_from_response(err.response) from None
+          │    └ <function BaseClient._make_status_error_from_response at 0x7f50b9113100>
+          └ <openai.AsyncOpenAI object at 0x7f50b8e1e510>
+
+openai.BadRequestError: Error code: 400 - {'error': {'message': "An assistant message with 'tool_calls' must be followed by tool messages responding to each 'tool_call_id'. The following tool_call_ids did not have response messages: call_pPO7Sj3mhizJfvnExyQUMnqr", 'type': 'invalid_request_error', 'param': 'messages', 'code': None}}
+2024-12-20 20:52:42.552 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:52:48.147 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:53:02.448 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:53:02.449 | INFO     | __main__:annotate:359 - Batch annotated - idx 110:120
+2024-12-20 20:53:25.779 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:53:31.000 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:53:37.178 | INFO     | __main__:annotate:359 - Batch annotated - idx 120:130
+2024-12-20 20:53:48.778 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:53:58.932 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:54:01.049 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:54:15.380 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.4
+2024-12-20 20:54:18.016 | INFO     | __main__:annotate:359 - Batch annotated - idx 130:140
+2024-12-20 20:54:41.225 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:54:46.460 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:54:48.065 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:54:48.065 | INFO     | __main__:annotate:359 - Batch annotated - idx 140:150
+2024-12-20 20:54:49.219 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:54:53.152 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:55:20.752 | INFO     | __main__:annotate:359 - Batch annotated - idx 150:160
+2024-12-20 20:55:32.639 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 20:55:41.354 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 20:55:44.493 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:55:49.468 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:55:49.468 | INFO     | __main__:annotate:359 - Batch annotated - idx 160:170
+2024-12-20 20:55:53.541 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.4
+2024-12-20 20:55:57.393 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:56:19.997 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:56:19.997 | INFO     | __main__:annotate:359 - Batch annotated - idx 170:180
+2024-12-20 20:56:30.494 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:56:52.932 | INFO     | __main__:annotate:359 - Batch annotated - idx 180:190
+2024-12-20 20:56:58.041 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:57:02.534 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:57:11.578 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:57:17.733 | INFO     | __main__:annotate:359 - Batch annotated - idx 190:200
+2024-12-20 20:57:19.235 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:57:35.614 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:57:43.346 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:57:45.815 | INFO     | __main__:annotate:359 - Batch annotated - idx 200:210
+2024-12-20 20:57:45.815 | INFO     | __main__:evaluate:391 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ku9487n', 'kwa84je', 'kuotbev', 'kw9ppdw', 'ktem8i1', 'ktku1zl', 'ks6jw5n', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ktw2xtc', 'ktd1tw7', 'ksv0pyy', 'ksfmpjz', 'ksrpsqm', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'ku8sqs8', 'ktbrco2', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kt3j1yq', 'kt3n8nr', 'kvntswa', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktob0qc', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksctfck', 'kvo8j6d']
+2024-12-20 20:57:45.820 | INFO     | __main__:evaluate:412 - hate speech: Macro F1 0.6427896427896428; Micro F1 0.9683127683127684; Accuracy 0.9571428571428572
+
+2024-12-20 20:57:45.824 | INFO     | __main__:evaluate:412 - linguistic bias: Macro F1 0.8133333333333332; Micro F1 0.9194920634920635; Accuracy 0.9285714285714286
+
+2024-12-20 20:57:45.828 | INFO     | __main__:evaluate:412 - text-level context bias: Macro F1 0.7846153846153846; Micro F1 0.9463736263736263; Accuracy 0.9428571428571428
+
+2024-12-20 20:57:45.832 | INFO     | __main__:evaluate:412 - political bias: Macro F1 0.8674242424242424; Micro F1 0.9714285714285714; Accuracy 0.9714285714285714
+
+2024-12-20 20:57:45.836 | INFO     | __main__:evaluate:412 - racial bias: Macro F1 0.8321342925659472; Micro F1 0.9960260363138062; Accuracy 0.9952380952380953
+
+2024-12-20 20:57:45.840 | INFO     | __main__:evaluate:412 - gender bias: Macro F1 0.8725728155339806; Micro F1 0.9904761904761905; Accuracy 0.9904761904761905
+
+2024-12-20 20:57:45.840 | INFO     | __main__:evaluate:415 - Reflecting on mistakes...
+2024-12-20 20:58:06.204 | DEBUG    | __main__:evaluate:424 - Context(HateSpeech='', LinguisticBias='Example: \'He supports Black Trump?! What an asshole\' This annotation reflects linguistic bias through derogatory language aimed at individuals based on their political support, showcasing an emotional and negative connotation. The mistake here is failing to acknowledge the broader implications of degrading language in political discourse. A more nuanced approach to identifying such biases could involve analyzing the underlying motives and social dynamics related to the individuals mentioned. Example: \'What a fucking douche nozzle\' This is another instance where the choice of aggressive language embodies linguistic bias. Recognizing the toxic standard of lexical choices in discussions can help prevent the misclassification of such instances. The root of the error is a potential oversight of the damaging impact of these expressions. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' This annotation mistakes hyperbolic expressions of anger as normal discourse. A focus on the implications of violent language could help contextualize the biases present in such statements. Example: \'Yes because Donald Trump is awful. I’d vote for a sentient potato over Trump.\' The hyperbolic comparison solidifies a strong linguistic bias focused on derogation. The error lies in not recognizing how such stark comparisons shape views against an individual or group. Example: \'Are you afraid to fuck with someone in the room?\' This represents a potential linguistic bias embedded within confrontational dialogue, highlighting the need for careful evaluation of context in tense discussions. Example: "Am I the only one that finds all the emojis in posts like these unprofessional? My business writing professor would’ve had an aneurism if we wrote something like this." This commentary reflects linguistic bias by enforcing a strict standard of professionalism, potentially marginalizing perspectives that utilize different forms of written expression, such as emojis. Mistakes here stem from not assessing the cultural dynamics at play. Example: "I genuinely want to see Biden win and to see Trump lose. I like what Biden\'s been doing and Trump\'s a dumbass that I don\'t want to see in the white house again." This statement is laden with informal yet derogatory language that reveals considerable linguistic bias. An error could arise from interpreting personal political expression as neutral dialogue, thus underestimating the emotional charge present.', TextLevelContextBias='Example: \'Honestly? I honestly hope intel will make a top end competitor....\' While the author expresses personal wishes tied to technological competition, the reflection is on a specific individual’s desire, with little context leading to bias. The mistake is overly narrowing the focus without accounting for broader implications on industry competition narratives. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' this reflects a complete lack of professionalism in the narrative, reinforcing a polarized view without exploring constructive critiques. The error here revolves around the perceived narrative focus that allows extreme language to overshadow other constructive discussions. Example: "I genuinely want to see Biden win and see Trump lose...." this personal view shapes a political narrative that heavily favors one side, exemplifying a lack of balance in representing varying political opinions. The underlying error is a selective presentation of political sentiments that builds a skewed view of broader discourse.', PoliticalBias="Example: 'He supports Black Trump?! What an asshole' This statement showcases political bias, potentially misclassifying emotional reactions as standard discourse, thereby neglecting the socio-political implications of such a statement. Recognizing the distortions that arise from personal attacks can refine future evaluations of political bias. Example: 'Hope he does ranked ballots before he leaves....' This comment expresses a desire reflecting political bias without contextualizing the implications of electoral systems. Errors can occur from overlooking the context of electoral promises and their impacts on public perception. Example: 'It's looking like Dean Phillips and None of the Above may get a delegate or two...' This presentation of political dynamics might suggest bias based on the framing of candidates. Mistakes can arise from not adequately assessing the subtle bias in how candidates are referenced or discussed.", RacialBias='', GenderBias='Example: "On the heels front, I\'ve also noticed that it\'s becoming a lot less common for women to wear high heels to work since returning to the office...." This reflection hints at gender bias by perpetuating norms about women\'s professional attire, thus missing a broader discourse on workplace diversity. The error lies in the singular focus on women\'s aesthetic choices that encompass wide-reaching implications for gender representation in professional settings.')
+2024-12-20 20:58:06.204 | SUCCESS  | __main__:evaluate:425 - Evaluation done.
+2024-12-20 20:58:19.476 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 20:58:20.942 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:58:31.544 | INFO     | __main__:annotate:359 - Batch annotated - idx 210:220
+2024-12-20 20:58:49.376 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 20:58:54.475 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 20:59:05.166 | INFO     | __main__:annotate:359 - Batch annotated - idx 220:230
+2024-12-20 20:59:09.647 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:59:24.437 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:59:30.937 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:59:37.852 | INFO     | __main__:annotate:359 - Batch annotated - idx 230:240
+2024-12-20 20:59:39.498 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 20:59:45.748 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:00:04.804 | INFO     | __main__:annotate:359 - Batch annotated - idx 240:250
+2024-12-20 21:00:18.477 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:00:22.612 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.7
+2024-12-20 21:00:33.099 | INFO     | __main__:annotate:359 - Batch annotated - idx 250:260
+2024-12-20 21:00:37.017 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:00:48.702 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:00:58.009 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:01:05.410 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:01:09.608 | INFO     | __main__:annotate:359 - Batch annotated - idx 260:270
+2024-12-20 21:01:22.915 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:01:33.130 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:01:38.018 | INFO     | __main__:annotate:359 - Batch annotated - idx 270:280
+2024-12-20 21:01:44.718 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:01:56.946 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:02:03.137 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:02:03.137 | INFO     | __main__:annotate:359 - Batch annotated - idx 280:290
+2024-12-20 21:02:10.957 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6000000000000001
+2024-12-20 21:02:13.601 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:02:14.875 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:02:23.539 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:02:25.832 | INFO     | __main__:annotate:359 - Batch annotated - idx 290:300
+2024-12-20 21:02:29.696 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:02:51.498 | INFO     | __main__:annotate:359 - Batch annotated - idx 300:310
+2024-12-20 21:02:51.499 | INFO     | __main__:evaluate:391 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ku9487n', 'kwa84je', 'kuotbev', 'kw9ppdw', 'ktem8i1', 'ktku1zl', 'ks6jw5n', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ktw2xtc', 'ktd1tw7', 'ksv0pyy', 'ksfmpjz', 'ksrpsqm', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'ku8sqs8', 'ktbrco2', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kt3j1yq', 'kt3n8nr', 'kvntswa', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktob0qc', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksctfck', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kwmy2ie', 'kvc6quv', 'kth2ku9', 'kvcddx8', 'ktdr3bs', 'ktdvhe3', 'kv7nhjr', 'kv35qnu', 'kt5ovvt', 'kwyp9wz', 'krg3asx', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'krce91p']
+2024-12-20 21:02:51.504 | INFO     | __main__:evaluate:412 - hate speech: Macro F1 0.6242424242424243; Micro F1 0.9748973607038124; Accuracy 0.964516129032258
+
+2024-12-20 21:02:51.508 | INFO     | __main__:evaluate:412 - linguistic bias: Macro F1 0.825565749235474; Micro F1 0.917701884186643; Accuracy 0.9258064516129032
+
+2024-12-20 21:02:51.512 | INFO     | __main__:evaluate:412 - text-level context bias: Macro F1 0.7963285024154589; Micro F1 0.9490927224559762; Accuracy 0.9451612903225807
+
+2024-12-20 21:02:51.515 | INFO     | __main__:evaluate:412 - political bias: Macro F1 0.9021464646464648; Micro F1 0.974735255783643; Accuracy 0.9741935483870968
+
+2024-12-20 21:02:51.520 | INFO     | __main__:evaluate:412 - racial bias: Macro F1 0.8325229605618585; Micro F1 0.9973092138512749; Accuracy 0.9967741935483871
+
+2024-12-20 21:02:51.526 | INFO     | __main__:evaluate:412 - gender bias: Macro F1 0.898360655737705; Micro F1 0.9935483870967742; Accuracy 0.9935483870967742
+
+2024-12-20 21:02:51.526 | INFO     | __main__:evaluate:415 - Reflecting on mistakes...
+2024-12-20 21:03:06.961 | DEBUG    | __main__:evaluate:424 - Context(HateSpeech='', LinguisticBias='Example: \'He supports Black Trump?! What an asshole\' This annotation reflects linguistic bias through derogatory language aimed at individuals based on their political support. The mistake here is failing to acknowledge the broader implications of degrading language in political discourse, which could have been recognized by evaluating the emotional weight of expressions. Example: \'What a fucking douche nozzle\' This is another instance of aggressive language embodying linguistic bias. The root of the error is a potential oversight of the damaging impact of such lexical choices in discussions. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' This annotation mistakes hyperbolic expression of anger as normal discourse. A focus on the implications of violent language could help contextualize the biases present. Example: \'Yes because Donald Trump is awful. I’d vote for a sentient potato over Trump.\' Hyperbolic comparisons solidify strong linguistic bias and the error lies in interpreting personal political expression as neutral dialogue, underestimating the emotional charge. Example: "Am I the only one that finds all the emojis in posts like these unprofessional? My business writing professor would’ve had an aneurism if we wrote something like this." This commentary enforces a strict standard of professionalism, marginalizing perspectives that utilize different forms of written expression. Mistakes stem from not assessing the cultural dynamics at play. Example: "I genuinely want to see Biden win and Trump lose...." This statement is laden with informal yet derogatory language that reveals considerable linguistic bias. An error could arise from interpreting this expression as neutral dialogue, thus overlooking emotional intensity and bias. Example: \'Bummed Youssef did so poorly.\' This statements reflects a personal disappointment without acknowledging broader implications of individual performance within a group setting, leading to the potential oversight of contextual bias. Example: \'Y’all think we getting a tribe swap next episode?...\' Though casual, this comment reflects a specific expectation of entertainment that steers the discourse towards triviality, showcasing a potential linguistic bias that overlooks broader narrative crafting in reality television. Example: "Only 87.8%??? Damn he’s getting weak /j" The informal tone reflects a casual dismissal of performance expectations, which could be misclassified if the context of sarcasm isn\'t fully appreciated. Example: \'It would be the gag of the century if Tim fucking wins...\' This statement blends formal expectation with informal bias, demonstrating how emotional expressions can inadvertently create divisive narratives. The underlying error is failing to recognize the power dynamics at play in public support or critique. Example: \'Looks like the results won’t technically be official til May...\' While it presents information, it could misinterpret the excitement of a political process against the realities of voter turnout, reflecting a restricted context awareness.', TextLevelContextBias='Example: \'Honestly? I honestly hope intel will make a top end competitor....\' While the author expresses personal wishes related to tech competition, the reflection focuses narrowly without capturing broader implications on the industry\'s competitive landscape. The error is in not recognizing the overarching context of consumer attitudes towards tech innovation. Example: \'Yeah we should turn you to ash...\' This reflects a complete lack of professionalism in the narrative, reinforcing a polarized view without exploring constructive critiques. The error here revolves around perceived narrative focus that allows extreme language to overshadow other discussions. Example: "I genuinely want to see Biden win..." This personal expression creates a political narrative heavily favoring one side, and the underlying error is a selective representation of political sentiment that builds a skewed view of discussions. Example: \'Am I the only one that finds all the emojis...\' highlights a cultural bias that detracts from a more inclusive discourse on communication norms. Understanding the contextual dynamics of modern communication can prevent misinterpretation of biases. Example: \'Looks like the results won’t technically be official til May...\' This comment, while informative, suggests a biased framing around political processes, potentially overshadowing nuances important to civic engagement narratives.', PoliticalBias="Example: 'He supports Black Trump?! What an asshole' showcases political bias and misclassifies emotional reactions as standard discourse, neglecting the socio-political implications present. Future evaluations could benefit from understanding the impact of derogatory sentiments on political dialogue. Example: 'Hope he does ranked ballots before he leaves....' This comment expresses specific desires reflecting political bias and overlooks broader implications of electoral system discussions. Recognizing the importance of maintaining balance in political opinion expression could mitigate misinterpretations. Example: 'Looks like Dean Phillips...' This statement presents political dynamics that may suggest bias based on framing candidates, and mistakes may too easily arise from overlooking subtle biases in candidate representation.", RacialBias='', GenderBias='Example: "On the heels front, I\'ve also noticed that it\'s becoming a lot less common for women to wear high heels..." This reflection hints at gender bias and perpetuates aesthetic norms regarding women\'s professional attire, which could be misclassified if underlying implications about gender roles in professional spaces aren\'t adequately considered.')
+2024-12-20 21:03:06.962 | SUCCESS  | __main__:evaluate:425 - Evaluation done.
+2024-12-20 21:03:08.696 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:03:30.053 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.39999999999999997
+2024-12-20 21:03:39.929 | INFO     | __main__:annotate:359 - Batch annotated - idx 310:320
+2024-12-20 21:03:55.107 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:04:01.259 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:04:10.974 | INFO     | __main__:annotate:359 - Batch annotated - idx 320:330
+2024-12-20 21:04:19.240 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:04:26.441 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:04:36.137 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:04:45.802 | INFO     | __main__:annotate:359 - Batch annotated - idx 330:340
+2024-12-20 21:04:57.256 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:05:01.382 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:05:12.770 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:05:15.236 | INFO     | __main__:annotate:359 - Batch annotated - idx 340:350
+2024-12-20 21:05:16.699 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:05:22.920 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:05:24.453 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:05:35.666 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:05:47.474 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:05:47.474 | INFO     | __main__:annotate:359 - Batch annotated - idx 350:360
+2024-12-20 21:05:51.798 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 21:05:54.283 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:06:01.624 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:06:05.579 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:06:14.735 | INFO     | __main__:annotate:359 - Batch annotated - idx 360:370
+2024-12-20 21:06:16.121 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.49999999999999994
+2024-12-20 21:06:22.767 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:06:27.187 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:06:28.462 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:06:33.590 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:06:35.067 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.4
+2024-12-20 21:06:38.041 | INFO     | __main__:annotate:359 - Batch annotated - idx 370:380
+2024-12-20 21:06:41.688 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:06:43.153 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.29999999999999993
+2024-12-20 21:06:49.921 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:06:51.673 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:06:57.791 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:07:02.206 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:07:08.495 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:07:10.419 | INFO     | __main__:annotate:359 - Batch annotated - idx 380:390
+2024-12-20 21:07:12.885 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:07:25.734 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:07:27.264 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 21:07:30.078 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:07:35.020 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 21:07:37.360 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:07:41.478 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.7
+2024-12-20 21:07:41.479 | INFO     | __main__:annotate:359 - Batch annotated - idx 390:400
+2024-12-20 21:08:12.371 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:08:24.383 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:08:25.096 | INFO     | __main__:annotate:359 - Batch annotated - idx 400:410
+2024-12-20 21:08:25.097 | INFO     | __main__:evaluate:391 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ku9487n', 'kwa84je', 'kuotbev', 'kw9ppdw', 'ktem8i1', 'ktku1zl', 'ks6jw5n', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ktw2xtc', 'ktd1tw7', 'ksv0pyy', 'ksfmpjz', 'ksrpsqm', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'ku8sqs8', 'ktbrco2', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kt3j1yq', 'kt3n8nr', 'kvntswa', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktob0qc', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksctfck', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kwmy2ie', 'kvc6quv', 'kth2ku9', 'kvcddx8', 'ktdr3bs', 'ktdvhe3', 'kv7nhjr', 'kv35qnu', 'kt5ovvt', 'kwyp9wz', 'krg3asx', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'krce91p', 'kwkckkj', 'kt6txuq', 'ksxauop', 'kvelhst', 'krrus1f', 'kuwq9zw', 'kuar7b4', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ktiw39j', 'kvaqmly', 'kwnnnqw', 'kthpmj5', 'kvpv962', 'kurchxh', 'kuxfd9c', 'krtqzsw', 'ktia4kr', 'kt2a4l3', 'kwf6071', 'kuf3py2', 'kte3g5k']
+2024-12-20 21:08:25.104 | INFO     | __main__:evaluate:412 - hate speech: Macro F1 0.682341021514989; Micro F1 0.9763787196248506; Accuracy 0.9682926829268292
+
+2024-12-20 21:08:25.110 | INFO     | __main__:evaluate:412 - linguistic bias: Macro F1 0.8042555387811456; Micro F1 0.8988905915072389; Accuracy 0.9097560975609756
+
+2024-12-20 21:08:25.115 | INFO     | __main__:evaluate:412 - text-level context bias: Macro F1 0.7786129290049462; Micro F1 0.9431610754907525; Accuracy 0.9390243902439024
+
+2024-12-20 21:08:25.121 | INFO     | __main__:evaluate:412 - political bias: Macro F1 0.9025896887621763; Micro F1 0.9737774455435217; Accuracy 0.973170731707317
+
+2024-12-20 21:08:25.125 | INFO     | __main__:evaluate:412 - racial bias: Macro F1 0.8327213382292942; Micro F1 0.9979659870038114; Accuracy 0.9975609756097561
+
+2024-12-20 21:08:25.129 | INFO     | __main__:evaluate:412 - gender bias: Macro F1 0.9154290429042904; Micro F1 0.9951219512195122; Accuracy 0.9951219512195122
+
+2024-12-20 21:08:25.129 | INFO     | __main__:evaluate:415 - Reflecting on mistakes...
+2024-12-20 21:08:38.755 | DEBUG    | __main__:evaluate:424 - Context(HateSpeech='', LinguisticBias='Example: \'He supports Black Trump?! What an asshole\' This annotation reflects linguistic bias through the use of derogatory language against a political figure, which reveals an emotional and negative response rather than constructive dialogue. The mistake here stems from failure to assess the implications of such language in shaping public opinions. Example: \'What a fucking douche nozzle\' represents another example of aggressive language indicative of linguistic bias. The error arises from not recognizing how this choice of words can perpetuate hostility and exclusion in discussions. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' This hyperbolic expression blurs the line between intense disagreement and violent language, demonstrating an oversight in evaluating the language\'s impact on the discourse. Example: \'Yes because Donald Trump is awful. I’d vote for a sentient potato over Trump.\' This exaggerated comparison serves to heighten the emotional tension in discussions, which can lead to misclassification if the vague boundary between humor and disdain is not clearly recognized. Example: "Am I the only one that finds all the emojis in posts like these unprofessional?..." This delineates a perspective that could marginalize varying communication styles, indicating linguistic bias by enforcing rigid standards of professionalism, thereby overlooking the significance of diverse expression forms. Example: "I genuinely want to see Biden win and see Trump lose...." The clear bias against Trump through the use of insult rather than reasoned critique indicates a significant linguistic bias present within the statement. The error includes not recognizing emotional bias depicted within political dialogues. Example: \'Bummed Youssef did so poorly.\' This reflects a natural disappointment without addressing the broader implications of individual performance within teams, leading to a potential oversight of context. Example: \'The only sane choice is Biden.\' This comment inherently possesses linguistic bias as it disregards alternative perspectives in political discourse. Recognizing and capturing instances where language influences political narrative could avoid future misinterpretations. Example: \'Government failed us all.\' This statement encapsulates frustration through broad language, failing to recognize specificity amid generalizations that risks overlooking nuanced conversation. Example: \'You sound just as bad as the right-wing accelerationists.\' This aligns with derogative language that does not offer an analytical view but rather personal attacks, which could misclassify emotional responses as standard discourse. Example: \'Covid is still a thing?\' A reactionary tone could oversimplify a critical public health discussion, prompting potential misinterpretations of bias in public statements.', TextLevelContextBias='Example: \'Honestly? I honestly hope intel will make a top end competitor....\' This personal desire for competition highlights a narrow focus on an individual\'s preference, which could miss wider implications tied to market dynamics. A mistake may occur when failing to capture the broader context of consumer technology debates. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' reflects extreme rhetoric that reduces the potential for constructive dialogue, illustrating a failure to focus on more relevant criticisms or solutions. Example: "I genuinely want to see Biden win and see Trump lose...." This indicates a strong bias that narrowly presents a personal political opinion without adequately acknowledging diverse perspectives in the political landscape. Example: \'Looks like the results won\'t technically be official...\' presents data analysis without properly balancing perspectives regarding electoral processes, leading to potential bias interpretations in civic discussions. Example: "The entire Sienna Miller thing is not working for me..." illustrates a personal critique that lacks broader context on industry-standard practices, missing the opportunity to address systemic issues within casting practices.', PoliticalBias="Example: 'He supports Black Trump?! What an asshole' showcases a strong political bias that misclassifies emotional reaction as standard discourse, neglecting the nuanced socio-political implications of the statement. Future evaluations could be improved by recognizing and contextualizing the power of language in political discourse. Example: 'Hope he does ranked ballots before he leaves....' This comment embodies assumptions about electoral systems that do not preach inclusivity, leading to a potential imbalance in representing various political standpoints. Mistakes could stem from evaluating statements without understanding the reflective nuances of electoral promises and their impact on public engagement. Example: 'I thought this was common knowledge since day one?...' This statement reflects skepticism towards political understanding yet may missteer conversations into rhetoric without delving into supportive evidence or reasoned analysis.", RacialBias='', GenderBias='Example: "On the heels front, I\'ve also noticed that it\'s becoming a lot less common for women to wear high heels to work..." This statement hints at gender bias through an emphasis on women\'s attire normativity, risking the essential conversations regarding flexibility in professional dress codes. An error may occur by narrowly focusing on appearance and missing out on the wider issues of representation and professional inclusivity.')
+2024-12-20 21:08:38.755 | SUCCESS  | __main__:evaluate:425 - Evaluation done.
+2024-12-20 21:08:48.550 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:08:56.361 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:09:02.643 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:09:04.348 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:09:06.360 | INFO     | __main__:annotate:359 - Batch annotated - idx 410:420
+2024-12-20 21:09:29.218 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.4
+2024-12-20 21:09:33.671 | INFO     | __main__:annotate:359 - Batch annotated - idx 420:430
+2024-12-20 21:09:35.143 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:09:36.819 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:09:46.236 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 21:09:50.588 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.30000000000000004
+2024-12-20 21:09:51.971 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.9
+2024-12-20 21:10:00.561 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:10:12.369 | INFO     | __main__:annotate:359 - Batch annotated - idx 430:440
+2024-12-20 21:10:14.243 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.7
+2024-12-20 21:10:21.390 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:10:29.194 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:10:33.678 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:10:39.386 | INFO     | __main__:annotate:359 - Batch annotated - idx 440:450
+2024-12-20 21:10:40.721 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:10:44.897 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:10:48.212 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:11:05.207 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:11:09.300 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:11:09.300 | INFO     | __main__:annotate:359 - Batch annotated - idx 450:460
+2024-12-20 21:11:10.677 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:11:11.847 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:11:14.250 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.39999999999999997
+2024-12-20 21:11:15.547 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:11:20.900 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:11:32.665 | INFO     | __main__:annotate:359 - Batch annotated - idx 460:470
+2024-12-20 21:11:48.366 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:11:52.337 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:12:02.207 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:12:04.889 | INFO     | __main__:annotate:359 - Batch annotated - idx 470:480
+2024-12-20 21:12:06.783 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:12:18.475 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:12:24.189 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:12:28.055 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:12:29.333 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:12:32.454 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:12:34.674 | INFO     | __main__:annotate:359 - Batch annotated - idx 480:490
+2024-12-20 21:12:38.654 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.4
+2024-12-20 21:12:40.142 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:12:41.607 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:12:49.123 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:13:03.354 | INFO     | __main__:annotate:359 - Batch annotated - idx 490:500
+2024-12-20 21:13:15.944 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:13:22.681 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:13:29.605 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:13:36.094 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:13:47.485 | INFO     | __main__:annotate:359 - Batch annotated - idx 500:510
+2024-12-20 21:13:47.486 | INFO     | __main__:evaluate:391 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ku9487n', 'kwa84je', 'kuotbev', 'kw9ppdw', 'ktem8i1', 'ktku1zl', 'ks6jw5n', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ktw2xtc', 'ktd1tw7', 'ksv0pyy', 'ksfmpjz', 'ksrpsqm', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'ku8sqs8', 'ktbrco2', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kt3j1yq', 'kt3n8nr', 'kvntswa', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktob0qc', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksctfck', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kwmy2ie', 'kvc6quv', 'kth2ku9', 'kvcddx8', 'ktdr3bs', 'ktdvhe3', 'kv7nhjr', 'kv35qnu', 'kt5ovvt', 'kwyp9wz', 'krg3asx', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'krce91p', 'kwkckkj', 'kt6txuq', 'ksxauop', 'kvelhst', 'krrus1f', 'kuwq9zw', 'kuar7b4', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ktiw39j', 'kvaqmly', 'kwnnnqw', 'kthpmj5', 'kvpv962', 'kurchxh', 'kuxfd9c', 'krtqzsw', 'ktia4kr', 'kt2a4l3', 'kwf6071', 'kuf3py2', 'kte3g5k', 'kuav8g8', 'kuk503d', 'ktk46n2', 'ktuox0a', 'kukby75', 'kvwo1uq', 'kw0zs7p', 'kv6xrwg', 'ksi65jq', 'kutwa6d', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kuh1o2n', 'kwdsutp', 'ku6ujva', 'kuvohjy', 'kworjf6', 'ksbc49f', 'kun7igy', 'kvy6nt1', 'kv5mxpz', 'ktutxqa']
+2024-12-20 21:13:47.493 | INFO     | __main__:evaluate:412 - hate speech: Macro F1 0.6586345381526104; Micro F1 0.9775572879754312; Accuracy 0.9686274509803922
+
+2024-12-20 21:13:47.498 | INFO     | __main__:evaluate:412 - linguistic bias: Macro F1 0.7819088422530438; Micro F1 0.8852493375536259; Accuracy 0.8960784313725491
+
+2024-12-20 21:13:47.504 | INFO     | __main__:evaluate:412 - text-level context bias: Macro F1 0.7873256298847173; Micro F1 0.9445018831326233; Accuracy 0.9392156862745098
+
+2024-12-20 21:13:47.509 | INFO     | __main__:evaluate:412 - political bias: Macro F1 0.9050531914893617; Micro F1 0.9734908218606592; Accuracy 0.9725490196078431
+
+2024-12-20 21:13:47.514 | INFO     | __main__:evaluate:412 - racial bias: Macro F1 0.8323471400394478; Micro F1 0.996078431372549; Accuracy 0.996078431372549
+
+2024-12-20 21:13:47.520 | INFO     | __main__:evaluate:412 - gender bias: Macro F1 0.9102691924227317; Micro F1 0.9942877250601138; Accuracy 0.9941176470588236
+
+2024-12-20 21:13:47.520 | INFO     | __main__:evaluate:415 - Reflecting on mistakes...
+2024-12-20 21:14:00.657 | DEBUG    | __main__:evaluate:424 - Context(HateSpeech='', LinguisticBias='Example: \'He supports Black Trump?! What an asshole\' This annotation demonstrates linguistic bias with aggressive and derogatory language against a political figure. The mistake arises from not recognizing the harmful implications of such statements in political discussions. Example: \'What a fucking douche nozzle\' uses aggressive language that embodies a clear linguistic bias, reflecting emotional contempt. The oversight is in failing to connect how this type of language can escalate hostility and reduce productive discourse. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' exhibits hyperbolic and violent language which can mislead interpretation if not evaluated within the context of heated discourse. Example: \'Yes because Donald Trump is awful. I’d vote for a sentient potato over Trump.\' This statement utilizes humor and hyperbole to express disdain for a political figure, which could misclassify emotional statements as objective commentary if the context isn\'t properly assessed. Example: "Am I the only one that finds all the emojis in posts like these unprofessional?" This expresses a rigid view on professionalism that marginalizes varying communication styles, indicative of linguistic bias that reinforces norms without considering diversity in expression forms. Example: "I genuinely want to see Biden win and see Trump lose...." This statement carries bias by expressing a strong political preference in a dismissive tone toward another candidate, raising an error of not recognizing emotional undercurrents in political expression. Example: \'Bummed Youssef did so poorly.\' Here, a casual expression of disappointment could be misclassified if context on overall performance in media is overlooked. Example: \'The only sane choice is Biden.\' This inherently reflects linguistic bias by dismissing other political options as irrational, encapsulating an error in failing to appreciate a range of perspectives in political discussions. Example: \'Government failed us all\' uses generalized statements without addressing nuances around governance, potentially misinterpreting biases in public sentiment. Example: \'You sound just as bad as the right-wing accelerationists.\' This comment encapsulates personal attack rhetoric which might overshadow more reasoned political critique, showing an error in discerning between valid critique and emotional responses.', TextLevelContextBias='Example: \'Honestly? I honestly hope intel will make a top end competitor....\' A narrow focus on personal hopes regarding market competition misses significant industry dynamics. Errors come from failing to recognize broader economic implications and technology debates. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' uses provocative language that diminishes opportunity for constructive dialogue, reinforcing a lack of professional conduct in discussions. Example: "I genuinely want to see Biden win and see Trump lose...." This personal expression showcases strong bias that doesn\'t sufficiently engage with the diverse political spectrum, emphasizing the value of representing more perspectives. Example: \'Looks like the results won\'t technically be official...\' provides commentary on political dynamics but could mislead if the complexities of voter participation and electoral processes are ignored. Example: "The entire Sienna Miller thing is not working for me..." conveys a subjective critique that fails to integrate broader industry standards, reflecting a more limited mindset. Recognizing nuanced perspectives in media commentary could refine future evaluations.', PoliticalBias="Example: 'He supports Black Trump?! What an asshole' reveals strong political bias and assumes an emotional reaction represents standard discourse. The mistake may come from a lack of understanding about how personal denigration impacts political discussion. Example: 'Hope he does ranked ballots before he leaves....' This expression of disappointment about political processes indicates political bias but overlooks the significance of discussing electoral reform in depth. Errors may arise from failing to connect candidates’ actions with broader impacts on the electoral system. Example: 'I thought this was common knowledge since day one?...' This skepticism towards political understanding risks derailing discussions into divisions rather than fanning awareness, misrepresenting the conversational intent.", RacialBias="Example: 'The Argonians have a few things to say about this' reflects an apparent racial bias involving fictional group representation, indicating potential misconceptions about the handling of real-world racial discourses. Overlooking the relationship between representation and bias in discussions could be an error in evaluating statements about race.", GenderBias='Example: "On the heels front, I\'ve also noticed that it\'s becoming a lot less common for women to wear high heels to work..." This observation hints at gender bias by enforcing norms around women\'s professional appearance, potentially overshadowing broader conversations about workplace inclusivity and representation. An error may occur by only superficially addressing gender dynamics related to occupational attire.')
+2024-12-20 21:14:00.657 | SUCCESS  | __main__:evaluate:425 - Evaluation done.
+2024-12-20 21:14:01.846 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:14:10.643 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:14:20.775 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:14:24.535 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:14:27.010 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:14:28.743 | INFO     | __main__:annotate:359 - Batch annotated - idx 510:520
+2024-12-20 21:14:33.942 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:14:39.345 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:14:44.200 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:14:54.562 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:15:02.799 | INFO     | __main__:annotate:359 - Batch annotated - idx 520:530
+2024-12-20 21:15:12.481 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:15:16.720 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:15:33.691 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:15:33.692 | INFO     | __main__:annotate:359 - Batch annotated - idx 530:540
+2024-12-20 21:15:41.526 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:15:46.489 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:15:57.931 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:16:09.152 | INFO     | __main__:annotate:359 - Batch annotated - idx 540:550
+2024-12-20 21:16:19.047 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:16:20.667 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:16:40.923 | INFO     | __main__:annotate:359 - Batch annotated - idx 550:560
+2024-12-20 21:16:56.321 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.39999999999999997
+2024-12-20 21:16:57.753 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:17:02.147 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:17:12.393 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:17:18.095 | INFO     | __main__:annotate:359 - Batch annotated - idx 560:570
+2024-12-20 21:17:38.799 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:17:46.077 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:17:51.260 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:17:53.565 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:17:54.857 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:17:54.857 | INFO     | __main__:annotate:359 - Batch annotated - idx 570:580
+2024-12-20 21:18:02.130 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:18:08.100 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.39999999999999997
+2024-12-20 21:18:29.975 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:18:32.620 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:18:32.620 | INFO     | __main__:annotate:359 - Batch annotated - idx 580:590
+2024-12-20 21:18:36.963 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:18:47.533 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:18:54.272 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:19:01.029 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.7
+2024-12-20 21:19:03.406 | INFO     | __main__:annotate:359 - Batch annotated - idx 590:600
+2024-12-20 21:19:05.517 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:19:11.741 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:19:13.734 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:19:37.529 | INFO     | __main__:annotate:359 - Batch annotated - idx 600:610
+2024-12-20 21:19:37.530 | INFO     | __main__:evaluate:391 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ku9487n', 'kwa84je', 'kuotbev', 'kw9ppdw', 'ktem8i1', 'ktku1zl', 'ks6jw5n', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ktw2xtc', 'ktd1tw7', 'ksv0pyy', 'ksfmpjz', 'ksrpsqm', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'ku8sqs8', 'ktbrco2', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kt3j1yq', 'kt3n8nr', 'kvntswa', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktob0qc', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksctfck', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kwmy2ie', 'kvc6quv', 'kth2ku9', 'kvcddx8', 'ktdr3bs', 'ktdvhe3', 'kv7nhjr', 'kv35qnu', 'kt5ovvt', 'kwyp9wz', 'krg3asx', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'krce91p', 'kwkckkj', 'kt6txuq', 'ksxauop', 'kvelhst', 'krrus1f', 'kuwq9zw', 'kuar7b4', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ktiw39j', 'kvaqmly', 'kwnnnqw', 'kthpmj5', 'kvpv962', 'kurchxh', 'kuxfd9c', 'krtqzsw', 'ktia4kr', 'kt2a4l3', 'kwf6071', 'kuf3py2', 'kte3g5k', 'kuav8g8', 'kuk503d', 'ktk46n2', 'ktuox0a', 'kukby75', 'kvwo1uq', 'kw0zs7p', 'kv6xrwg', 'ksi65jq', 'kutwa6d', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kuh1o2n', 'kwdsutp', 'ku6ujva', 'kuvohjy', 'kworjf6', 'ksbc49f', 'kun7igy', 'kvy6nt1', 'kv5mxpz', 'ktutxqa', 'kva44k3', 'kug4atl', 'kuh3t87', 'kt2qbai', 'ktglxk6', 'kt4k1i3', 'kwsiotr', 'kte72ih', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kuun08a', 'ktcx5ts', 'krtm5a8', 'kuaybit', 'kub6rxl', 'ktc35aq', 'kvqxne7', 'kt0z58s', 'kudkp1n']
+2024-12-20 21:19:37.535 | INFO     | __main__:evaluate:412 - hate speech: Macro F1 0.7111742424242424; Micro F1 0.9767728514654744; Accuracy 0.9704918032786886
+
+2024-12-20 21:19:37.539 | INFO     | __main__:evaluate:412 - linguistic bias: Macro F1 0.7945685719175624; Micro F1 0.8905907878828031; Accuracy 0.9
+
+2024-12-20 21:19:37.542 | INFO     | __main__:evaluate:412 - text-level context bias: Macro F1 0.7803171142409406; Micro F1 0.945166065403037; Accuracy 0.9393442622950819
+
+2024-12-20 21:19:37.546 | INFO     | __main__:evaluate:412 - political bias: Macro F1 0.904031465093412; Micro F1 0.9745751728807002; Accuracy 0.9737704918032787
+
+2024-12-20 21:19:37.550 | INFO     | __main__:evaluate:412 - racial bias: Macro F1 0.7983471074380165; Micro F1 0.992792304565777; Accuracy 0.9934426229508196
+
+2024-12-20 21:19:37.554 | INFO     | __main__:evaluate:412 - gender bias: Macro F1 0.9335294758635719; Micro F1 0.9951868266532333; Accuracy 0.9950819672131147
+
+2024-12-20 21:19:37.554 | INFO     | __main__:evaluate:415 - Reflecting on mistakes...
+2024-12-20 21:19:59.652 | DEBUG    | __main__:evaluate:424 - Context(HateSpeech="Example: 'ESPN being trash isn’t news' This statement reflects a dismissive attitude and implies derogatory sentiment towards ESPN, illustrating how negative commentary can verge on hate speech. An oversight here involves not assessing the broader implications of such statements in fostering contempt within public discourse. Example: 'I genuinely would like to know who the fuck finds this funny...' This reflects strong emotional language that could alienate those with differing opinions, suggesting the need for more thoughtful criticism. The error in this instance is failing to recognize the potential harm and divisiveness inherent in this type of expression.", LinguisticBias='Example: \'He supports Black Trump?! What an asshole\' This annotation reflects linguistic bias through derogatory language aimed at a political figure, showcasing an emotional and negative connotation. The mistake here is failing to acknowledge the broader implications of degrading language in political discourse. Example: \'What a fucking douche nozzle\' This is another instance where the choice of aggressive language embodies linguistic bias. Recognizing the emotional weight of expressions could prevent future misclassifications. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' This annotation mistakes hyperbolic expressions of anger as standard discourse. Focusing on the implications of violent language could help contextualize the biases present in such statements. Example: \'Yes because Donald Trump is awful. I’d vote for a sentient potato over Trump.\' The hyperbolic comparison solidifies a strong linguistic bias focused on derogation. The error lies in not recognizing how stark comparisons shape views against an individual or group. Example: "Am I the only one that finds all the emojis in posts like these unprofessional?..." This commentary enforces a strict standard of professionalism, potentially marginalizing perspectives that utilize different forms of written expression, such as emojis. Mistakes here stem from not assessing the cultural dynamics at play. Example: \'Bummed Youssef did so poorly.\' This expresses disappointment without adequately contextualizing performance standards related to group dynamics, inadvertently overlooking bias in personal performance assessments. Example: \'You sound just as bad as the right-wing accelerationists.\' This uses derogatory language without offering constructive critique, which may be seen as a contribution to hostile dialog rather than informative discussion.', TextLevelContextBias='Example: \'Honestly? I honestly hope intel will make a top end competitor....\' While the author expresses personal wishes tied to technological competition, the reflection is on a specific individual’s desire, potentially overlooking broader implications about competition. The mistake is overly narrowing the focus without accounting for wider industry dynamics. Example: \'Yeah we should turn you to ash...\' This employs extreme language that reduces the potential for constructive dialogue, reinforcing the need for more civil discussions. Example: "I genuinely want to see Biden win and see Trump lose...." This personal view shapes a political narrative that heavily favors one side, exemplifying a lack of balance in representing varying political opinions. The underlying error is a selective presentation of political sentiments that builds a skewed view of broader discourse. Example: \'Looks like the results won’t technically be official til May...\' presents important information but risks misinterpreting the excitement or apathy surrounding political processes by neglecting varied public perceptions. Example: "The entire Sienna Miller thing is not working for me..." This contains a subjective critique that might miss systemic issues within casting practices and overlooks broader cultural discussions regarding industry representation.', PoliticalBias="Example: 'He supports Black Trump?! What an asshole' This statement showcases a strong political bias, misclassifying emotional reactions as standard discourse while neglecting the socio-political implications of derogatory rhetoric. Recognizing the nuances of language can refine future evaluations of political bias. Example: 'Hope he does ranked ballots before he leaves....' This expresses demands reflective of political bias without fully capturing the implications of voter reform discussions. Errors can occur from overlooking broader systemic issues that affect electoral processes. Example: 'I thought this was common knowledge since day one?...' This commentary expresses skepticism but may misinterpret political discussions, focusing more on disparagement than evidence-based critique. Example: 'How do we vote them out?' poses a query that might misrepresent the complexities of political engagement by reducing it to a simplistic notion of voting without addressing systemic barriers. Recognizing such nuances could enhance the understanding of political sentiment within discourse.", RacialBias="Example: 'The Argonians have a few things to say about this' indicates a racial bias tied to fictional representations, suggesting a misunderstanding of how such narratives affect real dialogues surrounding race. Overlooking the multifaceted implications of representation in media can lead to misinterpretations of bias. Example: 'That’s what Islam does to the world.' This statement generalizes and perpetuates negative stereotypes about a religious group, reflecting significant racial bias and fostering a divisive narrative. A crucial oversight is failing to contextualize the impact of such statements on public understanding. Example: 'Nah don’t you have a cute chocolate face' engages in racial commentary that can easily be misinterpreted as a compliment, though it perpetuates objectification based on race which is a critical point that should not be overlooked.", GenderBias='Example: "On the heels front, I\'ve also noticed that it\'s becoming a lot less common for women to wear high heels to work..." This observation hints at gender bias by reinforcing norms about women\'s professional attire, missing the broader discourse on workplace inclusivity. The error lies in failing to consider the wider implications of gender representation in professional settings.')
+2024-12-20 21:19:59.652 | SUCCESS  | __main__:evaluate:425 - Evaluation done.
+2024-12-20 21:20:06.299 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:20:07.899 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:20:14.846 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:20:17.638 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:20:20.788 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:20:23.972 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:20:28.814 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:20:28.814 | INFO     | __main__:annotate:359 - Batch annotated - idx 610:620
+2024-12-20 21:20:41.812 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:20:43.390 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 21:20:50.491 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:20:53.401 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:20:59.377 | INFO     | __main__:annotate:359 - Batch annotated - idx 620:630
+2024-12-20 21:21:08.110 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:21:11.684 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:21:16.169 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:21:25.381 | INFO     | __main__:annotate:359 - Batch annotated - idx 630:640
+2024-12-20 21:21:37.766 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 21:21:47.700 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:21:51.326 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.39999999999999997
+2024-12-20 21:21:55.099 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.7
+2024-12-20 21:21:58.895 | INFO     | __main__:annotate:359 - Batch annotated - idx 640:650
+2024-12-20 21:22:05.083 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:22:13.660 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:22:19.696 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:22:22.914 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:22:29.222 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:22:36.239 | INFO     | __main__:annotate:359 - Batch annotated - idx 650:660
+2024-12-20 21:23:02.373 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:23:27.295 | INFO     | __main__:annotate:359 - Batch annotated - idx 660:670
+2024-12-20 21:23:41.263 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.9
+2024-12-20 21:23:42.591 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:23:50.859 | INFO     | __main__:annotate:359 - Batch annotated - idx 670:680
+2024-12-20 21:24:05.768 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:24:06.881 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:24:18.315 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:24:18.315 | INFO     | __main__:annotate:359 - Batch annotated - idx 680:690
+2024-12-20 21:24:24.649 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:24:27.138 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:24:46.588 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:24:57.181 | INFO     | __main__:annotate:359 - Batch annotated - idx 690:700
+2024-12-20 21:25:06.754 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:25:30.492 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:25:32.008 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:25:34.496 | INFO     | __main__:annotate:359 - Batch annotated - idx 700:710
+2024-12-20 21:25:34.497 | INFO     | __main__:evaluate:391 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ku9487n', 'kwa84je', 'kuotbev', 'kw9ppdw', 'ktem8i1', 'ktku1zl', 'ks6jw5n', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ktw2xtc', 'ktd1tw7', 'ksv0pyy', 'ksfmpjz', 'ksrpsqm', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'ku8sqs8', 'ktbrco2', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kt3j1yq', 'kt3n8nr', 'kvntswa', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktob0qc', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksctfck', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kwmy2ie', 'kvc6quv', 'kth2ku9', 'kvcddx8', 'ktdr3bs', 'ktdvhe3', 'kv7nhjr', 'kv35qnu', 'kt5ovvt', 'kwyp9wz', 'krg3asx', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'krce91p', 'kwkckkj', 'kt6txuq', 'ksxauop', 'kvelhst', 'krrus1f', 'kuwq9zw', 'kuar7b4', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ktiw39j', 'kvaqmly', 'kwnnnqw', 'kthpmj5', 'kvpv962', 'kurchxh', 'kuxfd9c', 'krtqzsw', 'ktia4kr', 'kt2a4l3', 'kwf6071', 'kuf3py2', 'kte3g5k', 'kuav8g8', 'kuk503d', 'ktk46n2', 'ktuox0a', 'kukby75', 'kvwo1uq', 'kw0zs7p', 'kv6xrwg', 'ksi65jq', 'kutwa6d', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kuh1o2n', 'kwdsutp', 'ku6ujva', 'kuvohjy', 'kworjf6', 'ksbc49f', 'kun7igy', 'kvy6nt1', 'kv5mxpz', 'ktutxqa', 'kva44k3', 'kug4atl', 'kuh3t87', 'kt2qbai', 'ktglxk6', 'kt4k1i3', 'kwsiotr', 'kte72ih', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kuun08a', 'ktcx5ts', 'krtm5a8', 'kuaybit', 'kub6rxl', 'ktc35aq', 'kvqxne7', 'kt0z58s', 'kudkp1n', 'krrjqt7', 'ktjcc6g', 'kwtbiok', 'ktebp6s', 'ktnsqou', 'kuzjqnu', 'kuwldv4', 'ktokjw7', 'krm9n9m', 'kt6ubh3', 'ksbwzpk', 'kv0fd6t', 'ktf7bba', 'kvle1wp', 'kwa9amh', 'kuzwy6u', 'kv1v4v3', 'kvu3uhn', 'kti6xf5', 'kued4wu', 'ktta436', 'kwtdigi']
+2024-12-20 21:25:34.502 | INFO     | __main__:evaluate:412 - hate speech: Macro F1 0.6864964675658317; Micro F1 0.9765590653749084; Accuracy 0.9690140845070423
+
+2024-12-20 21:25:34.506 | INFO     | __main__:evaluate:412 - linguistic bias: Macro F1 0.7972201066260471; Micro F1 0.8888986623472748; Accuracy 0.8985915492957747
+
+2024-12-20 21:25:34.510 | INFO     | __main__:evaluate:412 - text-level context bias: Macro F1 0.7717442132335749; Micro F1 0.9446136722133126; Accuracy 0.9380281690140845
+
+2024-12-20 21:25:34.514 | INFO     | __main__:evaluate:412 - political bias: Macro F1 0.9086606495995017; Micro F1 0.9737802974825341; Accuracy 0.9732394366197183
+
+2024-12-20 21:25:34.518 | INFO     | __main__:evaluate:412 - racial bias: Macro F1 0.7985815602836879; Micro F1 0.9938068125062431; Accuracy 0.9943661971830986
+
+2024-12-20 21:25:34.522 | INFO     | __main__:evaluate:412 - gender bias: Macro F1 0.933708879275466; Micro F1 0.9958649910730762; Accuracy 0.995774647887324
+
+2024-12-20 21:25:34.522 | INFO     | __main__:evaluate:415 - Reflecting on mistakes...
+2024-12-20 21:25:52.839 | DEBUG    | __main__:evaluate:424 - Context(HateSpeech="Example: 'ESPN being trash isn’t news' This statement expresses contempt and negative sentiment towards ESPN, hinting at potential hatred or intolerance for the organization's content. Overlooking the broader implications can lead to misinterpretation of casual remarks as potentially harmful sentiments. Example: 'I genuinely would like to know who the fuck finds this funny...' This reflects strong emotional language that may offend individuals who appreciate the topic at hand. The failure here lies in not recognizing how harsh language can induce feelings of exclusion or disapproval among differing audiences.", LinguisticBias='Example: \'He supports Black Trump?! What an asshole\' Linguistic bias is evident through the use of derogatory language towards someone based on their political support. This suggests an emotional and negative judgment rather than constructive criticism. The oversight is in failing to recognize the implications of derogatory language in political discussions. Example: \'What a fucking douche nozzle\' This is another instance demonstrating linguistic bias in the form of aggressive language directed at individuals, reflecting contempt. The error arises from not connecting such language\'s potential to escalate conflicts. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' A hyperbolic expression that likely indicates frustration; ignoring the violent implications could misclassify the evaluation of acceptable discourse. Example: \'Yes because Donald Trump is awful. I’d vote for a sentient potato over Trump.\' The hyperbolic comparison showcases strong bias; misinterpretation could occur if the emotional intensity is not adequately recognized. Example: "Am I the only one that finds all the emojis in posts like these unprofessional?..." suggests a rigid standard for professional communication that might exclude diverse forms of expression, indicative of linguistic bias. Mistakes can stem from not assessing the social context surrounding the use of such expressions. Example: \'Bummed Youssef did so poorly.\' This expresses disappointment but lacks context regarding individual performance, showing potential bias regarding group performances. Example: \'You sound just as bad as the right-wing accelerationists.\' This statement uses derogatory language without critique or context; the absence of critical engagement can misclassify a personal attack as a standard political discourse.', TextLevelContextBias='Example: \'Honestly? I honestly hope intel will make a top end competitor...\' This narrows focus on personal optimism regarding market competition and overlooks implications of technology\'s broader impact. A mistake may arise from not capturing the full scope of consumer and industry dynamics. Example: \'Yeah we should turn you to ash...\' This harsh expression diminishes opportunities for productive dialogue. It illustrates a failure to engage in constructive discourse, promoting hostility instead. Example: "I genuinely want to see Biden win and see Trump lose...." This strongly biased personal view shapes a polarized political narrative; recognizing diverse positions could prevent one-sided discussions. Example: \'Looks like the results won’t technically be official...\' gives data commentary but risks simplified interpretations of political credibility, missing nuanced public perceptions of electoral processes. Example: "The entire Sienna Miller thing is not working for me..." This reflects subjective discontent without broader context, potentially missing systemic cultural issues that influence casting discussions.', PoliticalBias="Example: 'He supports Black Trump?! What an asshole' exemplifies strong political bias reflected through emotional reactions, overlooking the implications of such language in shaping political discourse. Future evaluations could improve contextual understanding of derogatory language's influence. Example: 'Hope he does ranked ballots before he leaves....' This comment expresses a desire for reform but lacks a comprehensive look at its practical implications and electoral dynamics. Errors can occur when focusing primarily on individual dissatisfaction rather than broader systemic issues. Example: 'I thought this was common knowledge since day one?...' This commentary conveys skepticism but may blur lines between valid critique and unfounded criticism, detracting from constructive discourse. Example: 'How do we vote them out?' is a simplification of political participation that risks misrepresenting the complexities of civic engagement; without understanding systemic barriers, this could lead to oversimplified expectations.", RacialBias="Example: 'The Argonians have a few things to say about this' reflects potential racial bias in the context of fictional representation, indicating a misunderstanding of how narratives influence perceptions of race. Recognizing the implications of representation in media could prevent misinterpretation of bias. Example: 'That’s what Islam does to the world.' This statement generalizes and promotes negative stereotypes about a religious community, demonstrating significant racial bias while failing to consider the harmful consequences of such generalizations. Example: 'Nah don’t you have a cute chocolate face' can be perceived as a form of racial commentary; while addressing aesthetics, it perpetuates stereotypes that can be dismissive or objectifying.", GenderBias='Example: "On the heels front, I\'ve also noticed that it\'s becoming a lot less common for women to wear high heels to work..." This statement hints at gender bias through the enforcement of norms around women\'s professional appearance, risking the substantial discussions regarding gender representation in workplaces. The error stems from failing to acknowledge the broader implications of societal expectations related to gender roles.')
+2024-12-20 21:25:52.839 | SUCCESS  | __main__:evaluate:425 - Evaluation done.
+2024-12-20 21:26:12.623 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:26:23.383 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:26:23.384 | INFO     | __main__:annotate:359 - Batch annotated - idx 710:720
+2024-12-20 21:26:36.509 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:26:45.766 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:26:48.023 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.39999999999999997
+2024-12-20 21:26:55.238 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:26:55.238 | INFO     | __main__:annotate:359 - Batch annotated - idx 720:730
+2024-12-20 21:26:56.703 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:27:06.371 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:27:14.194 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:27:27.623 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:27:27.624 | INFO     | __main__:annotate:359 - Batch annotated - idx 730:740
+2024-12-20 21:27:29.030 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:27:35.100 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:27:36.791 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:27:46.805 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:27:52.835 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:27:55.370 | INFO     | __main__:annotate:359 - Batch annotated - idx 740:750
+2024-12-20 21:27:57.780 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:28:18.715 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:28:20.202 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:28:28.048 | INFO     | __main__:annotate:359 - Batch annotated - idx 750:760
+2024-12-20 21:28:46.920 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:28:54.735 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:28:59.480 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:29:03.694 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:29:05.248 | INFO     | __main__:annotate:359 - Batch annotated - idx 760:770
+2024-12-20 21:29:08.962 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:29:15.188 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.39999999999999997
+2024-12-20 21:29:29.906 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:29:30.991 | INFO     | __main__:annotate:359 - Batch annotated - idx 770:780
+2024-12-20 21:29:39.784 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:29:41.120 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:29:45.035 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:29:54.982 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:30:03.300 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:30:05.514 | INFO     | __main__:annotate:359 - Batch annotated - idx 780:790
+2024-12-20 21:30:07.706 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:30:15.146 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:30:27.252 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:30:34.656 | INFO     | __main__:annotate:359 - Batch annotated - idx 790:800
+2024-12-20 21:30:50.433 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:30:57.683 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:31:10.252 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:31:10.252 | INFO     | __main__:annotate:359 - Batch annotated - idx 800:810
+2024-12-20 21:31:10.253 | INFO     | __main__:evaluate:391 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ku9487n', 'kwa84je', 'kuotbev', 'kw9ppdw', 'ktem8i1', 'ktku1zl', 'ks6jw5n', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ktw2xtc', 'ktd1tw7', 'ksv0pyy', 'ksfmpjz', 'ksrpsqm', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'ku8sqs8', 'ktbrco2', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kt3j1yq', 'kt3n8nr', 'kvntswa', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktob0qc', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksctfck', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kwmy2ie', 'kvc6quv', 'kth2ku9', 'kvcddx8', 'ktdr3bs', 'ktdvhe3', 'kv7nhjr', 'kv35qnu', 'kt5ovvt', 'kwyp9wz', 'krg3asx', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'krce91p', 'kwkckkj', 'kt6txuq', 'ksxauop', 'kvelhst', 'krrus1f', 'kuwq9zw', 'kuar7b4', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ktiw39j', 'kvaqmly', 'kwnnnqw', 'kthpmj5', 'kvpv962', 'kurchxh', 'kuxfd9c', 'krtqzsw', 'ktia4kr', 'kt2a4l3', 'kwf6071', 'kuf3py2', 'kte3g5k', 'kuav8g8', 'kuk503d', 'ktk46n2', 'ktuox0a', 'kukby75', 'kvwo1uq', 'kw0zs7p', 'kv6xrwg', 'ksi65jq', 'kutwa6d', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kuh1o2n', 'kwdsutp', 'ku6ujva', 'kuvohjy', 'kworjf6', 'ksbc49f', 'kun7igy', 'kvy6nt1', 'kv5mxpz', 'ktutxqa', 'kva44k3', 'kug4atl', 'kuh3t87', 'kt2qbai', 'ktglxk6', 'kt4k1i3', 'kwsiotr', 'kte72ih', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kuun08a', 'ktcx5ts', 'krtm5a8', 'kuaybit', 'kub6rxl', 'ktc35aq', 'kvqxne7', 'kt0z58s', 'kudkp1n', 'krrjqt7', 'ktjcc6g', 'kwtbiok', 'ktebp6s', 'ktnsqou', 'kuzjqnu', 'kuwldv4', 'ktokjw7', 'krm9n9m', 'kt6ubh3', 'ksbwzpk', 'kv0fd6t', 'ktf7bba', 'kvle1wp', 'kwa9amh', 'kuzwy6u', 'kv1v4v3', 'kvu3uhn', 'kti6xf5', 'kued4wu', 'ktta436', 'kwtdigi', 'kvttlyx', 'kvoe604', 'kwlyesr', 'kvd1i45', 'ktrzber', 'ktvnr9h', 'kwsg5qi', 'ksv05xt', 'ktf9uo3', 'kug7o9e', 'kt4ora7', 'kv7fizq', 'kt7l91h', 'kwq76ev', 'krefl04', 'ktxgd4i', 'kraxc86', 'ktehmjc', 'kteb0w7', 'kunvnab', 'kwn4iwy', 'kx263w5', 'kvrboe6', 'kw86crt', 'kt51ko5']
+2024-12-20 21:31:10.258 | INFO     | __main__:evaluate:412 - hate speech: Macro F1 0.6715807911253832; Micro F1 0.9756966782056388; Accuracy 0.9691358024691358
+
+2024-12-20 21:31:10.262 | INFO     | __main__:evaluate:412 - linguistic bias: Macro F1 0.8025810994195686; Micro F1 0.8909258317561285; Accuracy 0.9
+
+2024-12-20 21:31:10.268 | INFO     | __main__:evaluate:412 - text-level context bias: Macro F1 0.7848537005163512; Micro F1 0.9441032796677599; Accuracy 0.9382716049382716
+
+2024-12-20 21:31:10.273 | INFO     | __main__:evaluate:412 - political bias: Macro F1 0.9163655136809499; Micro F1 0.9758287284014354; Accuracy 0.9753086419753086
+
+2024-12-20 21:31:10.277 | INFO     | __main__:evaluate:412 - racial bias: Macro F1 0.7987577639751553; Micro F1 0.9945709684840119; Accuracy 0.9950617283950617
+
+2024-12-20 21:31:10.281 | INFO     | __main__:evaluate:412 - gender bias: Macro F1 0.9154135338345865; Micro F1 0.995264395556793; Accuracy 0.9950617283950617
+
+2024-12-20 21:31:10.281 | INFO     | __main__:evaluate:415 - Reflecting on mistakes...
+2024-12-20 21:31:36.246 | DEBUG    | __main__:evaluate:424 - Context(HateSpeech="Example: 'ESPN being trash isn’t news' This statement expresses derision and potential hatred, suggesting a contemptuous attitude towards ESPN, indicative of broader societal sentiments that can be harmful. The absence of a nuanced approach to critiquing media can misinterpret casual remarks as outright hostility. Example: 'I genuinely would like to know who the fuck finds this funny...' This reflects strong derogatory language towards differing tastes, turning criticism into hostile remarks, which can alienate audiences. The failure here is not recognizing the potential for divisive communication. Example: 'Jurassic World Dominion: absolutely dog shit' employs strong negative language that can be construed as hate speech directed at a creative work without a constructive context. Example: 'Every owner needs to buy their own stadium or ballpark. Wealthfare is a blight on our society.' This comment reflects animosity towards economic practices perceived as corrupt, potentially fostering divisive sentiments about wealth distribution.", LinguisticBias='Example: \'He supports Black Trump?! What an asshole\' Linguistic bias is evident through the use of derogatory language towards a political figure, suggesting emotional judgment rather than constructive critique. The oversight comes from failing to recognize how derogatory remarks influence political discourse. Example: \'What a fucking douche nozzle\' This expression employs aggressive language that embodies a clear linguistic bias, which reflects contempt. The error arises from not connecting how this type of language can escalate tensions in dialogue. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' A hyperbolic expression indicating frustration; ignoring the violent implications could misclassify acceptable discourse. Example: \'Yes because Donald Trump is awful. I’d vote for a sentient potato over Trump.\' This hyperbolic comparison illustrates strong linguistic bias and misinterpretation may occur if the intensity is not recognized. Example: "Am I the only one that finds all the emojis in posts like these unprofessional?..." suggests a rigid view of professionalism that excludes diverse expressions, illustrating linguistic bias. Mistakes can stem from not recognizing the social context in communication. Example: \'Bummed Youssef did so poorly.\' This conveys personal disappointment without addressing broader implications, leading to a potential oversight of context. Example: \'You sound just as bad as the right-wing accelerationists.\' This statement uses derogatory tones without valid critique, which can misinterpret a personal attack as standard political discourse.', TextLevelContextBias='Example: \'Honestly? I honestly hope intel will make a top end competitor...\' A narrow focus on personal sentiment about competition overlooks broader implications in technology discussions. The mistake comes from not understanding the larger context of market dynamics. Example: \'Yeah we should turn you to ash...\' This language diminishes opportunities for constructive discussions, showing a failure to promote productive dialogue. Example: "I genuinely want to see Biden win and see Trump lose...." This statement heavily favors one side, emphasizing the need for inclusivity. Example: \'Looks like the results won’t technically be official...\' provides crucial information but risks oversimplifying the view of an electoral process, neglecting nuanced public perceptions. Example: "The entire Sienna Miller thing is not working for me..." contains subjective critique but does not integrate broader context, missing systemic issues in casting and representation.', PoliticalBias="Example: 'He supports Black Trump?! What an asshole' showcases a strong political bias through emotional reactions that misinterpret political dialogue. Future evaluations could benefit from recognizing derogatory language's impact on political discourse. Example: 'Hope he does ranked ballots before he leaves....' expresses dissatisfaction about political processes without considering wider implications of electoral systems. Errors may arise from failing to connect candidates’ actions with public engagement. Example: 'I thought this was common knowledge since day one?...' This expresses skepticism towards political understanding but can misrepresent discussions by reducing them to dismissals. Example: 'How do we vote them out?' oversimplifies civic engagement complexities, which may risk entrenching a misleading understanding of the political process.", RacialBias="Example: 'The Argonians have a few things to say about this' illustrates potential racial bias connected to fictional representation, suggesting a misunderstanding of how narratives shape real-life racial perceptions. Recognizing representation's influence can prevent misinterpretation. Example: 'That’s what Islam does to the world.' This generalization perpetuates negative stereotypes about a religion, indicating significant racial bias that neglects the potential consequences. Example: 'Nah don’t you have a cute chocolate face' conveys mixed messages while perpetuating racial undertones; it risks being interpreted as objectification without considering its implications.", GenderBias='Example: "On the heels front, I\'ve also noticed that it\'s becoming a lot less common for women to wear high heels to work..." This reinforces norms around professional appearance for women, obscuring critical discussions about gender representation in professional environments. The error lies in not acknowledging the broader implications surrounding gender expectations in workplaces.')
+2024-12-20 21:31:36.246 | SUCCESS  | __main__:evaluate:425 - Evaluation done.
+2024-12-20 21:31:43.953 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:31:50.054 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:32:15.354 | INFO     | __main__:annotate:359 - Batch annotated - idx 810:820
+2024-12-20 21:32:16.922 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:32:20.622 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.9
+2024-12-20 21:32:28.335 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:32:30.576 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:32:32.205 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.7
+2024-12-20 21:32:35.751 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:32:44.076 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:32:48.031 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:32:51.866 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:32:54.652 | INFO     | __main__:annotate:359 - Batch annotated - idx 820:830
+2024-12-20 21:33:05.039 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:33:24.973 | INFO     | __main__:annotate:359 - Batch annotated - idx 830:840
+2024-12-20 21:33:29.950 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:33:33.690 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:33:35.582 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:33:42.560 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:33:54.585 | INFO     | __main__:annotate:359 - Batch annotated - idx 840:850
+2024-12-20 21:33:55.826 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:34:08.246 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:34:14.649 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:34:22.145 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.4
+2024-12-20 21:34:23.604 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:34:26.674 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:34:31.652 | INFO     | __main__:annotate:359 - Batch annotated - idx 850:860
+2024-12-20 21:34:35.906 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:34:48.698 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:34:52.802 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:35:00.065 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:35:08.106 | INFO     | __main__:annotate:359 - Batch annotated - idx 860:870
+2024-12-20 21:35:22.611 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:35:24.937 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:35:31.243 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:35:37.239 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:35:38.697 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:35:42.432 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:35:42.432 | INFO     | __main__:annotate:359 - Batch annotated - idx 870:880
+2024-12-20 21:35:52.258 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.39999999999999997
+2024-12-20 21:36:18.031 | INFO     | __main__:annotate:359 - Batch annotated - idx 880:890
+2024-12-20 21:36:46.846 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:36:53.858 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.4
+2024-12-20 21:36:53.858 | INFO     | __main__:annotate:359 - Batch annotated - idx 890:900
+2024-12-20 21:36:55.438 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:37:05.668 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:37:09.382 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:37:19.931 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:37:23.126 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:37:27.535 | INFO     | __main__:annotate:359 - Batch annotated - idx 900:910
+2024-12-20 21:37:27.536 | INFO     | __main__:evaluate:391 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ku9487n', 'kwa84je', 'kuotbev', 'kw9ppdw', 'ktem8i1', 'ktku1zl', 'ks6jw5n', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ktw2xtc', 'ktd1tw7', 'ksv0pyy', 'ksfmpjz', 'ksrpsqm', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'ku8sqs8', 'ktbrco2', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kt3j1yq', 'kt3n8nr', 'kvntswa', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktob0qc', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksctfck', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kwmy2ie', 'kvc6quv', 'kth2ku9', 'kvcddx8', 'ktdr3bs', 'ktdvhe3', 'kv7nhjr', 'kv35qnu', 'kt5ovvt', 'kwyp9wz', 'krg3asx', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'krce91p', 'kwkckkj', 'kt6txuq', 'ksxauop', 'kvelhst', 'krrus1f', 'kuwq9zw', 'kuar7b4', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ktiw39j', 'kvaqmly', 'kwnnnqw', 'kthpmj5', 'kvpv962', 'kurchxh', 'kuxfd9c', 'krtqzsw', 'ktia4kr', 'kt2a4l3', 'kwf6071', 'kuf3py2', 'kte3g5k', 'kuav8g8', 'kuk503d', 'ktk46n2', 'ktuox0a', 'kukby75', 'kvwo1uq', 'kw0zs7p', 'kv6xrwg', 'ksi65jq', 'kutwa6d', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kuh1o2n', 'kwdsutp', 'ku6ujva', 'kuvohjy', 'kworjf6', 'ksbc49f', 'kun7igy', 'kvy6nt1', 'kv5mxpz', 'ktutxqa', 'kva44k3', 'kug4atl', 'kuh3t87', 'kt2qbai', 'ktglxk6', 'kt4k1i3', 'kwsiotr', 'kte72ih', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kuun08a', 'ktcx5ts', 'krtm5a8', 'kuaybit', 'kub6rxl', 'ktc35aq', 'kvqxne7', 'kt0z58s', 'kudkp1n', 'krrjqt7', 'ktjcc6g', 'kwtbiok', 'ktebp6s', 'ktnsqou', 'kuzjqnu', 'kuwldv4', 'ktokjw7', 'krm9n9m', 'kt6ubh3', 'ksbwzpk', 'kv0fd6t', 'ktf7bba', 'kvle1wp', 'kwa9amh', 'kuzwy6u', 'kv1v4v3', 'kvu3uhn', 'kti6xf5', 'kued4wu', 'ktta436', 'kwtdigi', 'kvttlyx', 'kvoe604', 'kwlyesr', 'kvd1i45', 'ktrzber', 'ktvnr9h', 'kwsg5qi', 'ksv05xt', 'ktf9uo3', 'kug7o9e', 'kt4ora7', 'kv7fizq', 'kt7l91h', 'kwq76ev', 'krefl04', 'ktxgd4i', 'kraxc86', 'ktehmjc', 'kteb0w7', 'kunvnab', 'kwn4iwy', 'kx263w5', 'kvrboe6', 'kw86crt', 'kt51ko5', 'ktpbq8g', 'kw6qgns', 'kt3cr2v', 'ks3oonf', 'kty41pd', 'kwq3g3h', 'kvt825g', 'kv1q09m', 'kv9jf2f', 'ktn3l3l', 'ktsliqw', 'kwk54cq', 'ks3xmnq', 'ktdwspe', 'ks04x6z', 'kuts0ww', 'ktj766t', 'kuod4uk', 'kwqfjd1']
+2024-12-20 21:37:27.541 | INFO     | __main__:evaluate:412 - hate speech: Macro F1 0.6468231611893585; Micro F1 0.9744190957712086; Accuracy 0.9659340659340659
+
+2024-12-20 21:37:27.545 | INFO     | __main__:evaluate:412 - linguistic bias: Macro F1 0.7977356689462836; Micro F1 0.8864823499917122; Accuracy 0.8956043956043956
+
+2024-12-20 21:37:27.549 | INFO     | __main__:evaluate:412 - text-level context bias: Macro F1 0.7940643993275572; Micro F1 0.944525460314934; Accuracy 0.9384615384615385
+
+2024-12-20 21:37:27.553 | INFO     | __main__:evaluate:412 - political bias: Macro F1 0.9077812943359163; Micro F1 0.9722704666282096; Accuracy 0.9714285714285714
+
+2024-12-20 21:37:27.557 | INFO     | __main__:evaluate:412 - racial bias: Macro F1 0.8322271386430679; Micro F1 0.9952405264352168; Accuracy 0.9956043956043956
+
+2024-12-20 21:37:27.561 | INFO     | __main__:evaluate:412 - gender bias: Macro F1 0.9123972352182368; Micro F1 0.9947850913021594; Accuracy 0.9945054945054945
+
+2024-12-20 21:37:27.562 | INFO     | __main__:evaluate:415 - Reflecting on mistakes...
+2024-12-20 21:37:44.349 | DEBUG    | __main__:evaluate:424 - Context(HateSpeech="Example: 'ESPN being trash isn’t news' conveys a negative sentiment towards the organization that can reflect a broader contempt for media entities, suggesting a need for more considerate expressions. Overlooking nuance can misinterpret casual remarks as hostile. Example: 'I genuinely would like to know who the fuck finds this funny...' leverages inappropriate language that may alienate differing views, showcasing a lack of restraint in criticism. The failure here is not recognizing how harsh language can exclude audiences. Example: 'Jurassic World Dominion: absolutely dog shit' expresses a strong negative opinion that can lead to conversational hostility. Example: 'Every owner needs to buy their own stadium or ballpark. Wealthfare is a blight on our society.' This statement reflects animosity towards socioeconomic practices perceived as unfair, suggesting a disdain for wealth distribution.", LinguisticBias='Example: \'He supports Black Trump?! What an asshole\' exhibits linguistic bias with pejorative terms aimed at an individual\'s political choice, demonstrating emotional reaction rather than constructive discourse. The oversight comes from not assessing the potential harm of such language. Example: \'What a fucking douche nozzle\' illustrates linguistic bias through aggressive terms, reflecting a contemptuous viewpoint. The error comes from not recognizing how this language can escalate conflict in discussions. Example: \'Yeah we should turn you to ash because no one will be there to cremate you\' represents a hyperbolic expression that needs context evaluation to avoid mischaracterizations of acceptable discourse. Example: \'Yes because Donald Trump is awful. I’d vote for a sentient potato over Trump.\' The hyperbole here illustrates a strong disdain and misinterpretation might occur if emotional intent isn\'t accounted for. Example: "Am I the only one that finds all the emojis in posts like these unprofessional?..." signals rigid expectations on professional communication that can alienate non-traditional expression forms. Mistakes can arise from not considering the cultural implications underlying specific forms of communication. Example: \'Bummed Youssef did so poorly.\' This reflects disappointment but doesn’t give a fuller context regarding team dynamics, which may lead to misinterpretations of performance evaluations. Example: \'You sound just as bad as the right-wing accelerationists.\' This uses pejorative language without constructive commentary, which could misclassify emotional reaction as standard dialogue.', TextLevelContextBias='Example: \'Honestly? I honestly hope intel will make a top end competitor...\' focuses narrowly on personal technological preferences and overlooks broader industry implications. The mistake lies in failing to capture the larger context of market dynamics. Example: \'Yeah we should turn you to ash...\' employs extreme language that undermines constructive dialogue opportunities. Example: "I genuinely want to see Biden win and see Trump lose...." This strongly favors one political perspective, demonstrating a lack of balance in representation. Example: \'Looks like the results won’t technically be official...\' presents information but risks oversimplification of electoral significance, potentially neglecting public sentiment. Example: "The entire Sienna Miller thing is not working for me..." is subjective and fails to integrate essential context about systemic issues, misrepresenting broader industry practices.', PoliticalBias="Example: 'He supports Black Trump?! What an asshole' showcases strong political bias through the expression of derogatory sentiments that can mislead interpretations of political discussions. Future evaluations could benefit from understanding derogatory language's impact. Example: 'Hope he does ranked ballots before he leaves....' This reflects personal dissatisfaction relating to political promises without addressing larger electoral implications. Errors can arise when focusing solely on individual frustrations without engaging in broader issues. Example: 'I thought this was common knowledge since day one?...' This skepticism may misinterpret a conversation as dismissiveness rather than fostering insight. Example: 'How do we vote them out?' simplifies complex civic engagement considerations, risking oversimplification of political processes.", RacialBias="Example: 'The Argonians have a few things to say about this' indicates racial bias through fictional representation, suggesting a misunderstanding of how narratives influence racial perceptions. Recognizing representation's role can prevent misinterpretations of bias. Example: 'That’s what Islam does to the world.' This statement generalizes and propagates negative stereotypes, indicating racial bias without acknowledging potential harms. Example: 'Nah don’t you have a cute chocolate face' engages with racial commentary in a way that can be objectifying while also lacking a deeper understanding of implications.", GenderBias='Example: "On the heels front, I\'ve also noticed that it\'s becoming a lot less common for women to wear high heels to work..." This reinforces professional appearance norms for women, impairing discussions on gender representation in professional settings. An error arises from not addressing the deeper implications surrounding gender dynamics.')
+2024-12-20 21:37:44.349 | SUCCESS  | __main__:evaluate:425 - Evaluation done.
+2024-12-20 21:37:48.278 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:37:50.845 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:37:53.899 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:38:00.685 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:38:03.688 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:38:14.413 | INFO     | __main__:annotate:359 - Batch annotated - idx 910:920
+2024-12-20 21:38:18.069 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.19999999999999996
+2024-12-20 21:38:41.012 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:38:41.012 | INFO     | __main__:annotate:359 - Batch annotated - idx 920:930
+2024-12-20 21:38:46.167 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:39:01.625 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:39:03.007 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:39:04.452 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:39:07.300 | INFO     | __main__:annotate:359 - Batch annotated - idx 930:940
+2024-12-20 21:39:22.338 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:39:25.916 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:39:28.606 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.7
+2024-12-20 21:39:33.441 | INFO     | __main__:annotate:359 - Batch annotated - idx 940:950
+2024-12-20 21:39:40.497 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:39:44.361 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.09999999999999998
+2024-12-20 21:39:47.896 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:39:56.448 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:40:03.638 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.7
+2024-12-20 21:40:03.639 | INFO     | __main__:annotate:359 - Batch annotated - idx 950:960
+2024-12-20 21:40:10.139 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:40:13.377 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:40:28.686 | INFO     | __main__:annotate:359 - Batch annotated - idx 960:970
+2024-12-20 21:40:35.145 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:40:41.888 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:40:44.433 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:40:52.586 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:40:59.159 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:40:59.160 | INFO     | __main__:annotate:359 - Batch annotated - idx 970:980
+2024-12-20 21:41:14.486 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.8
+2024-12-20 21:41:15.975 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.10000000000000009
+2024-12-20 21:41:18.794 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.0
+2024-12-20 21:41:23.490 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.20000000000000007
+2024-12-20 21:41:27.562 | INFO     | __main__:annotate:359 - Batch annotated - idx 980:990
+2024-12-20 21:41:31.465 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:41:36.874 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.39999999999999997
+2024-12-20 21:41:38.887 | DEBUG    | __main__:confidence_aware_agg:275 - Maximum confidence gap: 0.6
+2024-12-20 21:41:59.117 | INFO     | __main__:annotate:359 - Batch annotated - idx 990:1000
+2024-12-20 21:41:59.118 | INFO     | __main__:evaluate:391 - Evaluation started; current human judgement: ['kupkzr9', 'ksx7n0i', 'kx0y7ok', 'kwzxb36', 'ku9487n', 'kwa84je', 'kuotbev', 'kw9ppdw', 'ktem8i1', 'ktku1zl', 'ks6jw5n', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ktw2xtc', 'ktd1tw7', 'ksv0pyy', 'ksfmpjz', 'ksrpsqm', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'ku8sqs8', 'ktbrco2', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kt3j1yq', 'kt3n8nr', 'kvntswa', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktob0qc', 'kufmlpr', 'ktbcnyy', 'ksckiea', 'ksctfck', 'kvo8j6d', 'ksw9sbb', 'kul3cib', 'kwmy2ie', 'kvc6quv', 'kth2ku9', 'kvcddx8', 'ktdr3bs', 'ktdvhe3', 'kv7nhjr', 'kv35qnu', 'kt5ovvt', 'kwyp9wz', 'krg3asx', 'ksqfs84', 'kri0tfl', 'kvprt4r', 'krce91p', 'kwkckkj', 'kt6txuq', 'ksxauop', 'kvelhst', 'krrus1f', 'kuwq9zw', 'kuar7b4', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'ksz58gt', 'kquaelg', 'ktxlvny', 'ktiw39j', 'kvaqmly', 'kwnnnqw', 'kthpmj5', 'kvpv962', 'kurchxh', 'kuxfd9c', 'krtqzsw', 'ktia4kr', 'kt2a4l3', 'kwf6071', 'kuf3py2', 'kte3g5k', 'kuav8g8', 'kuk503d', 'ktk46n2', 'ktuox0a', 'kukby75', 'kvwo1uq', 'kw0zs7p', 'kv6xrwg', 'ksi65jq', 'kutwa6d', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kuh1o2n', 'kwdsutp', 'ku6ujva', 'kuvohjy', 'kworjf6', 'ksbc49f', 'kun7igy', 'kvy6nt1', 'kv5mxpz', 'ktutxqa', 'kva44k3', 'kug4atl', 'kuh3t87', 'kt2qbai', 'ktglxk6', 'kt4k1i3', 'kwsiotr', 'kte72ih', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kuun08a', 'ktcx5ts', 'krtm5a8', 'kuaybit', 'kub6rxl', 'ktc35aq', 'kvqxne7', 'kt0z58s', 'kudkp1n', 'krrjqt7', 'ktjcc6g', 'kwtbiok', 'ktebp6s', 'ktnsqou', 'kuzjqnu', 'kuwldv4', 'ktokjw7', 'krm9n9m', 'kt6ubh3', 'ksbwzpk', 'kv0fd6t', 'ktf7bba', 'kvle1wp', 'kwa9amh', 'kuzwy6u', 'kv1v4v3', 'kvu3uhn', 'kti6xf5', 'kued4wu', 'ktta436', 'kwtdigi', 'kvttlyx', 'kvoe604', 'kwlyesr', 'kvd1i45', 'ktrzber', 'ktvnr9h', 'kwsg5qi', 'ksv05xt', 'ktf9uo3', 'kug7o9e', 'kt4ora7', 'kv7fizq', 'kt7l91h', 'kwq76ev', 'krefl04', 'ktxgd4i', 'kraxc86', 'ktehmjc', 'kteb0w7', 'kunvnab', 'kwn4iwy', 'kx263w5', 'kvrboe6', 'kw86crt', 'kt51ko5', 'ktpbq8g', 'kw6qgns', 'kt3cr2v', 'ks3oonf', 'kty41pd', 'kwq3g3h', 'kvt825g', 'kv1q09m', 'kv9jf2f', 'ktn3l3l', 'ktsliqw', 'kwk54cq', 'ks3xmnq', 'ktdwspe', 'ks04x6z', 'kuts0ww', 'ktj766t', 'kuod4uk', 'kwqfjd1', 'kskm0rq', 'kupycdx', 'ktfi4ti', 'ksyl9sb', 'kuo2qvv', 'ktng7tl', 'ktp1xty', 'kveu3c6', 'kvoml85', 'kta2i24', 'kvyz4vm', 'kwzzqm4', 'kw9uc6o', 'kutwi4x', 'kswmhyr', 'kt8f053', 'kwvlg3b', 'ksz3ymf', 'kted3w2']
+2024-12-20 21:41:59.125 | INFO     | __main__:evaluate:412 - hate speech: Macro F1 0.6468231611893585; Micro F1 0.9744190957712086; Accuracy 0.9659340659340659
+
+2024-12-20 21:41:59.129 | INFO     | __main__:evaluate:412 - linguistic bias: Macro F1 0.7977356689462836; Micro F1 0.8864823499917122; Accuracy 0.8956043956043956
+
+2024-12-20 21:41:59.134 | INFO     | __main__:evaluate:412 - text-level context bias: Macro F1 0.7940643993275572; Micro F1 0.944525460314934; Accuracy 0.9384615384615385
+
+2024-12-20 21:41:59.139 | INFO     | __main__:evaluate:412 - political bias: Macro F1 0.9077812943359163; Micro F1 0.9722704666282096; Accuracy 0.9714285714285714
+
+2024-12-20 21:41:59.145 | INFO     | __main__:evaluate:412 - racial bias: Macro F1 0.8322271386430679; Micro F1 0.9952405264352168; Accuracy 0.9956043956043956
+
+2024-12-20 21:41:59.151 | INFO     | __main__:evaluate:412 - gender bias: Macro F1 0.9123972352182368; Micro F1 0.9947850913021594; Accuracy 0.9945054945054945
+
+2024-12-20 21:41:59.151 | INFO     | __main__:evaluate:415 - Reflecting on mistakes...
+2024-12-20 21:42:00.409 | DEBUG    | __main__:evaluate:424 - Context(HateSpeech='', LinguisticBias='', TextLevelContextBias='', PoliticalBias='', RacialBias='', GenderBias='')
+2024-12-20 21:42:00.409 | SUCCESS  | __main__:evaluate:425 - Evaluation done.
+2024-12-20 21:42:00.415 | SUCCESS  | __main__:annotate:384 - Pipeline finished - saved predictions at ./save/
+2024-12-20 21:42:00.415 | SUCCESS  | __main__:annotate:387 - Done.

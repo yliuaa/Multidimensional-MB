@@ -1,0 +1,594 @@
+2024-12-17 00:11:19.971 | INFO     | __main__:<module>:475 - Pipeline started with args: Namespace(model='gpt-4o-mini', api_key='../api_key.txt', strategies=['zero-shot', 'CoT', 'biliteral'], dynamic_context=False, max_retries=10, seed=42, eval_path='~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv', batch_size=10, context_path='./ref_samples.json', output_path='./save/', note='No-CU_ConfCheck')
+2024-12-17 00:11:19.979 | INFO     | __main__:load_data:59 - Loading data from ~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv
+2024-12-17 00:11:19.979 | INFO     | __main__:load_data:60 - Columns: ['Unnamed: 0', 'id', 'textDisplay', 'publishedAt', 'parentId', 'parentType', 'hate speech', 'linguistic bias', 'text-level context bias', 'political bias', 'gender bias', 'racial bias', 'domain']
+2024-12-17 00:11:19.979 | INFO     | __main__:load_data:61 - Shape: (1998, 13)
+2024-12-17 00:11:20.013 | DEBUG    | __main__:__init__:99 - Confidence check True
+2024-12-17 00:11:20.023 | INFO     | __main__:annotate:280 - Loaded context examples at ./ref_samples.json
+2024-12-17 00:11:20.024 | INFO     | __main__:annotate:281 - Starting annotation...
+2024-12-17 00:11:43.226 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:12:01.610 | INFO     | __main__:annotate:334 - Batch annotated - idx 0:10
+2024-12-17 00:12:10.323 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:12:13.016 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:12:18.131 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:12:31.607 | INFO     | __main__:annotate:334 - Batch annotated - idx 10:20
+2024-12-17 00:12:44.426 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:12:50.264 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:12:55.315 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:13:02.377 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:13:03.703 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:13:03.703 | INFO     | __main__:annotate:334 - Batch annotated - idx 20:30
+2024-12-17 00:13:05.590 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:13:07.116 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:13:20.565 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:13:24.489 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.3
+2024-12-17 00:13:27.831 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:13:32.580 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.3
+2024-12-17 00:13:35.284 | INFO     | __main__:annotate:334 - Batch annotated - idx 30:40
+2024-12-17 00:13:55.008 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:14:11.702 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:14:15.918 | INFO     | __main__:annotate:334 - Batch annotated - idx 40:50
+2024-12-17 00:14:29.188 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:14:50.140 | INFO     | __main__:annotate:334 - Batch annotated - idx 50:60
+2024-12-17 00:14:53.610 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:16:39.283 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:18:18.884 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.19999999999999996
+2024-12-17 00:18:26.305 | INFO     | __main__:annotate:334 - Batch annotated - idx 60:70
+2024-12-17 00:18:31.228 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:18:32.592 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:18:38.101 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:18:59.287 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:19:06.507 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:19:06.507 | INFO     | __main__:annotate:334 - Batch annotated - idx 70:80
+2024-12-17 00:19:19.283 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:19:26.783 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:19:30.470 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.39999999999999997
+2024-12-17 00:19:44.188 | INFO     | __main__:annotate:334 - Batch annotated - idx 80:90
+2024-12-17 00:19:53.610 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:20:03.075 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:20:16.124 | INFO     | __main__:annotate:334 - Batch annotated - idx 90:100
+2024-12-17 00:20:17.489 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:20:34.236 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:20:43.549 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:20:46.590 | INFO     | __main__:annotate:334 - Batch annotated - idx 100:110
+2024-12-17 00:20:46.591 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['kupkzr9', 'kx0y7ok', 'kwzxb36', 'ktjfene', 'krou5ax', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'kv34sr6', 'ktem8i1', 'ktku1zl', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ksvnzr6', 'kvfsonx', 'kv6n8zr', 'kvfvdqb']
+2024-12-17 00:20:46.596 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.4835680751173709; Micro F1 0.9583440034144259; Accuracy 0.9363636363636364
+
+2024-12-17 00:20:46.600 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.7677988869698714; Micro F1 0.8888505085396278; Accuracy 0.9
+
+2024-12-17 00:20:46.604 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7131266299623298; Micro F1 0.9247965016727695; Accuracy 0.9181818181818182
+
+2024-12-17 00:20:46.608 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8952380952380953; Micro F1 0.9818181818181818; Accuracy 0.9818181818181818
+
+2024-12-17 00:20:46.612 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-17 00:20:46.616 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.4954128440366973; Micro F1 0.9818181818181818; Accuracy 0.9818181818181818
+
+2024-12-17 00:20:46.616 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:21:06.789 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:21:12.728 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:21:25.232 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:21:27.133 | INFO     | __main__:annotate:334 - Batch annotated - idx 110:120
+2024-12-17 00:21:44.393 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:21:50.735 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:21:58.354 | INFO     | __main__:annotate:334 - Batch annotated - idx 120:130
+2024-12-17 00:22:09.435 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:22:15.210 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:22:17.340 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:22:27.215 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:22:29.572 | INFO     | __main__:annotate:334 - Batch annotated - idx 130:140
+2024-12-17 00:22:59.844 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:23:04.127 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:23:05.743 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:23:07.571 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:23:09.363 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:23:11.692 | INFO     | __main__:annotate:334 - Batch annotated - idx 140:150
+2024-12-17 00:23:37.592 | INFO     | __main__:annotate:334 - Batch annotated - idx 150:160
+2024-12-17 00:23:50.742 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:23:59.861 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:24:02.223 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:24:04.446 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.19999999999999996
+2024-12-17 00:24:07.595 | INFO     | __main__:annotate:334 - Batch annotated - idx 160:170
+2024-12-17 00:24:11.457 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:24:13.528 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:24:36.411 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:24:36.412 | INFO     | __main__:annotate:334 - Batch annotated - idx 170:180
+2024-12-17 00:24:41.152 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:25:04.675 | INFO     | __main__:annotate:334 - Batch annotated - idx 180:190
+2024-12-17 00:25:13.046 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:25:25.696 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:25:37.868 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:25:42.542 | INFO     | __main__:annotate:334 - Batch annotated - idx 190:200
+2024-12-17 00:26:06.268 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:26:07.541 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:26:11.336 | INFO     | __main__:annotate:334 - Batch annotated - idx 200:210
+2024-12-17 00:26:11.337 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['kupkzr9', 'kx0y7ok', 'kwzxb36', 'ktjfene', 'krou5ax', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'kv34sr6', 'ktem8i1', 'ktku1zl', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ksvnzr6', 'kvfsonx', 'kv6n8zr', 'kvfvdqb', 'ksz5kj7', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kww3cnv', 'kvimu6i', 'ktbrco2', 'kuihcqo', 'kuwgg3x', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'ktob0qc', 'ktbcnyy', 'kt5p9qt', 'kvo8j6d']
+2024-12-17 00:26:11.341 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.5902439024390244; Micro F1 0.9693379790940767; Accuracy 0.9619047619047619
+
+2024-12-17 00:26:11.345 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8203182933089954; Micro F1 0.9212660022653748; Accuracy 0.9285714285714286
+
+2024-12-17 00:26:11.349 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7387843104735052; Micro F1 0.9338727447194152; Accuracy 0.9285714285714286
+
+2024-12-17 00:26:11.354 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8850071186069435; Micro F1 0.9757028646525964; Accuracy 0.9761904761904762
+
+2024-12-17 00:26:11.358 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-17 00:26:11.362 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.7820823244552058; Micro F1 0.984711172604635; Accuracy 0.9857142857142858
+
+2024-12-17 00:26:11.362 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:26:23.603 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:26:39.219 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:26:46.822 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:26:49.238 | INFO     | __main__:annotate:334 - Batch annotated - idx 210:220
+2024-12-17 00:27:10.809 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:27:15.074 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:27:28.770 | INFO     | __main__:annotate:334 - Batch annotated - idx 220:230
+2024-12-17 00:27:38.219 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:27:52.258 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:27:56.737 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:28:04.030 | INFO     | __main__:annotate:334 - Batch annotated - idx 230:240
+2024-12-17 00:28:06.209 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:28:11.179 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-17 00:28:23.803 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-17 00:28:32.629 | INFO     | __main__:annotate:334 - Batch annotated - idx 240:250
+2024-12-17 00:28:44.557 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6000000000000001
+2024-12-17 00:28:46.086 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:28:51.905 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:28:55.635 | INFO     | __main__:annotate:334 - Batch annotated - idx 250:260
+2024-12-17 00:29:00.139 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:29:01.738 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:29:03.732 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:29:22.841 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:29:33.778 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:29:37.057 | INFO     | __main__:annotate:334 - Batch annotated - idx 260:270
+2024-12-17 00:29:45.396 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:30:02.312 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.10000000000000009
+2024-12-17 00:30:10.085 | INFO     | __main__:annotate:334 - Batch annotated - idx 270:280
+2024-12-17 00:30:30.162 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:30:42.533 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:30:49.442 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.19999999999999996
+2024-12-17 00:30:50.448 | INFO     | __main__:annotate:334 - Batch annotated - idx 280:290
+2024-12-17 00:30:57.287 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-17 00:30:59.768 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:31:01.210 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:31:02.453 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:31:10.323 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:31:13.812 | INFO     | __main__:annotate:334 - Batch annotated - idx 290:300
+2024-12-17 00:31:45.893 | INFO     | __main__:annotate:334 - Batch annotated - idx 300:310
+2024-12-17 00:31:45.893 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['kupkzr9', 'kx0y7ok', 'kwzxb36', 'ktjfene', 'krou5ax', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'kv34sr6', 'ktem8i1', 'ktku1zl', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ksvnzr6', 'kvfsonx', 'kv6n8zr', 'kvfvdqb', 'ksz5kj7', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kww3cnv', 'kvimu6i', 'ktbrco2', 'kuihcqo', 'kuwgg3x', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'ktob0qc', 'ktbcnyy', 'kt5p9qt', 'kvo8j6d', 'kul3cib', 'kta6b47', 'kwmy2ie', 'kuono6m', 'kwqahfk', 'kvc6quv', 'ktprd34', 'kth2ku9', 'kvcddx8', 'kvshv3o', 'kt1kz1o', 'kt8cttl', 'kwql6xq', 'ksqfs84', 'kri0tfl', 'kv9dh0h', 'kvprt4r']
+2024-12-17 00:31:45.897 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.5678621214041313; Micro F1 0.9738648766867931; Accuracy 0.964516129032258
+
+2024-12-17 00:31:45.901 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.7800081103000811; Micro F1 0.8976911807027181; Accuracy 0.9096774193548387
+
+2024-12-17 00:31:45.905 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7582711373510082; Micro F1 0.9382119897803347; Accuracy 0.932258064516129
+
+2024-12-17 00:31:45.909 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9233811171527434; Micro F1 0.9806451612903225; Accuracy 0.9806451612903225
+
+2024-12-17 00:31:45.913 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-17 00:31:45.916 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.8308783415166394; Micro F1 0.989792865565; Accuracy 0.9903225806451613
+
+2024-12-17 00:31:45.917 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:31:51.570 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:32:00.062 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:32:13.613 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:32:15.206 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:32:22.309 | INFO     | __main__:annotate:334 - Batch annotated - idx 310:320
+2024-12-17 00:32:37.356 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:32:40.839 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:32:51.338 | INFO     | __main__:annotate:334 - Batch annotated - idx 320:330
+2024-12-17 00:32:52.980 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:32:54.617 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:33:05.986 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:33:14.154 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:33:25.552 | INFO     | __main__:annotate:334 - Batch annotated - idx 330:340
+2024-12-17 00:33:31.972 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6000000000000001
+2024-12-17 00:33:33.295 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:33:54.335 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:33:54.335 | INFO     | __main__:annotate:334 - Batch annotated - idx 340:350
+2024-12-17 00:33:55.595 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:33:56.975 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:34:03.223 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:34:13.405 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-17 00:34:27.670 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:34:27.671 | INFO     | __main__:annotate:334 - Batch annotated - idx 350:360
+2024-12-17 00:34:34.838 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:34:39.900 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:34:46.811 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:34:50.990 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:35:04.321 | INFO     | __main__:annotate:334 - Batch annotated - idx 360:370
+2024-12-17 00:35:05.564 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:35:25.871 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:35:27.194 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:35:31.098 | INFO     | __main__:annotate:334 - Batch annotated - idx 370:380
+2024-12-17 00:35:35.027 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:35:36.259 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.39999999999999997
+2024-12-17 00:35:37.857 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:35:39.712 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:35:40.980 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:35:48.932 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:35:50.171 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:35:53.510 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-17 00:35:54.452 | INFO     | __main__:annotate:334 - Batch annotated - idx 380:390
+2024-12-17 00:36:04.354 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:36:05.922 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:36:09.834 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.19999999999999996
+2024-12-17 00:36:15.739 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:36:26.183 | INFO     | __main__:annotate:334 - Batch annotated - idx 390:400
+2024-12-17 00:36:53.155 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:37:02.463 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:37:04.310 | INFO     | __main__:annotate:334 - Batch annotated - idx 400:410
+2024-12-17 00:37:04.311 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['kupkzr9', 'kx0y7ok', 'kwzxb36', 'ktjfene', 'krou5ax', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'kv34sr6', 'ktem8i1', 'ktku1zl', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ksvnzr6', 'kvfsonx', 'kv6n8zr', 'kvfvdqb', 'ksz5kj7', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kww3cnv', 'kvimu6i', 'ktbrco2', 'kuihcqo', 'kuwgg3x', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'ktob0qc', 'ktbcnyy', 'kt5p9qt', 'kvo8j6d', 'kul3cib', 'kta6b47', 'kwmy2ie', 'kuono6m', 'kwqahfk', 'kvc6quv', 'ktprd34', 'kth2ku9', 'kvcddx8', 'kvshv3o', 'kt1kz1o', 'kt8cttl', 'kwql6xq', 'ksqfs84', 'kri0tfl', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kw3mm57', 'kt6txuq', 'kwqvned', 'ksxauop', 'kubeoe9', 'krrus1f', 'ksgkvrr', 'kr8v34x', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'ktia4kr', 'kwbzlfl', 'kt2a4l3', 'ktvc3n0']
+2024-12-17 00:37:04.315 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.649779880412642; Micro F1 0.9756241796598923; Accuracy 0.9682926829268292
+
+2024-12-17 00:37:04.319 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.7689111428608879; Micro F1 0.8813762196160976; Accuracy 0.8951219512195122
+
+2024-12-17 00:37:04.323 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7627314814814814; Micro F1 0.9375677506775068; Accuracy 0.9317073170731708
+
+2024-12-17 00:37:04.327 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9178155415488095; Micro F1 0.9782203851571468; Accuracy 0.9780487804878049
+
+2024-12-17 00:37:04.331 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-17 00:37:04.334 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.8617822227216541; Micro F1 0.992354854889149; Accuracy 0.9926829268292683
+
+2024-12-17 00:37:04.334 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:37:12.890 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:37:16.015 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.19999999999999996
+2024-12-17 00:37:25.154 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:37:28.323 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:37:28.323 | INFO     | __main__:annotate:334 - Batch annotated - idx 410:420
+2024-12-17 00:37:58.370 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:38:00.871 | INFO     | __main__:annotate:334 - Batch annotated - idx 420:430
+2024-12-17 00:38:04.636 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-17 00:38:15.165 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:38:18.887 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:38:20.140 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:38:26.844 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:38:30.857 | INFO     | __main__:annotate:334 - Batch annotated - idx 430:440
+2024-12-17 00:38:32.762 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:38:39.697 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:38:43.336 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:38:44.494 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:38:45.657 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-17 00:38:51.592 | INFO     | __main__:annotate:334 - Batch annotated - idx 440:450
+2024-12-17 00:38:55.418 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:38:58.865 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:39:11.576 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:39:18.231 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-17 00:39:18.231 | INFO     | __main__:annotate:334 - Batch annotated - idx 450:460
+2024-12-17 00:39:19.526 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:39:20.911 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:39:23.131 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:39:24.304 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:39:27.514 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:39:37.654 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:39:42.401 | INFO     | __main__:annotate:334 - Batch annotated - idx 460:470
+2024-12-17 00:39:49.906 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:39:53.100 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:39:57.669 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6000000000000001
+2024-12-17 00:40:02.456 | INFO     | __main__:annotate:334 - Batch annotated - idx 470:480
+2024-12-17 00:40:04.632 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:40:07.729 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:40:18.144 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:40:28.235 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:40:36.643 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:40:38.277 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:40:40.541 | INFO     | __main__:annotate:334 - Batch annotated - idx 480:490
+2024-12-17 00:40:42.013 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:40:46.185 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:40:47.539 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:40:51.106 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:41:01.915 | INFO     | __main__:annotate:334 - Batch annotated - idx 490:500
+2024-12-17 00:41:11.040 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:41:26.048 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:41:29.320 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:41:31.140 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:41:33.812 | INFO     | __main__:annotate:334 - Batch annotated - idx 500:510
+2024-12-17 00:41:33.813 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['kupkzr9', 'kx0y7ok', 'kwzxb36', 'ktjfene', 'krou5ax', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'kv34sr6', 'ktem8i1', 'ktku1zl', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ksvnzr6', 'kvfsonx', 'kv6n8zr', 'kvfvdqb', 'ksz5kj7', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kww3cnv', 'kvimu6i', 'ktbrco2', 'kuihcqo', 'kuwgg3x', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'ktob0qc', 'ktbcnyy', 'kt5p9qt', 'kvo8j6d', 'kul3cib', 'kta6b47', 'kwmy2ie', 'kuono6m', 'kwqahfk', 'kvc6quv', 'ktprd34', 'kth2ku9', 'kvcddx8', 'kvshv3o', 'kt1kz1o', 'kt8cttl', 'kwql6xq', 'ksqfs84', 'kri0tfl', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kw3mm57', 'kt6txuq', 'kwqvned', 'ksxauop', 'kubeoe9', 'krrus1f', 'ksgkvrr', 'kr8v34x', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'ktia4kr', 'kwbzlfl', 'kt2a4l3', 'ktvc3n0', 'kuav8g8', 'ksz7qv5', 'ktuox0a', 'kvpj2xe', 'kvwo1uq', 'kw0zs7p', 'ku26gjr', 'ktac398', 'kv6diyw', 'krscef3', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kvzu757', 'kuiclh8', 'kvfcxqp', 'ku6kwso', 'krcc679', 'ksbc49f', 'kvy6nt1', 'kupmqu4', 'kun4pba', 'kqwncsc', 'kt809xd']
+2024-12-17 00:41:33.817 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6104522613065326; Micro F1 0.9736407527835255; Accuracy 0.9627450980392157
+
+2024-12-17 00:41:33.821 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.7763354091746338; Micro F1 0.8817423996175087; Accuracy 0.8921568627450981
+
+2024-12-17 00:41:33.825 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7725245316681535; Micro F1 0.9418096587430691; Accuracy 0.9372549019607843
+
+2024-12-17 00:41:33.829 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9167074963253308; Micro F1 0.9770239501974235; Accuracy 0.9764705882352941
+
+2024-12-17 00:41:33.833 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8995073891625616; Micro F1 0.9978441031585048; Accuracy 0.9980392156862745
+
+2024-12-17 00:41:33.837 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.87300796812749; Micro F1 0.9921568627450981; Accuracy 0.9921568627450981
+
+2024-12-17 00:41:33.837 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:41:38.813 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:41:45.148 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:41:57.858 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:42:00.568 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:42:01.841 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:42:01.841 | INFO     | __main__:annotate:334 - Batch annotated - idx 510:520
+2024-12-17 00:42:09.015 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:42:18.621 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:42:28.803 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:42:30.975 | INFO     | __main__:annotate:334 - Batch annotated - idx 520:530
+2024-12-17 00:42:42.730 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:42:44.123 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:43:01.302 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:43:01.302 | INFO     | __main__:annotate:334 - Batch annotated - idx 530:540
+2024-12-17 00:44:37.355 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:44:39.593 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:44:46.148 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:44:56.608 | INFO     | __main__:annotate:334 - Batch annotated - idx 540:550
+2024-12-17 00:45:08.095 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:45:16.843 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:45:35.713 | INFO     | __main__:annotate:334 - Batch annotated - idx 550:560
+2024-12-17 00:45:48.350 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-17 00:45:49.812 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:45:55.050 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:46:03.182 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:46:07.723 | INFO     | __main__:annotate:334 - Batch annotated - idx 560:570
+2024-12-17 00:46:14.274 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:46:24.382 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:46:28.798 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:46:31.555 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:46:34.198 | INFO     | __main__:annotate:334 - Batch annotated - idx 570:580
+2024-12-17 00:46:43.098 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:46:45.105 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-17 00:46:58.467 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:47:01.940 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-17 00:47:01.940 | INFO     | __main__:annotate:334 - Batch annotated - idx 580:590
+2024-12-17 00:47:05.146 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:47:06.515 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:47:07.917 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:47:09.336 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:47:14.332 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:47:25.064 | INFO     | __main__:annotate:334 - Batch annotated - idx 590:600
+2024-12-17 00:47:26.542 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:47:28.836 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:47:34.742 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-17 00:47:51.186 | INFO     | __main__:annotate:334 - Batch annotated - idx 600:610
+2024-12-17 00:47:51.187 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['kupkzr9', 'kx0y7ok', 'kwzxb36', 'ktjfene', 'krou5ax', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'kv34sr6', 'ktem8i1', 'ktku1zl', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ksvnzr6', 'kvfsonx', 'kv6n8zr', 'kvfvdqb', 'ksz5kj7', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kww3cnv', 'kvimu6i', 'ktbrco2', 'kuihcqo', 'kuwgg3x', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'ktob0qc', 'ktbcnyy', 'kt5p9qt', 'kvo8j6d', 'kul3cib', 'kta6b47', 'kwmy2ie', 'kuono6m', 'kwqahfk', 'kvc6quv', 'ktprd34', 'kth2ku9', 'kvcddx8', 'kvshv3o', 'kt1kz1o', 'kt8cttl', 'kwql6xq', 'ksqfs84', 'kri0tfl', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kw3mm57', 'kt6txuq', 'kwqvned', 'ksxauop', 'kubeoe9', 'krrus1f', 'ksgkvrr', 'kr8v34x', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'ktia4kr', 'kwbzlfl', 'kt2a4l3', 'ktvc3n0', 'kuav8g8', 'ksz7qv5', 'ktuox0a', 'kvpj2xe', 'kvwo1uq', 'kw0zs7p', 'ku26gjr', 'ktac398', 'kv6diyw', 'krscef3', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kvzu757', 'kuiclh8', 'kvfcxqp', 'ku6kwso', 'krcc679', 'ksbc49f', 'kvy6nt1', 'kupmqu4', 'kun4pba', 'kqwncsc', 'kt809xd', 'kuo8j6v', 'kva44k3', 'kug4atl', 'ktdbzmq', 'ku9isry', 'ksdyfha', 'kuh3t87', 'ku10ehx', 'krxqxep', 'kt4k1i3', 'kwsiotr', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kwrpam5', 'ktcx5ts', 'kuaybit', 'kw1zqfw', 'ksunegg', 'ktyfhb8', 'kub6rxl', 'kvqxne7', 'kvxjwvg']
+2024-12-17 00:47:51.192 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6671957147108422; Micro F1 0.9721771682161376; Accuracy 0.9639344262295082
+
+2024-12-17 00:47:51.196 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.7834191372270549; Micro F1 0.8848844484929267; Accuracy 0.8950819672131147
+
+2024-12-17 00:47:51.200 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.771027989976768; Micro F1 0.9441716888434086; Accuracy 0.9393442622950819
+
+2024-12-17 00:47:51.204 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9090990373439036; Micro F1 0.9760462160916934; Accuracy 0.9754098360655737
+
+2024-12-17 00:47:51.207 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8991735537190083; Micro F1 0.9963961522828885; Accuracy 0.9967213114754099
+
+2024-12-17 00:47:51.211 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.8892157931059532; Micro F1 0.9919780444220552; Accuracy 0.9918032786885246
+
+2024-12-17 00:47:51.211 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:47:57.070 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:48:00.632 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:48:02.237 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:48:05.366 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6000000000000001
+2024-12-17 00:48:06.690 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:48:10.723 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:48:12.994 | INFO     | __main__:annotate:334 - Batch annotated - idx 610:620
+2024-12-17 00:48:22.968 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:48:38.247 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:48:45.317 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:48:56.039 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:49:11.264 | INFO     | __main__:annotate:334 - Batch annotated - idx 620:630
+2024-12-17 00:49:20.500 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:49:28.757 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:49:38.014 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:49:46.179 | INFO     | __main__:annotate:334 - Batch annotated - idx 630:640
+2024-12-17 00:49:58.478 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:50:05.101 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:50:06.778 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:50:10.494 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6000000000000001
+2024-12-17 00:50:12.970 | INFO     | __main__:annotate:334 - Batch annotated - idx 640:650
+2024-12-17 00:50:16.691 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:50:23.067 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:50:27.366 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:50:28.640 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:50:32.524 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:50:36.138 | INFO     | __main__:annotate:334 - Batch annotated - idx 650:660
+2024-12-17 00:50:45.547 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:51:03.796 | INFO     | __main__:annotate:334 - Batch annotated - idx 660:670
+2024-12-17 00:51:07.586 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-17 00:51:16.108 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:51:17.618 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:51:33.691 | INFO     | __main__:annotate:334 - Batch annotated - idx 670:680
+2024-12-17 00:51:47.195 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:51:48.702 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-17 00:51:58.810 | INFO     | __main__:annotate:334 - Batch annotated - idx 680:690
+2024-12-17 00:52:00.705 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:52:02.097 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:52:13.717 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:52:21.504 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:52:31.107 | INFO     | __main__:annotate:334 - Batch annotated - idx 690:700
+2024-12-17 00:52:35.073 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:52:51.978 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.19999999999999996
+2024-12-17 00:52:55.459 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:52:58.008 | INFO     | __main__:annotate:334 - Batch annotated - idx 700:710
+2024-12-17 00:52:58.008 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['kupkzr9', 'kx0y7ok', 'kwzxb36', 'ktjfene', 'krou5ax', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'kv34sr6', 'ktem8i1', 'ktku1zl', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ksvnzr6', 'kvfsonx', 'kv6n8zr', 'kvfvdqb', 'ksz5kj7', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kww3cnv', 'kvimu6i', 'ktbrco2', 'kuihcqo', 'kuwgg3x', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'ktob0qc', 'ktbcnyy', 'kt5p9qt', 'kvo8j6d', 'kul3cib', 'kta6b47', 'kwmy2ie', 'kuono6m', 'kwqahfk', 'kvc6quv', 'ktprd34', 'kth2ku9', 'kvcddx8', 'kvshv3o', 'kt1kz1o', 'kt8cttl', 'kwql6xq', 'ksqfs84', 'kri0tfl', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kw3mm57', 'kt6txuq', 'kwqvned', 'ksxauop', 'kubeoe9', 'krrus1f', 'ksgkvrr', 'kr8v34x', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'ktia4kr', 'kwbzlfl', 'kt2a4l3', 'ktvc3n0', 'kuav8g8', 'ksz7qv5', 'ktuox0a', 'kvpj2xe', 'kvwo1uq', 'kw0zs7p', 'ku26gjr', 'ktac398', 'kv6diyw', 'krscef3', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kvzu757', 'kuiclh8', 'kvfcxqp', 'ku6kwso', 'krcc679', 'ksbc49f', 'kvy6nt1', 'kupmqu4', 'kun4pba', 'kqwncsc', 'kt809xd', 'kuo8j6v', 'kva44k3', 'kug4atl', 'ktdbzmq', 'ku9isry', 'ksdyfha', 'kuh3t87', 'ku10ehx', 'krxqxep', 'kt4k1i3', 'kwsiotr', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kwrpam5', 'ktcx5ts', 'kuaybit', 'kw1zqfw', 'ksunegg', 'ktyfhb8', 'kub6rxl', 'kvqxne7', 'kvxjwvg', 'krrjqt7', 'ks78ekc', 'kszbfkv', 'kwtbiok', 'kuzjqnu', 'krm9n9m', 'kt6ubh3', 'kru22m1', 'kwea4ic', 'ksbwzpk', 'kv0fd6t', 'krs7aqn', 'ktf7bba', 'kxhrf5j', 'kvle1wp', 'kukvheb', 'kwa9amh', 'kv1v4v3', 'kued4wu', 'kvun422', 'ksw2giv', 'kwtdigi']
+2024-12-17 00:52:58.013 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6631253223310984; Micro F1 0.975274026832475; Accuracy 0.967605633802817
+
+2024-12-17 00:52:58.017 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.784232497880712; Micro F1 0.882171511498897; Accuracy 0.8929577464788733
+
+2024-12-17 00:52:58.020 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7540010762913654; Micro F1 0.9406157329377033; Accuracy 0.9338028169014084
+
+2024-12-17 00:52:58.024 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9071569659804954; Micro F1 0.973570400579514; Accuracy 0.9732394366197183
+
+2024-12-17 00:52:58.028 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8992907801418439; Micro F1 0.9969034062531215; Accuracy 0.9971830985915493
+
+2024-12-17 00:52:58.032 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.8895147987924434; Micro F1 0.993108318455127; Accuracy 0.9929577464788732
+
+2024-12-17 00:52:58.032 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:53:17.485 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:53:28.545 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:53:29.803 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:53:29.803 | INFO     | __main__:annotate:334 - Batch annotated - idx 710:720
+2024-12-17 00:53:46.438 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:53:48.686 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.10000000000000009
+2024-12-17 00:53:53.774 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:53:53.774 | INFO     | __main__:annotate:334 - Batch annotated - idx 720:730
+2024-12-17 00:53:57.601 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:54:06.318 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:54:13.025 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:54:19.831 | INFO     | __main__:annotate:334 - Batch annotated - idx 730:740
+2024-12-17 00:54:21.198 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:54:25.694 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:54:27.790 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:54:33.860 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-17 00:54:37.555 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:54:41.950 | INFO     | __main__:annotate:334 - Batch annotated - idx 740:750
+2024-12-17 00:54:43.565 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:55:04.801 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:55:05.932 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:55:10.015 | INFO     | __main__:annotate:334 - Batch annotated - idx 750:760
+2024-12-17 00:55:27.533 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:55:31.765 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:55:34.287 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:55:35.713 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:55:36.895 | INFO     | __main__:annotate:334 - Batch annotated - idx 760:770
+2024-12-17 00:55:41.166 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:55:48.664 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:55:59.639 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:55:59.640 | INFO     | __main__:annotate:334 - Batch annotated - idx 770:780
+2024-12-17 00:56:03.789 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:56:06.231 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:56:08.076 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:56:16.217 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:56:29.138 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:56:30.282 | INFO     | __main__:annotate:334 - Batch annotated - idx 780:790
+2024-12-17 00:56:36.651 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:56:38.164 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:56:47.907 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.30000000000000004
+2024-12-17 00:56:52.889 | INFO     | __main__:annotate:334 - Batch annotated - idx 790:800
+2024-12-17 00:57:08.700 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:57:12.234 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:57:22.428 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:57:22.428 | INFO     | __main__:annotate:334 - Batch annotated - idx 800:810
+2024-12-17 00:57:22.429 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['kupkzr9', 'kx0y7ok', 'kwzxb36', 'ktjfene', 'krou5ax', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'kv34sr6', 'ktem8i1', 'ktku1zl', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ksvnzr6', 'kvfsonx', 'kv6n8zr', 'kvfvdqb', 'ksz5kj7', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kww3cnv', 'kvimu6i', 'ktbrco2', 'kuihcqo', 'kuwgg3x', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'ktob0qc', 'ktbcnyy', 'kt5p9qt', 'kvo8j6d', 'kul3cib', 'kta6b47', 'kwmy2ie', 'kuono6m', 'kwqahfk', 'kvc6quv', 'ktprd34', 'kth2ku9', 'kvcddx8', 'kvshv3o', 'kt1kz1o', 'kt8cttl', 'kwql6xq', 'ksqfs84', 'kri0tfl', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kw3mm57', 'kt6txuq', 'kwqvned', 'ksxauop', 'kubeoe9', 'krrus1f', 'ksgkvrr', 'kr8v34x', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'ktia4kr', 'kwbzlfl', 'kt2a4l3', 'ktvc3n0', 'kuav8g8', 'ksz7qv5', 'ktuox0a', 'kvpj2xe', 'kvwo1uq', 'kw0zs7p', 'ku26gjr', 'ktac398', 'kv6diyw', 'krscef3', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kvzu757', 'kuiclh8', 'kvfcxqp', 'ku6kwso', 'krcc679', 'ksbc49f', 'kvy6nt1', 'kupmqu4', 'kun4pba', 'kqwncsc', 'kt809xd', 'kuo8j6v', 'kva44k3', 'kug4atl', 'ktdbzmq', 'ku9isry', 'ksdyfha', 'kuh3t87', 'ku10ehx', 'krxqxep', 'kt4k1i3', 'kwsiotr', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kwrpam5', 'ktcx5ts', 'kuaybit', 'kw1zqfw', 'ksunegg', 'ktyfhb8', 'kub6rxl', 'kvqxne7', 'kvxjwvg', 'krrjqt7', 'ks78ekc', 'kszbfkv', 'kwtbiok', 'kuzjqnu', 'krm9n9m', 'kt6ubh3', 'kru22m1', 'kwea4ic', 'ksbwzpk', 'kv0fd6t', 'krs7aqn', 'ktf7bba', 'kxhrf5j', 'kvle1wp', 'kukvheb', 'kwa9amh', 'kv1v4v3', 'kued4wu', 'kvun422', 'ksw2giv', 'kwtdigi', 'kvttlyx', 'kseqcmp', 'kvoe604', 'kwlyesr', 'ktrzber', 'kvxcx6p', 'ktvnr9h', 'kwsg5qi', 'ksnbok3', 'ktf9uo3', 'kug7o9e', 'kt4ora7', 'kwq76ev', 'ksis8bw', 'krefl04', 'kw14kjp', 'kraxc86', 'kvdw49d', 'ktng6iq', 'kx263w5', 'kv1j792', 'ku3vd8j', 'kvrboe6', 'kw86crt', 'kt51ko5']
+2024-12-17 00:57:22.434 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6621819923075735; Micro F1 0.9741896950318457; Accuracy 0.9666666666666667
+
+2024-12-17 00:57:22.438 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.7882134040302082; Micro F1 0.8834873521687177; Accuracy 0.8938271604938272
+
+2024-12-17 00:57:22.442 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7702742474916388; Micro F1 0.9405640199843097; Accuracy 0.9345679012345679
+
+2024-12-17 00:57:22.446 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9151725871313673; Micro F1 0.9756613461092907; Accuracy 0.9753086419753086
+
+2024-12-17 00:57:22.450 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8993788819875776; Micro F1 0.9972854842420059; Accuracy 0.9975308641975309
+
+2024-12-17 00:57:22.454 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.8897389126351039; Micro F1 0.9939594200209666; Accuracy 0.9938271604938271
+
+2024-12-17 00:57:22.454 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:57:34.355 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-17 00:57:57.746 | INFO     | __main__:annotate:334 - Batch annotated - idx 810:820
+2024-12-17 00:57:59.236 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.39999999999999997
+2024-12-17 00:58:00.445 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:58:08.283 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:58:24.010 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:58:25.348 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:58:27.409 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:58:29.894 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:58:31.663 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:58:33.364 | INFO     | __main__:annotate:334 - Batch annotated - idx 820:830
+2024-12-17 00:58:49.613 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:59:05.697 | INFO     | __main__:annotate:334 - Batch annotated - idx 830:840
+2024-12-17 00:59:09.626 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 00:59:10.915 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:59:14.248 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 00:59:31.989 | INFO     | __main__:annotate:334 - Batch annotated - idx 840:850
+2024-12-17 00:59:33.110 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-17 00:59:37.317 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 00:59:48.065 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:59:53.683 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.5
+2024-12-17 00:59:55.041 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 00:59:57.413 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:00:01.244 | INFO     | __main__:annotate:334 - Batch annotated - idx 850:860
+2024-12-17 01:00:10.307 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:00:17.463 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 01:00:24.429 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:00:28.628 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.10000000000000009
+2024-12-17 01:00:39.969 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:00:46.351 | INFO     | __main__:annotate:334 - Batch annotated - idx 860:870
+2024-12-17 01:00:58.608 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 01:01:07.662 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:01:10.559 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 01:01:14.457 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:01:16.733 | INFO     | __main__:annotate:334 - Batch annotated - idx 870:880
+2024-12-17 01:01:25.438 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:01:51.109 | INFO     | __main__:annotate:334 - Batch annotated - idx 880:890
+2024-12-17 01:02:08.555 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 01:02:09.816 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:02:15.109 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 01:02:16.288 | INFO     | __main__:annotate:334 - Batch annotated - idx 890:900
+2024-12-17 01:02:17.743 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:02:25.013 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:02:32.356 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 01:02:39.865 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:02:46.477 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:02:53.409 | INFO     | __main__:annotate:334 - Batch annotated - idx 900:910
+2024-12-17 01:02:53.410 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['kupkzr9', 'kx0y7ok', 'kwzxb36', 'ktjfene', 'krou5ax', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'kv34sr6', 'ktem8i1', 'ktku1zl', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ksvnzr6', 'kvfsonx', 'kv6n8zr', 'kvfvdqb', 'ksz5kj7', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kww3cnv', 'kvimu6i', 'ktbrco2', 'kuihcqo', 'kuwgg3x', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'ktob0qc', 'ktbcnyy', 'kt5p9qt', 'kvo8j6d', 'kul3cib', 'kta6b47', 'kwmy2ie', 'kuono6m', 'kwqahfk', 'kvc6quv', 'ktprd34', 'kth2ku9', 'kvcddx8', 'kvshv3o', 'kt1kz1o', 'kt8cttl', 'kwql6xq', 'ksqfs84', 'kri0tfl', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kw3mm57', 'kt6txuq', 'kwqvned', 'ksxauop', 'kubeoe9', 'krrus1f', 'ksgkvrr', 'kr8v34x', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'ktia4kr', 'kwbzlfl', 'kt2a4l3', 'ktvc3n0', 'kuav8g8', 'ksz7qv5', 'ktuox0a', 'kvpj2xe', 'kvwo1uq', 'kw0zs7p', 'ku26gjr', 'ktac398', 'kv6diyw', 'krscef3', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kvzu757', 'kuiclh8', 'kvfcxqp', 'ku6kwso', 'krcc679', 'ksbc49f', 'kvy6nt1', 'kupmqu4', 'kun4pba', 'kqwncsc', 'kt809xd', 'kuo8j6v', 'kva44k3', 'kug4atl', 'ktdbzmq', 'ku9isry', 'ksdyfha', 'kuh3t87', 'ku10ehx', 'krxqxep', 'kt4k1i3', 'kwsiotr', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kwrpam5', 'ktcx5ts', 'kuaybit', 'kw1zqfw', 'ksunegg', 'ktyfhb8', 'kub6rxl', 'kvqxne7', 'kvxjwvg', 'krrjqt7', 'ks78ekc', 'kszbfkv', 'kwtbiok', 'kuzjqnu', 'krm9n9m', 'kt6ubh3', 'kru22m1', 'kwea4ic', 'ksbwzpk', 'kv0fd6t', 'krs7aqn', 'ktf7bba', 'kxhrf5j', 'kvle1wp', 'kukvheb', 'kwa9amh', 'kv1v4v3', 'kued4wu', 'kvun422', 'ksw2giv', 'kwtdigi', 'kvttlyx', 'kseqcmp', 'kvoe604', 'kwlyesr', 'ktrzber', 'kvxcx6p', 'ktvnr9h', 'kwsg5qi', 'ksnbok3', 'ktf9uo3', 'kug7o9e', 'kt4ora7', 'kwq76ev', 'ksis8bw', 'krefl04', 'kw14kjp', 'kraxc86', 'kvdw49d', 'ktng6iq', 'kx263w5', 'kv1j792', 'ku3vd8j', 'kvrboe6', 'kw86crt', 'kt51ko5', 'ksk59on', 'kt3cr2v', 'ku6tpkp', 'kty41pd', 'ktx6st3', 'kwq3g3h', 'kvt825g', 'kwko826', 'kux10db', 'ktn3l3l', 'ku6pu3i', 'ktsliqw', 'kvcakv9', 'kvicnxn', 'kuts0ww', 'kuod4uk']
+2024-12-17 01:02:53.414 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6362396538750941; Micro F1 0.972482305129032; Accuracy 0.9626373626373627
+
+2024-12-17 01:02:53.418 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.7808802560882333; Micro F1 0.8774781671996996; Accuracy 0.8879120879120879
+
+2024-12-17 01:02:53.422 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7662258021744894; Micro F1 0.9379229428752102; Accuracy 0.9318681318681319
+
+2024-12-17 01:02:53.426 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.90749437850454; Micro F1 0.9727831727660949; Accuracy 0.9725274725274725
+
+2024-12-17 01:02:53.430 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.9161135693215339; Micro F1 0.9976202632176083; Accuracy 0.9978021978021978
+
+2024-12-17 01:02:53.434 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9060130961971453; Micro F1 0.9946057123971235; Accuracy 0.9945054945054945
+
+2024-12-17 01:02:53.434 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 01:02:58.180 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 01:02:59.339 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:03:04.980 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 01:03:10.367 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:03:21.605 | INFO     | __main__:annotate:334 - Batch annotated - idx 910:920
+2024-12-17 01:05:04.193 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 01:05:20.160 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:05:20.160 | INFO     | __main__:annotate:334 - Batch annotated - idx 920:930
+2024-12-17 01:05:23.939 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:05:46.652 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:05:47.833 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:05:49.108 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:05:51.619 | INFO     | __main__:annotate:334 - Batch annotated - idx 930:940
+2024-12-17 01:05:55.646 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:06:01.093 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:06:04.616 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:06:06.299 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 01:06:11.001 | INFO     | __main__:annotate:334 - Batch annotated - idx 940:950
+2024-12-17 01:06:16.613 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6000000000000001
+2024-12-17 01:06:17.920 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 01:06:20.580 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 01:06:27.953 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-17 01:06:33.502 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:06:33.502 | INFO     | __main__:annotate:334 - Batch annotated - idx 950:960
+2024-12-17 01:06:38.876 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:06:40.109 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6000000000000001
+2024-12-17 01:06:48.508 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 01:06:56.457 | INFO     | __main__:annotate:334 - Batch annotated - idx 960:970
+2024-12-17 01:07:11.560 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.30000000000000004
+2024-12-17 01:07:22.464 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:07:26.262 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-17 01:07:26.262 | INFO     | __main__:annotate:334 - Batch annotated - idx 970:980
+2024-12-17 01:07:35.583 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:07:39.166 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:07:46.328 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-17 01:07:53.628 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:07:56.684 | INFO     | __main__:annotate:334 - Batch annotated - idx 980:990
+2024-12-17 01:08:00.925 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-17 01:08:06.117 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-17 01:08:19.652 | INFO     | __main__:annotate:334 - Batch annotated - idx 990:1000
+2024-12-17 01:08:19.653 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['kupkzr9', 'kx0y7ok', 'kwzxb36', 'ktjfene', 'krou5ax', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'kv34sr6', 'ktem8i1', 'ktku1zl', 'ktk2w4e', 'kvxn0gp', 'krtbxj4', 'ksvnzr6', 'kvfsonx', 'kv6n8zr', 'kvfvdqb', 'ksz5kj7', 'kwfa31y', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'ku8sqs8', 'kww3cnv', 'kvimu6i', 'ktbrco2', 'kuihcqo', 'kuwgg3x', 'kt3j1yq', 'kvntswa', 'kvk8jnt', 'kup8ieo', 'ktob0qc', 'ktbcnyy', 'kt5p9qt', 'kvo8j6d', 'kul3cib', 'kta6b47', 'kwmy2ie', 'kuono6m', 'kwqahfk', 'kvc6quv', 'ktprd34', 'kth2ku9', 'kvcddx8', 'kvshv3o', 'kt1kz1o', 'kt8cttl', 'kwql6xq', 'ksqfs84', 'kri0tfl', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kw3mm57', 'kt6txuq', 'kwqvned', 'ksxauop', 'kubeoe9', 'krrus1f', 'ksgkvrr', 'kr8v34x', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksndg8a', 'kslz8kx', 'kquaelg', 'ktxlvny', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kurchxh', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'ktia4kr', 'kwbzlfl', 'kt2a4l3', 'ktvc3n0', 'kuav8g8', 'ksz7qv5', 'ktuox0a', 'kvpj2xe', 'kvwo1uq', 'kw0zs7p', 'ku26gjr', 'ktac398', 'kv6diyw', 'krscef3', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kwo79b4', 'kvzu757', 'kuiclh8', 'kvfcxqp', 'ku6kwso', 'krcc679', 'ksbc49f', 'kvy6nt1', 'kupmqu4', 'kun4pba', 'kqwncsc', 'kt809xd', 'kuo8j6v', 'kva44k3', 'kug4atl', 'ktdbzmq', 'ku9isry', 'ksdyfha', 'kuh3t87', 'ku10ehx', 'krxqxep', 'kt4k1i3', 'kwsiotr', 'ku55h67', 'ku3afbj', 'ks2te00', 'kua5fl2', 'kwrpam5', 'ktcx5ts', 'kuaybit', 'kw1zqfw', 'ksunegg', 'ktyfhb8', 'kub6rxl', 'kvqxne7', 'kvxjwvg', 'krrjqt7', 'ks78ekc', 'kszbfkv', 'kwtbiok', 'kuzjqnu', 'krm9n9m', 'kt6ubh3', 'kru22m1', 'kwea4ic', 'ksbwzpk', 'kv0fd6t', 'krs7aqn', 'ktf7bba', 'kxhrf5j', 'kvle1wp', 'kukvheb', 'kwa9amh', 'kv1v4v3', 'kued4wu', 'kvun422', 'ksw2giv', 'kwtdigi', 'kvttlyx', 'kseqcmp', 'kvoe604', 'kwlyesr', 'ktrzber', 'kvxcx6p', 'ktvnr9h', 'kwsg5qi', 'ksnbok3', 'ktf9uo3', 'kug7o9e', 'kt4ora7', 'kwq76ev', 'ksis8bw', 'krefl04', 'kw14kjp', 'kraxc86', 'kvdw49d', 'ktng6iq', 'kx263w5', 'kv1j792', 'ku3vd8j', 'kvrboe6', 'kw86crt', 'kt51ko5', 'ksk59on', 'kt3cr2v', 'ku6tpkp', 'kty41pd', 'ktx6st3', 'kwq3g3h', 'kvt825g', 'kwko826', 'kux10db', 'ktn3l3l', 'ku6pu3i', 'ktsliqw', 'kvcakv9', 'kvicnxn', 'kuts0ww', 'kuod4uk', 'kr11n0l', 'ksh5yy8', 'ktfi4ti', 'ksyl9sb', 'kuo2qvv', 'ktng7tl', 'kv2tkav', 'ktp1xty', 'kveu3c6', 'kvoml85', 'kry91t6', 'kvozno1', 'kvavfkn', 'kta2i24', 'kvyz4vm', 'kwzzqm4', 'ks0ie76', 'kssy8t4', 'kutwi4x', 'kswmhyr', 'ksvfjz0', 'kwhtyh4', 'ksz3ymf']
+2024-12-17 01:08:19.657 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6362396538750941; Micro F1 0.972482305129032; Accuracy 0.9626373626373627
+
+2024-12-17 01:08:19.661 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.7808802560882333; Micro F1 0.8774781671996996; Accuracy 0.8879120879120879
+
+2024-12-17 01:08:19.665 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7662258021744894; Micro F1 0.9379229428752102; Accuracy 0.9318681318681319
+
+2024-12-17 01:08:19.669 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.90749437850454; Micro F1 0.9727831727660949; Accuracy 0.9725274725274725
+
+2024-12-17 01:08:19.673 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.9161135693215339; Micro F1 0.9976202632176083; Accuracy 0.9978021978021978
+
+2024-12-17 01:08:19.677 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9060130961971453; Micro F1 0.9946057123971235; Accuracy 0.9945054945054945
+
+2024-12-17 01:08:19.677 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 01:08:19.680 | SUCCESS  | __main__:annotate:359 - Pipeline finished - saved predictions at ./save/
+2024-12-17 01:08:19.680 | SUCCESS  | __main__:annotate:362 - Done.

@@ -1,0 +1,240 @@
+2024-12-15 20:17:22.282 | INFO     | __main__:<module>:392 - Pipeline started with args: Namespace(model='gpt-4o-mini', api_key='../api_key.txt', strategies=['CoT'], max_retries=10, seed=42, eval_path='~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv', batch_size=10, context_path='./ref_samples.json', output_path='./save/', note='CU_COT')
+2024-12-15 20:17:22.334 | INFO     | __main__:annotate:214 - Loaded context examples at ./ref_samples.json
+2024-12-15 20:17:22.334 | INFO     | __main__:annotate:215 - Starting annotation...
+2024-12-15 20:17:31.107 | INFO     | __main__:annotate:256 - Batch annotated - idx 0:10
+2024-12-15 20:17:40.042 | INFO     | __main__:annotate:256 - Batch annotated - idx 10:20
+2024-12-15 20:17:50.843 | INFO     | __main__:annotate:256 - Batch annotated - idx 20:30
+2024-12-15 20:18:00.815 | INFO     | __main__:annotate:256 - Batch annotated - idx 30:40
+2024-12-15 20:18:12.164 | INFO     | __main__:annotate:256 - Batch annotated - idx 40:50
+2024-12-15 20:18:21.705 | INFO     | __main__:annotate:256 - Batch annotated - idx 50:60
+2024-12-15 20:18:35.043 | INFO     | __main__:annotate:256 - Batch annotated - idx 60:70
+2024-12-15 20:18:45.307 | INFO     | __main__:annotate:256 - Batch annotated - idx 70:80
+2024-12-15 20:18:56.072 | INFO     | __main__:annotate:256 - Batch annotated - idx 80:90
+2024-12-15 20:19:06.368 | INFO     | __main__:annotate:256 - Batch annotated - idx 90:100
+2024-12-15 20:19:18.425 | INFO     | __main__:annotate:256 - Batch annotated - idx 100:110
+2024-12-15 20:19:18.425 | INFO     | __main__:evaluate:283 - Evaluating & Reflecting...
+2024-12-15 20:19:18.431 | INFO     | __main__:evaluate:304 - Macro F1: hate speech: 0.4786729857819905
+
+2024-12-15 20:19:18.435 | INFO     | __main__:evaluate:304 - Macro F1: linguistic bias: 0.598925350220687
+
+2024-12-15 20:19:18.440 | INFO     | __main__:evaluate:304 - Macro F1: text-level context bias: 0.595959595959596
+
+2024-12-15 20:19:18.443 | INFO     | __main__:evaluate:304 - Macro F1: political bias: 0.7355769230769231
+
+2024-12-15 20:19:18.447 | INFO     | __main__:evaluate:304 - Macro F1: racial bias: 1.0
+
+2024-12-15 20:19:18.451 | INFO     | __main__:evaluate:304 - Macro F1: gender bias: 0.4954128440366973
+
+2024-12-15 20:19:23.841 | DEBUG    | __main__:evaluate:315 - Context(HateSpeech="The phrase 'ESPN being trash isn’t news' may seem dismissive, but it lacks any hate speech or directly derogatory language. The tone appears to be frustrated rather than hateful. A clearer interpretation of hatred towards a target is needed to avoid misclassification.", LinguisticBias="Several annotations, such as 'He supports Black Trump?! What an asshole' and 'What a fucking douche nozzle', reflect linguistic bias through derogatory language targeting individuals based on their political affiliations or behaviors. The unfiltered use of strong language indicates a lack of neutrality. Better training on identifying the negativity attributed to social categories could prevent these instances.", TextLevelContextBias="Contextual phrases like 'Ooh! I’m showing this to the idiots' exhibit text-level context bias as they imply judgment against a specific group without a nuanced understanding of differing perspectives. Teaching analysts to recognize and assess language that conditions context surrounding groups can improve accuracy.", PoliticalBias="The annotations demonstrating political bias include expressions of frustration and discontent regarding political figures, as seen in 'He supports Black Trump?! What an asshole'. This reflects a biased perspective that needs a framework for presenting political opinions objectively, enhancing the assessment process.", RacialBias='', GenderBias="Annotations such as 'Imagine being her kid and seeing this... Pathetic woman.' signal gender bias, with a negative portrayal that diminishes the individual based on gender. A deeper understanding of the impact of language on gender representation can guide more equitable evaluations.")
+2024-12-15 20:19:23.841 | SUCCESS  | __main__:evaluate:316 - Evaluation done.
+2024-12-15 20:19:34.679 | INFO     | __main__:annotate:256 - Batch annotated - idx 110:120
+2024-12-15 20:19:46.756 | INFO     | __main__:annotate:256 - Batch annotated - idx 120:130
+2024-12-15 20:19:57.559 | INFO     | __main__:annotate:256 - Batch annotated - idx 130:140
+2024-12-15 20:20:12.467 | INFO     | __main__:annotate:256 - Batch annotated - idx 140:150
+2024-12-15 20:20:21.838 | INFO     | __main__:annotate:256 - Batch annotated - idx 150:160
+2024-12-15 20:20:31.594 | INFO     | __main__:annotate:256 - Batch annotated - idx 160:170
+2024-12-15 20:20:43.158 | INFO     | __main__:annotate:256 - Batch annotated - idx 170:180
+2024-12-15 20:22:23.528 | INFO     | __main__:annotate:256 - Batch annotated - idx 180:190
+2024-12-15 20:22:32.643 | INFO     | __main__:annotate:256 - Batch annotated - idx 190:200
+2024-12-15 20:22:43.005 | INFO     | __main__:annotate:256 - Batch annotated - idx 200:210
+2024-12-15 20:22:43.005 | INFO     | __main__:evaluate:283 - Evaluating & Reflecting...
+2024-12-15 20:22:43.010 | INFO     | __main__:evaluate:304 - Macro F1: hate speech: 0.5634095634095635
+
+2024-12-15 20:22:43.014 | INFO     | __main__:evaluate:304 - Macro F1: linguistic bias: 0.6094372708432967
+
+2024-12-15 20:22:43.020 | INFO     | __main__:evaluate:304 - Macro F1: text-level context bias: 0.6050347222222222
+
+2024-12-15 20:22:43.025 | INFO     | __main__:evaluate:304 - Macro F1: political bias: 0.7387843104735052
+
+2024-12-15 20:22:43.029 | INFO     | __main__:evaluate:304 - Macro F1: racial bias: 1.0
+
+2024-12-15 20:22:43.033 | INFO     | __main__:evaluate:304 - Macro F1: gender bias: 0.4939759036144578
+
+2024-12-15 20:22:48.498 | DEBUG    | __main__:evaluate:315 - Context(HateSpeech="The phrase 'And people say ukraine is filled with nazis....' misconstrues the complicated political narrative and could reflect hatred towards specific nationalities or groups. Clarification on what constitutes hate speech could prevent similar misinterpretations in future analyses.", LinguisticBias="Annotations like 'What a fucking douche nozzle' and 'He supports Black Trump?! What an asshole' showcase linguistic bias through derogatory language aimed at individuals based on their political or personal actions. There's a need for clearer guidelines on identifying manifestations of linguistic bias to enhance future assessments.", TextLevelContextBias="Comments such as 'Ooh! I’m showing this to the idiots' and 'Yeah we should turn you to ash because no one will be there to cremate you' exhibit text-level context bias where the language skews perceptions against certain groups. A training module on the influence of tone and context in bias detection could mitigate these errors.", PoliticalBias="The bias exhibited in phrases like 'He supports Black Trump?! What an asshole' and 'And people say ukraine is filled with nazis....' indicates a lack of neutrality in political expression. Developing a framework for recognizing underlying political sentiments more objectively could refine the accuracy of political bias identification.", RacialBias='', GenderBias="The annotation, 'Imagine being her kid and seeing this... Pathetic woman.' indicates gender bias through a negative portrayal based solely on gender. Improving awareness of gender stereotypes in language and teaching analysts how to identify subtle forms of gender bias could strengthen the quality of future evaluations.")
+2024-12-15 20:22:48.498 | SUCCESS  | __main__:evaluate:316 - Evaluation done.
+2024-12-15 20:22:58.945 | INFO     | __main__:annotate:256 - Batch annotated - idx 210:220
+2024-12-15 20:23:08.428 | INFO     | __main__:annotate:256 - Batch annotated - idx 220:230
+2024-12-15 20:23:17.563 | INFO     | __main__:annotate:256 - Batch annotated - idx 230:240
+2024-12-15 20:23:27.877 | INFO     | __main__:annotate:256 - Batch annotated - idx 240:250
+2024-12-15 20:23:37.740 | INFO     | __main__:annotate:256 - Batch annotated - idx 250:260
+2024-12-15 20:23:49.203 | INFO     | __main__:annotate:256 - Batch annotated - idx 260:270
+2024-12-15 20:23:59.490 | INFO     | __main__:annotate:256 - Batch annotated - idx 270:280
+2024-12-15 20:24:10.494 | INFO     | __main__:annotate:256 - Batch annotated - idx 280:290
+2024-12-15 20:24:20.855 | INFO     | __main__:annotate:256 - Batch annotated - idx 290:300
+2024-12-15 20:24:32.386 | INFO     | __main__:annotate:256 - Batch annotated - idx 300:310
+2024-12-15 20:24:32.386 | INFO     | __main__:evaluate:283 - Evaluating & Reflecting...
+2024-12-15 20:24:32.392 | INFO     | __main__:evaluate:304 - Macro F1: hate speech: 0.5615275813295615
+
+2024-12-15 20:24:32.396 | INFO     | __main__:evaluate:304 - Macro F1: linguistic bias: 0.5980428134556575
+
+2024-12-15 20:24:32.400 | INFO     | __main__:evaluate:304 - Macro F1: text-level context bias: 0.5942939405836932
+
+2024-12-15 20:24:32.404 | INFO     | __main__:evaluate:304 - Macro F1: political bias: 0.8039998668929487
+
+2024-12-15 20:24:32.408 | INFO     | __main__:evaluate:304 - Macro F1: racial bias: 1.0
+
+2024-12-15 20:24:32.411 | INFO     | __main__:evaluate:304 - Macro F1: gender bias: 0.495114006514658
+
+2024-12-15 20:24:38.675 | DEBUG    | __main__:evaluate:315 - Context(HateSpeech="The statement 'And people say ukraine is filled with nazis....' requires a refined understanding of context. It can imply hate towards groups if interpreted in the wrong light. Future training should emphasize the distinction between hyperbole and hate speech to avoid misclassifications.", LinguisticBias="Phrases like 'He supports Black Trump?! What an asshole' and 'What a fucking douche nozzle' demonstrate linguistic bias through their negative language aimed at individuals based on political affiliations. Addressing the impact of lexical choices and derogatory terms in bias detection is crucial for ensuring fair evaluations moving forward.", TextLevelContextBias="Expressions such as 'Ooh! I’m showing this to the idiots' display text-level context bias by generalizing a group negatively. Training programs focused on recognizing and analyzing language that undermines diverse perspectives can help reduce these types of biases in future annotations.", PoliticalBias="Instances of political bias are reflected in comments like 'He supports Black Trump?! What an asshole'. This reveals an apparent disdain towards political views without a balanced perspective. Clearer guidelines for objective political commentary will aid in reducing the directness of bias in future assessments.", RacialBias='', GenderBias="Female representation issues are highlighted in the remarks such as 'Imagine being her kid and seeing this... Pathetic woman.' and critiques on workplace fashion concerning female representation. A deeper understanding of societal stereotypes in the context of gender can enhance the recognition and classification of gender bias in language.")
+2024-12-15 20:24:38.676 | SUCCESS  | __main__:evaluate:316 - Evaluation done.
+2024-12-15 20:24:48.014 | INFO     | __main__:annotate:256 - Batch annotated - idx 310:320
+2024-12-15 20:24:57.945 | INFO     | __main__:annotate:256 - Batch annotated - idx 320:330
+2024-12-15 20:25:10.022 | INFO     | __main__:annotate:256 - Batch annotated - idx 330:340
+2024-12-15 20:25:19.775 | INFO     | __main__:annotate:256 - Batch annotated - idx 340:350
+2024-12-15 20:25:30.112 | INFO     | __main__:annotate:256 - Batch annotated - idx 350:360
+2024-12-15 20:25:43.633 | INFO     | __main__:annotate:256 - Batch annotated - idx 360:370
+2024-12-15 20:25:56.798 | INFO     | __main__:annotate:256 - Batch annotated - idx 370:380
+2024-12-15 20:26:07.196 | INFO     | __main__:annotate:256 - Batch annotated - idx 380:390
+2024-12-15 20:26:21.903 | INFO     | __main__:annotate:256 - Batch annotated - idx 390:400
+2024-12-15 20:26:35.975 | INFO     | __main__:annotate:256 - Batch annotated - idx 400:410
+2024-12-15 20:26:35.975 | INFO     | __main__:evaluate:283 - Evaluating & Reflecting...
+2024-12-15 20:26:35.980 | INFO     | __main__:evaluate:304 - Macro F1: hate speech: 0.579630895420369
+
+2024-12-15 20:26:35.984 | INFO     | __main__:evaluate:304 - Macro F1: linguistic bias: 0.5800256081946222
+
+2024-12-15 20:26:35.988 | INFO     | __main__:evaluate:304 - Macro F1: text-level context bias: 0.5844594594594594
+
+2024-12-15 20:26:35.993 | INFO     | __main__:evaluate:304 - Macro F1: political bias: 0.7872035794183445
+
+2024-12-15 20:26:35.996 | INFO     | __main__:evaluate:304 - Macro F1: racial bias: 1.0
+
+2024-12-15 20:26:36.000 | INFO     | __main__:evaluate:304 - Macro F1: gender bias: 0.6213054187192117
+
+2024-12-15 20:26:42.169 | DEBUG    | __main__:evaluate:315 - Context(HateSpeech="The phrase 'AB if he was just autistic or some shit idk' is problematic as it trivializes autism and can contribute to derogatory narratives about neurodivergent individuals. Training should emphasize sensitivity to language that disparages marginalized groups, helping to avoid misclassifications as non-hate speech.", LinguisticBias="Strong language such as 'He supports Black Trump?! What an asshole' illustrates linguistic bias towards individuals based on their political beliefs. Refinement in recognizing extreme lexical choices that indicate prejudice against social categories is essential for accurate bias detection.", TextLevelContextBias="Comments like 'Ooh! I’m showing this to the idiots' indicate text-level context bias through dismissive language that undermines opposing viewpoints. Better education on the implications of contextually biased language could bolster the accuracy of identifying such biases in text.", PoliticalBias="Expressions such as 'He supports Black Trump?! What an asshole' and the commentary regarding Ukraine denote a clear political bias. Enhancing frameworks for analyzing the objectivity of political comments will improve the identification of bias in future evaluations.", RacialBias='', GenderBias="The statement 'Imagine being her kid and seeing this... Pathetic woman.' reflects gender bias through negative implications associated with womanhood. Training that focuses on recognizing and dismantling stereotypes within gender discussions can enhance future bias assessments.")
+2024-12-15 20:26:42.169 | SUCCESS  | __main__:evaluate:316 - Evaluation done.
+2024-12-15 20:26:57.905 | INFO     | __main__:annotate:256 - Batch annotated - idx 410:420
+2024-12-15 20:27:08.463 | INFO     | __main__:annotate:256 - Batch annotated - idx 420:430
+2024-12-15 20:27:21.909 | INFO     | __main__:annotate:256 - Batch annotated - idx 430:440
+2024-12-15 20:27:31.885 | INFO     | __main__:annotate:256 - Batch annotated - idx 440:450
+2024-12-15 20:27:41.865 | INFO     | __main__:annotate:256 - Batch annotated - idx 450:460
+2024-12-15 20:27:56.378 | INFO     | __main__:annotate:256 - Batch annotated - idx 460:470
+2024-12-15 20:28:14.544 | INFO     | __main__:annotate:256 - Batch annotated - idx 470:480
+2024-12-15 20:28:24.555 | INFO     | __main__:annotate:256 - Batch annotated - idx 480:490
+2024-12-15 20:28:34.829 | INFO     | __main__:annotate:256 - Batch annotated - idx 490:500
+2024-12-15 20:28:45.163 | INFO     | __main__:annotate:256 - Batch annotated - idx 500:510
+2024-12-15 20:28:45.164 | INFO     | __main__:evaluate:283 - Evaluating & Reflecting...
+2024-12-15 20:28:45.168 | INFO     | __main__:evaluate:304 - Macro F1: hate speech: 0.5535353535353535
+
+2024-12-15 20:28:45.172 | INFO     | __main__:evaluate:304 - Macro F1: linguistic bias: 0.5795281582952816
+
+2024-12-15 20:28:45.176 | INFO     | __main__:evaluate:304 - Macro F1: text-level context bias: 0.5857699805068226
+
+2024-12-15 20:28:45.180 | INFO     | __main__:evaluate:304 - Macro F1: political bias: 0.7782608695652173
+
+2024-12-15 20:28:45.184 | INFO     | __main__:evaluate:304 - Macro F1: racial bias: 0.8995073891625616
+
+2024-12-15 20:28:45.188 | INFO     | __main__:evaluate:304 - Macro F1: gender bias: 0.7272935604613857
+
+2024-12-15 20:28:51.813 | DEBUG    | __main__:evaluate:315 - Context(HateSpeech="The statement 'AB if he was just autistic or some shit idk' trivializes autism in a derogatory way, reflecting a potentially harmful narrative about neurodiversity. Future instructions should stress the need to identify and moderate language that can perpetuate stigma against marginalized groups as a form of hate speech.", LinguisticBias="Annotations such as 'He supports Black Trump?! What an asshole' illustrate linguistic bias through pejorative language that targets individuals based on political opinions. Training should focus on identifying and categorizing such biased language to enhance evaluative accuracy.", TextLevelContextBias="Comments like 'Ooh! I’m showing this to the idiots' and similar expressions exemplify text-level context bias by using dismissive language toward opposing views. Analysts should be trained to recognize and address language that marginalizes different perspectives in discussions.", PoliticalBias="Political bias is evident in the phrases 'He supports Black Trump?! What an asshole' and 'And people say ukraine is filled with nazis....', which reflect disdain towards certain political figures or ideologies. Emphasizing the importance of neutrality and balance in political commentary could improve future classifications.", RacialBias="The remark 'The Argonians have a few things to say about this' seems to use a reference from a fictional context to comment on racial perspectives. Clarifying how fictional narratives interact with real-world racial discussions would enrich understanding and annotation accuracy.", GenderBias="Statements such as 'Imagine being her kid and seeing this... Pathetic woman.' reveal gender bias through negative portrayals of women. Educating annotators on recognizing harmful gender stereotypes can strengthen the quality of gender bias assessments.")
+2024-12-15 20:28:51.813 | SUCCESS  | __main__:evaluate:316 - Evaluation done.
+2024-12-15 20:29:01.032 | INFO     | __main__:annotate:256 - Batch annotated - idx 510:520
+2024-12-15 20:29:13.016 | INFO     | __main__:annotate:256 - Batch annotated - idx 520:530
+2024-12-15 20:29:24.576 | INFO     | __main__:annotate:256 - Batch annotated - idx 530:540
+2024-12-15 20:29:34.640 | INFO     | __main__:annotate:256 - Batch annotated - idx 540:550
+2024-12-15 20:29:44.389 | INFO     | __main__:annotate:256 - Batch annotated - idx 550:560
+2024-12-15 20:29:55.065 | INFO     | __main__:annotate:256 - Batch annotated - idx 560:570
+2024-12-15 20:30:05.283 | INFO     | __main__:annotate:256 - Batch annotated - idx 570:580
+2024-12-15 20:30:15.518 | INFO     | __main__:annotate:256 - Batch annotated - idx 580:590
+2024-12-15 20:30:27.198 | INFO     | __main__:annotate:256 - Batch annotated - idx 590:600
+2024-12-15 20:30:37.684 | INFO     | __main__:annotate:256 - Batch annotated - idx 600:610
+2024-12-15 20:30:37.684 | INFO     | __main__:evaluate:283 - Evaluating & Reflecting...
+2024-12-15 20:30:37.690 | INFO     | __main__:evaluate:304 - Macro F1: hate speech: 0.6088044849914148
+
+2024-12-15 20:30:37.694 | INFO     | __main__:evaluate:304 - Macro F1: linguistic bias: 0.5775789752222453
+
+2024-12-15 20:30:37.698 | INFO     | __main__:evaluate:304 - Macro F1: text-level context bias: 0.5751719334900322
+
+2024-12-15 20:30:37.702 | INFO     | __main__:evaluate:304 - Macro F1: political bias: 0.78055975250018
+
+2024-12-15 20:30:37.706 | INFO     | __main__:evaluate:304 - Macro F1: racial bias: 0.8320946875860171
+
+2024-12-15 20:30:37.710 | INFO     | __main__:evaluate:304 - Macro F1: gender bias: 0.812875235549323
+
+2024-12-15 20:30:45.731 | DEBUG    | __main__:evaluate:315 - Context(HateSpeech="The statement 'I genuinely would like to know who the fuck finds this funny. Does this even appeal to kids, like most pranksters do?' conveys anger and contempt towards certain behaviors but lacks the direct hateful language typically associated with hate speech. Future guidelines should clarify the distinction between strong disapproval and hate speech to prevent misclassification.", LinguisticBias="The expression 'He supports Black Trump?! What an asshole' exemplifies linguistic bias through harsh language aimed at an individual based on their political association. Enhancing annotator training on the impact of derogatory language and its implications on social categories will improve bias identification.", TextLevelContextBias="Phrases like 'Ooh! I’m showing this to the idiots' illustrate context level bias by dismissing alternative opinions entirely. Training should focus on identifying language that marginalizes perspectives, refining the evaluative criteria for this type of bias, and enhancing overall context recognition.", PoliticalBias="Comments such as 'He supports Black Trump?! What an asshole' and 'And people say ukraine is filled with nazis....' reflect explicit political bias. Developing frameworks for recognizing the subtleties in political commentary can enhance annotation accuracy and promote neutral assessments.", RacialBias="The annotations like 'That’s what Islam does to the world.' reflect a potential racial bias by making generalizations about a religion and its followers. Future training should emphasize recognizing and tackling generalizations in conversations about race and religion to avoid perpetuating stereotypes.", GenderBias="Statements like 'Imagine being her kid and seeing this... Pathetic woman.' highlight gender bias through negative stereotypes attached to women. A focus on dismantling harmful gender narratives and improving recognition of biased language is essential for future evaluations.")
+2024-12-15 20:30:45.731 | SUCCESS  | __main__:evaluate:316 - Evaluation done.
+2024-12-15 20:30:55.736 | INFO     | __main__:annotate:256 - Batch annotated - idx 610:620
+2024-12-15 20:31:04.585 | INFO     | __main__:annotate:256 - Batch annotated - idx 620:630
+2024-12-15 20:31:15.547 | INFO     | __main__:annotate:256 - Batch annotated - idx 630:640
+2024-12-15 20:31:28.494 | INFO     | __main__:annotate:256 - Batch annotated - idx 640:650
+2024-12-15 20:31:40.188 | INFO     | __main__:annotate:256 - Batch annotated - idx 650:660
+2024-12-15 20:31:51.523 | INFO     | __main__:annotate:256 - Batch annotated - idx 660:670
+2024-12-15 20:32:04.785 | INFO     | __main__:annotate:256 - Batch annotated - idx 670:680
+2024-12-15 20:32:17.061 | INFO     | __main__:annotate:256 - Batch annotated - idx 680:690
+2024-12-15 20:32:27.693 | INFO     | __main__:annotate:256 - Batch annotated - idx 690:700
+2024-12-15 20:32:38.418 | INFO     | __main__:annotate:256 - Batch annotated - idx 700:710
+2024-12-15 20:32:38.419 | INFO     | __main__:evaluate:283 - Evaluating & Reflecting...
+2024-12-15 20:32:38.424 | INFO     | __main__:evaluate:304 - Macro F1: hate speech: 0.6012817124735729
+
+2024-12-15 20:32:38.428 | INFO     | __main__:evaluate:304 - Macro F1: linguistic bias: 0.5844510559430327
+
+2024-12-15 20:32:38.432 | INFO     | __main__:evaluate:304 - Macro F1: text-level context bias: 0.573894029297721
+
+2024-12-15 20:32:38.436 | INFO     | __main__:evaluate:304 - Macro F1: political bias: 0.7830811356103184
+
+2024-12-15 20:32:38.440 | INFO     | __main__:evaluate:304 - Macro F1: racial bias: 0.8322702575005906
+
+2024-12-15 20:32:38.444 | INFO     | __main__:evaluate:304 - Macro F1: gender bias: 0.7971428571428572
+
+2024-12-15 20:32:50.562 | DEBUG    | __main__:evaluate:315 - Context(HateSpeech="The phrase 'I genuinely would like to know who the fuck finds this funny. Does this even appeal to kids, like most pranksters do?' lacks the typical characteristics of hate speech but conveys frustration that may border on contempt. It's important to distinguish between strong disapproval and genuine hate to prevent misclassification in future evaluations.", LinguisticBias="The annotation 'He supports Black Trump?! What an asshole' demonstrates linguistic bias through derogatory and judgmental phrases directed at an individual's political stance. Expanding training on the implications of biased language towards social categories will enhance the annotation process.", TextLevelContextBias="Expressions like 'Ooh! I’m showing this to the idiots' exhibit text-level context bias as they dismissively categorize those with opposing views. Training to identify not only context but also the framing of narratives can improve overall bias detection accuracy.", PoliticalBias="Comments such as 'He supports Black Trump?! What an asshole' and 'And people say ukraine is filled with nazis....' indicate strong political bias, often resulting from strong emotional expressions. Providing clearer guidelines for objective political discourse will help reduce evident biases in future annotations.", RacialBias="The annotations like 'That’s what Islam does to the world.' and 'Nah don’t you have a cute chocolate face' can promulgate stereotypes and harmful generalizations. Focused training on recognizing and addressing racial biases in various contexts will be vital in improving the detection of such biases.", GenderBias="Statements like 'Imagine being her kid and seeing this... Pathetic woman.' reveal gender bias through negative implications based on gender. Further training on recognizing derogatory gender-related narratives can improve the quality of assessments related to gender bias.")
+2024-12-15 20:32:50.562 | SUCCESS  | __main__:evaluate:316 - Evaluation done.
+2024-12-15 20:33:00.614 | INFO     | __main__:annotate:256 - Batch annotated - idx 710:720
+2024-12-15 20:33:11.289 | INFO     | __main__:annotate:256 - Batch annotated - idx 720:730
+2024-12-15 20:33:22.425 | INFO     | __main__:annotate:256 - Batch annotated - idx 730:740
+2024-12-15 20:33:32.071 | INFO     | __main__:annotate:256 - Batch annotated - idx 740:750
+2024-12-15 20:33:43.542 | INFO     | __main__:annotate:256 - Batch annotated - idx 750:760
+2024-12-15 20:34:01.902 | INFO     | __main__:annotate:256 - Batch annotated - idx 760:770
+2024-12-15 20:34:14.320 | INFO     | __main__:annotate:256 - Batch annotated - idx 770:780
+2024-12-15 20:34:25.009 | INFO     | __main__:annotate:256 - Batch annotated - idx 780:790
+2024-12-15 20:34:35.179 | INFO     | __main__:annotate:256 - Batch annotated - idx 790:800
+2024-12-15 20:34:44.792 | INFO     | __main__:annotate:256 - Batch annotated - idx 800:810
+2024-12-15 20:34:44.793 | INFO     | __main__:evaluate:283 - Evaluating & Reflecting...
+2024-12-15 20:34:44.800 | INFO     | __main__:evaluate:304 - Macro F1: hate speech: 0.5849735687774154
+
+2024-12-15 20:34:44.806 | INFO     | __main__:evaluate:304 - Macro F1: linguistic bias: 0.5993240648283278
+
+2024-12-15 20:34:44.812 | INFO     | __main__:evaluate:304 - Macro F1: text-level context bias: 0.5875
+
+2024-12-15 20:34:44.817 | INFO     | __main__:evaluate:304 - Macro F1: political bias: 0.7847309579915309
+
+2024-12-15 20:34:44.822 | INFO     | __main__:evaluate:304 - Macro F1: racial bias: 0.8324022346368715
+
+2024-12-15 20:34:44.828 | INFO     | __main__:evaluate:304 - Macro F1: gender bias: 0.7829000268024657
+
+2024-12-15 20:34:51.494 | DEBUG    | __main__:evaluate:315 - Context(HateSpeech="The phrase 'Jurassic World Dominion: absolutely dog shit' expresses a subjective opinion about a film rather than hate speech directed at a person or group. Clarifying contexts in which personal opinions may be misclassified as hate speech can refine future evaluations. Additionally, the comment 'Every owner needs to buy their own stadium or ballpark. Wealthfare is a blight on our society.' challenges societal norms but does not contain hate towards specific groups.", LinguisticBias="The remark 'He supports Black Trump?! What an asshole' exemplifies linguistic bias as it reflects disdain towards a political affiliation using strong language. Improvements in training on interpreting linguistic expressions will aid accuracy in identifying biased language within socio-political commentary.", TextLevelContextBias="Remarks like 'Ooh! I’m showing this to the idiots' illustrate text-level context bias via disparaging language against those with opposing viewpoints. Training should focus on identifying language that diminishes diverse perspectives to improve textual bias evaluations.", PoliticalBias="Comments such as 'He supports Black Trump?! What an asshole' and 'And people say ukraine is filled with nazis....' reveal explicit political bias, often arising from deeply emotional rhetoric. Developing clearer guidelines for objective political discourse can aid in minimizing overt biases in future assessments.", RacialBias="The remarks 'That’s what Islam does to the world.' and 'Nah don’t you have a cute chocolate face' demonstrate racial bias by promoting stereotypes and making generalizations. Focus on recognizing harmful racial stereotypes in discussions will strengthen the understanding of bias in textual analysis.", GenderBias="Statements like 'Imagine being her kid and seeing this... Pathetic woman.' highlight gender bias through negative implications tied to gender. Training on dismantling sexual stereotypes and harmful portrayals of gender will enhance the effectiveness of bias annotation.")
+2024-12-15 20:34:51.494 | SUCCESS  | __main__:evaluate:316 - Evaluation done.
+2024-12-15 20:35:07.539 | INFO     | __main__:annotate:256 - Batch annotated - idx 810:820
+2024-12-15 20:35:20.330 | INFO     | __main__:annotate:256 - Batch annotated - idx 820:830
+2024-12-15 20:35:31.842 | INFO     | __main__:annotate:256 - Batch annotated - idx 830:840
+2024-12-15 20:35:40.395 | INFO     | __main__:annotate:256 - Batch annotated - idx 840:850
+2024-12-15 20:35:54.329 | INFO     | __main__:annotate:256 - Batch annotated - idx 850:860
+2024-12-15 20:36:08.517 | INFO     | __main__:annotate:256 - Batch annotated - idx 860:870
+2024-12-15 20:36:22.120 | INFO     | __main__:annotate:256 - Batch annotated - idx 870:880
+2024-12-15 20:36:33.454 | INFO     | __main__:annotate:256 - Batch annotated - idx 880:890
+2024-12-15 20:36:43.621 | INFO     | __main__:annotate:256 - Batch annotated - idx 890:900
+2024-12-15 20:36:55.755 | INFO     | __main__:annotate:256 - Batch annotated - idx 900:910
+2024-12-15 20:36:55.756 | INFO     | __main__:evaluate:283 - Evaluating & Reflecting...
+2024-12-15 20:36:55.761 | INFO     | __main__:evaluate:304 - Macro F1: hate speech: 0.5691287878787878
+
+2024-12-15 20:36:55.765 | INFO     | __main__:evaluate:304 - Macro F1: linguistic bias: 0.6023331813345494
+
+2024-12-15 20:36:55.770 | INFO     | __main__:evaluate:304 - Macro F1: text-level context bias: 0.5918906798059989
+
+2024-12-15 20:36:55.775 | INFO     | __main__:evaluate:304 - Macro F1: political bias: 0.7924270072992701
+
+2024-12-15 20:36:55.779 | INFO     | __main__:evaluate:304 - Macro F1: racial bias: 0.7988950276243094
+
+2024-12-15 20:36:55.783 | INFO     | __main__:evaluate:304 - Macro F1: gender bias: 0.8174930362116992
+
+2024-12-15 20:37:02.746 | DEBUG    | __main__:evaluate:315 - Context(HateSpeech="The phrase 'Every owner needs to buy their own stadium or ballpark. Wealthfare is a blight on our society.' critiques economic practices rather than promotes hate towards a particular group. Clarifying distinctions between economic critiques and hateful language can improve future evaluations. Additionally, 'Jurassic World Dominion: absolutely dog shit' conveys personal opinion without malice towards groups, thus not fitting hate speech criteria.", LinguisticBias="The statement 'He supports Black Trump?! What an asshole' shows linguistic bias through derogatory language targeting someone based on political support. Enhancements in training focusing on the dangers of biased language in political discussions will bolster future assessments.", TextLevelContextBias="The comment 'Ooh! I’m showing this to the idiots' exemplifies text-level context bias, dismissing opposing views in a derogatory manner. Training should emphasize identifying complacent language that belittles different perspectives for improved evaluations.", PoliticalBias="Expressions such as 'He supports Black Trump?! What an asshole' and 'And people say ukraine is filled with nazis....' reflect significant political bias through strong emotions. Providing clearer definitions of political neutrality can assist in reducing apparent biases in annotations.", RacialBias="The remarks 'That’s what Islam does to the world.' and 'Damn dude that looks like the Chinese buffet bathroom caulking job.' exemplify racial bias by projecting negative stereotypes. Training should focus on sensitivity regarding racial generalizations, improving the understanding of such bias.", GenderBias="Statements like 'Imagine being her kid and seeing this... Pathetic woman.' present gender bias by implying negative stereotypes about women. Training that addresses harmful representations and stereotypes related to gender will enhance the quality of future bias assessments.")
+2024-12-15 20:37:02.746 | SUCCESS  | __main__:evaluate:316 - Evaluation done.
+2024-12-15 20:37:14.002 | INFO     | __main__:annotate:256 - Batch annotated - idx 910:920
+2024-12-15 20:37:24.550 | INFO     | __main__:annotate:256 - Batch annotated - idx 920:930
+2024-12-15 20:37:36.284 | INFO     | __main__:annotate:256 - Batch annotated - idx 930:940
+2024-12-15 20:37:46.525 | INFO     | __main__:annotate:256 - Batch annotated - idx 940:950
+2024-12-15 20:37:58.071 | INFO     | __main__:annotate:256 - Batch annotated - idx 950:960
+2024-12-15 20:38:10.692 | INFO     | __main__:annotate:256 - Batch annotated - idx 960:970
+2024-12-15 20:38:21.382 | INFO     | __main__:annotate:256 - Batch annotated - idx 970:980
+2024-12-15 20:38:32.476 | INFO     | __main__:annotate:256 - Batch annotated - idx 980:990
+2024-12-15 20:38:42.362 | INFO     | __main__:annotate:256 - Batch annotated - idx 990:1000
+2024-12-15 20:38:42.365 | SUCCESS  | __main__:annotate:276 - Pipeline finished - saved predictions at ./save/
+2024-12-15 20:38:42.365 | SUCCESS  | __main__:annotate:279 - Done.

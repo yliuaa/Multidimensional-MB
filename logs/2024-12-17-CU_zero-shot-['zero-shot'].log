@@ -1,0 +1,269 @@
+2024-12-17 00:01:36.974 | INFO     | __main__:<module>:474 - Pipeline started with args: Namespace(model='gpt-4o-mini', api_key='../api_key.txt', strategies=['zero-shot'], max_retries=10, seed=42, eval_path='~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv', batch_size=10, context_path='./ref_samples.json', output_path='./save/', note='CU_zero-shot')
+2024-12-17 00:01:36.982 | INFO     | __main__:load_data:59 - Loading data from ~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv
+2024-12-17 00:01:36.982 | INFO     | __main__:load_data:60 - Columns: ['Unnamed: 0', 'id', 'textDisplay', 'publishedAt', 'parentId', 'parentType', 'hate speech', 'linguistic bias', 'text-level context bias', 'political bias', 'gender bias', 'racial bias', 'domain']
+2024-12-17 00:01:36.982 | INFO     | __main__:load_data:61 - Shape: (1998, 13)
+2024-12-17 00:01:37.016 | DEBUG    | __main__:__init__:99 - Confidence check True
+2024-12-17 00:01:37.025 | INFO     | __main__:annotate:280 - Loaded context examples at ./ref_samples.json
+2024-12-17 00:01:37.025 | INFO     | __main__:annotate:281 - Starting annotation...
+2024-12-17 00:01:51.480 | INFO     | __main__:annotate:334 - Batch annotated - idx 0:10
+2024-12-17 00:02:07.830 | INFO     | __main__:annotate:334 - Batch annotated - idx 10:20
+2024-12-17 00:02:27.121 | INFO     | __main__:annotate:334 - Batch annotated - idx 20:30
+2024-12-17 00:02:47.578 | INFO     | __main__:annotate:334 - Batch annotated - idx 30:40
+2024-12-17 00:04:34.668 | INFO     | __main__:annotate:334 - Batch annotated - idx 40:50
+2024-12-17 00:04:47.891 | INFO     | __main__:annotate:334 - Batch annotated - idx 50:60
+2024-12-17 00:05:00.041 | INFO     | __main__:annotate:334 - Batch annotated - idx 60:70
+2024-12-17 00:05:12.682 | INFO     | __main__:annotate:334 - Batch annotated - idx 70:80
+2024-12-17 00:05:29.583 | INFO     | __main__:annotate:334 - Batch annotated - idx 80:90
+2024-12-17 00:05:42.795 | INFO     | __main__:annotate:334 - Batch annotated - idx 90:100
+2024-12-17 00:05:56.639 | INFO     | __main__:annotate:334 - Batch annotated - idx 100:110
+2024-12-17 00:05:56.639 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: []
+2024-12-17 00:05:56.646 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.47619047619047616; Micro F1 0.9437229437229437; Accuracy 0.9090909090909091
+
+2024-12-17 00:05:56.650 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.5432388517782993; Micro F1 0.7756208045429928; Accuracy 0.7909090909090909
+
+2024-12-17 00:05:56.654 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.6051687006460875; Micro F1 0.8839652809502055; Accuracy 0.8636363636363636
+
+2024-12-17 00:05:56.657 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.7607655502392344; Micro F1 0.9565028273162245; Accuracy 0.9545454545454546
+
+2024-12-17 00:05:56.662 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.4977168949771689; Micro F1 0.9954337899543378; Accuracy 0.990909090909091
+
+2024-12-17 00:05:56.666 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.4954128440366973; Micro F1 0.9818181818181818; Accuracy 0.9818181818181818
+
+2024-12-17 00:05:56.666 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-17 00:06:02.655 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='', LinguisticBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Misclassification of a comment as linguistic bias due to its derogatory language towards a group of people, missing the underlying issue of dismissiveness toward differing opinions, which could suggest a broader societal narrative. Preventing such mistakes would require a keener analysis of comment context and intent.', TextLevelContextBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Overlooked context in interpreting strong language as indicative of bias without recognizing the deeper societal implications of frustration in job market narratives. Training on contextual awareness can mitigate this.', PoliticalBias='Example: He supports Black Trump?! What an asshole. Misclassification occurred here due to not recognizing the dual layers of political contempt and the discussion of racial dynamics. A comprehensive framework for political and racial bias could improve classification accuracy.', RacialBias='', GenderBias='Example: Imagine being her kid and seeing this... Pathetic woman. This reflects an underestimation of the intersectionality between gender bias and expectations placed upon women, highlighting a gap in understanding their societal roles. Revisiting stereotypes and societal norms could enhance the recognition of such biases.')
+2024-12-17 00:06:02.655 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:06:17.279 | INFO     | __main__:annotate:334 - Batch annotated - idx 110:120
+2024-12-17 00:06:33.837 | INFO     | __main__:annotate:334 - Batch annotated - idx 120:130
+2024-12-17 00:06:50.644 | INFO     | __main__:annotate:334 - Batch annotated - idx 130:140
+2024-12-17 00:07:06.131 | INFO     | __main__:annotate:334 - Batch annotated - idx 140:150
+2024-12-17 00:07:21.080 | INFO     | __main__:annotate:334 - Batch annotated - idx 150:160
+2024-12-17 00:07:34.836 | INFO     | __main__:annotate:334 - Batch annotated - idx 160:170
+2024-12-17 00:09:19.965 | INFO     | __main__:annotate:334 - Batch annotated - idx 170:180
+2024-12-17 00:09:36.330 | INFO     | __main__:annotate:334 - Batch annotated - idx 180:190
+2024-12-17 00:09:46.805 | INFO     | __main__:annotate:334 - Batch annotated - idx 190:200
+2024-12-17 00:10:00.328 | INFO     | __main__:annotate:334 - Batch annotated - idx 200:210
+2024-12-17 00:10:00.328 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: []
+2024-12-17 00:10:00.333 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.5451732673267327; Micro F1 0.9533415841584157; Accuracy 0.9333333333333333
+
+2024-12-17 00:10:00.337 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.5610367892976589; Micro F1 0.8000875935658542; Accuracy 0.8095238095238095
+
+2024-12-17 00:10:00.342 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.5855263157894737; Micro F1 0.8795112781954887; Accuracy 0.8571428571428571
+
+2024-12-17 00:10:00.346 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.7823013853548204; Micro F1 0.9503291732299366; Accuracy 0.9476190476190476
+
+2024-12-17 00:10:00.349 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8321342925659472; Micro F1 0.9960260363138062; Accuracy 0.9952380952380953
+
+2024-12-17 00:10:00.353 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.6618357487922705; Micro F1 0.9778237865194387; Accuracy 0.9809523809523809
+
+2024-12-17 00:10:00.354 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-17 00:10:06.740 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... Misclassification as hate speech occurs due to potentially missing deeper contextual insights about politically charged statements, reflecting biases rather than outright derogatory intent. Analyzing the broader conversation about Ukraine and political ideology would help clarify intent and bias.', LinguisticBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Misclassification of a comment as linguistic bias due to its derogatory language towards a group without recognizing the broader context of economic frustration. Enhancing analytical frameworks to account for context nuances could prevent this.', TextLevelContextBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Overlooked context in strong language indicating frustration with a job market narrative rather than an absolute bias, highlighting the necessity for improved contextual sensitivity.', PoliticalBias='Example: And people say ukraine is filled with nazis.... This remark exemplifies how political bias can intermingle with allegations of hate. Improving classification would benefit from distinguishing between satire, hyperbole, and expression of genuine political sentiment. A clearer definition framework for political bias could enhance accuracy.', RacialBias='', GenderBias='Example: Imagine being her kid and seeing this... Pathetic woman. This highlights biases around gender expectations and societal roles, underscoring the need for a more nuanced understanding of the intersection between gender bias and culturally informed judgments. Increased focus on societal norms could improve recognition of such biases.')
+2024-12-17 00:10:06.741 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:11:50.104 | INFO     | __main__:annotate:334 - Batch annotated - idx 210:220
+2024-12-17 00:12:05.299 | INFO     | __main__:annotate:334 - Batch annotated - idx 220:230
+2024-12-17 00:12:21.521 | INFO     | __main__:annotate:334 - Batch annotated - idx 230:240
+2024-12-17 00:12:36.094 | INFO     | __main__:annotate:334 - Batch annotated - idx 240:250
+2024-12-17 00:12:56.762 | INFO     | __main__:annotate:334 - Batch annotated - idx 250:260
+2024-12-17 00:13:13.477 | INFO     | __main__:annotate:334 - Batch annotated - idx 260:270
+2024-12-17 00:13:28.786 | INFO     | __main__:annotate:334 - Batch annotated - idx 270:280
+2024-12-17 00:13:43.465 | INFO     | __main__:annotate:334 - Batch annotated - idx 280:290
+2024-12-17 00:13:58.383 | INFO     | __main__:annotate:334 - Batch annotated - idx 290:300
+2024-12-17 00:14:15.463 | INFO     | __main__:annotate:334 - Batch annotated - idx 300:310
+2024-12-17 00:14:15.463 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: []
+2024-12-17 00:14:15.467 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.5384884841054383; Micro F1 0.9633288040023842; Accuracy 0.9451612903225807
+
+2024-12-17 00:14:15.471 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.5243045243045243; Micro F1 0.7766359766359766; Accuracy 0.8
+
+2024-12-17 00:14:15.475 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.5785371159249524; Micro F1 0.8779555760869884; Accuracy 0.8548387096774194
+
+2024-12-17 00:14:15.479 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8259649122807018; Micro F1 0.9521539332201472; Accuracy 0.9483870967741935
+
+2024-12-17 00:14:15.483 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8325229605618585; Micro F1 0.9973092138512749; Accuracy 0.9967741935483871
+
+2024-12-17 00:14:15.487 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.638778839431368; Micro F1 0.9804542139962864; Accuracy 0.9838709677419355
+
+2024-12-17 00:14:15.487 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-17 00:14:28.521 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech="Example: And people say ukraine is filled with nazis.... Misclassification stemmed from a lack of context in examining this politically charged statement, which reflects a sarcastic or critical stance rather than genuine hate. Adequate contextual analysis is crucial to understanding the commentator's intent and the broader implications of the statement.", LinguisticBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Misclassification noted in the failure to recognize the tone of disdain carries implications beyond mere linguistic bias, encompassing broader socio-economic commentary. Incorporating a multi-dimensional analysis may improve classification processes when addressing dismissive sentiments.', TextLevelContextBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. A lack of contextual depth led to the misunderstanding of deeper social frustrations expressed here, necessitating a focus on contextual intricacies in future assessments.', PoliticalBias='Example: And people say ukraine is filled with nazis.... This reflects political bias but also links to larger discussions surrounding political perceptions of countries in conflict. Enhanced frameworks for evaluating political language can reveal nuanced meanings hidden within statements, improving accuracy in classification.', RacialBias='', GenderBias='Example: Imagine being her kid and seeing this... Pathetic woman. This indicates a misunderstanding of the gender norms surrounding societal expectations and parenting discourse, emphasizing the need for recognizing how gender affects perceptions in everyday discourse. Expanding gender-bias frameworks to include societal expectations can enhance future evaluations.')
+2024-12-17 00:14:28.521 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:14:42.973 | INFO     | __main__:annotate:334 - Batch annotated - idx 310:320
+2024-12-17 00:15:01.196 | INFO     | __main__:annotate:334 - Batch annotated - idx 320:330
+2024-12-17 00:15:18.749 | INFO     | __main__:annotate:334 - Batch annotated - idx 330:340
+2024-12-17 00:15:32.354 | INFO     | __main__:annotate:334 - Batch annotated - idx 340:350
+2024-12-17 00:15:45.193 | INFO     | __main__:annotate:334 - Batch annotated - idx 350:360
+2024-12-17 00:16:00.287 | INFO     | __main__:annotate:334 - Batch annotated - idx 360:370
+2024-12-17 00:16:16.539 | INFO     | __main__:annotate:334 - Batch annotated - idx 370:380
+2024-12-17 00:16:32.607 | INFO     | __main__:annotate:334 - Batch annotated - idx 380:390
+2024-12-17 00:16:57.725 | INFO     | __main__:annotate:334 - Batch annotated - idx 390:400
+2024-12-17 00:17:11.706 | INFO     | __main__:annotate:334 - Batch annotated - idx 400:410
+2024-12-17 00:17:11.706 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: []
+2024-12-17 00:17:11.711 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.5278475711892797; Micro F1 0.9615199983658129; Accuracy 0.9463414634146341
+
+2024-12-17 00:17:11.715 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.5154957496283308; Micro F1 0.7481788438133686; Accuracy 0.7731707317073171
+
+2024-12-17 00:17:11.719 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.5983108108108108; Micro F1 0.8806163480553724; Accuracy 0.8585365853658536
+
+2024-12-17 00:17:11.723 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8021961056755245; Micro F1 0.9434382058751404; Accuracy 0.9390243902439024
+
+2024-12-17 00:17:11.727 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8327213382292942; Micro F1 0.9979659870038114; Accuracy 0.9975609756097561
+
+2024-12-17 00:17:11.730 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.6962962962962963; Micro F1 0.9839205058717253; Accuracy 0.9853658536585366
+
+2024-12-17 00:17:11.730 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-17 00:17:18.009 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... Misclassification occurred due to the lack of recognition of the complexities surrounding politically charged statements, where context is essential to discern whether the language is meant as critique or hate. Incorporating comprehensive context analysis would clarify intent more effectively.', LinguisticBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Misclassification arises from overlooking the underlying socioeconomic commentary tied to dismissive language, which may indicate frustration rather than simple linguistic bias. Training on context-specific sentiment interpretation can ameliorate this.', TextLevelContextBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. This reflects a failure to recognize the socio-economic backdrop of the comment, indicating the need to train models to identify nuances in frustration versus bias.', PoliticalBias='Example: And people say ukraine is filled with nazis.... This statement combines a political accent with possibly offensive language. Future bias classifications would benefit from a clearer understanding of how political commentary intertwines with issues of hate, requiring a dual-analysis lens for such statements.', RacialBias='', GenderBias='Example: Imagine being her kid and seeing this... Pathetic woman. This demonstrates a lack of sensitivity to the intersectionality of gender and societal expectations, where biases could be deepened by harsh societal judgments. A deeper exploration of these societal norms is essential for improving future classifications.')
+2024-12-17 00:17:18.009 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:17:36.550 | INFO     | __main__:annotate:334 - Batch annotated - idx 410:420
+2024-12-17 00:17:48.916 | INFO     | __main__:annotate:334 - Batch annotated - idx 420:430
+2024-12-17 00:18:06.697 | INFO     | __main__:annotate:334 - Batch annotated - idx 430:440
+2024-12-17 00:18:22.757 | INFO     | __main__:annotate:334 - Batch annotated - idx 440:450
+2024-12-17 00:18:44.177 | INFO     | __main__:annotate:334 - Batch annotated - idx 450:460
+2024-12-17 00:19:03.138 | INFO     | __main__:annotate:334 - Batch annotated - idx 460:470
+2024-12-17 00:19:20.118 | INFO     | __main__:annotate:334 - Batch annotated - idx 470:480
+2024-12-17 00:19:36.151 | INFO     | __main__:annotate:334 - Batch annotated - idx 480:490
+2024-12-17 00:19:53.776 | INFO     | __main__:annotate:334 - Batch annotated - idx 490:500
+2024-12-17 00:20:16.172 | INFO     | __main__:annotate:334 - Batch annotated - idx 500:510
+2024-12-17 00:20:16.173 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: []
+2024-12-17 00:20:16.177 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.5191919191919192; Micro F1 0.9628441275500098; Accuracy 0.9450980392156862
+
+2024-12-17 00:20:16.182 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.5404709315769749; Micro F1 0.7570343846686994; Accuracy 0.7784313725490196
+
+2024-12-17 00:20:16.186 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.6008695652173913; Micro F1 0.8814731457800512; Accuracy 0.8588235294117647
+
+2024-12-17 00:20:16.190 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8009202853121045; Micro F1 0.9407460392453744; Accuracy 0.9352941176470588
+
+2024-12-17 00:20:16.194 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8323471400394478; Micro F1 0.996078431372549; Accuracy 0.996078431372549
+
+2024-12-17 00:20:16.198 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.7460159362549801; Micro F1 0.984313725490196; Accuracy 0.984313725490196
+
+2024-12-17 00:20:16.198 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-17 00:20:27.340 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... This comment was likely misclassified due to missing nuanced understanding of political critique versus hate speech. Recognizing that the intent might be to challenge misconceptions rather than endorse hate can improve future assessments. Contextual analysis of political statements is essential to avoid misclassification.', LinguisticBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Misclassification of this comment arises from failing to recognize that derogatory descriptors may reveal broader frustrations linked to socio-economic conditions rather than purely linguistic bias. Training models with a focus on the socio-economic context may enhance classification accuracy.', TextLevelContextBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. The lack of discussion regarding the socio-economic implications behind the dismissal indicates a need for enhanced training in discerning contextual subtleties that influence bias assessment. Implementing a layered context evaluation framework could be beneficial.', PoliticalBias="Example: And people say ukraine is filled with nazis.... The political charge of this statement should not diminish the close examination of the user's intent. Understanding the nuanced distinction between criticism of a viewpoint and outright hate will contribute to more accurate bias assessments. Establishing a clearer framework for political expression will facilitate better discrimination between commentary and bias.", RacialBias='Example: The Argonians have a few things to say about this. This comment illustrates a reliance on a fantasy racial stereotype that could perpetuate negative portrayals. Developing a comprehensive understanding of how fictional portrayals relate to racial discourse is essential for accurate classification.', GenderBias='Example: Imagine being her kid and seeing this... Pathetic woman. This comment highlights a judgment rooted in societal expectations of women, showcasing gender bias in the language used. Building a deeper understanding of the intersections of gender, societal roles, and personal critiques can enhance the accuracy of future classifications.')
+2024-12-17 00:20:27.340 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:20:41.834 | INFO     | __main__:annotate:334 - Batch annotated - idx 510:520
+2024-12-17 00:21:00.845 | INFO     | __main__:annotate:334 - Batch annotated - idx 520:530
+2024-12-17 00:21:24.559 | INFO     | __main__:annotate:334 - Batch annotated - idx 530:540
+2024-12-17 00:21:46.611 | INFO     | __main__:annotate:334 - Batch annotated - idx 540:550
+2024-12-17 00:22:02.592 | INFO     | __main__:annotate:334 - Batch annotated - idx 550:560
+2024-12-17 00:22:18.016 | INFO     | __main__:annotate:334 - Batch annotated - idx 560:570
+2024-12-17 00:22:33.689 | INFO     | __main__:annotate:334 - Batch annotated - idx 570:580
+2024-12-17 00:22:55.927 | INFO     | __main__:annotate:334 - Batch annotated - idx 580:590
+2024-12-17 00:23:10.791 | INFO     | __main__:annotate:334 - Batch annotated - idx 590:600
+2024-12-17 00:23:25.782 | INFO     | __main__:annotate:334 - Batch annotated - idx 600:610
+2024-12-17 00:23:25.783 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: []
+2024-12-17 00:23:25.788 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.5925728025647876; Micro F1 0.9633457864516497; Accuracy 0.9508196721311475
+
+2024-12-17 00:23:25.792 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.5477174028174981; Micro F1 0.7600896681894979; Accuracy 0.7819672131147541
+
+2024-12-17 00:23:25.796 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.5969249613202682; Micro F1 0.8871519880959426; Accuracy 0.8655737704918033
+
+2024-12-17 00:23:25.800 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.7933674333525287; Micro F1 0.9405835579118172; Accuracy 0.9344262295081968
+
+2024-12-17 00:23:25.804 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.7201578126433618; Micro F1 0.9904473113039397; Accuracy 0.9918032786885246
+
+2024-12-17 00:23:25.808 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.7819611581079471; Micro F1 0.9849007662513455; Accuracy 0.9852459016393442
+
+2024-12-17 00:23:25.808 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-17 00:23:31.608 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... Misclassification indicates a lack of deep contextual understanding around politically charged statements, which can reflect a critique or sarcasm rather than outright hate. Emphasizing context-driven analysis could significantly reduce such errors in future assessments.', LinguisticBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Misclassification arises from misinterpreting the depth of emotional frustration tied to the language. Enhanced sensitivity to the nuances of socio-political commentary can improve classification accuracy.', TextLevelContextBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. An oversight regarding socioeconomic factors behind the dismissive tone highlights the need for a comprehensive contextual analysis framework that caters to diverse perspectives and frustrations.', PoliticalBias='Example: And people say ukraine is filled with nazis.... This statement requires careful context interpretation to differentiate between criticism and genuine political bias. Establishing a more nuanced lens for interpreting political expressions ensures more precise classifications and mitigates the risk of misinterpretation.', RacialBias='Example: i am black can confirm i will be buying trumps ugly $400 sneakers and will be voting for him. i also like fried chicken and watermelon 🙄. The comment reflects an intersection of racial bias with political expression that can perpetuate harmful stereotypes. Emphasizing a deeper understanding of how language intersects with racial identity will enhance future evaluations.', GenderBias='Example: Imagine being her kid and seeing this... Pathetic woman. This reveals an underlying societal expectation of women that reinforces negative stereotypes. A better understanding of how gender bias manifests in language, especially in terms of societal roles and expectations, will lead to improved classification methodologies.')
+2024-12-17 00:23:31.608 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:23:49.485 | INFO     | __main__:annotate:334 - Batch annotated - idx 610:620
+2024-12-17 00:24:01.620 | INFO     | __main__:annotate:334 - Batch annotated - idx 620:630
+2024-12-17 00:24:16.755 | INFO     | __main__:annotate:334 - Batch annotated - idx 630:640
+2024-12-17 00:24:34.653 | INFO     | __main__:annotate:334 - Batch annotated - idx 640:650
+2024-12-17 00:24:54.508 | INFO     | __main__:annotate:334 - Batch annotated - idx 650:660
+2024-12-17 00:25:08.023 | INFO     | __main__:annotate:334 - Batch annotated - idx 660:670
+2024-12-17 00:25:27.243 | INFO     | __main__:annotate:334 - Batch annotated - idx 670:680
+2024-12-17 00:25:45.081 | INFO     | __main__:annotate:334 - Batch annotated - idx 680:690
+2024-12-17 00:26:05.863 | INFO     | __main__:annotate:334 - Batch annotated - idx 690:700
+2024-12-17 00:26:20.257 | INFO     | __main__:annotate:334 - Batch annotated - idx 700:710
+2024-12-17 00:26:20.258 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: []
+2024-12-17 00:26:20.262 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.573128283020062; Micro F1 0.9622225728270006; Accuracy 0.9464788732394366
+
+2024-12-17 00:26:20.266 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.5440504641597165; Micro F1 0.7526530298211255; Accuracy 0.7774647887323943
+
+2024-12-17 00:26:20.270 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.5976538081801239; Micro F1 0.8877884326364682; Accuracy 0.8633802816901408
+
+2024-12-17 00:26:20.275 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8025106424148607; Micro F1 0.9397714265468974; Accuracy 0.9352112676056338
+
+2024-12-17 00:26:20.279 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.720450429167651; Micro F1 0.9917915240082119; Accuracy 0.9929577464788732
+
+2024-12-17 00:26:20.283 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.7691507348159708; Micro F1 0.9859154929577465; Accuracy 0.9859154929577465
+
+2024-12-17 00:26:20.283 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-17 00:26:27.487 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... This statement is misclassified given its sarcasm or critical comment rather than direct hate. A deeper context analysis could distinguish between mocking rhetoric and outright hate speech. Enhancing the contextuality of assessments may improve future classifications.', LinguisticBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Misclassification here illustrates a need to recognize that derogatory language may express broader frustrations beyond linguistic bias, such as economic stress or dissatisfaction with societal expectations. Training focused on nuanced emotional expressions could refine future classifications.', TextLevelContextBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Here, context plays a crucial role in interpreting the frustration expressed in the statement, highlighting the necessity for context-sensitive evaluations in bias detection processes.', PoliticalBias='Example: And people say ukraine is filled with nazis.... Misclassification arises due to a lack of understanding that this might be a sarcastic critique rather than a straightforward expression of political bias. Incorporating a nuanced political lens into classification frameworks may yield more accurate interpretations.', RacialBias='Example: i am black can confirm i will be buying trumps ugly $400 sneakers and will be voting for him. i also like fried chicken and watermelon 🙄. This comment reflects a problematic intersection of racial stereotypes and political expression, underscoring a need for greater awareness of how language can perpetuate biases. Training in recognizing harmful stereotypes and their implications would enhance classification rigor.', GenderBias='Example: Imagine being her kid and seeing this... Pathetic woman. This comment encapsulates gender expectations underlying societal narratives, illustrating a bias often directed at women. Improving classifications would benefit from a comprehensive approach to understanding gender norms and their consequences in social commentary.')
+2024-12-17 00:26:27.487 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:26:48.961 | INFO     | __main__:annotate:334 - Batch annotated - idx 710:720
+2024-12-17 00:27:04.170 | INFO     | __main__:annotate:334 - Batch annotated - idx 720:730
+2024-12-17 00:27:18.347 | INFO     | __main__:annotate:334 - Batch annotated - idx 730:740
+2024-12-17 00:27:34.251 | INFO     | __main__:annotate:334 - Batch annotated - idx 740:750
+2024-12-17 00:27:54.855 | INFO     | __main__:annotate:334 - Batch annotated - idx 750:760
+2024-12-17 00:28:06.351 | INFO     | __main__:annotate:334 - Batch annotated - idx 760:770
+2024-12-17 00:28:19.410 | INFO     | __main__:annotate:334 - Batch annotated - idx 770:780
+2024-12-17 00:28:40.696 | INFO     | __main__:annotate:334 - Batch annotated - idx 780:790
+2024-12-17 00:28:55.127 | INFO     | __main__:annotate:334 - Batch annotated - idx 790:800
+2024-12-17 00:29:10.011 | INFO     | __main__:annotate:334 - Batch annotated - idx 800:810
+2024-12-17 00:29:10.013 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: []
+2024-12-17 00:29:10.019 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.5577112982863781; Micro F1 0.9587709541277166; Accuracy 0.9419753086419753
+
+2024-12-17 00:29:10.024 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.5504495504495505; Micro F1 0.7540977540977541; Accuracy 0.7777777777777778
+
+2024-12-17 00:29:10.028 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.6040005966092706; Micro F1 0.8799749407738449; Accuracy 0.854320987654321
+
+2024-12-17 00:29:10.032 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8042787308786082; Micro F1 0.9401601833551675; Accuracy 0.9358024691358025
+
+2024-12-17 00:29:10.036 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.7206703910614525; Micro F1 0.9928041014322826; Accuracy 0.9938271604938271
+
+2024-12-17 00:29:10.040 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.7574256077972286; Micro F1 0.9867107240461266; Accuracy 0.9864197530864197
+
+2024-12-17 00:29:10.040 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-17 00:29:27.168 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: And people say ukraine is filled with nazis.... The classification of this statement often fails to take into account the intent behind the sarcasm. Understanding the nuanced meaning within politically charged commentary can prevent misinterpretation. Contextual sensitivity is crucial for improving future assessments.', LinguisticBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. The linguistic bias classification could overlook broader socioeconomic issues reflected in the comment, indicating a need for models to analyze emotional depth in language. Enhancing models to factor in the context of economic frustrations could lead to more accurate classifications.', TextLevelContextBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Misclassification highlights the importance of contextual nuances, where surface-level interpretations may miss deeper societal comments tied to the economy. Training on contextual awareness can mitigate future errors.', PoliticalBias='Example: And people say ukraine is filled with nazis.... This highlights a misunderstanding of the intent behind political critique. Establishing better frameworks that distinguish between mockery and genuine bias could enhance the classification process significantly, leading to a more nuanced understanding of political expressions.', RacialBias='Example: i am black can confirm i will be buying trumps ugly $400 sneakers and will be voting for him. i also like fried chicken and watermelon 🙄. The comment relies on personal experience while invoking harmful stereotypes, illustrating the interplay between race and political expression. A focused training on harmful stereotypes and their implications would improve future classification accuracy.', GenderBias='Example: Imagine being her kid and seeing this... Pathetic woman. This reflects a judgment tied to societal expectations for women, indicating the need for a deeper understanding of gender biases. Incorporating insights on gender norms and societal expectations in evaluations would provide a richer context for future assessments.')
+2024-12-17 00:29:27.168 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:29:40.048 | INFO     | __main__:annotate:334 - Batch annotated - idx 810:820
+2024-12-17 00:29:53.472 | INFO     | __main__:annotate:334 - Batch annotated - idx 820:830
+2024-12-17 00:30:05.184 | INFO     | __main__:annotate:334 - Batch annotated - idx 830:840
+2024-12-17 00:30:17.443 | INFO     | __main__:annotate:334 - Batch annotated - idx 840:850
+2024-12-17 00:30:31.557 | INFO     | __main__:annotate:334 - Batch annotated - idx 850:860
+2024-12-17 00:30:51.173 | INFO     | __main__:annotate:334 - Batch annotated - idx 860:870
+2024-12-17 00:31:03.599 | INFO     | __main__:annotate:334 - Batch annotated - idx 870:880
+2024-12-17 00:31:24.625 | INFO     | __main__:annotate:334 - Batch annotated - idx 880:890
+2024-12-17 00:31:38.565 | INFO     | __main__:annotate:334 - Batch annotated - idx 890:900
+2024-12-17 00:31:50.994 | INFO     | __main__:annotate:334 - Batch annotated - idx 900:910
+2024-12-17 00:31:50.995 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: []
+2024-12-17 00:31:50.999 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.5491577672575141; Micro F1 0.9591263960084834; Accuracy 0.9406593406593406
+
+2024-12-17 00:31:51.003 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.5634309925520595; Micro F1 0.7564956095735851; Accuracy 0.778021978021978
+
+2024-12-17 00:31:51.007 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.606264126574104; Micro F1 0.8780802407150486; Accuracy 0.8527472527472527
+
+2024-12-17 00:31:51.011 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8077679520986; Micro F1 0.9400633427847485; Accuracy 0.9362637362637363
+
+2024-12-17 00:31:51.015 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.7713452937333534; Micro F1 0.9937607997309491; Accuracy 0.9945054945054945
+
+2024-12-17 00:31:51.019 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.7932288116337196; Micro F1 0.9881325672736716; Accuracy 0.987912087912088
+
+2024-12-17 00:31:51.019 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-17 00:32:18.663 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech="Example: And people say ukraine is filled with nazis.... This type of statement is often misclassified if the sarcasm isn't considered, reflecting a critical sentiment rather than hate. Improved training on political commentary could enhance accuracy in distinguishing critique from hate speech.", LinguisticBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. Misclassification could occur by interpreting anger as simply linguistic bias without acknowledging the underlying socioeconomic frustration which it represents. Training should incorporate emotional context understanding.', TextLevelContextBias='Example: Ooh! I’m showing this to the idiots claiming they’re quitting soon because “there are better jobs waiting for me”. The failure to recognize broader socio-economic issues reflecting in this comment indicates a need for a deeper modeling approach that includes context sensitivity.', PoliticalBias='Example: And people say ukraine is filled with nazis.... This illustrates that sarcasm or exaggerated language can complicate interpretations of political stance, emphasizing the necessity for categorization frameworks that can distinguish between genuine bias and critical commentary. Improved context-based classifications are essential.', RacialBias='Example: i am black can confirm i will be buying trumps ugly $400 sneakers and will be voting for him. i also like fried chicken and watermelon 🙄. This comment uses personal identity to invoke stereotypes, which requires a more discerning approach to recognizing the intertwining of racial identities and political expression. Enhanced training on nuanced racial dialogue will support better classification.', GenderBias='Example: Imagine being her kid and seeing this... Pathetic woman. This comment captures societal expectations of women and how language impacts perceptions based on gender. A comprehensive framework that includes social context and norms would augment the accuracy of identifying gender biases.')
+2024-12-17 00:32:18.663 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:32:35.835 | INFO     | __main__:annotate:334 - Batch annotated - idx 910:920
+2024-12-17 00:32:48.328 | INFO     | __main__:annotate:334 - Batch annotated - idx 920:930
+2024-12-17 00:33:11.501 | INFO     | __main__:annotate:334 - Batch annotated - idx 930:940
+2024-12-17 00:33:25.339 | INFO     | __main__:annotate:334 - Batch annotated - idx 940:950
+2024-12-17 00:33:43.250 | INFO     | __main__:annotate:334 - Batch annotated - idx 950:960
+2024-12-17 00:33:57.937 | INFO     | __main__:annotate:334 - Batch annotated - idx 960:970
+2024-12-17 00:34:11.066 | INFO     | __main__:annotate:334 - Batch annotated - idx 970:980
+2024-12-17 00:34:24.304 | INFO     | __main__:annotate:334 - Batch annotated - idx 980:990
+2024-12-17 00:34:36.877 | INFO     | __main__:annotate:334 - Batch annotated - idx 990:1000
+2024-12-17 00:34:36.878 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: []
+2024-12-17 00:34:36.884 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.5491577672575141; Micro F1 0.9591263960084834; Accuracy 0.9406593406593406
+
+2024-12-17 00:34:36.888 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.5634309925520595; Micro F1 0.7564956095735851; Accuracy 0.778021978021978
+
+2024-12-17 00:34:36.892 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.606264126574104; Micro F1 0.8780802407150486; Accuracy 0.8527472527472527
+
+2024-12-17 00:34:36.897 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8077679520986; Micro F1 0.9400633427847485; Accuracy 0.9362637362637363
+
+2024-12-17 00:34:36.900 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.7713452937333534; Micro F1 0.9937607997309491; Accuracy 0.9945054945054945
+
+2024-12-17 00:34:36.904 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.7932288116337196; Micro F1 0.9881325672736716; Accuracy 0.987912087912088
+
+2024-12-17 00:34:36.904 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-17 00:34:38.423 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='', LinguisticBias='', TextLevelContextBias='', PoliticalBias='', RacialBias='', GenderBias='')
+2024-12-17 00:34:38.423 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-17 00:34:38.427 | SUCCESS  | __main__:annotate:359 - Pipeline finished - saved predictions at ./save/
+2024-12-17 00:34:38.427 | SUCCESS  | __main__:annotate:362 - Done.

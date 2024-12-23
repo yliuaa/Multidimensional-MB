@@ -1,0 +1,707 @@
+2024-12-16 22:31:42.361 | INFO     | __main__:<module>:474 - Pipeline started with args: Namespace(model='gpt-4o-mini', api_key='../api_key.txt', strategies=['zero-shot', 'CoT', 'biliteral'], max_retries=10, seed=42, eval_path='~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv', batch_size=10, context_path='./ref_samples.json', output_path='./save/', note='CU_PE_ConfCheck')
+2024-12-16 22:31:42.370 | INFO     | __main__:load_data:59 - Loading data from ~/Multidimensional-MB/data/reddit_data/eval_dataset(Nov5).csv
+2024-12-16 22:31:42.370 | INFO     | __main__:load_data:60 - Columns: ['Unnamed: 0', 'id', 'textDisplay', 'publishedAt', 'parentId', 'parentType', 'hate speech', 'linguistic bias', 'text-level context bias', 'political bias', 'gender bias', 'racial bias', 'domain']
+2024-12-16 22:31:42.370 | INFO     | __main__:load_data:61 - Shape: (1998, 13)
+2024-12-16 22:31:42.404 | DEBUG    | __main__:__init__:99 - Confidence check True
+2024-12-16 22:31:42.414 | INFO     | __main__:annotate:280 - Loaded context examples at ./ref_samples.json
+2024-12-16 22:31:42.414 | INFO     | __main__:annotate:281 - Starting annotation...
+2024-12-16 22:31:59.673 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:32:15.284 | INFO     | __main__:annotate:334 - Batch annotated - idx 0:10
+2024-12-16 22:32:31.106 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6000000000000001
+2024-12-16 22:32:36.587 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:32:39.112 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:32:58.048 | INFO     | __main__:annotate:334 - Batch annotated - idx 10:20
+2024-12-16 22:33:02.583 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:33:06.643 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:33:11.210 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:33:16.572 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:33:18.328 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:33:19.652 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 22:33:19.652 | INFO     | __main__:annotate:334 - Batch annotated - idx 20:30
+2024-12-16 22:33:21.232 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:33:22.627 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:33:30.956 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:33:37.458 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 22:33:38.904 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:33:40.478 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:33:45.415 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:33:45.415 | INFO     | __main__:annotate:334 - Batch annotated - idx 30:40
+2024-12-16 22:33:52.767 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:34:08.225 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:34:23.558 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:34:28.102 | INFO     | __main__:annotate:334 - Batch annotated - idx 40:50
+2024-12-16 22:34:36.721 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 22:34:48.175 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:35:16.119 | INFO     | __main__:annotate:334 - Batch annotated - idx 50:60
+2024-12-16 22:35:17.230 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:35:49.609 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:35:56.066 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:36:03.299 | INFO     | __main__:annotate:334 - Batch annotated - idx 60:70
+2024-12-16 22:36:07.247 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.29999999999999993
+2024-12-16 22:36:11.152 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:36:22.080 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:36:25.927 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:36:33.234 | INFO     | __main__:annotate:334 - Batch annotated - idx 70:80
+2024-12-16 22:36:50.058 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:36:54.048 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:36:57.086 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 22:37:07.095 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:37:11.822 | INFO     | __main__:annotate:334 - Batch annotated - idx 80:90
+2024-12-16 22:37:13.491 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:37:33.867 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:37:41.828 | INFO     | __main__:annotate:334 - Batch annotated - idx 90:100
+2024-12-16 22:38:00.373 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:38:04.052 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:38:05.383 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:38:07.258 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:38:07.258 | INFO     | __main__:annotate:334 - Batch annotated - idx 100:110
+2024-12-16 22:38:07.258 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['ksx7n0i', 'kwzxb36', 'ksj00jk', 'ktjfene', 'krou5ax', 'ksahnm1', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'ktctb1v', 'kuotbev', 'kuphpzq', 'kv34sr6', 'kumjanv', 'ku1jglg', 'kw9ppdw', 'ktku1zl', 'kunxqb4', 'kvxn0gp', 'kuurzbc', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ksfns05', 'ksv0pyy', 'kvfvdqb', 'ktbz4zb']
+2024-12-16 22:38:07.266 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.4835680751173709; Micro F1 0.9583440034144259; Accuracy 0.9363636363636364
+
+2024-12-16 22:38:07.270 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8255352894528152; Micro F1 0.9175834474803547; Accuracy 0.9272727272727272
+
+2024-12-16 22:38:07.274 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7768762677484787; Micro F1 0.9415083901899318; Accuracy 0.9363636363636364
+
+2024-12-16 22:38:07.278 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8564593301435407; Micro F1 0.9739016963897347; Accuracy 0.9727272727272728
+
+2024-12-16 22:38:07.282 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-16 22:38:07.286 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-16 22:38:07.286 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-16 22:38:16.185 | ERROR    | __main__:annotate:346 - An error has been caught in function 'annotate', process 'MainProcess' (3847183), thread 'MainThread' (140617095737984):
+Traceback (most recent call last):
+
+  File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 488, in <module>
+    asyncio.run(pipeline.annotate(sample_num=1000))
+    │       │   │        └ <function Pipeline.annotate at 0x7fe2fa73a7a0>
+    │       │   └ <__main__.Pipeline object at 0x7fe2fa434440>
+    │       └ <function run at 0x7fe3f7121ee0>
+    └ <module 'asyncio' from '/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/__init__.py'>
+
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object Pipeline.annotate at 0x7fe2fa5c7840>
+           │      └ <function Runner.run at 0x7fe3f71e0400>
+           └ <asyncio.runners.Runner object at 0x7fe2fa435010>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<Pipeline.annotate() running at /home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7fe3f71ddf80>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7fe2fa435010>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 707, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7fe3f71ddee0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 678, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7fe3f71dfce0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/base_events.py", line 2033, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7fe3f7386d40>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7fe37a16b130>()>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/asyncio/events.py", line 89, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7fe37a16b130>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7fe37a16b130>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x7fe37a16b130>()>
+
+> File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 346, in annotate
+    context = await self.evaluate(
+                    │    └ <function Pipeline.evaluate at 0x7fe2fa73ab60>
+                    └ <__main__.Pipeline object at 0x7fe2fa434440>
+
+  File "/home/yifan40/Multidimensional-MB/annotator/pipeline.py", line 391, in evaluate
+    reflection = await self.contextual_expert.run(
+                       │    │                 └ <function Agent.run at 0x7fe2fad036a0>
+                       │    └ Agent(model=OpenAIModel(model_name='gpt-4o-mini'), name=None, last_run_messages=[SystemPrompt(content='\n                # Ta...
+                       └ <__main__.Pipeline object at 0x7fe2fa434440>
+
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/pydantic_ai/agent.py", line 209, in run
+    model_response, request_cost = await agent_model.request(messages)
+    │                                    │           │       └ [SystemPrompt(content='\n                # Task: Reflection on Mistake Annotations\n                You are a reflective anno...
+    │                                    │           └ <function OpenAIAgentModel.request at 0x7fe2fa6745e0>
+    │                                    └ OpenAIAgentModel(client=<openai.AsyncOpenAI object at 0x7fe2fa5dc980>, model_name='gpt-4o-mini', allow_text_result=False, too...
+    └ ModelStructuredResponse(calls=[ToolCall(tool_name='final_result', args=ArgsJson(args_json='{"HateSpeech": "Example: ESPN bein...
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/pydantic_ai/models/openai.py", line 139, in request
+    response = await self._completions_create(messages, False)
+                     │    │                   └ [SystemPrompt(content='\n                # Task: Reflection on Mistake Annotations\n                You are a reflective anno...
+                     │    └ <function OpenAIAgentModel._completions_create at 0x7fe2fa674ae0>
+                     └ OpenAIAgentModel(client=<openai.AsyncOpenAI object at 0x7fe2fa5dc980>, model_name='gpt-4o-mini', allow_text_result=False, too...
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/pydantic_ai/models/openai.py", line 170, in _completions_create
+    return await self.client.chat.completions.create(
+                 │    │      │    │           └ <function AsyncCompletions.create at 0x7fe2fa7bcc20>
+                 │    │      │    └ <openai.resources.chat.completions.AsyncCompletions object at 0x7fe2fa436660>
+                 │    │      └ <openai.resources.chat.chat.AsyncChat object at 0x7fe2fa5dd2b0>
+                 │    └ <openai.AsyncOpenAI object at 0x7fe2fa5dc980>
+                 └ OpenAIAgentModel(client=<openai.AsyncOpenAI object at 0x7fe2fa5dc980>, model_name='gpt-4o-mini', allow_text_result=False, too...
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/openai/resources/chat/completions.py", line 1661, in create
+    return await self._post(
+                 │    └ <bound method AsyncAPIClient.post of <openai.AsyncOpenAI object at 0x7fe2fa5dc980>>
+                 └ <openai.resources.chat.completions.AsyncCompletions object at 0x7fe2fa436660>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/openai/_base_client.py", line 1843, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+                 │    │       │        │            │                  └ openai.AsyncStream[openai.types.chat.chat_completion_chunk.ChatCompletionChunk]
+                 │    │       │        │            └ False
+                 │    │       │        └ FinalRequestOptions(method='post', url='/chat/completions', params={}, headers=NOT_GIVEN, max_retries=NOT_GIVEN, timeout=NOT_...
+                 │    │       └ <class 'openai.types.chat.chat_completion.ChatCompletion'>
+                 │    └ <function AsyncAPIClient.request at 0x7fe2faa45f80>
+                 └ <openai.AsyncOpenAI object at 0x7fe2fa5dc980>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/openai/_base_client.py", line 1537, in request
+    return await self._request(
+                 │    └ <function AsyncAPIClient._request at 0x7fe2faa46020>
+                 └ <openai.AsyncOpenAI object at 0x7fe2fa5dc980>
+  File "/home/yifan40/miniconda3/envs/bias_iden/lib/python3.13/site-packages/openai/_base_client.py", line 1638, in _request
+    raise self._make_status_error_from_response(err.response) from None
+          │    └ <function BaseClient._make_status_error_from_response at 0x7fe2faa3f100>
+          └ <openai.AsyncOpenAI object at 0x7fe2fa5dc980>
+
+openai.BadRequestError: Error code: 400 - {'error': {'message': "An assistant message with 'tool_calls' must be followed by tool messages responding to each 'tool_call_id'. The following tool_call_ids did not have response messages: call_8iMohsBy90dnuLeSLajiNfHb", 'type': 'invalid_request_error', 'param': 'messages', 'code': None}}
+2024-12-16 22:38:33.520 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:38:39.935 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:38:42.511 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:38:51.146 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-16 22:38:53.673 | INFO     | __main__:annotate:334 - Batch annotated - idx 110:120
+2024-12-16 22:39:01.350 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:39:11.158 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-16 22:39:24.125 | INFO     | __main__:annotate:334 - Batch annotated - idx 120:130
+2024-12-16 22:39:29.904 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:39:33.346 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:39:34.718 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:39:39.350 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:39:41.072 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:39:50.153 | INFO     | __main__:annotate:334 - Batch annotated - idx 130:140
+2024-12-16 22:40:14.463 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:40:17.564 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:40:18.818 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 22:40:18.818 | INFO     | __main__:annotate:334 - Batch annotated - idx 140:150
+2024-12-16 22:40:20.727 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:40:24.226 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 22:40:44.822 | INFO     | __main__:annotate:334 - Batch annotated - idx 150:160
+2024-12-16 22:40:53.298 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:40:54.502 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:41:00.489 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:41:02.616 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:41:04.658 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:41:04.659 | INFO     | __main__:annotate:334 - Batch annotated - idx 160:170
+2024-12-16 22:41:09.296 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:41:15.595 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:41:33.249 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:41:33.249 | INFO     | __main__:annotate:334 - Batch annotated - idx 170:180
+2024-12-16 22:41:38.263 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:42:11.683 | INFO     | __main__:annotate:334 - Batch annotated - idx 180:190
+2024-12-16 22:42:21.514 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:42:36.908 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:42:38.454 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:42:42.259 | INFO     | __main__:annotate:334 - Batch annotated - idx 190:200
+2024-12-16 22:43:09.726 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:43:14.148 | INFO     | __main__:annotate:334 - Batch annotated - idx 200:210
+2024-12-16 22:43:14.148 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['ksx7n0i', 'kwzxb36', 'ksj00jk', 'ktjfene', 'krou5ax', 'ksahnm1', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'ktctb1v', 'kuotbev', 'kuphpzq', 'kv34sr6', 'kumjanv', 'ku1jglg', 'kw9ppdw', 'ktku1zl', 'kunxqb4', 'kvxn0gp', 'kuurzbc', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ksfns05', 'ksv0pyy', 'kvfvdqb', 'ktbz4zb', 'ksfmpjz', 'kx3xjb4', 'ksm29cg', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'kv9cpfm', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kt3j1yq', 'kt3n8nr', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktbcnyy']
+2024-12-16 22:43:14.152 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6568627450980392; Micro F1 0.9711484593837535; Accuracy 0.9619047619047619
+
+2024-12-16 22:43:14.156 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8353494623655915; Micro F1 0.9272849462365591; Accuracy 0.9333333333333333
+
+2024-12-16 22:43:14.160 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.763208762886598; Micro F1 0.9390678694158076; Accuracy 0.9333333333333333
+
+2024-12-16 22:43:14.164 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.8852040816326531; Micro F1 0.9733236151603498; Accuracy 0.9714285714285714
+
+2024-12-16 22:43:14.168 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-16 22:43:14.172 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9273607748184018; Micro F1 0.9949037242015449; Accuracy 0.9952380952380953
+
+2024-12-16 22:43:14.172 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-16 22:43:21.977 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: ESPN being trash isn’t news. The annotation mistakenly identifies a comment that expresses personal frustration with a sports network as hate speech, overlooking the context that it does not target any specific group with animosity. Preventing this error could involve stricter guidelines to differentiate between personal opinion and hate speech directed at a group.', LinguisticBias='Example: This shit again. This comment is an expression of frustration that lacks biased language towards any group but was marked nonetheless. It suggests a misclassification where feelings of annoyance do not constitute bias. Enhancing understanding of linguistic bias could help avoid similar errors.', TextLevelContextBias='Example: I genuinely want to see Biden win and to see Trump lose. This statement reflects a personal political preference but has been classified as text-level context bias erroneously. An emphasis on context and the neutrality of political preferences could aid in better accuracy.', PoliticalBias='Example: "It\'s looking like Dean Phillips and None of the Above may get a delegate or two in Ohio and Kansas, respectively." This annotation accurately identifies a political statement but fails to encompass the underlying bias that might be present in the phrasing. More nuanced recognition of political language could prevent this gap in understanding.', RacialBias='', GenderBias='Example: [GOP Candidate Mark Robinson Claimed His Anti-LGBTQ Views Don’t Impact His Office](https://www.meidastouch.com/news/gop-candidate-mark-robinson-claimed-his-anti-lgbtq-views-dont-impact-his-office). The annotation correctly identifies a biased viewpoint implying negative connotations towards LGBTQ individuals, highlighting a needed context for such bias. Providing specificity regarding what constitutes gender bias can enhance future accuracy.')
+2024-12-16 22:43:21.977 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-16 22:43:33.116 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:43:36.828 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:43:46.785 | INFO     | __main__:annotate:334 - Batch annotated - idx 210:220
+2024-12-16 22:43:58.383 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:44:05.921 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:44:19.124 | INFO     | __main__:annotate:334 - Batch annotated - idx 220:230
+2024-12-16 22:44:23.005 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:44:38.923 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:44:42.017 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:44:47.361 | INFO     | __main__:annotate:334 - Batch annotated - idx 230:240
+2024-12-16 22:44:48.910 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:44:53.185 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:45:12.775 | INFO     | __main__:annotate:334 - Batch annotated - idx 240:250
+2024-12-16 22:45:28.585 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:45:30.249 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:45:46.798 | INFO     | __main__:annotate:334 - Batch annotated - idx 250:260
+2024-12-16 22:45:56.720 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.10000000000000009
+2024-12-16 22:46:06.271 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:47:39.884 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-16 22:47:50.037 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:47:53.750 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:47:55.522 | INFO     | __main__:annotate:334 - Batch annotated - idx 260:270
+2024-12-16 22:48:03.683 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:48:15.859 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:48:23.118 | INFO     | __main__:annotate:334 - Batch annotated - idx 270:280
+2024-12-16 22:48:45.412 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:48:50.295 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:48:52.064 | INFO     | __main__:annotate:334 - Batch annotated - idx 280:290
+2024-12-16 22:48:58.378 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:48:59.712 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 22:49:01.398 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.2
+2024-12-16 22:49:04.936 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:49:10.816 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 22:49:13.059 | INFO     | __main__:annotate:334 - Batch annotated - idx 290:300
+2024-12-16 22:49:44.333 | INFO     | __main__:annotate:334 - Batch annotated - idx 300:310
+2024-12-16 22:49:44.333 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['ksx7n0i', 'kwzxb36', 'ksj00jk', 'ktjfene', 'krou5ax', 'ksahnm1', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'ktctb1v', 'kuotbev', 'kuphpzq', 'kv34sr6', 'kumjanv', 'ku1jglg', 'kw9ppdw', 'ktku1zl', 'kunxqb4', 'kvxn0gp', 'kuurzbc', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ksfns05', 'ksv0pyy', 'kvfvdqb', 'ktbz4zb', 'ksfmpjz', 'kx3xjb4', 'ksm29cg', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'kv9cpfm', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kt3j1yq', 'kt3n8nr', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktbcnyy', 'kul3cib', 'kwmy2ie', 'kuono6m', 'kv275vm', 'kv4mwet', 'kwqahfk', 'kvc6quv', 'kth2ku9', 'kt8cttl', 'ktdr3bs', 'kvugl3f', 'kt5ovvt', 'krg3asx', 'ksqfs84', 'kv9dh0h', 'kvprt4r']
+2024-12-16 22:49:44.338 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6600877192982456; Micro F1 0.9805178268251273; Accuracy 0.9741935483870968
+
+2024-12-16 22:49:44.342 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8059152037264281; Micro F1 0.9093032254833135; Accuracy 0.9193548387096774
+
+2024-12-16 22:49:44.346 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7798295454545454; Micro F1 0.945592008797654; Accuracy 0.9419354838709677
+
+2024-12-16 22:49:44.350 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.919423712450336; Micro F1 0.9785219335913402; Accuracy 0.9774193548387097
+
+2024-12-16 22:49:44.354 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-16 22:49:44.358 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9436261138388797; Micro F1 0.9965976218550001; Accuracy 0.9967741935483871
+
+2024-12-16 22:49:44.358 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-16 22:49:50.261 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: ESPN being trash isn’t news. This comment reflects personal sentiment regarding a sports network without any animosity towards a specific group. Misclassifying such opinions as hate speech demonstrates a misunderstanding of the classification boundaries between personal critique and hate speech. Ensuring clarity in recognizing non-hateful personal opinions could prevent this error.', LinguisticBias="Example: This shit again. This expression of frustration was misclassified as linguistic bias. Frustration and annoyance do not indicate bias against any social group but rather reflect an individual's emotional response. Greater awareness of the differences between general expressions of annoyance and actual biased language may enhance accuracy in future annotations.", TextLevelContextBias='Example: I genuinely want to see Biden win and to see Trump lose. This statement reflects a subjective political viewpoint but does not craft a biased narrative against another party. More precise criteria for assessing text-level context bias might help separate political opinions from biased context. Recognizing the nuances between opinion and bias will enhance classification effectiveness.', PoliticalBias='Example: "It\'s looking like Dean Phillips and None of the Above may get a delegate or two in Ohio and Kansas, respectively." The annotation is accurate; however, recognizing the implied biases in phrasing concerning one political perspective over another could be beneficial. A more detailed understanding of political ideology\'s expressive nuances could prevent oversights.', RacialBias='', GenderBias='Example: [GOP Candidate Mark Robinson Claimed His Anti-LGBTQ Views Don’t Impact His Office](https://www.meidastouch.com/news/gop-candidate-mark-robinson-claimed-his-anti-lgbtq-views-dont-impact-his-office). The identification of bias against LGBTQ individuals in this context was appropriate, illustrating the need for clear definitions around gender bias. Continuous reinforcement of contextual understanding related to gender discussions will further improve future assessments.')
+2024-12-16 22:49:50.262 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-16 22:49:51.850 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.9
+2024-12-16 22:50:11.115 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 22:50:13.310 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:50:20.353 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:50:22.257 | INFO     | __main__:annotate:334 - Batch annotated - idx 310:320
+2024-12-16 22:50:30.407 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:50:41.050 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:50:48.228 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 22:50:55.864 | INFO     | __main__:annotate:334 - Batch annotated - idx 320:330
+2024-12-16 22:50:57.111 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:50:58.379 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 22:51:02.190 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.10000000000000009
+2024-12-16 22:51:11.317 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:51:18.831 | INFO     | __main__:annotate:334 - Batch annotated - idx 330:340
+2024-12-16 22:51:34.227 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:51:35.471 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:51:40.156 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:51:52.384 | INFO     | __main__:annotate:334 - Batch annotated - idx 340:350
+2024-12-16 22:51:54.088 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:51:58.102 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:52:05.088 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.30000000000000004
+2024-12-16 22:52:15.693 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:52:31.301 | INFO     | __main__:annotate:334 - Batch annotated - idx 350:360
+2024-12-16 22:52:35.259 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:52:41.343 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:52:48.498 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:52:54.052 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:52:59.301 | INFO     | __main__:annotate:334 - Batch annotated - idx 360:370
+2024-12-16 22:53:00.742 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:53:24.800 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:53:31.027 | INFO     | __main__:annotate:334 - Batch annotated - idx 370:380
+2024-12-16 22:53:40.246 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:53:44.062 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:53:45.671 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:53:47.065 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:53:48.557 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:53:50.243 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:54:05.442 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:54:05.442 | INFO     | __main__:annotate:334 - Batch annotated - idx 380:390
+2024-12-16 22:54:20.606 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:54:22.087 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:54:23.160 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:54:26.608 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.30000000000000004
+2024-12-16 22:54:32.442 | INFO     | __main__:annotate:334 - Batch annotated - idx 390:400
+2024-12-16 22:54:54.757 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:54:58.422 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:54:59.765 | INFO     | __main__:annotate:334 - Batch annotated - idx 400:410
+2024-12-16 22:54:59.766 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['ksx7n0i', 'kwzxb36', 'ksj00jk', 'ktjfene', 'krou5ax', 'ksahnm1', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'ktctb1v', 'kuotbev', 'kuphpzq', 'kv34sr6', 'kumjanv', 'ku1jglg', 'kw9ppdw', 'ktku1zl', 'kunxqb4', 'kvxn0gp', 'kuurzbc', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ksfns05', 'ksv0pyy', 'kvfvdqb', 'ktbz4zb', 'ksfmpjz', 'kx3xjb4', 'ksm29cg', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'kv9cpfm', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kt3j1yq', 'kt3n8nr', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktbcnyy', 'kul3cib', 'kwmy2ie', 'kuono6m', 'kv275vm', 'kv4mwet', 'kwqahfk', 'kvc6quv', 'kth2ku9', 'kt8cttl', 'ktdr3bs', 'kvugl3f', 'kt5ovvt', 'krg3asx', 'ksqfs84', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kt6txuq', 'ktpicpj', 'kvelhst', 'kubeoe9', 'kv13awz', 'krrus1f', 'ksgkvrr', 'kr5fe5w', 'ks276mr', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksz58gt', 'kquaelg', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kt4cqfh']
+2024-12-16 22:54:59.770 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.7036598988106971; Micro F1 0.9793743058660628; Accuracy 0.973170731707317
+
+2024-12-16 22:54:59.774 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8148363204686513; Micro F1 0.90435596493928; Accuracy 0.9146341463414634
+
+2024-12-16 22:54:59.778 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7959091320481492; Micro F1 0.9489056508811083; Accuracy 0.9463414634146341
+
+2024-12-16 22:54:59.782 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9080998471726949; Micro F1 0.9744910105239616; Accuracy 0.973170731707317
+
+2024-12-16 22:54:59.786 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 1.0; Micro F1 1.0; Accuracy 1.0
+
+2024-12-16 22:54:59.789 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9539274075738846; Micro F1 0.997451618296383; Accuracy 0.9975609756097561
+
+2024-12-16 22:54:59.790 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-16 22:55:05.874 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech="Example: ESPN being trash isn’t news. This comment does not demonstrate hatred towards any specific group; instead, it conveys an individual's dissatisfaction with a sports network. Misclassifying this as hate speech suggests a need for clearer criteria in distinguishing between expressions of personal annoyance and actual hate speech targeting a group.", LinguisticBias='Example: This shit again. This phrase expresses annoyance but does not exhibit bias against any demographic or social group. Its misclassification highlights a misunderstanding of linguistic bias, which is often characterized by social-category-based discrimination. Increasing awareness of what constitutes actual linguistic bias could enhance annotation accuracy.', TextLevelContextBias="Example: I genuinely want to see Biden win and to see Trump lose. This comment articulates a political preference and reflects an individual's stance, but it is inaccurately classified as crafting a narrative bias. Properly differentiating personal political opinions from constructed narratives in text will improve future classifications.", PoliticalBias='Example: "It\'s looking like Dean Phillips and None of the Above may get a delegate or two in Ohio and Kansas, respectively." This statement reflects a political event without showing overt bias. Recognizing and accurately labeling expressions that include political content without necessarily reflecting bias is essential. Nuanced evaluation of political statements can help avoid misclassification.', RacialBias='', GenderBias='Example: [GOP Candidate Mark Robinson Claimed His Anti-LGBTQ Views Don’t Impact His Office](https://www.meidastouch.com/news/gop-candidate-mark-robinson-claimed-his-anti-lgbtq-views-dont-impact-his-office). The identification of gender bias in this statement is appropriate, showing the potential impact of discriminatory views on marginalized communities. Emphasizing clarity in recognizing anti-LGBTQ rhetoric could strengthen future bias assessments.')
+2024-12-16 22:55:05.874 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-16 22:55:15.150 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:55:18.817 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:55:28.613 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:55:29.934 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:55:29.934 | INFO     | __main__:annotate:334 - Batch annotated - idx 410:420
+2024-12-16 22:55:40.539 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:57:23.493 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:57:27.909 | INFO     | __main__:annotate:334 - Batch annotated - idx 420:430
+2024-12-16 22:57:29.701 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:57:36.233 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:57:43.073 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 22:57:44.306 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 22:57:56.000 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:58:01.083 | INFO     | __main__:annotate:334 - Batch annotated - idx 430:440
+2024-12-16 22:58:02.538 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:58:11.120 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:58:17.495 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:58:20.034 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:58:21.391 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:58:26.819 | INFO     | __main__:annotate:334 - Batch annotated - idx 440:450
+2024-12-16 22:58:30.990 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:58:33.970 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:58:46.920 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:58:51.421 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:58:51.421 | INFO     | __main__:annotate:334 - Batch annotated - idx 450:460
+2024-12-16 22:58:53.422 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:58:55.169 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:58:56.491 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:58:57.702 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:58:58.831 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:59:12.428 | INFO     | __main__:annotate:334 - Batch annotated - idx 460:470
+2024-12-16 22:59:32.379 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 22:59:37.857 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:59:41.802 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 22:59:41.802 | INFO     | __main__:annotate:334 - Batch annotated - idx 470:480
+2024-12-16 22:59:43.761 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 22:59:55.574 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 22:59:59.512 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:00:00.927 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:00:08.493 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:00:09.827 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:00:09.827 | INFO     | __main__:annotate:334 - Batch annotated - idx 480:490
+2024-12-16 23:00:11.656 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:00:20.087 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:00:21.608 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:00:29.507 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:00:48.071 | INFO     | __main__:annotate:334 - Batch annotated - idx 490:500
+2024-12-16 23:00:52.027 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:01:10.196 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:01:13.663 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:01:18.071 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:01:18.071 | INFO     | __main__:annotate:334 - Batch annotated - idx 500:510
+2024-12-16 23:01:18.072 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['ksx7n0i', 'kwzxb36', 'ksj00jk', 'ktjfene', 'krou5ax', 'ksahnm1', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'ktctb1v', 'kuotbev', 'kuphpzq', 'kv34sr6', 'kumjanv', 'ku1jglg', 'kw9ppdw', 'ktku1zl', 'kunxqb4', 'kvxn0gp', 'kuurzbc', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ksfns05', 'ksv0pyy', 'kvfvdqb', 'ktbz4zb', 'ksfmpjz', 'kx3xjb4', 'ksm29cg', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'kv9cpfm', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kt3j1yq', 'kt3n8nr', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktbcnyy', 'kul3cib', 'kwmy2ie', 'kuono6m', 'kv275vm', 'kv4mwet', 'kwqahfk', 'kvc6quv', 'kth2ku9', 'kt8cttl', 'ktdr3bs', 'kvugl3f', 'kt5ovvt', 'krg3asx', 'ksqfs84', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kt6txuq', 'ktpicpj', 'kvelhst', 'kubeoe9', 'kv13awz', 'krrus1f', 'ksgkvrr', 'kr5fe5w', 'ks276mr', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksz58gt', 'kquaelg', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kt4cqfh', 'kuav8g8', 'ktk46n2', 'ksz7qv5', 'kwvh83l', 'kukby75', 'kvpj2xe', 'kuzyqqs', 'kvwo1uq', 'kv6diyw', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kxao3py', 'kwo79b4', 'kw29ttp', 'kvfcxqp', 'kwv49ck', 'ku6ujva', 'ktqxxdd', 'krcc679', 'kt4qisi', 'kvy6nt1', 'kupmqu4', 'kv5mxpz', 'kqwncsc', 'ktjm7eb']
+2024-12-16 23:01:18.076 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6663904757751515; Micro F1 0.9787085040287101; Accuracy 0.9705882352941176
+
+2024-12-16 23:01:18.080 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8230581172996394; Micro F1 0.9069004059397341; Accuracy 0.9156862745098039
+
+2024-12-16 23:01:18.084 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7758438818565401; Micro F1 0.9441962438984033; Accuracy 0.9411764705882353
+
+2024-12-16 23:01:18.088 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9037433155080214; Micro F1 0.972318339100346; Accuracy 0.9705882352941176
+
+2024-12-16 23:01:18.093 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8995073891625616; Micro F1 0.9978441031585048; Accuracy 0.9980392156862745
+
+2024-12-16 23:01:18.096 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9275773927861403; Micro F1 0.9958022175072812; Accuracy 0.996078431372549
+
+2024-12-16 23:01:18.096 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-16 23:01:24.709 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: ESPN being trash isn’t news. This comment reflects frustration towards a media outlet without targeting any group, showing a misunderstanding in categorizing personal critique as hate speech. Clearer definitions of hate speech versus subjective criticism could help avoid such misclassifications.', LinguisticBias='Example: This shit again. This expression conveys annoyance but does not imply bias against any group. Mislabeling such comments reflects the importance of distinguishing between emotional reactions and linguistic biases against social categories. Improved training on linguistic bias standards may enhance accuracy.', TextLevelContextBias='Example: I genuinely want to see Biden win and to see Trump lose. This statement indicates a personal political opinion rather than contextual bias. This mislabeling suggests a need to refine criteria for text-level context bias so that personal political expressions are not conflated with biased narratives. Clarity in distinguishing context is vital for accurate assessments.', PoliticalBias='Example: "It\'s looking like Dean Phillips and None of the Above may get a delegate or two in Ohio and Kansas, respectively." This assessment is politically neutral, but its classification could benefit from recognizing subtler political biases in language. Emphasizing nuanced understanding of political expression may help refine distinctions between bias and neutrality.', RacialBias="Example: The Argonians have a few things to say about this. The statement lacks specific hateful or derogatory context but could be misinterpreted depending upon the reader's familiarity with references. More careful analysis of context is needed to discern genuine racial bias from cultural references. Enhancements in contextual training could mitigate misunderstandings.", GenderBias='Example: [GOP Candidate Mark Robinson Claimed His Anti-LGBTQ Views Don’t Impact His Office](https://www.meidastouch.com/news/gop-candidate-mark-robinson-claimed-his-anti-lgbtq-views-dont-impact-his-office). This identification of bias against LGBTQ individuals was accurate. However, the comment about overweight female fans reflects harmful stereotypes. Developing clear guidelines around the classification of gender bias to identify both overt and subtle expressions may strengthen future evaluations.')
+2024-12-16 23:01:24.709 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-16 23:01:38.157 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:01:59.267 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-16 23:02:02.917 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:02:10.630 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:02:12.630 | INFO     | __main__:annotate:334 - Batch annotated - idx 510:520
+2024-12-16 23:02:16.645 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:02:26.979 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:02:37.486 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:02:40.608 | INFO     | __main__:annotate:334 - Batch annotated - idx 520:530
+2024-12-16 23:02:59.470 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:03:02.475 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:03:15.035 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:03:15.035 | INFO     | __main__:annotate:334 - Batch annotated - idx 530:540
+2024-12-16 23:03:19.193 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:03:20.762 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:03:40.232 | INFO     | __main__:annotate:334 - Batch annotated - idx 540:550
+2024-12-16 23:04:06.493 | INFO     | __main__:annotate:334 - Batch annotated - idx 550:560
+2024-12-16 23:04:20.589 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:04:22.546 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:04:26.681 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:04:31.727 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:04:35.332 | INFO     | __main__:annotate:334 - Batch annotated - idx 560:570
+2024-12-16 23:04:41.707 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:04:55.447 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 23:04:56.746 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:04:59.226 | INFO     | __main__:annotate:334 - Batch annotated - idx 570:580
+2024-12-16 23:05:06.000 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:05:08.064 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:05:19.803 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:05:21.084 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:05:21.085 | INFO     | __main__:annotate:334 - Batch annotated - idx 580:590
+2024-12-16 23:05:24.934 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:05:26.237 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:05:32.613 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 23:05:40.012 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.19999999999999996
+2024-12-16 23:05:55.173 | INFO     | __main__:annotate:334 - Batch annotated - idx 590:600
+2024-12-16 23:06:01.790 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:06:10.250 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:07:48.197 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:08:09.166 | INFO     | __main__:annotate:334 - Batch annotated - idx 600:610
+2024-12-16 23:08:09.167 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['ksx7n0i', 'kwzxb36', 'ksj00jk', 'ktjfene', 'krou5ax', 'ksahnm1', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'ktctb1v', 'kuotbev', 'kuphpzq', 'kv34sr6', 'kumjanv', 'ku1jglg', 'kw9ppdw', 'ktku1zl', 'kunxqb4', 'kvxn0gp', 'kuurzbc', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ksfns05', 'ksv0pyy', 'kvfvdqb', 'ktbz4zb', 'ksfmpjz', 'kx3xjb4', 'ksm29cg', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'kv9cpfm', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kt3j1yq', 'kt3n8nr', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktbcnyy', 'kul3cib', 'kwmy2ie', 'kuono6m', 'kv275vm', 'kv4mwet', 'kwqahfk', 'kvc6quv', 'kth2ku9', 'kt8cttl', 'ktdr3bs', 'kvugl3f', 'kt5ovvt', 'krg3asx', 'ksqfs84', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kt6txuq', 'ktpicpj', 'kvelhst', 'kubeoe9', 'kv13awz', 'krrus1f', 'ksgkvrr', 'kr5fe5w', 'ks276mr', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksz58gt', 'kquaelg', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kt4cqfh', 'kuav8g8', 'ktk46n2', 'ksz7qv5', 'kwvh83l', 'kukby75', 'kvpj2xe', 'kuzyqqs', 'kvwo1uq', 'kv6diyw', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kxao3py', 'kwo79b4', 'kw29ttp', 'kvfcxqp', 'kwv49ck', 'ku6ujva', 'ktqxxdd', 'krcc679', 'kt4qisi', 'kvy6nt1', 'kupmqu4', 'kv5mxpz', 'kqwncsc', 'ktjm7eb', 'kuo8j6v', 'ku9isry', 'kuh3t87', 'kruh0tt', 'kwsiotr', 'kte72ih', 'kusbz8r', 'ku55h67', 'ks2te00', 'kua5fl2', 'kwrpam5', 'ktcx5ts', 'krtm5a8', 'kuaybit', 'kw1zqfw', 'kub6rxl', 'kvqxne7', 'kvxjwvg', 'kudkp1n']
+2024-12-16 23:08:09.171 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.7266106442577032; Micro F1 0.9788841438214632; Accuracy 0.9737704918032787
+
+2024-12-16 23:08:09.176 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8179811844453577; Micro F1 0.9038386917512425; Accuracy 0.9131147540983606
+
+2024-12-16 23:08:09.180 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7685862625868478; Micro F1 0.9455838774625747; Accuracy 0.9426229508196722
+
+2024-12-16 23:08:09.184 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9029707602339181; Micro F1 0.973608359697057; Accuracy 0.9721311475409836
+
+2024-12-16 23:08:09.188 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8320946875860171; Micro F1 0.9942683867823638; Accuracy 0.9950819672131147
+
+2024-12-16 23:08:09.192 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9491666666666667; Micro F1 0.9965601092896175; Accuracy 0.9967213114754099
+
+2024-12-16 23:08:09.192 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-16 23:08:20.860 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: ESPN being trash isn’t news. This reflects frustration towards a media outlet rather than targeting a group, indicating a misunderstanding in categorizing personal critique as hate speech. Enhancing clarity in the definitions of what constitutes hate speech can mitigate such errors. Example: I genuinely would like to know who the fuck finds this funny. Does this even appeal to kids, like most pranksters do? This statement does not inherently attack a demographic but expresses personal confusion and dissatisfaction. Clarifying the boundaries between personal critique and hate speech can improve classification accuracy.', LinguisticBias='Example: This shit again. This phrase indicates annoyance but does not suggest bias against any group, illustrating the importance of distinguishing between emotional expressions and actual linguistic bias. Greater awareness and guidelines can help avoid such misclassifications. Example: What a fucking douche nozzle. This insult may suggest personal bias against the individual but does not explicitly target a social group. Understanding difference between individual insults and linguistic bias is essential for better accuracy. Example: “You have to be mentally ill...”. This statement ridicules a group with mental health issues, indicating a need for improved recognition of derogatory terms in bias identification.', TextLevelContextBias='Example: I genuinely want to see Biden win and to see Trump lose. This is more about personal political preference than crafting a biased narrative. Mislabeling this as context bias suggests a need to refine criteria for distinguishing bias from personal preferences. Clear criteria could improve identification in this context. Example: Filled in Harambe on the ballot. No way I’m voting for these politicians. Although this reflects a political choice, it does not indicate context bias in narrative crafting.', PoliticalBias='Example: "It\'s looking like Dean Phillips and None of the Above may get a delegate or two in Ohio and Kansas, respectively." This denotes a political observation without bias. Improving recognition of neutral political comments can prevent misinterpretation. Example: I thought this was common knowledge since day one? Oh wait, I was just a conspiracy theorist. This reflects a personal feeling about political epistemology and could misguide interpretation without context consideration.', RacialBias='Example: The Argonians have a few things to say about this. This remark requires context understanding between fictional references and actual sentiments about race. Improved training on how to handle cultural references is necessary. Example: That’s what Islam does to the world. This statement generalizes a religion, showing racial bias. More careful scrutiny could enhance the understanding of social impacts in such comments. Example: Nah don’t you have a cute chocolate face. This can be interpreted as a racial stereotype, emphasizing the importance of clarity in identifying racial bias and avoiding stereotypes in future annotations.', GenderBias='Example: [GOP Candidate Mark Robinson Claimed His Anti-LGBTQ Views Don’t Impact His Office](https://www.meidastouch.com/news/gop-candidate-mark-robinson-claimed-his-anti-lgbtq-views-dont-impact-his-office). This correctly highlights bias against LGBTQ individuals and demonstrates how political views can intersect with gender discrimination. Continued recognition of such intersections will improve gender bias annotations. Example: My favorite stat for the White Sox - amount of overweight female fans... This comment perpetuates harmful stereotypes about women, signaling the need for clear definitions around derogatory gender stereotypes.')
+2024-12-16 23:08:20.860 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-16 23:08:35.625 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:08:36.983 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:08:38.009 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:08:40.575 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:08:44.138 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 23:08:48.697 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:08:49.726 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:08:49.727 | INFO     | __main__:annotate:334 - Batch annotated - idx 610:620
+2024-12-16 23:08:57.676 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:09:02.706 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:09:06.416 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:09:07.860 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:09:16.642 | INFO     | __main__:annotate:334 - Batch annotated - idx 620:630
+2024-12-16 23:09:33.583 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:09:35.041 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 23:09:39.609 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:09:47.630 | INFO     | __main__:annotate:334 - Batch annotated - idx 630:640
+2024-12-16 23:09:55.593 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:09:56.948 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:10:00.713 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:10:02.097 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:10:03.312 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:10:06.324 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:10:09.101 | INFO     | __main__:annotate:334 - Batch annotated - idx 640:650
+2024-12-16 23:10:12.980 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:10:19.732 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:10:27.410 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:10:31.873 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:10:38.681 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:10:43.520 | INFO     | __main__:annotate:334 - Batch annotated - idx 650:660
+2024-12-16 23:10:51.430 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:11:07.971 | INFO     | __main__:annotate:334 - Batch annotated - idx 660:670
+2024-12-16 23:11:11.945 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:11:19.800 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-16 23:11:24.223 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:11:26.735 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:11:34.185 | INFO     | __main__:annotate:334 - Batch annotated - idx 670:680
+2024-12-16 23:11:56.493 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:12:03.149 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:12:14.448 | INFO     | __main__:annotate:334 - Batch annotated - idx 680:690
+2024-12-16 23:12:17.968 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:12:26.865 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:12:43.506 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 23:12:49.647 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:12:49.647 | INFO     | __main__:annotate:334 - Batch annotated - idx 690:700
+2024-12-16 23:12:53.518 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:12:57.867 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.19999999999999996
+2024-12-16 23:13:13.246 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:13:18.195 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:13:18.196 | INFO     | __main__:annotate:334 - Batch annotated - idx 700:710
+2024-12-16 23:13:18.197 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['ksx7n0i', 'kwzxb36', 'ksj00jk', 'ktjfene', 'krou5ax', 'ksahnm1', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'ktctb1v', 'kuotbev', 'kuphpzq', 'kv34sr6', 'kumjanv', 'ku1jglg', 'kw9ppdw', 'ktku1zl', 'kunxqb4', 'kvxn0gp', 'kuurzbc', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ksfns05', 'ksv0pyy', 'kvfvdqb', 'ktbz4zb', 'ksfmpjz', 'kx3xjb4', 'ksm29cg', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'kv9cpfm', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kt3j1yq', 'kt3n8nr', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktbcnyy', 'kul3cib', 'kwmy2ie', 'kuono6m', 'kv275vm', 'kv4mwet', 'kwqahfk', 'kvc6quv', 'kth2ku9', 'kt8cttl', 'ktdr3bs', 'kvugl3f', 'kt5ovvt', 'krg3asx', 'ksqfs84', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kt6txuq', 'ktpicpj', 'kvelhst', 'kubeoe9', 'kv13awz', 'krrus1f', 'ksgkvrr', 'kr5fe5w', 'ks276mr', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksz58gt', 'kquaelg', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kt4cqfh', 'kuav8g8', 'ktk46n2', 'ksz7qv5', 'kwvh83l', 'kukby75', 'kvpj2xe', 'kuzyqqs', 'kvwo1uq', 'kv6diyw', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kxao3py', 'kwo79b4', 'kw29ttp', 'kvfcxqp', 'kwv49ck', 'ku6ujva', 'ktqxxdd', 'krcc679', 'kt4qisi', 'kvy6nt1', 'kupmqu4', 'kv5mxpz', 'kqwncsc', 'ktjm7eb', 'kuo8j6v', 'ku9isry', 'kuh3t87', 'kruh0tt', 'kwsiotr', 'kte72ih', 'kusbz8r', 'ku55h67', 'ks2te00', 'kua5fl2', 'kwrpam5', 'ktcx5ts', 'krtm5a8', 'kuaybit', 'kw1zqfw', 'kub6rxl', 'kvqxne7', 'kvxjwvg', 'kudkp1n', 'krrjqt7', 'ktjcc6g', 'kvga689', 'kszbfkv', 'ktj28qf', 'ktebp6s', 'ktnsqou', 'kx1tn0x', 'kuzjqnu', 'kuwldv4', 'ktokjw7', 'krm9n9m', 'kt6ubh3', 'kru22m1', 'kx0r6my', 'kwea4ic', 'ksbwzpk', 'kv0fd6t', 'krs7aqn', 'kwa9amh', 'kuzwy6u', 'kv1v4v3', 'kued4wu', 'ksx8v54', 'ksw2giv', 'ksmb3jd', 'kv7fxdi']
+2024-12-16 23:13:18.201 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.705271897052719; Micro F1 0.9791766790030345; Accuracy 0.9732394366197183
+
+2024-12-16 23:13:18.206 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8232707359570761; Micro F1 0.9030124102749084; Accuracy 0.9112676056338028
+
+2024-12-16 23:13:18.209 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7641215126690489; Micro F1 0.9460067076906994; Accuracy 0.9422535211267605
+
+2024-12-16 23:13:18.213 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9075737457366764; Micro F1 0.9729164122698648; Accuracy 0.971830985915493
+
+2024-12-16 23:13:18.217 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8322702575005906; Micro F1 0.995074914404927; Accuracy 0.995774647887324
+
+2024-12-16 23:13:18.221 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9274992341468395; Micro F1 0.9956755543985859; Accuracy 0.995774647887324
+
+2024-12-16 23:13:18.221 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-16 23:13:27.976 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: ESPN being trash isn’t news. This reflects dissatisfaction with a network rather than targeting any specific group, indicating a misunderstanding in categorizing personal critique as hate speech. Clarifying the definitions and context for hate speech could prevent such misclassifications. Example: I genuinely would like to know who the fuck finds this funny. Does this even appeal to kids, like most pranksters do? This reflects personal confusion about comedic appeal rather than targeting a demographic. The need for explicit differentiation between critique and hate speech remains essential.', LinguisticBias='Example: This shit again. This comment expresses frustration without targeting any specific group, indicating a need to distinguish emotional reactions from true linguistic bias. Increasing awareness of linguistic bias standards could improve accuracy. Example: What a fucking douche nozzle. This insult is aimed at an individual rather than a social category, pointing to the importance of context in detecting linguistic bias. Example: “You have to be mentally ill...”. This statement puts down those with mental health issues and highlights the need for better recognition of derogatory terms in bias identification.', TextLevelContextBias='Example: I genuinely want to see Biden win and to see Trump lose. This reflects personal political opinions rather than an objective narrative bias. Mislabeling opinions as context bias suggests a need to refine the criteria for distinguishing personal expression from constructed narratives. Example: Filled in Harambe on the ballot. No way I’m voting for these politicians. Although this reflects a political choice, it does not indicate narrative bias in crafting opinions.', PoliticalBias='Example: "It\'s looking like Dean Phillips and None of the Above may get a delegate or two in Ohio and Kansas, respectively." This denotes a political observation that does not inherently reflect bias. Improving recognition of neutral political comments could prevent misunderstandings. Example: I thought this was common knowledge since day one? Oh wait, I was just a conspiracy theorist. This shows personal frustration regarding political culture but needs careful context evaluation to avoid oversimplifying sentiments.', RacialBias='Example: The Argonians have a few things to say about this. The statement could benefit from understanding fictional references and sentiments about race, indicating a need for improved context training. Example: That’s what Islam does to the world. This generalizes a religion negatively, indicating racial bias that could be clearly identified. Example: Nah don’t you have a cute chocolate face. This comment presents a stereotype that requires better sensitivity in identifying racial bias and promoting respectful language.', GenderBias='Example: [GOP Candidate Mark Robinson Claimed His Anti-LGBTQ Views Don’t Impact His Office](https://www.meidastouch.com/news/gop-candidate-mark-robinson-claimed-his-anti-lgbtq-views-dont-impact-his-office). This insightfully highlights bias against LGBTQ individuals, demonstrating the connection between political views and gender discrimination. Sustaining recognition of these intersections can improve bias assessments. Example: My favorite stat for the White Sox - amount of overweight female fans... This harmful stereotype against women accentuates the necessity for rigorous definitions around derogatory gender representations.')
+2024-12-16 23:13:27.976 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-16 23:13:47.598 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 23:13:55.522 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:13:55.522 | INFO     | __main__:annotate:334 - Batch annotated - idx 710:720
+2024-12-16 23:14:13.837 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.29999999999999993
+2024-12-16 23:14:19.822 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:14:19.822 | INFO     | __main__:annotate:334 - Batch annotated - idx 720:730
+2024-12-16 23:14:21.558 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:14:23.971 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:14:29.435 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:14:35.698 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:14:37.399 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.19999999999999996
+2024-12-16 23:14:43.552 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:14:43.552 | INFO     | __main__:annotate:334 - Batch annotated - idx 730:740
+2024-12-16 23:14:45.062 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.30000000000000004
+2024-12-16 23:14:49.238 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-16 23:14:51.940 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.49999999999999994
+2024-12-16 23:14:58.640 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:15:06.061 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:15:08.392 | INFO     | __main__:annotate:334 - Batch annotated - idx 740:750
+2024-12-16 23:15:09.928 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 23:15:26.505 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:15:32.288 | INFO     | __main__:annotate:334 - Batch annotated - idx 750:760
+2024-12-16 23:15:49.418 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:15:53.780 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:15:56.053 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:16:05.332 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:16:09.934 | INFO     | __main__:annotate:334 - Batch annotated - idx 760:770
+2024-12-16 23:16:13.644 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 23:16:20.138 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:16:35.498 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:16:35.499 | INFO     | __main__:annotate:334 - Batch annotated - idx 770:780
+2024-12-16 23:16:42.377 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:16:44.434 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:16:45.748 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:17:01.815 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:17:14.867 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 23:17:14.867 | INFO     | __main__:annotate:334 - Batch annotated - idx 780:790
+2024-12-16 23:17:16.811 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:17:29.248 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:17:32.790 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:17:52.757 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:18:00.771 | INFO     | __main__:annotate:334 - Batch annotated - idx 790:800
+2024-12-16 23:18:20.644 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 23:18:25.278 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:18:41.832 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:18:41.832 | INFO     | __main__:annotate:334 - Batch annotated - idx 800:810
+2024-12-16 23:18:41.833 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['ksx7n0i', 'kwzxb36', 'ksj00jk', 'ktjfene', 'krou5ax', 'ksahnm1', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'ktctb1v', 'kuotbev', 'kuphpzq', 'kv34sr6', 'kumjanv', 'ku1jglg', 'kw9ppdw', 'ktku1zl', 'kunxqb4', 'kvxn0gp', 'kuurzbc', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ksfns05', 'ksv0pyy', 'kvfvdqb', 'ktbz4zb', 'ksfmpjz', 'kx3xjb4', 'ksm29cg', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'kv9cpfm', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kt3j1yq', 'kt3n8nr', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktbcnyy', 'kul3cib', 'kwmy2ie', 'kuono6m', 'kv275vm', 'kv4mwet', 'kwqahfk', 'kvc6quv', 'kth2ku9', 'kt8cttl', 'ktdr3bs', 'kvugl3f', 'kt5ovvt', 'krg3asx', 'ksqfs84', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kt6txuq', 'ktpicpj', 'kvelhst', 'kubeoe9', 'kv13awz', 'krrus1f', 'ksgkvrr', 'kr5fe5w', 'ks276mr', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksz58gt', 'kquaelg', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kt4cqfh', 'kuav8g8', 'ktk46n2', 'ksz7qv5', 'kwvh83l', 'kukby75', 'kvpj2xe', 'kuzyqqs', 'kvwo1uq', 'kv6diyw', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kxao3py', 'kwo79b4', 'kw29ttp', 'kvfcxqp', 'kwv49ck', 'ku6ujva', 'ktqxxdd', 'krcc679', 'kt4qisi', 'kvy6nt1', 'kupmqu4', 'kv5mxpz', 'kqwncsc', 'ktjm7eb', 'kuo8j6v', 'ku9isry', 'kuh3t87', 'kruh0tt', 'kwsiotr', 'kte72ih', 'kusbz8r', 'ku55h67', 'ks2te00', 'kua5fl2', 'kwrpam5', 'ktcx5ts', 'krtm5a8', 'kuaybit', 'kw1zqfw', 'kub6rxl', 'kvqxne7', 'kvxjwvg', 'kudkp1n', 'krrjqt7', 'ktjcc6g', 'kvga689', 'kszbfkv', 'ktj28qf', 'ktebp6s', 'ktnsqou', 'kx1tn0x', 'kuzjqnu', 'kuwldv4', 'ktokjw7', 'krm9n9m', 'kt6ubh3', 'kru22m1', 'kx0r6my', 'kwea4ic', 'ksbwzpk', 'kv0fd6t', 'krs7aqn', 'kwa9amh', 'kuzwy6u', 'kv1v4v3', 'kued4wu', 'ksx8v54', 'ksw2giv', 'ksmb3jd', 'kv7fxdi', 'kvttlyx', 'kvoe604', 'ktrzber', 'kvxcx6p', 'kv8vvhn', 'ktvnr9h', 'kwsg5qi', 'ksv05xt', 'ksnbok3', 'kug7o9e', 'kt4ora7', 'kv7fizq', 'kt7l91h', 'kwq76ev', 'krefl04', 'ktxgd4i', 'kvdw49d', 'ktehmjc', 'ktng6iq', 'ktjtlg7', 'kwn4iwy', 'kv1j792', 'kvrboe6', 'kw86crt', 'kt51ko5']
+2024-12-16 23:18:41.837 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.7095832408529819; Micro F1 0.9792064964522325; Accuracy 0.9740740740740741
+
+2024-12-16 23:18:41.842 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8318283439500029; Micro F1 0.9070849677922577; Accuracy 0.9148148148148149
+
+2024-12-16 23:18:41.845 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7893976599739998; Micro F1 0.9477907779222239; Accuracy 0.9444444444444444
+
+2024-12-16 23:18:41.849 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9070707070707071; Micro F1 0.9726566072245084; Accuracy 0.971604938271605
+
+2024-12-16 23:18:41.853 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.8324022346368715; Micro F1 0.9956824608593695; Accuracy 0.9962962962962963
+
+2024-12-16 23:18:41.857 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9078393446353397; Micro F1 0.9950617283950617; Accuracy 0.9950617283950617
+
+2024-12-16 23:18:41.857 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-16 23:18:51.778 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: ESPN being trash isn’t news. This reflects dissatisfaction with a media outlet rather than targeting a group and indicates a misunderstanding in categorizing personal critique as hate speech. Clear standards regarding hate speech versus subjective critique could prevent such misclassifications. Example: I genuinely would like to know who the fuck finds this funny. Does this even appeal to kids, like most pranksters do? This expresses personal confusion rather than hatred, showing the need for differentiation between critique and hate. Example: Jurassic World Dominion: absolutely dog shit. This delivers a negative opinion about a movie without targeting any group; thus it should not be categorized as hate speech. Establishing boundaries between personal disdain and actual hate speech is crucial for appropriate classification.', LinguisticBias='Example: This shit again. This phrase indicates annoyance but does not demonstrate bias towards any specific group. Recognizing emotional expressions versus linguistic bias is essential for accurate classification. Example: What a fucking douche nozzle. This focuses on an individual and reflects frustration rather than bias against a demographic, emphasizing the context’s importance. Example: “You have to be mentally ill...”; this expression constitutes derogatory remarks towards individuals with mental health issues, requiring better detection of harmful language in bias assessments.', TextLevelContextBias='Example: I genuinely want to see Biden win and to see Trump lose. This statement expresses a personal opinion rather than crafting a biased narrative. Misunderstandings about personal opinions versus context bias suggest a need for clearer criteria in categorization. Example: Filled in Harambe on the ballot. No way I’m voting for these politicians. While political dissent is expressed, it is not indicative of narrative crafting. Context clarity is important for correct bias classification.', PoliticalBias='Example: "It\'s looking like Dean Phillips and None of the Above may get a delegate or two in Ohio and Kansas, respectively." This reflects political observation without bias. Recognizing neutral political content can assist in preventing misinterpretation. Example: I thought this was common knowledge since day one? Oh wait, I was just a conspiracy theorist. This statement shares personal sentiment toward political discourse but may require careful consideration of context. Example: My thing is there needs to be more than two parties running. This implies dissatisfaction with the political system without incorporating bias; thus, improved recognition of such statements is important for classifications.', RacialBias='Example: The Argonians have a few things to say about this. This comment requires context to discern its applicability since it relies on fictional references to actual social commentary. Enhanced training on contextual interpretations of cultural references is needed. Example: That’s what Islam does to the world. This presents a negative generalization about a religion, indicating racial bias that needs clarity. Example: Nah don’t you have a cute chocolate face. This reflects a potentially harmful stereotype, reinforcing the need for careful identification of racial bias and respect for appropriate dialogue.', GenderBias='Example: [GOP Candidate Mark Robinson Claimed His Anti-LGBTQ Views Don’t Impact His Office](https://www.meidastouch.com/news/gop-candidate-mark-robinson-claimed-his-anti-lgbtq-views-dont-impact-his-office). This highlights bias against LGBTQ individuals accurately and reflects the importance of recognizing political connections to gender issues. Sustained emphasis on these intersections throughout future assessments will improve accuracy. Example: My favorite stat for the White Sox - amount of overweight female fans... This perpetuates gender stereotypes that need to be carefully recognized in future annotations. Clear definitions around discriminatory remarks and their societal impact will enhance gender bias identification.')
+2024-12-16 23:18:51.778 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-16 23:18:53.043 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:18:56.255 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:19:11.114 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:19:18.184 | INFO     | __main__:annotate:334 - Batch annotated - idx 810:820
+2024-12-16 23:19:19.387 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:19:23.479 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:19:38.766 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:19:42.018 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:19:44.258 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:19:45.410 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.29999999999999993
+2024-12-16 23:19:48.179 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:19:50.238 | INFO     | __main__:annotate:334 - Batch annotated - idx 820:830
+2024-12-16 23:20:00.197 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:20:16.044 | INFO     | __main__:annotate:334 - Batch annotated - idx 830:840
+2024-12-16 23:20:20.113 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:20:21.459 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.10000000000000009
+2024-12-16 23:20:42.009 | INFO     | __main__:annotate:334 - Batch annotated - idx 840:850
+2024-12-16 23:20:43.544 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.09999999999999998
+2024-12-16 23:20:49.672 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:20:55.398 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:21:00.848 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.2
+2024-12-16 23:21:05.335 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:21:09.012 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:21:13.609 | INFO     | __main__:annotate:334 - Batch annotated - idx 850:860
+2024-12-16 23:21:17.463 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:21:19.902 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:21:22.065 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 23:21:25.342 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.10000000000000009
+2024-12-16 23:21:32.384 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:21:37.827 | INFO     | __main__:annotate:334 - Batch annotated - idx 860:870
+2024-12-16 23:21:46.536 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:21:47.630 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:21:51.791 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 23:21:53.166 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:21:54.407 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.4
+2024-12-16 23:21:59.753 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:22:01.913 | INFO     | __main__:annotate:334 - Batch annotated - idx 870:880
+2024-12-16 23:22:10.267 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 23:22:25.367 | INFO     | __main__:annotate:334 - Batch annotated - idx 880:890
+2024-12-16 23:22:56.870 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:22:56.871 | INFO     | __main__:annotate:334 - Batch annotated - idx 890:900
+2024-12-16 23:22:58.209 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:23:02.718 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.7
+2024-12-16 23:23:03.748 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:23:06.945 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.19999999999999996
+2024-12-16 23:23:12.869 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:23:14.134 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:23:19.965 | INFO     | __main__:annotate:334 - Batch annotated - idx 900:910
+2024-12-16 23:23:19.967 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['ksx7n0i', 'kwzxb36', 'ksj00jk', 'ktjfene', 'krou5ax', 'ksahnm1', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'ktctb1v', 'kuotbev', 'kuphpzq', 'kv34sr6', 'kumjanv', 'ku1jglg', 'kw9ppdw', 'ktku1zl', 'kunxqb4', 'kvxn0gp', 'kuurzbc', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ksfns05', 'ksv0pyy', 'kvfvdqb', 'ktbz4zb', 'ksfmpjz', 'kx3xjb4', 'ksm29cg', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'kv9cpfm', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kt3j1yq', 'kt3n8nr', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktbcnyy', 'kul3cib', 'kwmy2ie', 'kuono6m', 'kv275vm', 'kv4mwet', 'kwqahfk', 'kvc6quv', 'kth2ku9', 'kt8cttl', 'ktdr3bs', 'kvugl3f', 'kt5ovvt', 'krg3asx', 'ksqfs84', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kt6txuq', 'ktpicpj', 'kvelhst', 'kubeoe9', 'kv13awz', 'krrus1f', 'ksgkvrr', 'kr5fe5w', 'ks276mr', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksz58gt', 'kquaelg', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kt4cqfh', 'kuav8g8', 'ktk46n2', 'ksz7qv5', 'kwvh83l', 'kukby75', 'kvpj2xe', 'kuzyqqs', 'kvwo1uq', 'kv6diyw', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kxao3py', 'kwo79b4', 'kw29ttp', 'kvfcxqp', 'kwv49ck', 'ku6ujva', 'ktqxxdd', 'krcc679', 'kt4qisi', 'kvy6nt1', 'kupmqu4', 'kv5mxpz', 'kqwncsc', 'ktjm7eb', 'kuo8j6v', 'ku9isry', 'kuh3t87', 'kruh0tt', 'kwsiotr', 'kte72ih', 'kusbz8r', 'ku55h67', 'ks2te00', 'kua5fl2', 'kwrpam5', 'ktcx5ts', 'krtm5a8', 'kuaybit', 'kw1zqfw', 'kub6rxl', 'kvqxne7', 'kvxjwvg', 'kudkp1n', 'krrjqt7', 'ktjcc6g', 'kvga689', 'kszbfkv', 'ktj28qf', 'ktebp6s', 'ktnsqou', 'kx1tn0x', 'kuzjqnu', 'kuwldv4', 'ktokjw7', 'krm9n9m', 'kt6ubh3', 'kru22m1', 'kx0r6my', 'kwea4ic', 'ksbwzpk', 'kv0fd6t', 'krs7aqn', 'kwa9amh', 'kuzwy6u', 'kv1v4v3', 'kued4wu', 'ksx8v54', 'ksw2giv', 'ksmb3jd', 'kv7fxdi', 'kvttlyx', 'kvoe604', 'ktrzber', 'kvxcx6p', 'kv8vvhn', 'ktvnr9h', 'kwsg5qi', 'ksv05xt', 'ksnbok3', 'kug7o9e', 'kt4ora7', 'kv7fizq', 'kt7l91h', 'kwq76ev', 'krefl04', 'ktxgd4i', 'kvdw49d', 'ktehmjc', 'ktng6iq', 'ktjtlg7', 'kwn4iwy', 'kv1j792', 'kvrboe6', 'kw86crt', 'kt51ko5', 'ktpbq8g', 'kw6qgns', 'ks1ht41', 'ksk59on', 'kwhy4k9', 'kvt825g', 'ku6pu3i', 'ktsliqw', 'kvcakv9', 'kwk54cq', 'ksdgxg7', 'kwq4vro', 'ks3xmnq', 'ktipm1k', 'ks04x6z', 'ktj766t', 'kuod4uk', 'kqzdvn8', 'ktcl5s7']
+2024-12-16 23:23:19.972 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6784494379081546; Micro F1 0.9773994337447243; Accuracy 0.9703296703296703
+
+2024-12-16 23:23:19.976 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8200907570608854; Micro F1 0.8987793796150332; Accuracy 0.9065934065934066
+
+2024-12-16 23:23:19.980 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7824932278111223; Micro F1 0.9443281422460261; Accuracy 0.9406593406593406
+
+2024-12-16 23:23:19.984 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9006875477463713; Micro F1 0.9701374255996105; Accuracy 0.9692307692307692
+
+2024-12-16 23:23:19.988 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.862807176240012; Micro F1 0.9962564798385695; Accuracy 0.9967032967032967
+
+2024-12-16 23:23:19.992 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9060130961971453; Micro F1 0.9946057123971235; Accuracy 0.9945054945054945
+
+2024-12-16 23:23:19.992 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-16 23:23:33.732 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='Example: ESPN being trash isn’t news. This signifies frustration with a network as opposed to being a targeted attack on any demographic. The misclassification as hate speech highlights a need for clearer delineations between personal critiques and hate speech. Example: I genuinely would like to know who the fuck finds this funny. Does this even appeal to kids, like most pranksters do? This is an expression of personal confusion, not directed hate; thus, distinctions need to be made between expressing confusion and attacking a group. Example: Jurassic World Dominion: absolutely dog shit. This derogatory comment on a film does not stigmatize any group, indicating a need for clarity on the context of critiques versus hate speech.', LinguisticBias='Example: This shit again. This remark indicates personal frustration but does not demonstrate bias against any particular group. Greater sensitivity in recognizing emotional expressions as opposed to true bias is crucial. Example: What a fucking douche nozzle. This targets an individual rather than a broader group, reaffirming the significance of context to ascertain bias. Example: “You have to be mentally ill...”; this comment disparages individuals with mental health issues and highlights the requirement for improved identification of the derogatory language in bias assessments.', TextLevelContextBias='Example: I genuinely want to see Biden win and to see Trump lose. This statement articulates a subjective political viewpoint rather than biasing the narrative. Misclassifying political opinion as context bias calls for refined criteria to distinguish personal views from constructed narratives. Example: Filled in Harambe on the ballot. No way I’m voting for these politicians. This reflects individual political choice but does not imply a crafted narrative bias. A clearer contextual understanding is required.', PoliticalBias='Example: "It\'s looking like Dean Phillips and None of the Above may get a delegate or two in Ohio and Kansas, respectively." This statement offers political information without overt bias. Enhancing the identification of neutral statements in political discussions is necessary. Example: I thought this was common knowledge since day one? Oh wait, I was just a conspiracy theorist. This sentiment sheds light on personal frustration with political culture but requires careful analysis of context to avoid oversimplification. Example: My thing is there needs to be more than two parties running. This shows dissatisfaction with a political system rather than bias; thus, improved understanding of political commentary can enhance classification accuracy.', RacialBias='Example: The Argonians have a few things to say about this. This requires contextual analysis related to its fictional content versus social implications. Enhanced training on identifying cultural references is recommended. Example: That’s what Islam does to the world. This statement portrays a negative stereotype about a religion, revealing racial bias that needs to be clearly identified. Example: Nah don’t you have a cute chocolate face. This reflects stereotypical language and indicates the need for careful scrutiny in identifying racial bias and fostering respectful discourse.', GenderBias='Example: [GOP Candidate Mark Robinson Claimed His Anti-LGBTQ Views Don’t Impact His Office](https://www.meidastouch.com/news/gop-candidate-mark-robinson-claimed-his-anti-lgbtq-views-dont-impact-his-office). This statement correctly captures bias against LGBTQ individuals, illustrating the intersection of politics and gender discussions effectively. Continued emphasis on these connections will foster more accurate bias evaluations. Example: My favorite stat for the White Sox - amount of overweight female fans... This comment reinforces harmful stereotypes regarding women, highlighting the necessity for rigorous categorization around derogatory gender representations.')
+2024-12-16 23:23:33.732 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-16 23:23:37.737 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:23:39.153 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:23:41.325 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:23:48.652 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:23:59.521 | INFO     | __main__:annotate:334 - Batch annotated - idx 910:920
+2024-12-16 23:24:03.219 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:24:18.834 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:24:22.930 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6000000000000001
+2024-12-16 23:24:22.930 | INFO     | __main__:annotate:334 - Batch annotated - idx 920:930
+2024-12-16 23:24:26.819 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.10000000000000009
+2024-12-16 23:24:42.394 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:24:45.437 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:24:46.694 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:24:49.113 | INFO     | __main__:annotate:334 - Batch annotated - idx 930:940
+2024-12-16 23:24:53.074 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:24:57.863 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:24:59.274 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:25:03.511 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:25:05.035 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:25:12.058 | INFO     | __main__:annotate:334 - Batch annotated - idx 940:950
+2024-12-16 23:25:18.382 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:25:20.880 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:25:22.088 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:25:29.579 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.20000000000000007
+2024-12-16 23:25:36.365 | INFO     | __main__:annotate:334 - Batch annotated - idx 950:960
+2024-12-16 23:25:40.216 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:25:56.632 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:26:02.687 | INFO     | __main__:annotate:334 - Batch annotated - idx 960:970
+2024-12-16 23:26:13.898 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:26:18.477 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:27:00.738 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:27:02.838 | INFO     | __main__:annotate:334 - Batch annotated - idx 970:980
+2024-12-16 23:27:21.992 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:27:23.959 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:27:25.067 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:27:29.234 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.8
+2024-12-16 23:27:31.832 | INFO     | __main__:annotate:334 - Batch annotated - idx 980:990
+2024-12-16 23:27:41.669 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.6
+2024-12-16 23:27:46.494 | DEBUG    | __main__:confidence_aware_agg:250 - Maximum confidence gap: 0.0
+2024-12-16 23:29:34.213 | INFO     | __main__:annotate:334 - Batch annotated - idx 990:1000
+2024-12-16 23:29:34.214 | INFO     | __main__:evaluate:366 - Evaluation started; current human judgement: ['ksx7n0i', 'kwzxb36', 'ksj00jk', 'ktjfene', 'krou5ax', 'ksahnm1', 'ktmpukg', 'ku9487n', 'kwa84je', 'ku5hvgh', 'ktctb1v', 'kuotbev', 'kuphpzq', 'kv34sr6', 'kumjanv', 'ku1jglg', 'kw9ppdw', 'ktku1zl', 'kunxqb4', 'kvxn0gp', 'kuurzbc', 'ku51qsm', 'ksvnzr6', 'ktjkcwl', 'ksfns05', 'ksv0pyy', 'kvfvdqb', 'ktbz4zb', 'ksfmpjz', 'kx3xjb4', 'ksm29cg', 'ksfd6gd', 'ksjzyeu', 'kszazba', 'kv9cpfm', 'kuihcqo', 'kv1lxp4', 'kvqykq9', 'kseglyt', 'kuwgg3x', 'kv3qjri', 'kt3j1yq', 'kt3n8nr', 'kwf4q5i', 'kup8ieo', 'kuqzvj1', 'ktbcnyy', 'kul3cib', 'kwmy2ie', 'kuono6m', 'kv275vm', 'kv4mwet', 'kwqahfk', 'kvc6quv', 'kth2ku9', 'kt8cttl', 'ktdr3bs', 'kvugl3f', 'kt5ovvt', 'krg3asx', 'ksqfs84', 'kv9dh0h', 'kvprt4r', 'kwkckkj', 'kt6txuq', 'ktpicpj', 'kvelhst', 'kubeoe9', 'kv13awz', 'krrus1f', 'ksgkvrr', 'kr5fe5w', 'ks276mr', 'ksx18nn', 'kve9kkx', 'kshxfll', 'ksz58gt', 'kquaelg', 'ksq9v8z', 'ktiw39j', 'kthpmj5', 'kteyrm0', 'kuxfd9c', 'kvaet75', 'krtqzsw', 'krqtv5l', 'kt2a4l3', 'ku1zspd', 'kwf6071', 'ktvc3n0', 'kt4cqfh', 'kuav8g8', 'ktk46n2', 'ksz7qv5', 'kwvh83l', 'kukby75', 'kvpj2xe', 'kuzyqqs', 'kvwo1uq', 'kv6diyw', 'kswoeub', 'ksl89yk', 'kskcdhp', 'kxao3py', 'kwo79b4', 'kw29ttp', 'kvfcxqp', 'kwv49ck', 'ku6ujva', 'ktqxxdd', 'krcc679', 'kt4qisi', 'kvy6nt1', 'kupmqu4', 'kv5mxpz', 'kqwncsc', 'ktjm7eb', 'kuo8j6v', 'ku9isry', 'kuh3t87', 'kruh0tt', 'kwsiotr', 'kte72ih', 'kusbz8r', 'ku55h67', 'ks2te00', 'kua5fl2', 'kwrpam5', 'ktcx5ts', 'krtm5a8', 'kuaybit', 'kw1zqfw', 'kub6rxl', 'kvqxne7', 'kvxjwvg', 'kudkp1n', 'krrjqt7', 'ktjcc6g', 'kvga689', 'kszbfkv', 'ktj28qf', 'ktebp6s', 'ktnsqou', 'kx1tn0x', 'kuzjqnu', 'kuwldv4', 'ktokjw7', 'krm9n9m', 'kt6ubh3', 'kru22m1', 'kx0r6my', 'kwea4ic', 'ksbwzpk', 'kv0fd6t', 'krs7aqn', 'kwa9amh', 'kuzwy6u', 'kv1v4v3', 'kued4wu', 'ksx8v54', 'ksw2giv', 'ksmb3jd', 'kv7fxdi', 'kvttlyx', 'kvoe604', 'ktrzber', 'kvxcx6p', 'kv8vvhn', 'ktvnr9h', 'kwsg5qi', 'ksv05xt', 'ksnbok3', 'kug7o9e', 'kt4ora7', 'kv7fizq', 'kt7l91h', 'kwq76ev', 'krefl04', 'ktxgd4i', 'kvdw49d', 'ktehmjc', 'ktng6iq', 'ktjtlg7', 'kwn4iwy', 'kv1j792', 'kvrboe6', 'kw86crt', 'kt51ko5', 'ktpbq8g', 'kw6qgns', 'ks1ht41', 'ksk59on', 'kwhy4k9', 'kvt825g', 'ku6pu3i', 'ktsliqw', 'kvcakv9', 'kwk54cq', 'ksdgxg7', 'kwq4vro', 'ks3xmnq', 'ktipm1k', 'ks04x6z', 'ktj766t', 'kuod4uk', 'kqzdvn8', 'ktcl5s7', 'kr11n0l', 'kskm0rq', 'kupycdx', 'ktgdxb2', 'ktfi4ti', 'kuo2qvv', 'ktng7tl', 'ksdpslg', 'ktp1xty', 'kveu3c6', 'kvozno1', 'ksycbbe', 'ks0ie76', 'kw9uc6o', 'kt8f053', 'ksfs7dq', 'kttbcnb', 'kwhtyh4', 'kwvlg3b']
+2024-12-16 23:29:34.218 | INFO     | __main__:evaluate:387 - hate speech: Macro F1 0.6784494379081546; Micro F1 0.9773994337447243; Accuracy 0.9703296703296703
+
+2024-12-16 23:29:34.222 | INFO     | __main__:evaluate:387 - linguistic bias: Macro F1 0.8200907570608854; Micro F1 0.8987793796150332; Accuracy 0.9065934065934066
+
+2024-12-16 23:29:34.226 | INFO     | __main__:evaluate:387 - text-level context bias: Macro F1 0.7824932278111223; Micro F1 0.9443281422460261; Accuracy 0.9406593406593406
+
+2024-12-16 23:29:34.230 | INFO     | __main__:evaluate:387 - political bias: Macro F1 0.9006875477463713; Micro F1 0.9701374255996105; Accuracy 0.9692307692307692
+
+2024-12-16 23:29:34.234 | INFO     | __main__:evaluate:387 - racial bias: Macro F1 0.862807176240012; Micro F1 0.9962564798385695; Accuracy 0.9967032967032967
+
+2024-12-16 23:29:34.238 | INFO     | __main__:evaluate:387 - gender bias: Macro F1 0.9060130961971453; Micro F1 0.9946057123971235; Accuracy 0.9945054945054945
+
+2024-12-16 23:29:34.238 | INFO     | __main__:evaluate:390 - Reflecting on mistakes...
+2024-12-16 23:29:35.654 | DEBUG    | __main__:evaluate:399 - Context(HateSpeech='', LinguisticBias='', TextLevelContextBias='', PoliticalBias='', RacialBias='', GenderBias='')
+2024-12-16 23:29:35.654 | SUCCESS  | __main__:evaluate:400 - Evaluation done.
+2024-12-16 23:29:35.658 | SUCCESS  | __main__:annotate:359 - Pipeline finished - saved predictions at ./save/
+2024-12-16 23:29:35.658 | SUCCESS  | __main__:annotate:362 - Done.
