@@ -1,4 +1,4 @@
-# Multidimensional-MB
+# [ASONAM 2024] Multidimensional-MB
 This repository contains all resources related to Multidimensional Media Bias Benchmark. Our initial results are
 presented in paper: [Intertwined Biases Across Social Media Spheres: Unpacking Correlations in Media Bias
 Dimensions](https://www.arxiv.org/abs/2408.15406). 
